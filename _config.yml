@@ -1,0 +1,136 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Blackie's Failed Notes
+subtitle: Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
+author: Blackie Tsai
+language:
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://blackie1019.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+#Custom Setting Start
+
+# Site settings
+SEOTitle: Blackie的失敗筆記 | Blackie's Failed Notes
+header-img: img/home-bg.jpg
+email: blackie1019@gmail.com
+description: "This is Blackie's blog, about his technical sharing and portfolio"
+keyword: "blackie1019,Chen-Tien Tsai"
+
+
+# SNS settings
+# RSS: false
+weibo_username:     Demonbane
+zhihu_username:     Demonbane
+github_username:    blackie1019
+twitter_username:   blackie1019
+facebook_username:  chentien.tsai
+linkedin_username:  blackie1019
+
+# Build settings
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: kaijun
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics
+ga_track_id: 'UA-38528893-3'            # Format: UA-xxxxxx-xx
+ga_domain: blackie1019.github.io
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "如果覺得文章還不錯或是有任何想要討論的請不要客氣，任何的回應都是我繼續努力產出的動力！"
+sidebar-avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+# Friends
+friends: [
+    {
+        title: "Blackie's Failed Notes(old)",
+        href: "https://dotblogs.com.tw/blackie1019"
+    }
+]
+
+
+#Custom Setting End
+
+
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: huxblog
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://github.com/blackie1019/blackie1019.github.io.git
+  branch: master
