@@ -13,6 +13,7 @@ tags:
 - iOS
 ---
 
+
 ![Flurry 五周年研究報告：App 正在吞噬這個世界，Web 必須順應其變](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130827/1.PNG)
 
 [完整文章來源](http://www.inside.com.tw/2013/04/08/flurry-five-year-report-it-s-an-app-world-the-just-web-lives-in-it)
