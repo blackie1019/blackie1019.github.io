@@ -1,4 +1,15 @@
-#App_Code is Evil in Web Application Project
+---
+layout: post
+title: App_Code is Evil in Web Application Project
+subtitle: ""
+date: 2013-12-15 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- Web MVC/WebApi 
+---
 
 ![App_Code](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131213/app_code.png)
 

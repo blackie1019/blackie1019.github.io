@@ -1,4 +1,16 @@
-[Other]Coding Dojo, Kata, Wasa, and Randori
+---
+layout: post
+title: Coding Dojo, Kata, Wasa, and Randori
+subtitle: ""
+date: 2014-11-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Development&Coding
+tags: 
+- Scrum
+- Agile
+---
 
 ![01](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/01.png)
 

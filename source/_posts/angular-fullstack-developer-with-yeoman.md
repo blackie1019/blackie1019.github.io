@@ -1,4 +1,19 @@
-#[JavaScript] Angular FullStack developer with Yeoman
+---
+layout: post
+title: Angular FullStack developer with Yeoman
+subtitle: ""
+date: 2015-03-28 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- AngularJS 
+- NodeJS
+- mongoDB
+- MAN
+- Yeoman
+---
 
 ![logo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/angular-fullstack/01/logo.jpeg)
 

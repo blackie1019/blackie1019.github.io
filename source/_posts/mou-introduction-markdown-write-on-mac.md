@@ -1,3 +1,16 @@
+---
+layout: post
+title: Mou - 在Mac 環境寫MarkDown的好物
+subtitle: ""
+date: 2014-11-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Tool
+tags:
+- MarkDown
+---
+
 ![Logo](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/mou_logo.png)
 
 ####[Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載
@@ -83,5 +96,3 @@ Mou真的蠻好用的而且用免費根本佛心～！
 ---
 
 工欲善其事，必先利其器，讓我們一起學好Markdown吧～！
-
-

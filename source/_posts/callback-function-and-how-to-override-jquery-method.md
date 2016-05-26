@@ -1,4 +1,16 @@
-#Callback function and how to override jQuery method 
+---
+layout: post
+title: Callback function and how to override jQuery method
+subtitle: ""
+date: 2014-02-17 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- ECMAScript
+- jQuery
+---
 
 在開始前先截錄一下它的解釋
 
@@ -6,8 +18,6 @@
 
 
 關於Callback這是一個在javascript很重要的機制，先從一張圖來講一下他到底是在幹嘛。
-
-
 
 國外朋友也寫了篇很好的說明文，有興趣的朋友可以參考[Callback Functions in JavaScript](http://www.impressivewebs.com/callback-functions-javascript/)
 

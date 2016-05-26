@@ -1,4 +1,17 @@
-*JavaScript* 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScript)標準，而該標準在最近一次更新(2009年)更新為第五版，其中加入strict mode(嚴格模式)這個功能，可以讓你的語法變得較嚴謹，相對於原本的語法較不容易出錯
+---
+layout: post
+title: JavaScript use strict(嚴格模式)-strict mode 介紹
+subtitle: ""
+date: 2013-08-30 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags:
+- ECMAScript
+---
+
+JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScript)標準，而該標準在最近一次更新(2009年)更新為第五版，其中加入strict mode(嚴格模式)這個功能，可以讓你的語法變得較嚴謹，相對於原本的語法較不容易出錯
 
 使用上很簡單，只要加上即可，先呈現一個使用範例
 
@@ -7,7 +20,7 @@
 	    var tryValue = 123;
 	    return tryValue;
 	}
-	
+
 	// This causes a syntax error.
 	testvar = 123;
 
@@ -33,7 +46,7 @@
 	    tryValue = 123;
 	    return tryValue;
 	}
-	
+
 	// This worked fine.
 	testvar = 123;
 	// This causes a syntax error
@@ -77,9 +90,9 @@
 
 	// Throws an error in strict mode
 	(function() {
-	
+
 	    someUndeclaredVar = "foo";
-	
+
 	}());
 
 ####使用this前的注意事項
@@ -90,21 +103,21 @@
 	function sayColor() {
 	    alert(this.color);
 	}
-	
+
 	// Throws an error in strict mode, "red" otherwise
 	sayColor();
-	
+
 	// Throws an error in strict mode, "red" otherwise
 	sayColor.call(null);
 
 基於[變數使用需要先宣告](#變數使用需要先宣告)的原則不能直接使用上方的this的寫法因為你沒先宣告this的物件為何
 
 下面這段也是一樣有錯誤，如果要透過constructor來產生的話要透過new的方式來告訴它this為何物件
-	
+
 	function Person(name) {
 	    this.name = name;
 	}
-	
+
 	// Error in strict mode
 	var me = Person("Nicholas");
 
@@ -115,7 +128,7 @@
 	function doSomething(value1, value2, value1) {
 	    //code
 	}
-	
+
 	// Error in strict mode - duplicate properties
 	var object = {
 	    foo: "bar",
@@ -129,25 +142,25 @@ These are both syntax errors and so the error is thrown before the code is execu
 最大的改變是在eval()內宣告的變數(variables)與函式(functions)並不會在scope中存在，如下範例
 
 	(function() {
-	
+
 	    eval("var x = 10;");
-	
+
 	    // Non-strict mode, alerts 10
 	    // Strict mode, throws an error because x is undeclared
 	    alert(x);
-	
+
 	}());
 
 上面的範例可以透過return value的方式把x傳回給scope呈現，
 如下範例
-	
+
 	(function() {
-	
+
 	    var result = eval("var x = 10, y = 20; x + y");
-	
+
 	    // Works in strict and non-strict mode (30)
 	    alert(result);
-	
+
 	}());
 
 ####對於不可改變的屬性無法在宣告後再對內容做彈性修改
@@ -158,7 +171,7 @@ These are both syntax errors and so the error is thrown before the code is execu
 	    writable: false,
 	    value: "Nicholas"
 	});
-	
+
 	// Fails silently in non-strict mode, throws error in strict mode
 	person.name = "John";
 
