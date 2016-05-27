@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var minifycss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
@@ -7,7 +7,7 @@ var htmlclean = require('gulp-htmlclean');
 // 压缩 public 目录 css
 gulp.task('minify-css', function() {
     return gulp.src('./public/**/*.css')
-        .pipe(minifycss())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./public'));
 });
 // 压缩 public 目录 html
