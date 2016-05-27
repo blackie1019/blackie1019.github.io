@@ -4,10 +4,79 @@
 
 # Site
 title: Blackie's Failed Notes
-subtitle: Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
+subtitle : Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
+description: Show me. Don't tell me.
 author: Blackie Tsai
-language:
-timezone:
+avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+language: en
+timezone: tw
+
+#Custom Setting Start
+
+# Scheme
+scheme: Muse
+
+# Sidebar settings
+sidebar:
+  position: left
+  display: always
+
+# Since
+since: 2013
+
+# Menu
+menu:
+  home: /
+  #about: /about
+  archives: /archives
+  categories: /categories
+  tags: /tags
+  search: /search
+
+menu_icons:
+  enable: true
+  # Icon Mapping.
+  home: home
+  about: user
+  categories: th
+  tags: tags
+  archives: archive
+  commonweal: heartbeat
+
+# Search
+search:
+  path: search.xml
+  field: post
+
+disqus_shortname: chentientsai
+
+# GA
+google_analytics: UA-38528893-3
+
+# Links
+links_title: Links
+links:
+  Larry - Level up: http://larrynung.github.io/
+
+# Social
+social:
+  GitHub: https://github.com/blackie1019
+  Facebook: https://www.facebook.com/chentien.tsai
+  LinkedIn: https://tw.linkedin.com/in/blackie1019
+
+social_icons:
+  enable: true
+  # Icon Mappings
+  GitHub: github
+  Facebook: facebook
+  LinkedIn: linkedin
+
+# Code Highlight theme
+# Available value: normal | night | night eighties | night blue | night bright
+# https://github.com/chriskempson/tomorrow-theme
+highlight_theme: night eighties
+
+#Custom Setting End
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -15,70 +84,6 @@ url: http://blackie1019.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
-
-#Custom Setting Start
-
-# Site settings
-SEOTitle: Blackie的失敗筆記 | Blackie's Failed Notes
-header-img: img/home-bg.jpg
-email: blackie1019@gmail.com
-description: "This is Blackie's blog, about my technical sharing and portfolio"
-keyword: "blackie1019,Chen-Tien Tsai"
-
-
-# SNS settings
-# RSS: false
-weibo_username:     Demonbane
-zhihu_username:     Demonbane
-github_username:    blackie1019
-twitter_username:   blackie1019
-facebook_username:  chentien.tsai
-linkedin_username:  blackie1019
-
-# Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
-
-# Duoshuo settings
-duoshuo_username: kaijun
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
-
-
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-ga_track_id: 'UA-38528893-3'            # Format: UA-xxxxxx-xx
-ga_domain: blackie1019.github.io
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "如果覺得文章還不錯或是有任何想要討論的請不要客氣，任何的回應都是我繼續努力產出的動力！"
-sidebar-avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-# Friends
-friends: [
-    {
-        title: "Blackie's Failed Notes(old)",
-        href: "https://dotblogs.com.tw/blackie1019"
-    }
-]
-
-
-#Custom Setting End
-
-
 
 # Directory
 source_dir: source
@@ -99,7 +104,7 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: true
 relative_link: false
-future: true
+future: false
 highlight:
   enable: true
   line_number: false
@@ -120,13 +125,13 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 30
 pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: huxblog
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
