@@ -11,6 +11,8 @@ tags:
 - MarkDown
 ---
 
+<!-- More -->
+
 ![Logo](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/mou_logo.png)
 
 ####[Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載

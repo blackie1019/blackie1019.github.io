@@ -1,5 +1,19 @@
-使用iScroll.js讓在Cordova(Phonegap)上面快樂拖曳與捲軸功能＆一秒加速iscroll.js
---
+---
+layout: post
+title: 使用iScroll.js讓在Cordova(Phonegap)上面快樂拖曳與捲軸功能＆一秒加速iscroll.js
+subtitle: ""
+date: 2013-09-10 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- iScroll
+- Cordova
+---
+
+<!-- More -->
+
 ![iScroll.js](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/1.jpg)
 
 ##前言

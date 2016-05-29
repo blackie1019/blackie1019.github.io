@@ -1,4 +1,17 @@
-#[JavaScript] How to Control YouTube AutoPlay and Play after another video end.
+---
+layout: post
+title: How to Control YouTube AutoPlay and Play after another video end
+subtitle: ""
+date: 2014-04-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Youtube API
+---
+
+<!-- More -->
 
 今天被一個朋友問起如何控制embed的YouTube影片，讓他可以自動撥放也可以在播放完後讓另外一個embed的影片也播放。
 

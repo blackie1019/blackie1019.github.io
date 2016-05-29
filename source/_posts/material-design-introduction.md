@@ -1,4 +1,17 @@
-#[Material Design]Introduction
+---
+layout: post
+title: Material Design Introduction
+subtitle: ""
+date: 2014-07-13 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Design
+tags: 
+- Material Design
+---
+
+<!-- More -->
 
 這系列文章為參考Google本身文件讀者本身對其之瞭解所做的筆記，如果有錯的地方麻煩順手讓我知道一下瞜~感謝
 

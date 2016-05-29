@@ -1,4 +1,17 @@
-#Use NonAction Attribute to Hide Controller in .NET MVC Routing Table
+---
+layout: post
+title: Use NonAction Attribute to Hide Controller in .NET MVC Routing Table
+subtitle: ""
+date: 2013-11-04 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- Web MVC/WebApi
+---
+
+<!-- More -->
 
 在.NET MVC當中一個Controller通常會被對應到URL中並透過該Controller本身具有的Action來作為整個路由(Routing)註冊的樣式，以一個叫做SportController的範例來說可能如下:
 

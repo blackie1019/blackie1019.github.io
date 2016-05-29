@@ -1,4 +1,18 @@
-#[FLUX] FLUX架構介紹
+---
+layout: post
+title: FLUX架構介紹
+subtitle: ""
+date: 2015-04-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- React
+- FLUX
+---
+
+<!-- More -->
 
 FLUX是一個由Facebook提出來的開發架構(FLUX 是一個 Pattern 而不是一個正式的框架)，目的是在解決所謂的MVC在大型商業網站所存在的問題，把沒有條理跟亂七八糟的架構做一個流程規範的定義。
 

@@ -1,4 +1,17 @@
-Javascript call method(呼叫函式)
+---
+layout: post
+title: Javascript call method(呼叫函式)
+subtitle: ""
+date: 2014-01-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
 
 因為javascript是一個有無限可能的程式(我指的是寫法XD)，所以這篇是幫js新手了解javascript如何呼叫/寫出函式，如果你要呼叫一個函式你可以透過以下四個方法:
 

@@ -1,4 +1,18 @@
-#實作javascript Carousel Animation
+---
+layout: post
+title: 實作javascript Carousel Animation
+subtitle: ""
+date: 2013-12-24 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
+
 
 ![horse](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131224/horse-3.png)
 

@@ -12,6 +12,8 @@ tags:
 - jQuery
 ---
 
+<!-- More -->
+
 在開始前先截錄一下它的解釋
 
 >A reference to executable code, or a piece of executable code, that is passed as an argument to other code.

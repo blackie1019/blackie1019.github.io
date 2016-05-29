@@ -1,4 +1,18 @@
-# GitLabTest
+---
+layout: post
+title: GitLabTest
+subtitle: ""
+date: 2015-11-06 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- SourceCode Control
+tags: 
+- Git
+- GitLab
+---
+
+<!-- More -->
 
 This is a step by step tourist for how to build up a GitLab from Bitnami VM
 

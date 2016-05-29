@@ -1,4 +1,17 @@
-#Cannot hide status bar in iOS7
+---
+layout: post
+title: Cannot hide status bar in iOS7
+subtitle: ""
+date: 2013-11-03 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Mobile
+tags: 
+- iOS
+---
+
+<!-- More -->
 
 最簡單的做法是在你的APP .plist 裡面加入下面兩個屬性
 

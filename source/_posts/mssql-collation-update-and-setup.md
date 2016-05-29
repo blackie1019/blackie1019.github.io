@@ -1,4 +1,17 @@
-#如何做MS SQL定序(Collation) 轉換
+---
+layout: post
+title: 如何做MS SQL定序(Collation) 轉換
+subtitle: ""
+date: 2014-07-13 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Database
+tags: 
+- MSSQL
+---
+
+<!-- More -->
 
 ##MS SQL定序
 

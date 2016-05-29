@@ -1,4 +1,17 @@
-#[Git]Git基本教學與使用AWS EC2( Elastic Compute Cloud ) /Microsoft Azure建立自己的Git Server
+---
+layout: post
+title: Git基本教學與使用AWS EC2( Elastic Compute Cloud ) /Microsoft Azure建立自己的Git Server
+subtitle: ""
+date: 2014-07-02 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- SourceCode Control
+tags: 
+- Git
+---
+
+<!-- More -->
 
 ![Logo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/logo.png)
 

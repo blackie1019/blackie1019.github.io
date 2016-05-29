@@ -1,4 +1,18 @@
-#Work with JSHint using Sublime Text 2 
+---
+layout: post
+title: Work with JSHint using Sublime Text 2 
+subtitle: ""
+date: 2014-01-18 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- JSHint
+- SublimeText
+---
+
+<!-- More -->
 
 ![LOGO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jshint.png)
 

@@ -1,4 +1,17 @@
-#No more TODO - Customize your token keywords for Task List with Visual Studio
+---
+layout: post
+title: No more TODO - Customize your token keywords for Task List with Visual Studio
+subtitle: ""
+date: 2013-12-19 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Development
+tags: 
+- Visual Studio
+---
+
+<!-- More -->
 
 在開發程式的時候想必我們都很習慣使用直接下註解TODO的方式來記錄我們以後要完成的function或是提醒自己有哪些事情還沒做，而使用Visual Studio 開發如果是自動產生的程式碼時不時都還會幫你加上這段
 

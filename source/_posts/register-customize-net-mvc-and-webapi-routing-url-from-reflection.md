@@ -1,4 +1,17 @@
-#Register customize .NET MVC Web/WebAPI Routing URL from Reflection
+---
+layout: post
+title: Register customize .NET MVC Web/WebAPI Routing URL from Reflection
+subtitle: ""
+date: 2014-01-12 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- Web MVC/WebApi
+---
+
+<!-- More -->
 
 ![電線杆](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140102/image.jpg)
 

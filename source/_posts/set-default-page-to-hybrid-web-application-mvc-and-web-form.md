@@ -1,4 +1,17 @@
-#Set Default Page to Hybrid Web Application(MVC and Web Form)
+---
+layout: post
+title: Set Default Page to Hybrid Web Application(MVC and Web Form)
+subtitle: ""
+date: 2014-02-17 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- Web MVC/WebApi
+---
+
+<!-- More -->
 
 在MVC架構，如果要設定預設的Default Page給MVC，我們可以在RoutConfig.cs中設定Default的MVC Controller來讓他接收，如下:
 

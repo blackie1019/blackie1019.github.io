@@ -1,4 +1,17 @@
-#JavaScript reserved word(保留字)
+---
+layout: post
+title: JavaScript reserved word(保留字)
+subtitle: ""
+date: 2014-04-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
 
 ![reserved](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140114/reserved.jpg)
 

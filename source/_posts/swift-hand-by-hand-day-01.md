@@ -1,4 +1,18 @@
-#[IT鐵人賽 - Swift與iOS APP開發] -   介紹與開發環境安裝
+---
+layout: post
+title: [Swift與iOS APP開發] -   介紹與開發環境安裝
+subtitle: ""
+date: 2014-07-23 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Mobile
+tags: 
+- Swift
+- iOS
+---
+
+<!-- More -->
 
 ##Swift介紹
 
@@ -24,6 +38,3 @@
 5. 按下⌘+R或是上方的執行按鈕執行。可以看到中間區塊的右下角出現 Hello World!字樣。
 
 6. 這樣就完成了我們第一天的學習
-
-
-##參考資源 

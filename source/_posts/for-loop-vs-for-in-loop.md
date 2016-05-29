@@ -1,5 +1,19 @@
+---
+layout: post
+title: for loop vs for-in loop 與效能改善
+subtitle: ""
+date: 2013-09-05 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
+
 ![Logo](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130905/1.png)
-#for loop vs for-in loop 與效能改善
 ##for loop 介紹
 
 引用[W3C school](http://www.w3schools.com/js/js_loop_for.asp)上的內容
@@ -74,7 +88,8 @@ Often this is the case when working with arrays:
 
 以自己開發上來說我會盡量作*改善三*，少部分情況我也會只做*改善一*而已(迴圈內數量不大且沒雙層迴圈的情況)
 
-小小的一個迴圈可能就可以讓你的程式效能差距甚遠，*改善一*只是將變數往前提出宣告就可以進步10%的效能，這可能是CP值最高的必修項目了，而如果你錯用for-in再跑迴圈的話可能會跑到哭出來，在這邊分享心得給大家一下摟，如果有更好的寫法也麻煩提出建議讓小弟也學習一下～！
+小小的一個迴圈可能就可以讓你的程式效能差距甚遠，*改善一*只是將變數往前提出宣告就可以進步10%的效能，這可能是CP值最高的必修項目了
+，而如果你錯用for-in再跑迴圈的話可能會跑到哭出來，在這邊分享心得給大家一下摟，如果有更好的寫法也麻煩提出建議讓小弟也學習一下～！
 
 ##題外話-撰寫保持ＣＰＵ使用率在50%的程式
 

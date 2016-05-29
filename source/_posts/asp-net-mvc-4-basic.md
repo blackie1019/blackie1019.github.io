@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET MVC 4 入門--開發環境與基本知識
+title: ASP.NET MVC 4 入門
 subtitle: ""
 date: 2013-10-23 00:29:45
 author: Blackie
@@ -10,6 +10,9 @@ catagory:
 tags: 
 - Web MVC/WebApi 
 ---
+MVC 開發環境與基本知識
+
+<!-- More -->
 
 ##檢視引擎(view engines):
 

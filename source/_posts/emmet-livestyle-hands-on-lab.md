@@ -1,4 +1,19 @@
-#Emmet LiveStyle hands on Lab
+---
+layout: post
+title: Emmet LiveStyle hands on Lab
+subtitle: ""
+date: 2014-08-03 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Development
+tags: 
+- Emmet
+- SublimeText
+---
+
+<!-- More -->
+
 
 想必大部分人都知道Emmet是一套在SublimeText上Toolkit，而今天要介紹的是旗下的另外一套超方便的Emmet LiveStyle工具,讓你再透過瀏覽器修改檢查時就完成開發項目的調整，而這也是前端開發必學項目之一。
 

@@ -7,4 +7,7 @@ author: Blackie
 header-img: ""
 catagory:
 tags:
+sitemap: true
 ---
+
+<!-- More -->

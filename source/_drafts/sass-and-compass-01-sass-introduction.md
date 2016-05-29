@@ -1,5 +1,17 @@
-#[CSS]Sass and Compass - 01:Sass Concept
+---
+layout: post
+title: Sass Introduction
+subtitle: ""
+date: 2015-01-09 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- CSS
+tags: 
+- SASS
+---
 
+<!-- More -->
 
 ![logo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20150104/logo.png)
 
@@ -23,16 +35,12 @@ Sass的全名Syntactically Awesome Style Sheets，由此可知他主要是提供
 
 當然以上最可怕的莫過於要更換框架了，因為這代表以前改的一些客製化的內容都要從做了呀。
 
-![]()
-
 此時Sass的出現主要就是要改變兩個CSS的兩個特性：
 
 1. 給予CSS變數宣告與運算(Variables,Operators等)的能力
 2. 給予CSS結構化(Nesting,Partials,Import,Mixins,Extend/Inheritance...等)的能力
 
 而最大的好處是，現在普遍框架都支援Sass，所以你學會後就不會再害怕換框架這件事情了。
-
-![]()
 
 透過這兩個改變你準備好跟上面的惡夢說掰掰了嗎？在開始學習之前先幫大家整理你學會Sass的好處：
 
@@ -47,7 +55,6 @@ Sass的全名Syntactically Awesome Style Sheets，由此可知他主要是提供
 ##How to using it
 
 使用Sass的方式很簡單，這邊簡單舉幾個例子：
-
 
 ##Sass hands on Lab
 

@@ -1,4 +1,17 @@
-#Multiple types were found that match the controller named 'XXX'
+---
+layout: post
+title: .NET MVC Multiple types were found that match the controller named 'XXX'
+subtitle: ""
+date: 2014-02-18 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- Web MVC/WebApi
+---
+
+<!-- More -->
 
 ##前言
 

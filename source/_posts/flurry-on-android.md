@@ -6,12 +6,14 @@ date: 2013-08-28 00:29:45
 author: Blackie
 header-img: ""
 catagory:
-- JavaScript
+- Mobile
 tags: 
 - Phonegap 
 - Cordova
 - Android
 ---
+
+<!-- More -->
 
 ## 接續上一篇[Flurry on iOS](http://www.dotblogs.com.tw/blackie1019/archive/2013/08/27/115696.aspx)，這篇來講android上的設定
 

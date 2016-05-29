@@ -1,4 +1,18 @@
-#Work with JSHint using Visual Studio
+---
+layout: post
+title: Work with JSHint using Visual Studio
+subtitle: ""
+date: 2014-01-19 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- JSHint
+- Visual Studio
+---
+
+<!-- More -->
 
 ![LOGO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140120/jshint_vs.png)
 

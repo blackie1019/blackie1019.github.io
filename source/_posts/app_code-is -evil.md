@@ -4,20 +4,20 @@ title: App_Code is Evil in Web Application Project
 subtitle: ""
 date: 2013-12-15 00:29:45
 author: Blackie
-header-img: ""
+header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131213/app_code.png"
 catagory:
 - Asp.Net
 tags: 
 - Web MVC/WebApi 
 ---
 
-![App_Code](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131213/app_code.png)
-
-##前言
-
 最近在新的專案上使用了WebAPI開發一些服務，結果因為以前的壞習慣讓我直接下意識地開了App_Code的資料夾並在資料夾內放了一些會常用到的Utilc或Common類型的class或static method。
 
 機車的是當我build過後真正傳入參數作處理要取得服務資料時出現了一些莫名的RunTime Error…
+
+<!-- More -->
+
+##前言
 
 其中最讓我感到錯愕的就是他跟我說我傳入某一個method的參數不是我要的class類型…但我仔細一看我的程式碼
 

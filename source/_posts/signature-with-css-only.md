@@ -1,4 +1,17 @@
-#使用CSS製作DotBlog對話框簽名檔效果
+---
+layout: post
+title: 使用CSS製作對話框簽名檔效果
+subtitle: ""
+date: 2013-10-09 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- CSS
+tags: 
+- 
+---
+
+<!-- More -->
 
 ![signature](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131009/singature.png)
 

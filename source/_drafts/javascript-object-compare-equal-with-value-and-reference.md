@@ -1,4 +1,17 @@
-#JavaScript Object and compare with == and ===
+---
+layout: post
+title: JavaScript Object and compare with == and ===
+subtitle: ""
+date: 2014-01-14 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
 
 #前言
 

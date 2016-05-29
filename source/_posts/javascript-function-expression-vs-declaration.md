@@ -1,4 +1,17 @@
-#[JavaScript]function expression(函式陳述式) VS declaration (函式運算式)
+---
+layout: post
+title: function expression(函式陳述式) VS declaration (函式運算式)
+subtitle: ""
+date: 2015-04-10 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
 
 先前寫過一篇[[Javascript]Call method(呼叫函式)](http://www.dotblogs.com.tw/blackie1019/archive/2014/01/14/139926.aspx)關於函數宣告,這邊進階一下做一個比較。
 

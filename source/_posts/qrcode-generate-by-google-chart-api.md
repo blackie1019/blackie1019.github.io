@@ -1,4 +1,17 @@
-[JavaScript] Google Chart API 畫出QRCode
+---
+layout: post
+title:  Google Chart API 畫出QRCode
+subtitle: ""
+date: 2013-09-27 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Google Chart API
+---
+
+<!-- More -->
 
 ##Google Chart API
 

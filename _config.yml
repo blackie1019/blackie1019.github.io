@@ -16,6 +16,17 @@ search:
   path: search.xml
   field: post
 
+# Sitemap
+sitemap:
+    path: sitemap.xml
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 30
+  hub:
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blackie1019.github.io
@@ -85,3 +96,7 @@ deploy:
   type: git
   repo: https://github.com/blackie1019/blackie1019.github.io.git
   branch: master
+
+# Livereload
+livereload:
+  port: 40001

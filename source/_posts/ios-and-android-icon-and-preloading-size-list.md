@@ -1,3 +1,19 @@
+---
+layout: post
+title: iOS & Android icon and preloading size list
+subtitle: ""
+date: 2013-10-02 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Mobile
+tags: 
+- iOS
+- Android
+---
+
+<!-- More -->
+
 整理一下開發APP時所要知道的各項尺寸
 
 ##iOS:(PNG only)

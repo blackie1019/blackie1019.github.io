@@ -1,4 +1,17 @@
-#Xcode4 upgrade to Xcode5:ld: symbol(s) not found for architecture armv7 or armv7s linker error
+---
+layout: post
+title: Xcode4 upgrade to Xcode5:ld: symbol(s) not found for architecture armv7 or armv7s linker error
+subtitle: ""
+date: 2013-10-11 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Mobile
+tags: 
+- iOS
+---
+
+<!-- More -->
 
 最近因為手殘把手機從iOS6升到iOS7後發現原本的Xcode4.6.3不能開發了…要使用Xcode5才可以上實機開發，而Xcode5又要OSX至少10.8以上的版本才能安裝，所以昨天花了一整天才把因手殘發生的悲劇環境重新弄好，正當興高采烈地打開專案要開始上實機開發卻發生了下面的悲劇畫面
 

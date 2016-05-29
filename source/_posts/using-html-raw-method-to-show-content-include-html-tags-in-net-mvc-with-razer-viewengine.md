@@ -1,4 +1,17 @@
-Using Html.Raw() method to show content include Html tags in .NET MVC(under Razor ViewEngine)
+---
+layout: post
+title: Using Html.Raw() method to show content include Html tags in .NET MVC(under Razor ViewEngine)
+subtitle: ""
+date: 2013-11-13 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- Web MVC/WebApi
+---
+
+<!-- More -->
 
 在.NET MVC中如果使用Razor作為ViewEngine 我們最常用來輸出一個model的參數的用法應該就是@了，詳細的說明與用法可以參考Demo大的[ASP.NET MVC3 Razor 初心者容易遇到的問題](http://demo.tc/Post/679)。
 

@@ -1,4 +1,17 @@
-#Edit Hosts file in Mac OS X with Terminal
+---
+layout: post
+title: Edit Hosts file in Mac OS X with Terminal
+subtitle: ""
+date: 2014-01-18 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Linux
+tags: 
+- OSX
+---
+
+<!-- More -->
 
 Mac的host file 是在/etc/hosts，所以我們可以透過編輯器直接開啓
 

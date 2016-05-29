@@ -1,5 +1,17 @@
-#Parallel.ForEach vs PLINQ
+---
+layout: post
+title: Parallel.ForEach vs PLINQ
+subtitle: ""
+date: 2014-01-15 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Asp.Net
+tags: 
+- C#
+---
 
+<!-- More -->
 ##Foreach and LINQ
 
 Language-Integrated Query (LINQ) is an innovation introduced in Visual Studio 2008 and .NET Framework version 3.5 that bridges the gap between the world of objects and the world of data.
@@ -13,8 +25,6 @@ Parallel.ForEach是在enumberable data set以一個類似Foreach loop的方式�
 評估是否使用Parallel.Foreach的幾項參考:
 
 1. Parallel.ForEach有numerous overloads
-
-
 
 ##PLINQ
 

@@ -1,4 +1,17 @@
-#[Javascript]javascript Floating-Point calculation bug
+---
+layout: post
+title: javascript Floating-Point calculation
+subtitle: ""
+date: 2015-02-28 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- Basic JS
+---
+
+<!-- More -->
 
 前陣子在幫同事改一段以前的程式的時候發現Javascript在做Float數值的運算時有bug，會導致簡單的計算出問題，當下去找了一下資料有幾個處理方式整理給大家。
 

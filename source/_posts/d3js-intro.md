@@ -1,4 +1,17 @@
-#[D3.js] Day 01 - Intro 
+---
+layout: post
+title: D3.JS:Intro
+subtitle: ""
+date: 2014-08-27 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- JavaScript
+tags: 
+- D3js
+---
+
+<!-- More -->
 
 ##What is D3.js?
 

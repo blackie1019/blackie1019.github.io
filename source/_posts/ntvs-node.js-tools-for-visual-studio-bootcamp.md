@@ -1,4 +1,18 @@
-#NTVS - Node.js Tools For Visual Studio Bootcamp
+---
+layout: post
+title:  NTVS - Node.js Tools For Visual Studio Bootcamp
+subtitle: ""
+date: 2013-12-27 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Development
+tags: 
+- Visual Studio
+- Nodejs
+---
+
+<!-- More -->
 
 ![N](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/Codeplex%20Logo.png)
 

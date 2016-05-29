@@ -1,4 +1,17 @@
-#[iOS]flurry:symbols not found for architecture i386
+---
+layout: post
+title: flurry:symbols not found for architecture i386
+subtitle: ""
+date: 2013-10-11 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Mobile
+tags: 
+- iOS
+---
+
+<!-- More -->
 
 這邊小弟原先使用的Flurry因為要app要上iOS7所以要更新到4.2.3以上的版本才能支援，所以先去官網下載了目前最新版的4.2.4，並將檔案放置專案後如下：
 

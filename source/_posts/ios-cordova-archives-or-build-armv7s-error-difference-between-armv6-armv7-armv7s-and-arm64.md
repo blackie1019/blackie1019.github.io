@@ -1,4 +1,19 @@
-#[iOS]Phonegap archives/build armv7s error!（What different between armv6/armv7/armv7s/arm64?)
+---
+layout: post
+title: Phonegap archives/build armv7s error!（What different between armv6/armv7/armv7s/arm64?)
+subtitle: ""
+date: 2013-10-12 00:29:45
+author: Blackie
+header-img: ""
+catagory:
+- Mobile
+tags: 
+- Phonegap
+- Cordova
+---
+
+<!-- More -->
+
 
 在Xcode 4.6.X的時代預設使用的Archives與build的架構是在armv6/armv7/armv7s(但armv7s預設不會開啓)所以在打包ipa檔案都沒什麼問題，直到最近換成Xcode5與iOS7之後真的是一連串的悲劇。
 

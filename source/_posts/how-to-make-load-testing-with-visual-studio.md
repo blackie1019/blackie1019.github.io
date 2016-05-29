@@ -12,6 +12,8 @@ tags:
 - Visual Studio
 ---
 
+<!-- More -->
+
 ![0](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/0.jpg)
 
 這邊分享一下給大家手把手(step by step)介紹一下如何建置Load Testing的專案，內容主要是我之前在公司對QA們做的training material，以英文為主，這邊如果有更好的內容會再把相關內容更新補齊上去。
