@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xcode4 upgrade to Xcode5:ld: symbol(s) not found for architecture armv7 or armv7s linker error
+title: Xcode4 upgrade to Xcode5 - symbol(s) not found for architecture armv7 or armv7s linker error
 subtitle: ""
 date: 2013-10-11 00:29:45
 author: Blackie

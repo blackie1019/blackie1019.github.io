@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C# ?: , ??與var
+title: c# ternary operator, null coalescing operator and var
 subtitle: ""
 date: 2014-05-05 00:29:45
 author: Blackie

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Swift與iOS APP開發] -   介紹與開發環境安裝
+title: Swift與iOS APP開發 - 介紹與開發環境安裝
 subtitle: ""
 date: 2014-07-23 00:29:45
 author: Blackie
