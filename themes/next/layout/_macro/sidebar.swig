@@ -76,7 +76,9 @@
                   {% if theme.social_icons.enable %}
                     <i class="fa fa-fw fa-{{ theme.social_icons[name] | default('globe') | lower }}"></i>
                   {% endif %}
-                  {{ name }}
+                  {% if theme.social_wordEnable %}
+                    {{ name }}
+                  {% endif %}
                 </a>
               </span>
             {% endfor %}

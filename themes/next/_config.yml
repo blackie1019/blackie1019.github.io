@@ -121,7 +121,8 @@ social:
   GitHub: https://github.com/blackie1019
   Facebook: https://www.facebook.com/chentien.tsai
   LinkedIn: https://tw.linkedin.com/in/blackie1019
-
+  SlideShare: https://www.slideshare.net/chentientsai
+social_wordEnable: false
 
 # Social Links Icons
 # Icon Mapping:
@@ -134,6 +135,7 @@ social_icons:
   GitHub: github
   Facebook: facebook
   LinkedIn: linkedin
+  SlideShare: slideshare
 
 
 # Sidebar Avatar
@@ -242,7 +244,7 @@ mathjax:
 #duoshuo_shortname:
 
 # Disqus
-disqus_shortname: blackie1019sdsds
+disqus_shortname: blackie1019
 
 # Baidu Share
 # Available value:
