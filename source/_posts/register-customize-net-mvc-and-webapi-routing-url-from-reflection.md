@@ -7,9 +7,11 @@ author: Blackie
 header-img: ""
 catagory:
 - Asp.Net
-tags: 
+tags:
 - Web MVC/WebApi
 ---
+
+分享一下如何動態註冊客製的Routing
 
 <!-- More -->
 
@@ -44,7 +46,7 @@ tags:
     );
 
 或是
-	
+
     //Register HttpRoute
     config.Routes.MapHttpRoute(
         name: "PostActionApi",
@@ -60,7 +62,7 @@ tags:
 		routes.IgnoreRoute("{resource}.aspx/{*pathInfo}");
 
 - 過濾 Page 目錄下的所有程式與檔案 (會直接讓IIS 來決定要用何種 Handler 來處理這次 HTTP 要求 )
-		
+
 		routes.IgnoreRoute("Page/{*pathInfo}");
 
 - 忽略所有在 Page 目錄下的所有檔案 ( 保哥文章提供的另一種寫法 )
@@ -69,7 +71,7 @@ tags:
 
 基本上我們要注意一個要點，.NET MVC的Routing與IIS的Rouing是兩件事情，所以使用上要稍微注意不是沒註冊就連不到檔案(有可能Rouing的URL與IIS的目錄結構剛好一樣)
 
-#Register customize MVC/WebAPI Routing 
+#Register customize MVC/WebAPI Routing
 
 而當我們要新增一個customize的Routing的時候可以透過下面的方式寫在App_Start裡面的RoueCofig.cs或是WebApiConfig當中:
 
@@ -117,7 +119,7 @@ tags:
 
             //RegisterMemberApi by Action to HttpRoute
             RegisterMemberApiAction(config);
-            
+
         }
         private static void RegisterMemberApiAction(HttpConfiguration config)
         {
@@ -146,19 +148,19 @@ tags:
 	}
 
 MVCHelper.cs
-	
+
 	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Reflection;
 	using System.Web.Http;
-	
+
 	namespace Example.Util
 	{
 	    public class MvcHelper
 	    {
 	        private static MvcHelper _mvcHelper;
-	
+
 	        public static MvcHelper Instance
 	        {
 	            get
@@ -174,13 +176,13 @@ MVCHelper.cs
 	                _mvcHelper = value;
 	            }
 	        }
-	
+
 	        private static List<Type> GetSubClasses<T>()
 	        {
 	            return Assembly.GetCallingAssembly().GetTypes().Where(
 	                type => type.IsSubclassOf(typeof(T))).ToList();
 	        }
-	
+
 	        public List<Type> GetAllApiControllers(List<string> excludedControllerNames)
 	        {
 	            List<Type> controllers = new List<Type>();
@@ -195,7 +197,7 @@ MVCHelper.cs
 	            }
 	            return controllers;
 	        }
-	
+
 	        public List<string> GetActionNames(Type controllerType)
 	        {
 	            List<string> actionNames = new List<string>();
@@ -216,7 +218,7 @@ TestController.cs
 
 	using System;
 	using System.Web.Http;
-	
+
 	namespace Example.Controllers
 	{
 	    public class ServiceLocatorController : ApiController
@@ -243,7 +245,7 @@ TestResponse.cs
 	            get;
 	            set;
 	        }
-	
+
 	        public TestResponse(BaseResponseModel request)
 	            : base(request)
 	        {
@@ -256,5 +258,3 @@ TestResponse.cs
 #Combined with WebApi.HelpPage
 
 如果是開發WebAPI的朋友應該多少都會安裝WebApi.HelpPage，這邊要稍微注意一下，預設的HelpPage會去抓你已經註冊進入Routing的Method去幫你根據註解(comment)建立文件，所以記得要把vs專案預設建立的WebAPI routing注解或刪除，不然會有把每個method都註冊兩次歐!
-
-

@@ -7,13 +7,13 @@ author: Blackie
 header-img: ""
 catagory:
 - CSS
-tags: 
+tags:
 - Excel
 ---
 
-<!-- More -->
-
 在網頁應用程式開發上常常會有需求是要把表格呈現的資料轉為excel儲存，而遇到這些需求的時候往往就是透過直接輸出一個表格的方式(html table tag)把資料透過tr,th,td的方式印出來。
+
+<!-- More -->
 
 而有時候在印出的資料為一個數字的時候會發生印出少0的情況，如035781178印出來會變成35781178，而資料如果是035-781178卻可以成功印出。其實這樣是因為excel column預設的general format會將數字開頭的0去除，而文字格式則不會有這個問題。
 
@@ -32,7 +32,7 @@ tags:
 	'設定編碼，避免中文亂碼
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<body>
-	<% 
+	<%
 	Response.Write("<style type=text/css>")
 	Response.Write("td{mso-number-format:\@;}") '將所有td欄位格式改	為"文字"
 	Response.Write("</style>")
@@ -45,9 +45,9 @@ tags:
     <th bgcolor="#d0d0d0">身分證字號</th>
     <th bgcolor="#d0d0d0">姓名</th>
 	<th bgcolor="#d0d0d0">印製狀態</th>
-    <th bgcolor="#d0d0d0">E-mail</th> 
+    <th bgcolor="#d0d0d0">E-mail</th>
     <th bgcolor="#d0d0d0">申請時間</th>  
-	<th bgcolor="#d0d0d0">聯絡地址</th> 
+	<th bgcolor="#d0d0d0">聯絡地址</th>
 	<th bgcolor="#d0d0d0">聯絡電話</th>
 	<th bgcolor="#d0d0d0">手機電話</th>
 	</tr>

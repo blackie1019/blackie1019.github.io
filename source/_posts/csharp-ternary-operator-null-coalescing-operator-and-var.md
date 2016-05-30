@@ -7,13 +7,13 @@ author: Blackie
 header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140505/main.JPG"
 catagory:
 - Asp.Net
-tags: 
+tags:
 - C#
 ---
 
-<!-- More -->
-
 在寫程式中往往會遇到一些簡化程式碼的簡寫，如foreach在C# 3.0有了LinQ與Lambda表態是後就漸漸的被少用了(在大型的開發架構下看的懂程式碼的架構才是第一步最重要的,除了效能考量外)
+
+<!-- More -->
 
 ##c#的?:
 
@@ -40,7 +40,7 @@ tags:
 	object A = B != null ? B : C ;
 
 接著我們將上面用??改寫
-	
+
 	object A =  B ?? C ;
 
 而??有另外一個特性就是可以直接串連，如下:
@@ -54,13 +54,13 @@ tags:
 ##var的用法
 
 另外，在C# 3.0 變數宣告可透過隱含型別的方式來做為宣告，隱含型別區域變數是強型別 (Strongly Typed)，就和自行宣告型別一樣，差別在於隱含型別是由編譯器 (Compiler) 判斷型別。
-	
+
 	// implicitly typed
-	var test = 100; 
-	var test2 ="123";	
-	
+	var test = 100;
+	var test2 ="123";
+
 	//explicitly typed
-	int test = 100; 
+	int test = 100;
 	string test2 ="123";
 
 對於這個部份的介紹小弟推薦另外一篇MVP-91 所撰寫的介紹文會更為詳細
@@ -70,9 +70,9 @@ tags:
 這邊截錄一個重點:
 
 > 什麼時候不用var？對我來說，只有兩種情況：
-> 
+>
 > 第一，要用到多型的時候，尤其是變數的型別為interface，這如果用var，變數型別就直接變成concrete class的型別了，雖說執行上不會有任何問題，但在開發上意義可完全不同，加上使用變數時看到的雜訊，會讓我不太愉悅，所以在運用多型的設計上，我不會用var。
-> 
+>
 > 第二，top-down的設計方式，當我還沒有實際的方法時，我不會用var。因為用Visual Studio的產生功能，會判斷成object，這樣我還要移過去改，太麻煩了，所以這類的宣告，我會想好型別宣告後，再透過產生功能來幫忙產生function的殼。
 
 簡單來講就是用vs開發的話就安心交給工具來幫你整理吧~

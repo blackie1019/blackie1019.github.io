@@ -7,10 +7,10 @@ author: Blackie
 header-img: ""
 catagory:
 - CSS
-tags: 
-- 
+tags:
+-
 ---
-
+運用CSS製作取代圖片的簽名檔
 <!-- More -->
 
 ![signature](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131009/singature.png)
@@ -57,7 +57,7 @@ tags:
 		top:20%;
 		right:-29px;
 	}
-	 
+
 	/*箭頭左*/
 	.mwt_border .arrow_l_int{
 		width:0px;
@@ -80,7 +80,7 @@ tags:
 		top:20%;
 		left:-29px;
 	}
-	 
+
 	/*箭頭上*/
 	.mwt_border .arrow_t_int{
 		width:0px;
@@ -103,7 +103,7 @@ tags:
 		top:-29px;
 		left:40px;
 	}
-	 
+
 	/*箭頭下*/
 	.mwt_border .arrow_b_int{
 		width:0px;
@@ -135,7 +135,7 @@ tags:
 	    <span class="arrow_l_out"></span>
 		如果覺得文章還不錯麻煩請在文章最上面給予推薦，你的支持是小弟繼續努力產出的動力！</div>
 	</div>
-	
+
 將上面的的內容貼到後台組態設定的文章簽名檔中的Source內(如下圖)
 
 ![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131009/1.png)
@@ -144,5 +144,5 @@ tags:
 
 		<span class="arrow_l_int"></span>
 	    <span class="arrow_l_out"></span>
-	  
+
 以上就可完成一個對話框效果的簽名檔摟，大家一起來改一下吧～

@@ -7,13 +7,15 @@ author: Blackie
 header-img: ""
 catagory:
 - Mobile
-tags: 
+tags:
 - iOS
 ---
 
+最近因為手殘把手機從iOS6升到iOS7後發現原本的Xcode4.6.3不能開發了…要使用Xcode5才可以上實機開發，而Xcode5又要OSX至少10.8以上的版本才能安裝，
+
 <!-- More -->
 
-最近因為手殘把手機從iOS6升到iOS7後發現原本的Xcode4.6.3不能開發了…要使用Xcode5才可以上實機開發，而Xcode5又要OSX至少10.8以上的版本才能安裝，所以昨天花了一整天才把因手殘發生的悲劇環境重新弄好，正當興高采烈地打開專案要開始上實機開發卻發生了下面的悲劇畫面
+所以昨天花了一整天才把因手殘發生的悲劇環境重新弄好，正當興高采烈地打開專案要開始上實機開發卻發生了下面的悲劇畫面
 
 ![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131007/2.png)
 
@@ -26,4 +28,3 @@ Active Architecture Only這個設定值預設是No的這邊我們要設定為Yes
 目前看來打包出來的app還是可以run在iphone4,iphone4s 只要你專案設定SDK有支援的目前看來還是可以執行的(只要iOS Deployment Targets有支援你選擇的iOS版本，這邊我是選擇5.0)
 
 而如果你也是跟我一樣用Phonegap開發APP的話強烈建議你升級到最新的Phonegap版本，因為這部分有些舊的專案設定已經不支援或建議修改了（目前我用的是2.5 & 2.7，專案內有很多警告....)
-

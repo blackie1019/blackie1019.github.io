@@ -7,9 +7,11 @@ author: Blackie
 header-img: ""
 catagory:
 - Asp.Net
-tags: 
+tags:
 - Web MVC/WebApi
 ---
+
+如果我們想要讓某一個Controller中的Action不要在路由表內被註冊的時候就可以透過NonAction的方式來實現
 
 <!-- More -->
 
@@ -40,13 +42,13 @@ tags:
 	![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/5.PNG)
 
 - ErrorController
-	
+
 		using System;
 		using System.Collections.Generic;
 		using System.Linq;
 		using System.Web;
 		using System.Web.Mvc;
-		
+
 		namespace BlackieStudio.Controllers
 		{
 		    public class ErrorController : Controller
@@ -57,12 +59,12 @@ tags:
 		        }
 		        public ActionResult NotFound()
 		        {
-		            Response.StatusCode = 404; 
+		            Response.StatusCode = 404;
 		            return View("NotFound");
 		        }
 		        public ActionResult Forbidden()
 		        {
-		            Response.StatusCode = 403; 
+		            Response.StatusCode = 403;
 		            return View("Forbidden");
 		        }
 		        public ActionResult InternalError()
@@ -70,7 +72,7 @@ tags:
 		            Response.StatusCode = 500;
 		            return View("InternalError");
 		        }
-		
+
 		    }
 		}
 
@@ -80,7 +82,7 @@ tags:
 		    ViewBag.Title = "Forbidden";
 		    Layout = "~/Views/Shared/_BootstrapLayout.cshtml";
 		}
-		
+
 		<div id="brief" class="container">
 		    <div class="starter-template">
 		    <h1>@ViewBag.Title</h1>
@@ -121,12 +123,12 @@ tags:
 
 
 - InternalError.html
- 
+
 		@{
 		    ViewBag.Title = "InternalError";
 		    Layout = "~/Views/Shared/_BootstrapLayout.cshtml";
 		}
-		
+
 		<div id="brief" class="container">
 		    <div class="starter-template">
 		    <h1>@ViewBag.Title</h1>
@@ -153,15 +155,14 @@ tags:
 		</div>
 
 - NotFound.html
-	
+
 		@{
 		    ViewBag.Title = "NotFound";
 		    Layout = "~/Views/Shared/_BootstrapLayout.cshtml";
 		}
-		
+
 		<div id="brief" class="container">
 		    <div class="starter-template">
 		    <h1>@ViewBag.Title</h1>
 		    </div>
 		</div>
-

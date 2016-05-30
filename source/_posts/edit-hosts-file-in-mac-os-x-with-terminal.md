@@ -7,9 +7,11 @@ author: Blackie
 header-img: ""
 catagory:
 - Linux
-tags: 
+tags:
 - OSX
 ---
+
+如何在OSX的環境加入自行建立的domain
 
 <!-- More -->
 
@@ -28,4 +30,3 @@ Mac的host file 是在/etc/hosts，所以我們可以透過編輯器直接開啓
 	dscacheutil -flushcache;sudo killall -HUP mDNSResponer
 
 接下來就可以在網頁打入你剛剛輸入的domain測試看看摟
-

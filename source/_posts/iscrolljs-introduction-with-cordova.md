@@ -7,17 +7,18 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - iScroll
 - Cordova
 ---
+
+在開發Hybrid app或是Web app的時候難免會需要做到拖曳或是滾動刷新的功能，通常網頁放到手機上拖放功能都可以正常運作，但如果要做成app的方式，就不會希望你的application被發現可以這樣拖曳(會被猜穿是網頁使用者會有疑慮，使用經驗會不好)
 
 <!-- More -->
 
 ![iScroll.js](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/1.jpg)
 
 ##前言
-在開發Hybrid app或是Web app的時候難免會需要做到拖曳或是滾動刷新的功能，通常網頁放到手機上拖放功能都可以正常運作，但如果要做成app的方式，就不會希望你的application被發現可以這樣拖曳(會被猜穿是網頁使用者會有疑慮，使用經驗會不好)
 
 通常有這需求大致上可能要完成下面幾個功能：
 
@@ -38,7 +39,7 @@ tags:
 - 左右slide效果[DEMO](http://cubiq.org/dropbox/iscroll4/examples/carousel/)
 
 這邊實作上只要先加入該script後在你要使用的dom物件帶入生成iScroll物件即可，如下
-	
+
 	<!doctype html>
 	<html lang="en">
 	<head>
@@ -54,7 +55,7 @@ tags:
 		</div>
 	</body>
 	</html>
-	
+
 這樣就可以生成一個支援點選縮放的區塊了，如下示意：
 
 一開始：
@@ -85,7 +86,3 @@ http://www.youtube.com/watch?v=pENszKvvGEg
 ![demo圖](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/3.png)
 
 有興趣的可以上他們[Github](https://github.com/cubiq/iscroll)關註一下
-
-
-
-

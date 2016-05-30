@@ -7,14 +7,14 @@ author: Blackie
 header-img: ""
 catagory:
 - Mobile
-tags: 
+tags:
 - iOS
 - Android
 ---
 
-<!-- More -->
-
 整理一下開發APP時所要知道的各項尺寸
+
+<!-- More -->
 
 ##iOS:(PNG only)
 

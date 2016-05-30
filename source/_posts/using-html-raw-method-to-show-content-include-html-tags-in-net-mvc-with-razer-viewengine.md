@@ -7,13 +7,14 @@ author: Blackie
 header-img: ""
 catagory:
 - Asp.Net
-tags: 
+tags:
 - Web MVC/WebApi
 ---
+在.NET MVC中如果使用Razor作為ViewEngine 我們最常用來輸出一個model的參數的用法應該就是@了，這邊來介紹如何輸出包含HTML Tag的內容
 
 <!-- More -->
 
-在.NET MVC中如果使用Razor作為ViewEngine 我們最常用來輸出一個model的參數的用法應該就是@了，詳細的說明與用法可以參考Demo大的[ASP.NET MVC3 Razor 初心者容易遇到的問題](http://demo.tc/Post/679)。
+詳細的說明與用法可以參考Demo大的[ASP.NET MVC3 Razor 初心者容易遇到的問題](http://demo.tc/Post/679)。
 
 這邊要講的是如果你今天model的參數是一個包含HTML Tag的內容，如:
 
@@ -49,7 +50,7 @@ tags:
 
 從上面就可以明顯看出差異了，這邊再來看一下官方文件的解說([原文內容](http://msdn.microsoft.com/en-us/library/gg480740(v=vs.108).aspx))。
 
->###HtmlHelper.Raw Method (String)	
+>###HtmlHelper.Raw Method (String)
 >
 >Returns markup that is not HTML encoded.
 >

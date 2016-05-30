@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Using Git bash with Proxy setting 
+title: Using Git bash with Proxy setting
 subtitle: ""
 date: 2014-01-01 00:29:45
 author: Blackie
 header-img: ""
 catagory:
 - SourceCode Control
-tags: 
+tags:
 - Git
 ---
 
-<!-- More -->
-
 Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的專案了，但如果你所在的開發環境需要透過Proxy才可以連外的話，你也必須幫Git設定一些參數才可以方便他透過Proxy來幫你取得外部設定
 
-##Set Git with Proxy 
+<!-- More -->
+
+##Set Git with Proxy
 
 在我們安裝完Git之後打開Git Bash，輸入`git config --list` 即可看到目前的設定
 
@@ -30,7 +30,7 @@ Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的�
 		git config --global http.proxy http://account:password@proxy Domain:port
 
 2. Https.proxy
-	
+
 		git config --global https.proxy https://account:password@proxy Domain:port
 
 3. http.sslcainfo
@@ -40,7 +40,7 @@ Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的�
 
 這三個要分別設定成對的內容才可以成功的透過Proxy取得git內容，這邊稍微注意一下，如果你輸入的文字是有特殊字符的(例如$#%^...等文字)，你需要將內容轉換成特殊的character codes格式才可以，
 例如:
-帳號blackie.tsai 
+帳號blackie.tsai
 密碼$RFV5tgb
 
 再上面的ScreenShot就可以看到其實我打進去setting的密碼是**%24RFV5tgb**而不是**$RFV5tgb**

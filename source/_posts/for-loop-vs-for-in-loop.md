@@ -7,10 +7,10 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - Basic JS
 ---
-
+比較for loop與for-in loop與效能實戰
 <!-- More -->
 
 ![Logo](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130905/1.png)
@@ -53,22 +53,22 @@ Often this is the case when working with arrays:
 原始的迴圈版本
 
 	for(var i=0;i<items.length;i++){
-		
+
 	}
-	
+
 
 調整1：將items.length宣告成一個變數，並讓迴圈的判斷改成每次去比對該變數
 
 	for(var i=0;i<items.length;i++){
-		
+
 	}
 
 調整2：將迴圈改為遞減至0
 
 	for(var i=items.length;i>0;i--){
-		
+
 	}
-	
+
 調整3:透過while迴圈改善
 
 	var i=items.length;
@@ -93,8 +93,8 @@ Often this is the case when working with arrays:
 
 ##題外話-撰寫保持ＣＰＵ使用率在50%的程式
 
-因為在跑for loop 每次透過console.log印出結果時發現CPU會飆到100％，這時我想到幾年前看過一個號稱是微軟面試程式人員的題目，要面試人員寫出一個可以讓CPU維持50%運作情況的程式，這邊我們可以透過for loop + setTimeout 來作，程式如下：	
-		
+因為在跑for loop 每次透過console.log印出結果時發現CPU會飆到100％，這時我想到幾年前看過一個號稱是微軟面試程式人員的題目，要面試人員寫出一個可以讓CPU維持50%運作情況的程式，這邊我們可以透過for loop + setTimeout 來作，程式如下：
+
 	setInterval("doLoop()",300);
 	function doLoop(){
 		console.log("do looping...");

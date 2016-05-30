@@ -7,9 +7,11 @@ author: Blackie
 header-img: ""
 catagory:
 - Cotainer & VM
-tags: 
+tags:
 - Docker
 ---
+
+*Build, Ship and Run. Any App, Anywhere!*這就是Docker寫在官網上面對自己最簡單的描述。
 
 <!-- More -->
 
@@ -59,11 +61,11 @@ Docker 使用一種叫做Microservices（微服務）的架構，把一個應用
 
 而一個Container的映象檔內可以安裝多支程式，例如同時安裝MSSQL、Node.js、ASP.net Web application等。但Docker官方建議，一隻程式安裝在一個Container內，再把需要使用到的Container疊起來提供一個完整的服務。
 
-如此一來提供了更好更換服務的流程，更新時只會讓對應的服務重新載入Container映像檔(reload)即可，不用將全部的服務都停止或重載，這邊與傳統的VM概念就有一個不小的差異摟. 
+如此一來提供了更好更換服務的流程，更新時只會讓對應的服務重新載入Container映像檔(reload)即可，不用將全部的服務都停止或重載，這邊與傳統的VM概念就有一個不小的差異摟.
 
 如果想要在一個Container做建置Application可以參考此篇[How To Build A 2-Container App with Docker](http://www.centurylinklabs.com/build-a-2-container-app-with-docker/)
 
-###Docker help Devops 
+###Docker help Devops
 
 因為Docker使用Dockerfile來記錄建立Container映象檔的每一個步驟(change)，可以將建立應用程式執行環境的過程和配置參數，完整地記錄下來。這也意味著Dockerfile這是一個可以被加入版本控制流程的一個檔案，而這樣的改變讓原本建立環境的過程不會再無跡可循，也可以不用在第一時間準備安裝流程之類的文件(如果要比較設定或改變，可以直接比較差異)，測底改善發佈與開發的流程，將基礎架構程式化（Infrastructure as code）來管理。
 
@@ -85,7 +87,7 @@ Docker 使用一種叫做Microservices（微服務）的架構，把一個應用
 
 ![Tryit](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/tryit.png)
 
-###Docker with Windows 
+###Docker with Windows
 
 因為Docker Engine是使用Linux-specific kernel，所以如果要在Windows上面使用的話還是需要先透過一個輕量的VM來作為載體。在這邊我們會用到[Boot2Docker](https://github.com/boot2docker/boot2docker)這個工具來幫我們。
 

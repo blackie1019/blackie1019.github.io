@@ -11,9 +11,11 @@ tags:
 - C#
 ---
 
-寫程式時我們常常遇到要將英文文字轉換成大寫與小寫的需求，此時我們通常會使用*.ToUpper()*或*.ToLower()*的方式做大寫與小寫的轉換
+寫程式時我們常常遇到要將英文文字轉換成大寫與小寫的需求，此時我們通常會使用.ToUpper()或.ToLower()的方式做大寫與小寫的轉換
 
-但我們也會常常收到只需要將第一個字轉成大寫其他都小寫的需求，這時我們可以透過TextInfo這個類別的*.ToTitleCase()*來幫忙我們完成
+<!-- More -->
+
+但我們也會常常收到只需要將第一個字轉成大寫其他都小寫的需求，這時我們可以透過TextInfo這個類別的.ToTitleCase()來幫忙我們完成
 
 使用前先稍微了解一下這個TextInfo類別的
 
@@ -24,7 +26,7 @@ tags:
 		string testStr = ABC;
 		var convertStr = Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(gameType.ToString().ToLower());
 
-這邊要稍微注意一下，這個方法只能將第一個字變大寫，如果像範例原本就是三個大寫的字卻希望只有開頭大寫的話就要先做一次*.ToLower()*將文字都轉換成小寫在透過*.ToTitleCase()*將第一個字轉換為大寫。
+這邊要稍微注意一下，這個方法只能將第一個字變大寫，如果像範例原本就是三個大寫的字卻希望只有開頭大寫的話就要先做一次.ToLower()將文字都轉換成小寫在透過.ToTitleCase()將第一個字轉換為大寫。
 
 關於TextInfo類別的其他方法(Method):
 

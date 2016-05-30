@@ -7,15 +7,15 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - Google Chart API
 ---
+
+這是Google提供的一個免費的畫圖Web API Service ，只要傳入指定選項與內容即可透過呼叫Web API Service的方式產生你要的圖或表甚至是QRCode
 
 <!-- More -->
 
 ##Google Chart API
-
-這是Google提供的一個免費的畫圖Web API Service ，只要傳入指定選項與內容即可透過呼叫Web API Service的方式產生你要的圖或表甚至是QRCode
 
 除了傳統的直接互叫web service 服務之外，現在只要是google提供的API都有做動態載入的功能，使用上如下
 

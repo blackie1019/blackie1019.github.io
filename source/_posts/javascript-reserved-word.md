@@ -7,15 +7,15 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - Basic JS
 ---
+
+這禮拜在看以前的code的時候看到前人使用保留字的來宣告變數名稱的js code，可能當時的時空背景允許這樣的事情發生，但想到以後如果部門還有小朋友的話要告訴他們的正確的觀念所以寫了這篇來Memo一下。
 
 <!-- More -->
 
 ![reserved](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140114/reserved.jpg)
-
-這禮拜在看以前的code的時候看到前人使用保留字的來宣告變數名稱的js code，可能當時的時空背景允許這樣的事情發生，但想到以後如果部門還有小朋友的話要告訴他們的正確的觀念所以寫了這篇來Memo一下。
 
 ##What is reserved word
 
@@ -100,7 +100,7 @@ JavaScript 的保留字 (reserved word)  、未來保留字 (future reserved wor
 
 關鍵字包含:
 
-- break	
+- break
 - case
 - catch
 - continue

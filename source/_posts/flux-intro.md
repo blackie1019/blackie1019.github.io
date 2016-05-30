@@ -7,14 +7,14 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - React
 - FLUX
 ---
 
-<!-- More -->
-
 FLUX是一個由Facebook提出來的開發架構(FLUX 是一個 Pattern 而不是一個正式的框架)，目的是在解決所謂的MVC在大型商業網站所存在的問題，把沒有條理跟亂七八糟的架構做一個流程規範的定義。
+
+<!-- More -->
 
 以下內容參考[What is Flux?](http://fluxxor.com/what-is-flux.html) 這篇的介紹很多，有興趣請先到原文出處學習與感謝分享。
 
@@ -76,7 +76,7 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 
 ![A simple flux flow](http://fluxxor.com/images/flux-simple.png)
 
-這邊要注意，因為FLUX的大前提是建立一個單一的資料進行方式，所以非常不建議為了view的顯示而跳過步驟直接修改Store，這樣又會讓架構跟先前的MVC提的遇到一樣不明確的問題。 
+這邊要注意，因為FLUX的大前提是建立一個單一的資料進行方式，所以非常不建議為了view的顯示而跳過步驟直接修改Store，這樣又會讓架構跟先前的MVC提的遇到一樣不明確的問題。
 
 與頁面上各控制項的互動如下圖
 
@@ -98,7 +98,7 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 
 上面這範例是參考Gasolin大大的文章實作的，請參考[使用 FLUX 架構的概念，漸進改善一般 Javascript 程式碼的組織方式](http://blog.gasolin.idv.tw/2014/11/flux-javascript.html)這篇好文。
 
-從範例來看Store 與 App 可以分開來測試，這對大型App是很重要的，每個測試環節應該確保該function可以運作。 
+從範例來看Store 與 App 可以分開來測試，這對大型App是很重要的，每個測試環節應該確保該function可以運作。
 
 ##結語
 

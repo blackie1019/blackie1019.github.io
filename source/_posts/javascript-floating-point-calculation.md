@@ -7,13 +7,13 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - Basic JS
 ---
 
-<!-- More -->
-
 前陣子在幫同事改一段以前的程式的時候發現Javascript在做Float數值的運算時有bug，會導致簡單的計算出問題，當下去找了一下資料有幾個處理方式整理給大家。
+
+<!-- More -->
 
 ##Problem Description
 
@@ -103,4 +103,3 @@ RangeError If digits is too small or too large. Values between 0 and 20, inclusi
 
 ##結語
 老實說學生時代只有印象中聽過浮點數計算透過二進位儲存有誤差，但我沒想到學問真的很大....也沒想到出社會還會看到這類型問題，也很感謝有遇到這樣的問題讓自已能夠在多收穫一些知識。
-

@@ -7,10 +7,12 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - ECMAScript
 - jQuery
 ---
+
+關於Callback這是一個在javascript很重要的機制
 
 <!-- More -->
 
@@ -19,7 +21,7 @@ tags:
 >A reference to executable code, or a piece of executable code, that is passed as an argument to other code.
 
 
-關於Callback這是一個在javascript很重要的機制，先從一張圖來講一下他到底是在幹嘛。
+先從一張圖來講一下他到底是在幹嘛。
 
 國外朋友也寫了篇很好的說明文，有興趣的朋友可以參考[Callback Functions in JavaScript](http://www.impressivewebs.com/callback-functions-javascript/)
 
@@ -61,12 +63,12 @@ tags:
 	});
 
 有沒有很簡單，使用上只要如下即可:
-	
+
 	$('#test').html(content,function(){
 		console.log("test2");
 	});
 
-## == vs === 
+## == vs ===
 
 簡單說明一下:
 
@@ -77,7 +79,7 @@ tags:
 		100=="100"	//true
 		1==true		//true
 
-- === 比較兩者是否相等(還包含類型的相等) 
+- === 比較兩者是否相等(還包含類型的相等)
 
 	EX:
 

@@ -7,16 +7,18 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - React
 ---
+
+ReactJS是Facebook推出的framework, 再搭配FLUX的架構下讓FB網頁上面更新資料的快速性與開發架構得到的顯著改善，也因此讓大家開始想去了解它的魅力。
 
 <!-- More -->
 
 ![ReactJS](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/FLUX%2BReactJS/02/ReactJS.png)
 
 ##ReactJS Intro
-ReactJS是Facebook推出的framework, 再搭配FLUX的架構下讓FB網頁上面更新資料的快速性與開發架構得到的顯著改善，也因此讓大家開始想去了解它的魅力。這邊用官網的三段特色描述來簡單介紹：
+這邊用官網的三段特色描述來簡單介紹：
 
 - ###VIRTUAL DOM
 
@@ -29,7 +31,7 @@ ReactJS是Facebook推出的framework, 再搭配FLUX的架構下讓FB網頁上面
 - ###JUST THE UI
 
 	Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project.
-	
+
 以往我們所知用更改一個DOM的Element來呈現畫面改變的這個方法在大型頻繁更新的網站上面是非常可怕的效能瓶頸。可以看到的是ReactJS要解決的是Web開發上面UI呈現的問題，隨者網頁功能越多與越多人互相使用與交流，FB遇到越來越多需要在同一個頁面即時更新的情況，ReactJS就是因此而誕生的一個Framework．
 
 而呼應FLUX架構，ReactJS用更簡單的流程來管理頁面的更新，透過事件的訂閱與註冊的概念產生單一方向的處理流程，簡化如MVC, MVVM等架構對於View方面雙向溝通的方式。而也因為是針對UI(View)處理所產生的framework，所以要結合回去你原本的AngularJS這種MVC框架也是可行的。
@@ -61,9 +63,9 @@ React : Rethinking Best Practices. 這是我覺得對於ReactJS還不錯的一�
 
 	$ bower install --save react
 
-這邊我們就直接用JSBin帶大家一起說聲Hello world 
+這邊我們就直接用JSBin帶大家一起說聲Hello world
 
-####Hello world 
+####Hello world
 
 <a class="jsbin-embed" href="http://jsbin.com/kixotojavo/2/embed?html,js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 

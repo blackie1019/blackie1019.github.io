@@ -7,15 +7,14 @@ author: Blackie
 header-img: ""
 catagory:
 - Mobile
-tags: 
+tags:
 - Phonegap
 - Cordova
 ---
 
-<!-- More -->
-
-
 在Xcode 4.6.X的時代預設使用的Archives與build的架構是在armv6/armv7/armv7s(但armv7s預設不會開啓)所以在打包ipa檔案都沒什麼問題，直到最近換成Xcode5與iOS7之後真的是一連串的悲劇。
+
+<!-- More -->
 
 先直接的說明，如果你要打包Phonegap的專案請使用armv7就好，設定上如下圖：
 

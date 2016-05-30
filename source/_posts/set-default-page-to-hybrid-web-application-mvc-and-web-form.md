@@ -7,9 +7,11 @@ author: Blackie
 header-img: ""
 catagory:
 - Asp.Net
-tags: 
+tags:
 - Web MVC/WebApi
 ---
+
+關於MVC架構下的Default Page的機制
 
 <!-- More -->
 
@@ -21,7 +23,7 @@ tags:
 	  routes.MapRoute(
 	    "Default",                          // Route name
 	    "{controller}/{action}/{id}",       // URL with parameters
-	    new { controller = "Home", 
+	    new { controller = "Home",
 	          action = "Index",
 	          id = UrlParameter.Optional }  // Parameter defaults
 	  );
@@ -34,18 +36,18 @@ tags:
 	{
 	  routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 	  routes.IgnoreRoute("{myWebForms}.aspx/{*pathInfo}");
-	
+
 	  // Web Forms default
 	  routes.MapPageRoute(
 	    "WebFormDefault",
 	    "",
 	    "~/default.aspx");
-	
+
 	  // MVC default
 	  routes.MapRoute(
 	    "Default",                          // Route name
 	    "{controller}/{action}/{id}",       // URL with parameters
-	    new { controller = "Home", 
+	    new { controller = "Home",
 	          action = "Index",
 	          id = UrlParameter.Optional }  // Parameter defaults
 	  );

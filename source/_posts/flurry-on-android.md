@@ -7,11 +7,13 @@ author: Blackie
 header-img: ""
 catagory:
 - Mobile
-tags: 
-- Phonegap 
+tags:
+- Phonegap
 - Cordova
 - Android
 ---
+
+關於Flurry在Android上面的設定
 
 <!-- More -->
 
@@ -65,7 +67,7 @@ tags:
 >     @Override
 >     protected void onStop()
 >     {
->     super.onStop(); 
+>     super.onStop();
 >     //結束Session
 >     FlurryAgent.onEndSession(this);
 >     }

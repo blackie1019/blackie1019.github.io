@@ -1,23 +1,24 @@
 ---
 layout: post
-title: Work with JSHint using Sublime Text 2 
+title: Work with JSHint using Sublime Text 2
 subtitle: ""
 date: 2014-01-18 00:29:45
 author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - JSHint
 - SublimeText
 ---
+
+寫 JavaScript的時候常常會因為他多元的用法(結構較為鬆散或是說它組合較多元)而感到困惑，或因為不好的習慣導致自己浪費了大量效能做出一個很簡單的東西，這邊要如何驗證自己寫的Javascript有沒有水準符不符合基本規範呢？此時除了定義一些開發上面的規範外，我們還需要一些工具來幫我們做檢查，JSLint就是這行的老牌子工具。
 
 <!-- More -->
 
 ![LOGO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jshint.png)
 
 ##JSLint VS JSHint
-寫 JavaScript的時候常常會因為他多元的用法(結構較為鬆散或是說它組合較多元)而感到困惑，或因為不好的習慣導致自己浪費了大量效能做出一個很簡單的東西，這邊要如何驗證自己寫的Javascript有沒有水準符不符合基本規範呢？此時除了定義一些開發上面的規範外，我們還需要一些工具來幫我們做檢查，JSLint就是這行的老牌子工具。
 
 JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒比第五版嚴謹，這部分還在追查)所定義的規格中更嚴謹的規格來驗證你的 JavaScript，這邊找到保哥幾年前寫的文章介紹[](http://blog.miniasp.com/post/2008/02/24/JSLint-The-JavaScript-Verifier.aspx)，有興趣的可以進去看看摟。
 

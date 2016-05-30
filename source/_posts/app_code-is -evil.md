@@ -7,8 +7,8 @@ author: Blackie
 header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131213/app_code.png"
 catagory:
 - Asp.Net
-tags: 
-- Web MVC/WebApi 
+tags:
+- Web MVC/WebApi
 ---
 
 最近在新的專案上使用了WebAPI開發一些服務，結果因為以前的壞習慣讓我直接下意識地開了App_Code的資料夾並在資料夾內放了一些會常用到的Utilc或Common類型的class或static method。
@@ -32,12 +32,12 @@ FXCK!是哪裡不一樣的類型(class)了啦，見鬼了！！！
 但幾分種後馬上後來發現了我一個白痴的懷習慣把共用程式放到App_Code才導致一些莫名的怪情況
 
 
-##Bin and App_Code 
+##Bin and App_Code
 
 在以往.NET的Web專案中如果要在網頁之間共用程式我們通常可以將程式碼保存在兩個特殊的資料夾，
 
 - Bin
-	
+
 	1. 已編譯的程式碼 (.dll 檔案)
 	2. Web 應用程式中的任何其他程式碼 (例如網頁的程式碼) 都會自動參考它
 
@@ -125,5 +125,3 @@ Blackie：…那我自己寫一篇網誌讓你tag吧....
 ![看仔細](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131213/%E5%A5%BD%E7%B2%BE%E7%B7%BB.jpg)
 
 開發路上不怕走偏走錯，就怕錯了還以為是對的結果越走越遠不知如何回頭，一步一步走得扎實才能往正確的地方前進，發現自己走錯的時候也能及時回頭。
-
-

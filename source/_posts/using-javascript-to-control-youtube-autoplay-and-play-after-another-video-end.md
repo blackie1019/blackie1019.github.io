@@ -7,13 +7,13 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - Youtube API
 ---
 
-<!-- More -->
-
 今天被一個朋友問起如何控制embed的YouTube影片，讓他可以自動撥放也可以在播放完後讓另外一個embed的影片也播放。
+
+<!-- More -->
 
 這邊先介紹一下官方的API ─ [Youtube IFrame API](https://developers.google.com/youtube/iframe_api_reference?hl=zh-tw)
 
@@ -27,7 +27,7 @@ Youtube iFrame API是Google官方提供的一組JavaScript Library讓我們可�
 - Video information
 - Queueing functions
 - Quality、Mute、Volume、Screen Size Control
-- Can Get Player State 
+- Can Get Player State
 	- 1 – unstarted
 	- 0 – ended
 	- 1 – playing
@@ -46,6 +46,3 @@ Youtube iFrame API是Google官方提供的一組JavaScript Library讓我們可�
 <a class="jsbin-embed" href="http://jsbin.com/wevuka/2/embed?html,css,js,console,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 如此一來透過這個API我們就可以很輕鬆的處理影片播放的任何需求了
-
-
-

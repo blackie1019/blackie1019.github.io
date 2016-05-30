@@ -7,8 +7,8 @@ author: Blackie
 header-img: ""
 catagory:
 - Asp.Net
-tags: 
-- Web MVC/WebApi 
+tags:
+- Web MVC/WebApi
 ---
 MVC 開發環境與基本知識
 
@@ -17,9 +17,9 @@ MVC 開發環境與基本知識
 ##檢視引擎(view engines):
 
 - ASPX
-	
+
 	傳統的頁面架構，保持先前ASP.NET的web form概念使用.aspx/.ascx/.master 等檔案組成 templates 架構，使用<%%>的方式呈現ASP.NET程式碼區段，如下:
-	
+
 		<h1>Hello MVC</h1>
 		<p>I am <%=name %></p>
 		<% foreach(var skill in skills){ %>
@@ -29,7 +29,7 @@ MVC 開發環境與基本知識
 - Razor
 
 	因關注點分離(Aspect-Oriented Programming)概念所產生的一個新的頁面架構(CSHTML)，[HTML Helper](http://www.w3schools.com/aspnet/mvc_htmlhelpers.asp)完全支援該架構(HTML Helper的客製可參考[此](http://kelp.phate.org/2010/12/aspnet-mvc-htmlhelper.html))，而該架構設計的重點如下:
-	
+
 	- 避免弄亂你的程式碼(avoid spaghetti code)，透過Razor的注入方式即可將整段code插入，讓你的view能更加簡潔，且可將程式碼的關注點逐項分離避免一個頁面有太雜亂的資訊
 	- 加速學習-對底層的HTML,js,CSS的概念與技術需更加熟悉但也更容易上手
 	- Razor是一個頁面架構而非一個新的程式語言，所以你還是使用C#/VB(or Other)語言做學習，只是在頁面的安排上你透過Razor來簡化你原本的頁面程式注入的架構
@@ -42,11 +42,11 @@ MVC 開發環境與基本知識
 		<h1>Hello MVC</h1>
 		<p>I am @name </p>
 		@ forearch(var skill in skills){
-			<li>@skill.name</li>	
+			<li>@skill.name</li>
 		}
 
 *<em>根據ScottGu的推薦好像還有兩個[Spark](http://sparkviewengine.com/)與[HNaml](http://code.google.com/p/nhaml/)在先前MVC3時也常被使用，但MVC4之後就是Razor的天下了</em>
-	
+
 ##NuGet
 
 VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊要稍微注意一下NuGet的版本有更新，如果你是用VS 2012安裝好的NuGet記得要更新一下，以下幾個不錯的Tips可參考
@@ -76,19 +76,19 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 	與MVC3之前的使用相同，可將程式分區塊，藉此可以不用將一份程式碼分成兩個專案去管理(如前後台功能的網站，可透過Area的方式直接在同一個專案內分割成不同網站)
 
 	- WebApiConfig
-	
+
 		針對WebAPI所設定的一些Routing與機制
-	
+
 	- FilterConfig
-	
+
 	- RouteConfig
-	
+
 	- BundleConfig
-	
+
 	- AuthConfig
 
 - Content
-	
+
 	靜態檔案(可能參考到的images、css、js)，也包含預設的theme相關檔案(包含minified後的檔案)
 
 - Controllers
@@ -107,7 +107,7 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 	放使用到的Model檔案
 
 - Scripts
-	
+
 	放所有被會被使用到的JS檔案
 
 - Views
@@ -115,7 +115,7 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 	所有網頁裡面實際的檢視頁面檔案，會按照各頁面的Class名稱分別建立對應的sub-folder
 
 - Global.asax
-	
+
 	註冊所使用到的程式與服務處
 
 - packages.config
@@ -128,7 +128,7 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 
 ##整合BootStrap3
 
-- 
+-
 - 參考上面設定確認App_start->BootstrapBundle.Config.cs的設定正確，筆者設定如下:
 
 
@@ -165,7 +165,7 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 		    <meta charset="utf-8" />
 		    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		    <title>[BootStrap]BlackieStudio-@ViewBag.Title</title>
-		    
+
 		    @Styles.Render("~/Content/css")
 		    @Styles.Render("~/Content/themes/base/css")
 		    @Styles.Render("~/bundles/bootstrap/css")
@@ -173,10 +173,10 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 		</head>
 		<body>
 		    @RenderBody()
-		
+
 		    @Scripts.Render("~/bundles/jquery")
 		    @Scripts.Render("~/bundles/bootstrap/js")
-		
+
 		    @RenderSection("scripts", required: false)
 		</body>
 		</html>
@@ -202,4 +202,4 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 1. [Introducing “Razor” – a new view engine for ASP.NET](http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx)
 2. [Basic-Understanding-On-ASP-NET-MVC-4](http://www.codeproject.com/Articles/585873/Basic-Understanding-On-ASP-NET-MVC-4)
 3. [Understanding ASP.NET MVC Project Folders](http://www.c-sharpcorner.com/UploadFile/suthish_nair/mvc-folders/)
-4. 
+4.

@@ -7,9 +7,11 @@ author: Blackie
 header-img: ""
 catagory:
 - Asp.Net
-tags: 
+tags:
 - Web MVC/WebApi
 ---
+
+解決重複註冊多個的Routing問題
 
 <!-- More -->
 
@@ -43,4 +45,3 @@ tags:
 	ControllerBuilder.Current.DefaultNamespaces.Add("YourCurrentProjectNamespace.WebSite.Controllers");
 
 以上的設定都在App_Start>RouteConfig.cs中
-

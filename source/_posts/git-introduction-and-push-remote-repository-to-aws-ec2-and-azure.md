@@ -7,15 +7,15 @@ author: Blackie
 header-img: ""
 catagory:
 - SourceCode Control
-tags: 
+tags:
 - Git
 ---
+
+這篇文章主要是帶大家在雲端服務上建立一個Git Server，並透過一個範例簡單帶大家瞭解一下Git基本指令
 
 <!-- More -->
 
 ![Logo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/logo.png)
-
-這篇文章主要是帶大家在雲端服務上建立一個Git Server，並透過一個範例簡單帶大家瞭解一下Git基本指令
 
 ##Git 簡介
 是目前最被大家推崇的版本管控工具，特色是利用分散發布的管理方式主要在乎檔案的整體性是否有改變，不強調需要到將檔案上傳到主機端管理，而是強調各分散管理的節點都能做好本身的檔案控管，並能靈活地交換各段節點的版本，以此來達成分散管理的好處。

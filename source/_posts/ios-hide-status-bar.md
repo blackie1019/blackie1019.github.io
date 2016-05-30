@@ -7,10 +7,10 @@ author: Blackie
 header-img: ""
 catagory:
 - Mobile
-tags: 
+tags:
 - iOS
 ---
-
+如何隱藏iOS7的狀態列
 <!-- More -->
 
 最簡單的做法是在你的APP .plist 裡面加入下面兩個屬性

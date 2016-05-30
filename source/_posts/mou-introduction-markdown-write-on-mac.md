@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mou - 在Mac 環境寫MarkDown的好物
+title: Mou Introduction
 subtitle: ""
 date: 2014-11-14 00:29:45
 author: Blackie
@@ -10,6 +10,8 @@ catagory:
 tags:
 - MarkDown
 ---
+
+在Mac 環境寫MarkDown的好物
 
 <!-- More -->
 

@@ -11,9 +11,9 @@ tags:
 - Basic JS
 ---
 
-<!-- More -->
-
 JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScript)標準，而該標準在最近一次更新(2009年)更新為第五版，其中加入strict mode(嚴格模式)這個功能，可以讓你的語法變得較嚴謹，相對於原本的語法較不容易出錯
+
+<!-- More -->
 
 使用上很簡單，只要加上即可，先呈現一個使用範例
 

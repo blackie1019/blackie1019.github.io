@@ -7,15 +7,15 @@ author: Blackie
 header-img: ""
 catagory:
 - Database
-tags: 
+tags:
 - MSSQL
 ---
+
+定序(Collation)，簡單來說定序就是在決定你的資料被排序與資料間比對的一個規則指引，看是要依據什麼規則來定.
 
 <!-- More -->
 
 ##MS SQL定序
-
-定序(Collation)，簡單來說定序就是在決定你的資料被排序與資料間比對的一個規則指引，看是要依據什麼規則來定.
 
 SQL Server的定序預設設定視安裝類型而定。一般而言，預設會選擇Windows 系統地區設定的 SQL Server 定序，以台灣繁體中文來說是Chinese_Taiwan_Stroke_CI_AS，所有的定序可以看[官方說明](http://technet.microsoft.com/en-us/library/ms188046.aspx)
 
@@ -26,20 +26,20 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 一般來說簡單的定序分類[from](http://www.dotblogs.com.tw/jimmyyu/archive/2009/08/30/10320.aspx)
 
-- Case sensitivity(CS) 
-	
+- Case sensitivity(CS)
+
 	簡單來說就是區分大小寫，A跟a是不同的，如果是Case Insensitive(CI)的話A在排序或者查詢時就會被視為相同，也就是查詢A，連同a也會被查詢到。
 
-- Accent sensitivity(AS) 
+- Accent sensitivity(AS)
 
 	代表的是腔調上的差別，a跟á、o跟ó在腔調上是相同的，那查詢時是要視為相同，如果是的話，那就是Accent Insensitive(AI)，如果不是的話就視為Accent sensitive。
 
-- Kana Sensitivity(KS) 
+- Kana Sensitivity(KS)
 
 	日文中的片假名(Hiragana)與平假名(Katakana)如果被視為相同，那就是Kana Insensitive(KI)，反之就是Kane sensitive.。
 
-- Width sensitivity(WS) 
-	
+- Width sensitivity(WS)
+
 	當半形字與全型自被視為相同(A跟Ａ)，那就是Width Insensitive(WI)，反之就是Width sensitive。
 
 
@@ -48,7 +48,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 在開始流程前要先知道定序可分為三部分
 
 - DataBase定序
-	
+
 	幫指定的DataBase作定序，之後產生的Table與Column會依據此這設定來指定預設的定序
 
 - Table定序
@@ -59,7 +59,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 - Column定序
 
 	幫指定的Column作定序，而改筆資料的內容會依據此設定做定序
-	
+
 由上解說可以知道他們三者在預設上有依序繼承的關係，但你也可以分別設定，圖解如下圖：
 
 ![定序架構圖](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/%E6%9E%B6%E6%A7%8B%E5%9C%96.png)
@@ -86,11 +86,11 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 1.查出所有設為Chinese_Taiwan_Stroke_CI_AS的欄位
 
-	SELECT Table_Name,CoLumn_name,collation_name,* 
+	SELECT Table_Name,CoLumn_name,collation_name,*
 	FROM INFORMATION_SCHEMA.COLUMNS
 	WHERE collation_name='Chinese_Taiwan_Stroke_CI_AS'
 	ORDER BY TABLE_NAME,COLUMN_NAME
-	
+
 
 2.檢查單一table的欄位定序設定(NULL表示非文字)
 
@@ -103,15 +103,15 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 	GO
 
 3.產生欄位定序修改的語法(這邊以Chinese_Taiwan_Stroke_CI_AS修改為Chinese_Taiwan_Stroke_BIN為例)
-	
+
 	SELECT * from (
 		SELECT ('ALTER TABLE ' + quotename(TABLE_NAME) +
 		' ALTER COLUMN ' + quotename(COLUMN_NAME) + ' ' + 		quotename(DATA_TYPE) +
 		CASE WHEN CHARACTER_MAXIMUM_LENGTH = -1 then '(max)'
 		WHEN DATA_TYPE in ('text','ntext') then ''
-		WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL 
+		WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL
 		THEN '('+(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH)+')' )
-		ELSE isnull(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH),' ') END 
+		ELSE isnull(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH),' ') END
 		+'COLLATE Chinese_Taiwan_Stroke_BIN ' + CASE IS_NULLABLE
 		WHEN 'YES' THEN 'NULL'
 		ELSE 'NOT NULL'
@@ -140,7 +140,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 ![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/2.PNG)
 
-3 大寫才查得到 
+3 大寫才查得到
 
 ![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/3.PNG)
 
@@ -202,6 +202,3 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 ![check_4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/check_4.jpg)
 
 以上即可證明完成定序資料轉換。
-
-
-

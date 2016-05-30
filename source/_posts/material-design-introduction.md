@@ -7,13 +7,13 @@ author: Blackie
 header-img: ""
 catagory:
 - Design
-tags: 
+tags:
 - Material Design
 ---
 
-<!-- More -->
-
 這系列文章為參考Google本身文件讀者本身對其之瞭解所做的筆記，如果有錯的地方麻煩順手讓我知道一下瞜~感謝
+
+<!-- More -->
 
 [原出處](http://www.google.com/design/spec/material-design/introduction.html#introduction-principles)
 

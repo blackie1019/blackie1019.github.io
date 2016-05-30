@@ -7,16 +7,18 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - Basic JS
 ---
 
+因為javascript是一個有無限可能的程式(我指的是寫法XD)，所以這篇是幫js新手了解javascript如何呼叫/寫出函式
+
 <!-- More -->
 
-因為javascript是一個有無限可能的程式(我指的是寫法XD)，所以這篇是幫js新手了解javascript如何呼叫/寫出函式，如果你要呼叫一個函式你可以透過以下四個方法:
+如果你要呼叫一個函式你可以透過以下四個方法:
 
 - function:
-	
+
 		var test=function(){
 			return 'test';
 		};
@@ -48,7 +50,7 @@ tags:
 				console.log(this.name,arguments[0],arguments[1]);
 			}
 		}
-        
+
         var man={name:'blackie'};
         var woman={name:'karma'};
 
@@ -64,10 +66,10 @@ tags:
 
 -	apply()
 
-	####lets you invoke the function with arguments as an array. 
+	####lets you invoke the function with arguments as an array.
 
--	call() 
-	
+-	call()
+
 	####requires the parameters be listed explicitly.
 
 從剛剛上面的範例我們看到結果是如下，可以看到其實他們是類似的東西:

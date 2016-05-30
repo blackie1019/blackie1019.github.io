@@ -7,14 +7,13 @@ author: Blackie
 header-img: ""
 catagory:
 - JavaScript
-tags: 
+tags:
 - D3js
 ---
 
-<!-- More -->
-
-
 [D3.JS:Data-Driven Documents](https://github.com/mbostock/d3/wiki)，是本人近期很感興趣的一個js 套件，它提供了一些基於文件操作方式的js函式，讓文件的資料呈現可以透過更能讓瀏覽者理解與互動的方式來使用，大大的提升了可讀性與使用率。
+
+<!-- More -->
 
 在動手前我們先來知道一下D3到底做了什麼，這邊節錄底部大大書裡的一段話
 

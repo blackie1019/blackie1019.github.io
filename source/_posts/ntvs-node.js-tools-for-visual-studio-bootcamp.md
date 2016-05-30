@@ -7,18 +7,18 @@ author: Blackie
 header-img: ""
 catagory:
 - Development
-tags: 
+tags:
 - Visual Studio
 - Nodejs
 ---
+
+NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表最強IDE工具開發NodeJS!除了支援可以一般的程式撰寫它還支援Intellisense, Profiling, npm，另外他在Debugging方面還支援 locally and remotely (Windows/MacOS/Linux)，最棒的是他整合了Azure Web Sites 與 Cloud Service.
 
 <!-- More -->
 
 ![N](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/Codeplex%20Logo.png)
 
 ##Intro
-
-NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表最強IDE工具開發NodeJS!除了支援可以一般的程式撰寫它還支援Intellisense, Profiling, npm，另外他在Debugging方面還支援 locally and remotely (Windows/MacOS/Linux)，最棒的是他整合了Azure Web Sites 與 Cloud Service.
 
 所支援的功能包含：
 
@@ -43,19 +43,19 @@ NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表
 3. 安裝完成後打開VS選擇New Project->Installed->Templates->Other Languages->Javascript就可以看到六個新的專案類型
 
 	- <em>**From Existing Node.js code**</em>
-	
+
 		用現有的NodeJs程式建立新的專案	 	
 
 	- <em>**Blank Node.js Console Application**</em>
-		
+
 		建立一個空白的NodeJs　Console專案(偏向一般桌面程式應用）
-		
+
 	- <em>**Blank Node.js Web Application**</em>
-	
+
 		建立一個空白的NodeJs　Web專案
 
 	- <em>**Blank Express Application**</em>
-	
+
 		建立一個空白的Express(NodeJs的一種開發架構下面會再提到)專案
 
 	- <em>**Blank Windows Azure Node.js Application**</em>
@@ -84,7 +84,7 @@ server.js預設的內容如下：
 	    res.end('Hello World\n');
 	}).listen(port);
 
-2.然後直接按下f5執行，就可以看到跑出一個node.exe的執行顯示port 5858 被監聽中，然後去看他開啟的網頁 
+2.然後直接按下f5執行，就可以看到跑出一個node.exe的執行顯示port 5858 被監聽中，然後去看他開啟的網頁
 
 Hello world已經幫我們開好瞜～
 
@@ -102,7 +102,7 @@ Hello world已經幫我們開好瞜～
 
 ![ARCH express](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/Arch%20express.PNG)
 
-2.然後直接按下f5執行，就可以看到跑出一個node.exe的執行顯示port 5858 被監聽中，然後去看他開啟的網頁 
+2.然後直接按下f5執行，就可以看到跑出一個node.exe的執行顯示port 5858 被監聽中，然後去看他開啟的網頁
 
 第二個Hello world也幫我們開好瞜～
 
@@ -131,20 +131,18 @@ Hello world已經幫我們開好瞜～
 -	**Light**
 	![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_1.PNG)
 
--	**Can use own Route or WebSocket**	
-	
-	![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_2.PNG)	
+-	**Can use own Route or WebSocket**
 
--	**More Features support for viewengine**	
-	
-	![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_3.PNG)	
+	![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_2.PNG)
+
+-	**More Features support for viewengine**
+
+	![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_3.PNG)
 
 -	**Auto LESS　CSS**
-	
-	![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_4.PNG)	
 
--	**No dependencies and Faster**	
-	
-	![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_5.PNG)	
+	![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_4.PNG)
 
+-	**No dependencies and Faster**
 
+	![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/compare_5.PNG)

@@ -7,14 +7,14 @@ author: Blackie
 header-img: ""
 catagory:
 - SourceCode Control
-tags: 
+tags:
 - Git
 - GitLab
 ---
 
-<!-- More -->
-
 This is a step by step tourist for how to build up a GitLab from Bitnami VM
+
+<!-- More -->
 
 ## GitLab from Bitnami
 
@@ -25,7 +25,7 @@ This is a step by step tourist for how to build up a GitLab from Bitnami VM
 ## General Setup
 
 1. Update your apache for GitLab host to example.com
-	
+
 		$ sudo /opt/bitnami/apps/gitlab/bnconfig --machine_hostname example.com
 
 2. Add example.com to host
@@ -33,12 +33,12 @@ This is a step by step tourist for how to build up a GitLab from Bitnami VM
 		127.0.0.1    example.com
 
 3. Update GitLab setting to correct host display
-		
+
 		$ sudo vi /opt/bitnami/apps/gitlab/htdocs/config/gitlab.yml
 		host: example.com
 
 4. restart(need do this action once configuration change)
-	
+
 		$ sudo /opt/bitnami/ctlscript.sh restart
 
 ## SSH Setup
@@ -57,10 +57,10 @@ This is a step by step tourist for how to build up a GitLab from Bitnami VM
 3. Client generate Key-pairs
 
 	- Linux & Mac
-	
+
 			$ sudo ssh-keygen
 	- Windows
-		
+
 		[PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 4. Bidning Public key to GitLab account
