@@ -17,11 +17,11 @@ tags:
 
 ![reserved](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140114/reserved.jpg)
 
-##What is reserved word
+## What is reserved word
 
 reserved word就是在程式裡預先保留的文字，大多有特殊用途與意涵或本身附帶一些功能與屬性，在正常的情況下不能用來當作參數或變數的命名
 
-##How To use reserved word
+## How To use reserved word
 
 那如何在非正常的情況下來使用這些保留字勒
 
@@ -36,7 +36,7 @@ reserved word就是在程式裡預先保留的文字，大多有特殊用途與�
 - a['import']=value
 - a = { 'import': value }
 
-####目前的保留字[詳情請參考](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FReserved_Words)
+### 目前的保留字[詳情請參考](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Reserved_Words?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FReserved_Words)
 
 比較常用到的有以下的(JavaScript目前的版本對照到ECMAScript 3)
 
@@ -72,7 +72,7 @@ reserved word就是在程式裡預先保留的文字，大多有特殊用途與�
 - transient
 - volatile
 
-####以下是未來保留字(最新的JavaScript版本應該會符合ECMAScript 5)：
+### 以下是未來保留字(最新的JavaScript版本應該會符合ECMAScript 5)：
 
 - class
 - enum
@@ -81,7 +81,7 @@ reserved word就是在程式裡預先保留的文字，大多有特殊用途與�
 - import
 - super
 
-####strict 模式中的未來保留字
+### strict 模式中的未來保留字
 
 以下是僅限於 strict 模式中的未來保留字。 如需 strict 模式的詳細了解，請參考之前的文章[[JavaScript]use strict(嚴格模式)-strict mode 介紹](http://www.dotblogs.com.tw/blackie1019/archive/2013/08/30/115977.aspx)
 
@@ -94,7 +94,7 @@ reserved word就是在程式裡預先保留的文字，大多有特殊用途與�
 - static
 - yield
 
-###More reserved words
+### More reserved words
 
 JavaScript 的保留字 (reserved word)  、未來保留字 (future reserved word) 另外包括關鍵字 (keyword)還有最常使用到的三個字面常數 (literal) ，分別是 null 、 true 、 false 。
 
@@ -125,7 +125,7 @@ JavaScript 的保留字 (reserved word)  、未來保留字 (future reserved wor
 - while
 - with
 
-##Avoid use reserved words
+## Avoid use reserved words
 
 強烈建議不要使用保留字，如開頭所說，這些字叫做保留字就代表它們有特別的意涵與功能，請按照規則撰寫程式，好的規則與習慣可以讓你的程式可讀性大增!
 

@@ -32,7 +32,7 @@ tags:
 
 額外會用到的有之後會依序介紹。接下來讓我們從實際來上手一次，如果想先知道結果會長怎樣可以先去[Demo](http://fullstack-demo.herokuapp.com/)這邊瞧瞧。
 
-##Install
+## Install
 
 - 先安裝好NodeJs(with npm)
 - 安裝 yeoman
@@ -59,7 +59,7 @@ tags:
 
 	![002](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/angular-fullstack/01/002.png)
 
-##Detail
+## Detail
 
 建立完後我們先來看一下整個專案架構
 

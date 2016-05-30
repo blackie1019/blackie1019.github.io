@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-##前言
+## 前言
 
 其中最讓我感到錯愕的就是他跟我說我傳入某一個method的參數不是我要的class類型…但我仔細一看我的程式碼
 
@@ -32,7 +32,7 @@ FXCK!是哪裡不一樣的類型(class)了啦，見鬼了！！！
 但幾分種後馬上後來發現了我一個白痴的懷習慣把共用程式放到App_Code才導致一些莫名的怪情況
 
 
-##Bin and App_Code
+## Bin and App_Code
 
 在以往.NET的Web專案中如果要在網頁之間共用程式我們通常可以將程式碼保存在兩個特殊的資料夾，
 
@@ -49,7 +49,7 @@ FXCK!是哪裡不一樣的類型(class)了啦，見鬼了！！！
 
 兩個看起來很像，差別在App_Code資料夾存放原始程式碼而不是已編譯的程式碼，而且當你在建立你的Web應用程式時，.NET會幫你將放在App_Code的程式碼包成可此作執行的DLL檔案，但他是以一種**特殊的方法**來處理包裝的過程。
 
-##細看App_Code
+## 細看App_Code
 
 在使用.NET建立Web專案時，VS會預設幫我們建立這一個資料夾，而這資料夾也俱有動態編譯的功能(預設的類型是不會編譯的，需要將每一個檔案都選擇為compiler)，而裡面可以放的檔案類型包含，自定控制項、自定class、interface 等都可以。
 
@@ -65,7 +65,7 @@ FXCK!是哪裡不一樣的類型(class)了啦，見鬼了！！！
 
 如果不做作上面的設定，則所有在App_Code根目錄的內容會被打包成一個App_Code_xxxx.dll(xxxx是隨機產生的數字或文字)，所有子目錄會被打包成App_SubCode_yyyy_xxxx.dll(yyyy是子目錄名稱)
 
-##Devil is in details
+## Devil is in details
 
 而本次發生Runtime Error告訴我A類別不是A類別的原因就在於App_Code本身會自動將目錄內的資料編譯成一個特殊的dll給專案參考，而我多餘的就是在本身打包程式下更改了namespace，把App_Code移除換成我自己的命名的…
 
@@ -84,7 +84,7 @@ FXCK!是哪裡不一樣的類型(class)了啦，見鬼了！！！
 
 為什麼Web application不適用可以參考[App_Code 資料夾不適用於 Web 應用程式專案](http://vishaljoshi.blogspot.tw/2009/07/appcode-folder-doesnt-work-with-web.html)，這邊節錄重點整理如下：
 
-##結語
+## 結語
 
 會寫這篇文章其實要感謝J神幫我提醒了我這壞習慣，當我去問J神的對話如下：
 

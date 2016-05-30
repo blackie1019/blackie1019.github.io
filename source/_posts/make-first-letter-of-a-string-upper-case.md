@@ -19,7 +19,7 @@ tags:
 
 使用前先稍微了解一下這個TextInfo類別的
 
-##TextInfo 類別(.net framework後 2.0開始使用)
+## TextInfo 類別(.net framework後 2.0開始使用)
 - 定義文字屬性和行為，例如書寫系統特有的大小寫。
 - 使用方式:
 

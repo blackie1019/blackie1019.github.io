@@ -18,7 +18,7 @@ NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表
 
 ![N](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/Codeplex%20Logo.png)
 
-##Intro
+## Introduction
 
 所支援的功能包含：
 
@@ -34,7 +34,7 @@ NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表
 
 目前visual studio 2012與2013都可使用(2010與08只能殘念)，整個NodeJS Application從開發、測試到發佈都可以透過VS來完成!真的不愧對"地表最強"這四個字阿!現在就讓我們趕快來安裝與使用吧!
 
-##Setup
+## Setup
 
 安裝上蠻簡單的只要依序完成下面幾個動作即可
 
@@ -67,7 +67,7 @@ NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表
 		建立一個支援Windows Azure　publish整合的Express專案
 
 
-##Hello world with Blank Node.js Web Application
+## Hello world with Blank Node.js Web Application
 
 這邊我們選擇Blank Node.js Web Application來實作我們第一個NTVS的Hello world
 
@@ -90,7 +90,7 @@ Hello world已經幫我們開好瞜～
 
 ![hello world](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131227/hello%20world.PNG)
 
-##Hello world with Blank Express Application
+## Hello world with Blank Express Application
 
 這邊我們換成用選擇Blank Express Application來作我們第二個NTVS的Hello world
 
@@ -108,7 +108,7 @@ Hello world已經幫我們開好瞜～
 
 針對NPM與Express的部分先前在講MAN這個架構的時候已經有介紹過，NPM請參考[這邊](http://www.dotblogs.com.tw/blackie1019/archive/2013/10/23/125248.aspx)若是想知道express架構上的內容請參考[這邊](http://www.dotblogs.com.tw/blackie1019/archive/2013/10/23/125249.aspx)
 
-##Still need improve
+## Still need improve
 
 官方已知的問題(其他更多小問題請上論壇看更多瞜，但我覺得都不影響使用就是了)
 
@@ -117,7 +117,7 @@ Hello world已經幫我們開好瞜～
 
 但如果要我選IDE工具，我選一百次一定都是選VS！！BJ4
 
-##Other Tips
+## Other Tips
 
 在Node web application開發上面現在有幾個比較有名的套件
 

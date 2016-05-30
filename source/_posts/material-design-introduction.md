@@ -17,7 +17,7 @@ tags:
 
 [原出處](http://www.google.com/design/spec/material-design/introduction.html#introduction-principles)
 
-##Goals
+## Goals
 
 ![goals_1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-goals-swirlanddot_large_mdpi.png)
 
@@ -29,7 +29,7 @@ tags:
 
 Material Design主要提供科技產品建置一跨平台與裝置的設計準則，目標再讓所有平台或裝置有同一的操作體驗，包括顯示、觸控、聲音等都在其範圍內。
 
-##Principles - Material is the metaphor
+## Principles - Material is the metaphor
 
 ![](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-principles-layersquares_large_mdpi.png)
 
@@ -37,7 +37,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 物件的光影、形狀、介面都能表達出與周遭環境的互動的情形，如同手指去波動水面會造成水面漣渏但在空氣中卻不會，合理的動作與物件顯示即可釋出彼此目前的關係。
 
-##Principles - Bold, graphic, intentional
+## Principles - Bold, graphic, intentional
 
 ![](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-principles-circleplus_large_mdpi.png)
 
@@ -45,7 +45,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 不需透過多的設計或誇張的顯示，僅需透過簡單的色彩、空間與形狀等搭配來建立出使用者應該走的方向是Material Design主要想強調的。
 
-##Principles - Motion provides meaning
+## Principles - Motion provides meaning
 
 ![](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-principles-flyingsquare_large_mdpi.png)
 
@@ -53,7 +53,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 這句就是最精隨的一段，無須破壞一個連貫活動的任一動作，因為那就是最真實的呈現。
 
-##感想
+## 感想
 
 ![all_2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/all_2.jpg)
 

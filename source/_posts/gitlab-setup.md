@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitLabTest
+title: GitLab Build up
 subtitle: ""
 date: 2015-11-06 00:29:45
 author: Blackie

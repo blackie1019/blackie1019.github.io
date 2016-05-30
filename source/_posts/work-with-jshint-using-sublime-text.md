@@ -18,21 +18,21 @@ tags:
 
 ![LOGO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jshint.png)
 
-##JSLint VS JSHint
+## JSLint VS JSHint
 
 JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒比第五版嚴謹，這部分還在追查)所定義的規格中更嚴謹的規格來驗證你的 JavaScript，這邊找到保哥幾年前寫的文章介紹[](http://blog.miniasp.com/post/2008/02/24/JSLint-The-JavaScript-Verifier.aspx)，有興趣的可以進去看看摟。
 
 而JSHint是JSLint其中一個分支，為什麼寫這個分支的理由在此：[Why I forked jslint to jshint?](http://anton.kovalyov.net/2011/02/20/why-i-forked-jslint-to-jshint/)．而簡單來講，因為在實務上有些JSLint規範太過嚴格的部分作出了部分的取捨而成的子集就成為了JSHint，而JSHint也還可以讓你自行條件檢查的修改，看是否要開啓或關閉。
 
-##Sublime Text2版
+## Sublime Text2版
 
-###前置工作
+### 前置工作
 
 1. 安裝[Sublime Text2](http://www.sublimetext.com/2)
 2. 安裝[Package Control](https://sublime.wbond.net/installation)
 3. 透過Package Control安裝[JSHint](https://github.com/victorporof/Sublime-JSHint)套件
 
-###實際使用流程
+### 實際使用流程
 
 實際經驗是告訴我最好先用html-css-js pretty先做過一次排版你可以少掉很多問題～
 
@@ -57,7 +57,7 @@ JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒�
 
 小小一段code 是不是差異很多啊！，最後的版本會看到它還是有提醒我有兩個沒通過的檢查，但因為這邊跟我使用AngularJS與AngularJS UI-Routing的套件有關，所以我們可以不用管它，這份code就可以開心上git摟!
 
-###條件修改
+### 條件修改
 
 如果對於預設的檢測需要做條件修改，可到上方的Tools->JSHint->Set Linting Preferences就可以進去修改了，如下：
 
@@ -65,13 +65,13 @@ JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒�
 
 至於有什麼可以修改的就參考[官方說明](https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options)摟
 
-###環境設定
+### 環境設定
 
 除了一般手動檢查外，我們也可以透過Tools->JSHint->Set Plug Options 設定Sublime Text2插件在環境的特殊選項，讓他在每次編輯或是存檔的時候幫我們做自動檢查。
 
 ![env](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/env.png)
 
-##結語
+## 結語
 
 在很早很早以前，當JSLint剛推出的時候還要上[官網](http://www.jslint.com/)把自己的code放進去檢查，現在在開發時的時候就可以養成良好的開發習慣了，小細節成就偉大！千萬不要養成不好的寫法與習慣啊！
 

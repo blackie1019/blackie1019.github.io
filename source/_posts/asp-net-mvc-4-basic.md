@@ -14,7 +14,7 @@ MVC 開發環境與基本知識
 
 <!-- More -->
 
-##檢視引擎(view engines):
+## 檢視引擎(view engines):
 
 - ASPX
 
@@ -45,9 +45,9 @@ MVC 開發環境與基本知識
 			<li>@skill.name</li>
 		}
 
-*<em>根據ScottGu的推薦好像還有兩個[Spark](http://sparkviewengine.com/)與[HNaml](http://code.google.com/p/nhaml/)在先前MVC3時也常被使用，但MVC4之後就是Razor的天下了</em>
+<em>根據ScottGu的推薦好像還有兩個[Spark](http://sparkviewengine.com/)與[HNaml](http://code.google.com/p/nhaml/)在先前MVC3時也常被使用，但MVC4之後就是Razor的天下了</em>
 
-##NuGet
+## NuGet
 
 VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊要稍微注意一下NuGet的版本有更新，如果你是用VS 2012安裝好的NuGet記得要更新一下，以下幾個不錯的Tips可參考
 
@@ -56,13 +56,13 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 - [NuGet套件還原](http://demo.tc/Post/763)
 - [架設自己的NuGet Server](http://blog.darkthread.net/post-2011-05-27-nuget-server.aspx)
 
-##MVC架構
+## MVC架構
 
 ![mvc](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/ASP.Net%20MVC/01/MVC.png)
 
 ![mvc2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/ASP.Net%20MVC/01/MVC2.png)
 
-##目錄架構(以Internet Application Template為例):
+## 目錄架構(以Internet Application Template為例):
 - App_Data
 
 	這邊存放db, XML, 或是任一會使用到資料實體檔案
@@ -126,7 +126,7 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 
 	該網頁應用程式的相關設定與參數
 
-##整合BootStrap3
+## 整合BootStrap3
 
 -
 - 參考上面設定確認App_start->BootstrapBundle.Config.cs的設定正確，筆者設定如下:
@@ -197,9 +197,8 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 		    </div>
 		</div>
 
-##References
+## References
 
 1. [Introducing “Razor” – a new view engine for ASP.NET](http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx)
 2. [Basic-Understanding-On-ASP-NET-MVC-4](http://www.codeproject.com/Articles/585873/Basic-Understanding-On-ASP-NET-MVC-4)
 3. [Understanding ASP.NET MVC Project Folders](http://www.c-sharpcorner.com/UploadFile/suthish_nair/mvc-folders/)
-4.

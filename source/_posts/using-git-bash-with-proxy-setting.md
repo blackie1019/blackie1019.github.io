@@ -15,7 +15,7 @@ Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的�
 
 <!-- More -->
 
-##Set Git with Proxy
+## Set Git with Proxy
 
 在我們安裝完Git之後打開Git Bash，輸入`git config --list` 即可看到目前的設定
 
@@ -46,6 +46,8 @@ Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的�
 再上面的ScreenShot就可以看到其實我打進去setting的密碼是**%24RFV5tgb**而不是**$RFV5tgb**
 
 如果需要特殊字符轉碼可以參考[HTML character codes](http://www.obkb.com/dcljr/charstxt.html)
+
+## Try clone with git proxy
 
 設定完後我們可以到隨意一個Github公開專案去複製他.git的位置(如下圖)
 

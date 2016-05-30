@@ -16,9 +16,9 @@ tags:
 
 <!-- More -->
 
-##Swift介紹
+## Swift介紹
 
-##安裝步驟
+## 安裝步驟
 
 <em> 首先要先確定你有apple developer開發帳號(還沒繳年費的記得快繳錢瞜, 呵呵) </em>
 

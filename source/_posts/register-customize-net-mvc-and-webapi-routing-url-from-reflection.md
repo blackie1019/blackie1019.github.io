@@ -17,6 +17,8 @@ tags:
 
 ![電線杆](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140102/image.jpg)
 
+## 前言
+
 因工作需求，需要將原本的預設Controller\Action\ID或api\Controller\Action\ID的Routing方式都改為只有Action的情況，說明如下:
 
 有一個TestController裡面有一個叫做GetTest的Action Method在預設的Rouing裡面應該會註冊成下面的樣子，
@@ -34,7 +36,7 @@ tags:
 
 這邊稍微為大家介紹一下如何使用Refactor的方式找出程式裡面既有的controller然後再透過controller裡面的Action去做MVC Web與WebAPI的Routing註冊
 
-#About MVC/WebAPI Routing
+## About MVC/WebAPI Routing
 
 傳統我們在針對.NET MVC的Routing做註冊時會直接增添或修改App_Start裡面的RoueCofig.cs或是WebApiConfig，預設專案裡面的設定應該會長的像下面這樣：
 
@@ -71,7 +73,7 @@ tags:
 
 基本上我們要注意一個要點，.NET MVC的Routing與IIS的Rouing是兩件事情，所以使用上要稍微注意不是沒註冊就連不到檔案(有可能Rouing的URL與IIS的目錄結構剛好一樣)
 
-#Register customize MVC/WebAPI Routing
+## Register customize MVC/WebAPI Routing
 
 而當我們要新增一個customize的Routing的時候可以透過下面的方式寫在App_Start裡面的RoueCofig.cs或是WebApiConfig當中:
 
@@ -96,7 +98,7 @@ tags:
         routeTemplate: "api/Test/GetTest"
     );
 
-#Register customize MVC/WebAPI Routing from Reflection
+## Register customize MVC/WebAPI Routing from Reflection
 
 如果你今天只有新增一個的話只要透過上面的方式來增加就可以了，但如果你今天是要把所有Controller都做這樣的設定一個一個手動設定實在太白吃了而且如果像我有手殘的情形就會導致頁面連不到的窘境，所以下面就分享如何透過Reflection來抓出所有ActionName後來做各別註冊。
 
@@ -255,6 +257,6 @@ TestResponse.cs
 
 這邊因為我所有的Respone與Request都有一個父類別來給他們繼承所以我直接找尋回傳符合父類別的Method就可以找到他的Controller並幫他註冊對應的Routing，所以透過RegisterMemberApiAction這個method我們就可以把所有符合的Controller跟ActionName註冊起來，很簡單吧。
 
-#Combined with WebApi.HelpPage
+## Combined with WebApi.HelpPage
 
 如果是開發WebAPI的朋友應該多少都會安裝WebApi.HelpPage，這邊要稍微注意一下，預設的HelpPage會去抓你已經註冊進入Routing的Method去幫你根據註解(comment)建立文件，所以記得要把vs專案預設建立的WebAPI routing注解或刪除，不然會有把每個method都註冊兩次歐!

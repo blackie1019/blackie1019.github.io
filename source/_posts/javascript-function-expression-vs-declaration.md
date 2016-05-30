@@ -18,7 +18,7 @@ tags:
 
 在開始前, 先來回憶一下如何自定一個JS函數
 
-##How to create JS custom function
+## How to create JS custom function
 
 ### 第一種 - declaration (函式運算式)
 
@@ -38,7 +38,7 @@ tags:
 
 大致上常見的有上面兩種, 其中第二種的變形使用很多變化，下面歸納兩點差異讓大家分辨
 
-##What’s different
+## What’s different
 
 - 1
 
@@ -80,6 +80,6 @@ tags:
 			callTest();
 
 
-##結語
+## 結語
 
 看完定義跟比較後應該很明確的可以知道以後什麼情況要用function expression與declaration了，不要再誤用或以為都一樣摟！

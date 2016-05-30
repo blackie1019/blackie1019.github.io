@@ -16,16 +16,18 @@ FLUX是一個由Facebook提出來的開發架構(FLUX 是一個 Pattern 而不�
 
 <!-- More -->
 
+## About FLUX
+
 以下內容參考[What is Flux?](http://fluxxor.com/what-is-flux.html) 這篇的介紹很多，有興趣請先到原文出處學習與感謝分享。
 
 這邊先提到一下兩個主軸:
 
-###FLUX希望作到的事情
+### FLUX希望作到的事情
 
 - Use explicit data instead of derived data
 - Separate data from view state
 
-###FLUX希望帶來的好處
+### FLUX希望帶來的好處
 
 - Improved data consistency
 - Easier to pinpoint root of a bug
@@ -35,7 +37,7 @@ FLUX是一個由Facebook提出來的開發架構(FLUX 是一個 Pattern 而不�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nYkdrAPrdcw?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v" frameborder="0" allowfullscreen></iframe>
 
-##MVC與遇到的問題
+## MVC與遇到的問題
 
 在介紹FLUX前，先讓大家了解一下目前普遍在使用的MVC架構
 
@@ -59,7 +61,7 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 原文如下:
 > We found that two-way data bindings led to cascading updates, where changing one object led to another object changing, which could also trigger more updates. As applications grew, these cascading updates made it very difficult to predict what would change as the result of one user interaction. When updates can only change data within a single round, the system as a whole becomes more predictable.
 
-##FLUX介紹
+## FLUX介紹
 
 接著我們先來介紹FLUX的中心思想打造單一的資料流進行方式(one-way data flow)，相對於MVC只定義了三個角色的功能與關係，FLUX更明確的定義了一個資料進行的方式，使得大家更容易遵守規則。
 
@@ -84,13 +86,13 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 
 在FLUX架構上，要避免從Store外部直接改變Store。我們可以透過使用 window.DispatchEvent 送出CustomEvent的方式，並在Store中接收CustomEvent來做到。 簡單來講就是維持他單一變化的flow，避免架構上出現壞味道。
 
-##Cowork with Web service
+## Cowork with Web service
 
 這邊找到一張先前看到的完整解釋FLUX架構如何跟Web Service的流程圖，下圖顯示了一個資料如何從Web service拿到後到畫面顯示以及如何互動去取得其他資料來呈現。
 
 ![with service](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/FLUX%2BReactJS/01/archieture.png)
 
-##手工打造FLUX架構
+## 手工打造FLUX架構
 
 這邊就用JS原生的語法來建立一個簡單的FLUX架構的範例吧
 
@@ -100,7 +102,7 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 
 從範例來看Store 與 App 可以分開來測試，這對大型App是很重要的，每個測試環節應該確保該function可以運作。
 
-##結語
+## 結語
 
 看起來FLUX真的很單純，用事件註冊與驅動指派的方式來統一管理資料處理的流程，不讓架構在大量增加時有所崩壞，而且應該可以是一種蠻適合JS的開發模式，又可透過原生的JS實作(無論你用什麼框架應該都可以實作)。
 
@@ -108,7 +110,7 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 
 如果對FLUX有心得的朋友也麻煩指導小弟一下，看看是不是有什麼誤解，也感謝大家的指教。
 
-##Ref
+## Ref
 
 - [What is Flux?](http://fluxxor.com/what-is-flux.html)
 - [Facebook：MVC不适合大规模应用，改用Flux](http://www.infoq.com/cn/news/2014/05/facebook-mvc-flux)

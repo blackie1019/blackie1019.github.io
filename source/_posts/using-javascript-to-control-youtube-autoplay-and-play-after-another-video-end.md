@@ -17,7 +17,7 @@ tags:
 
 這邊先介紹一下官方的API ─ [Youtube IFrame API](https://developers.google.com/youtube/iframe_api_reference?hl=zh-tw)
 
-##What is Youtube IFrame API
+## What is Youtube IFrame API
 
 Youtube iFrame API是Google官方提供的一組JavaScript Library讓我們可以輕鬆控制嵌入的影片，但不同於[Flash](https://developers.google.com/youtube/flash_api_reference?hl=zh-tw) 與 [JavaScript](https://developers.google.com/youtube/js_api_reference?hl=zh-tw) player API都在網頁內嵌入一個Flash object的概念，IFrame API 使用 `<iframe>` tag ，在HTML5的支援下這提供了更穩固的播放基礎。
 
@@ -35,7 +35,7 @@ Youtube iFrame API是Google官方提供的一組JavaScript Library讓我們可�
 	- 3 – buffering
 	- 5 – video cued
 
-##Hand on Lab
+## Hand on Lab
 
 在開發上主要透過Create 一個`YT.Player` object的方式去操控處理，基本的操控如下:
 

@@ -15,17 +15,17 @@ tags:
 
 <!-- More -->
 
-##What is D3.js?
+## What is D3.js?
 
 現在我們就直接看一個[Live Demo](http://zbryikt.github.io/visualize/dorling/) 感受一下魅力吧!
 
 另外推薦一個台灣人以台灣地圖與資料來呈現空間與數據關係的[範例](https://blog.safaribooksonline.com/2014/02/11/d3-js-maps/)
 
-##Why need it?
+## Why need it?
 
 為什麼我們會需要D3.js這樣圖像化地library勒？當我們處於一個大資料的時代，想要直接閱讀資料從中找出資訊是很不容易的事情，這是後我們可以透過圖像化的方式讓我們用看的就能感覺出他的重要性或差異，我們從下面這個範例來解說一下
 
-##Setup and Demo
+## Setup and Demo
 
 看完一串說明後，就讓我們來hand on一下吧
 

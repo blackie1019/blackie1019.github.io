@@ -17,12 +17,9 @@ tags:
 
 ![Logo](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/mou_logo.png)
 
-####[Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載
+[Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載
 
-#Mou
-
-###介紹
----
+## Mou介紹
 
 -這套Markdown editor 在[Markdown.tw](http://markdown.tw/)就有推薦下載，這套軟體的開發者是對岸的高手-羅晨，對他有興趣可以看[inside這篇專訪](http://www.inside.com.tw/2013/07/19/mou-creator-chen-luo-interview)
 
@@ -48,7 +45,7 @@ tags:
 
 ![6](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/6.png)
 
-###使用心得
+## 使用心得
 ---
 
 Mou真的蠻好用的而且用免費根本佛心～！
@@ -64,39 +61,33 @@ Mou真的蠻好用的而且用免費根本佛心～！
 因為上述的原因現在我的blog也是將Mou的CSS套在我的dotblog上面，加上個人覺得Mou的CSS比較偏向github的風格所以作了更換，如果想把MarkdownPad的CSS給Mou呈現或是想把Mou上面的Github2(2底色白色,1是灰色)這個樣式用在dotblog上的話可以直接從這邊[Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載
 
 
-###Github1 vs Markdownpad
----
+## Github1 vs Markdownpad
 
 這邊提供Markdownpad的css放到Mou的Github1(Mou預設)一些比較截圖(每組圖上面都是Mou下面都是Markdownpad)
 
-####比較一
----
+### 比較一
 
 ![Mou-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MouGithub_1.png)
 
 ![Markdownpad-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MakeDownPad_1.png)
 
-####比較二
----
+### 比較二
 
 ![Mou-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MouGithub_2.png)
 
 ![Markdownpad-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MakeDownPad_2.png)
 
-####比較三
----
+### 比較三
 
 ![Mou-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MouGithub_3.png)
 
 ![Markdownpad-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MakeDownPad_3.png)
 
-####比較四
----
+### 比較四
 
 ![Mou-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MouGithub_4.png)
 
 ![Markdownpad-1](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130831/MakeDownPad_4.png)
 
----
 
 工欲善其事，必先利其器，讓我們一起學好Markdown吧～！

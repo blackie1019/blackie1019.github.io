@@ -15,7 +15,7 @@ tags:
 
 <!-- More -->
 
-##Google Chart API
+## Google Chart API
 
 除了傳統的直接互叫web service 服務之外，現在只要是google提供的API都有做動態載入的功能，使用上如下
 
@@ -56,7 +56,7 @@ tags:
       }
     </script>
 
-##範例
+## 範例
 
 這邊帶大家看一個QRCode的範例，此範例是用呼叫服務的方式產生
 
@@ -66,7 +66,7 @@ tags:
 
 <a class="jsbin-embed" href="http://jsbin.com/AbEFEmu/2/embed?html,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-##結語
+## 結語
 
 想知道還可以做到什麼更多的內容，請參考[此](https://google-developers.appspot.com/chart/interactive/docs/gallery)
 

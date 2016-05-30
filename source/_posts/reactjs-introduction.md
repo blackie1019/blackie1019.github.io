@@ -17,18 +17,18 @@ ReactJS是Facebook推出的framework, 再搭配FLUX的架構下讓FB網頁上面
 
 ![ReactJS](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/FLUX%2BReactJS/02/ReactJS.png)
 
-##ReactJS Intro
+## ReactJS Introduciton
 這邊用官網的三段特色描述來簡單介紹：
 
-- ###VIRTUAL DOM
+- ### VIRTUAL DOM
 
 	React abstracts away the DOM from you, giving a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native.
 
-- ###DATA FLOW
+- ### DATA FLOW
 
 	React implements one-way reactive data flow which reduces boilerplate and is easier to reason about than traditional data binding.
 
-- ###JUST THE UI
+- ### JUST THE UI
 
 	Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project.
 
@@ -36,7 +36,7 @@ ReactJS是Facebook推出的framework, 再搭配FLUX的架構下讓FB網頁上面
 
 而呼應FLUX架構，ReactJS用更簡單的流程來管理頁面的更新，透過事件的訂閱與註冊的概念產生單一方向的處理流程，簡化如MVC, MVVM等架構對於View方面雙向溝通的方式。而也因為是針對UI(View)處理所產生的framework，所以要結合回去你原本的AngularJS這種MVC框架也是可行的。
 
-###AKA V in MVC
+### AKA V in MVC
 
 React : Rethinking Best Practices. 這是我覺得對於ReactJS還不錯的一個解釋
 
@@ -47,7 +47,7 @@ React : Rethinking Best Practices. 這是我覺得對於ReactJS還不錯的一�
 
 其中第4-6頁的簡單幾句話已經明確說明它的定位。
 
-###使用ReactJS
+### 使用ReactJS
 
 可以到官方網站透過[React starter kit](http://facebook.github.io/react/docs/getting-started.html)取得最新的範例跟JS檔案或是參考官方[CDN](https://cdnjs.com/libraries/react/)
 
@@ -65,15 +65,15 @@ React : Rethinking Best Practices. 這是我覺得對於ReactJS還不錯的一�
 
 這邊我們就直接用JSBin帶大家一起說聲Hello world
 
-####Hello world
+#### Hello world
 
 <a class="jsbin-embed" href="http://jsbin.com/kixotojavo/2/embed?html,js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
 很簡單的只要在HTML頁面放好一個div tag,並透過React render出所需要呈現的畫面裡面有什麼(這邊製作了一個div的Element並在裡面放入文字)，並讓這個建置他的物件本身的Name的屬性可以被傳入內部配合處理。
 
-###JSX and Hello world with JSX Syntax
+### JSX and Hello world with JSX Syntax
 
-####JSX
+#### JSX
 
 在已經習慣寫XML的情況下要我們產生一個div物件很簡單，但在剛剛說Hello world的時候我們怎麼知道要怎麼產生出一個div物件呢？
 
@@ -89,7 +89,7 @@ React為了讓開發方便就同時提出了一個JSX syntax的方式，接下�
 
 有沒有覺得很熟悉很簡單了，透過JSX我們可以快速地進行開發
 
-####Hello world with JSX Syntax
+#### Hello world with JSX Syntax
 
 <a class="jsbin-embed" href="http://jsbin.com/zezebu/3/embed?html,js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
@@ -108,7 +108,7 @@ React為了讓開發方便就同時提出了一個JSX syntax的方式，接下�
 在開發的時候我們可以透過JSX幫我快速地寫出我們想要的畫面，但因為JSX是一種結合XML語法的pre-compile結果，所以如果是要正式發佈的話還是轉換成純Javascript的內容，這樣才可以使render產生畫面的速度加快。
 
 
-##結語
+## 結語
 
 看完介紹與簡單實作，總結一下為什麼想用Reactjs
 
@@ -123,7 +123,7 @@ React為了讓開發方便就同時提出了一個JSX syntax的方式，接下�
 下一次會用簡單的Demo解說React如何使用FLUX這個架構，有興趣先了解FLUX的流程可以先參考另外一篇[[FLUX]FLUX架構介紹與實作FLUX架構
 ](http://www.dotblogs.com.tw/blackie1019/archive/2015/04/14/151049.aspx)
 
-##Ref
+## Ref
 
 - [初探Reactjs](http://jamestw.logdown.com/posts/207346-a-preliminary-study-on-reactjs)
 - [Getting Started with React and JSX](http://www.sitepoint.com/getting-started-react-jsx/)

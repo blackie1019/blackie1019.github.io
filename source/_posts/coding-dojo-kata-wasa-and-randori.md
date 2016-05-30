@@ -16,7 +16,7 @@ tags:
 
 <!-- More -->
 
-##Coding Dojo
+## Coding Dojo
 
 這是指一個學習的過程或方法，招集一群人有目地的在安全的環境一起學習技術或探索問題，而這過程著重在如何一起學習與解決問題，也會從中加入一些其他的開發方式，例如Pair coding、TDD、Design pattern等來當作主軸，讓大家在過程中都有個主題的方向去學習，既使犯錯了也是很好的教材。
 
@@ -58,7 +58,7 @@ tags:
 
 ![06](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/06.JPG)
 
-##Code Kata
+## Code Kata
 
 這名詞也指的是招式(套路)，通常在學武功的時候都會有幾招固定招式，如下
 
@@ -80,13 +80,13 @@ tags:
 
 由撰寫第一個測試失敗的Test Case 開始改進，然後實作通過測試(綠燈)後遇到需求變更或Refactoring評估如何改善(黃燈)，然後再繼續實作直到又通過綠燈換下一個
 
-##Wasa
+## Wasa
 
 ![10](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/10.JPG)
 
 一個寫測試，另外一個人寫程式通過測試，但經過一段時間後兩者調換身分，以此練習TDD與pair programming的開發方式與默契.
 
-##Randori
+## Randori
 
 ![Randori](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/xpug-coding-dojo-katayahtzee-in-ocp-way-4-728.jpg)
 
@@ -98,7 +98,7 @@ tags:
 
 流程上類似：第一個看到需求後先寫下了Test Case然後讓第二個補上功能，再讓第二個寫Test Case，第三個上來寫功能這樣的循環
 
-##Ref
+## Ref
 
 - [Agile tour 2014 - Coding Dojo with C# and TDD](http://www.slideshare.net/AgileCommunity/agile-tour-2014-dojo-with-c-sharp-pdf)
 

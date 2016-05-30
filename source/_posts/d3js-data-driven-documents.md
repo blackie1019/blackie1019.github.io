@@ -36,15 +36,15 @@ tags:
 
 如果想看了解更多，請知道還有什麼更酷的實例[請看](https://github.com/mbostock/d3/wiki/Gallery)，想了解更深請看[ACM期刊](http://dl.acm.org/citation.cfm?id=2068631)
 
-##Hands on with D3
+## Hands on with D3js
 
-接著我們來動手玩玩D3吧,先到[官方Github](https://github.com/mbostock/d3/wiki)下載最新的code,使用上很簡單只要加入下面這段即可
+接著我們來動手玩玩D3js吧,先到[官方Github](https://github.com/mbostock/d3/wiki)下載最新的code,使用上很簡單只要加入下面這段即可
 
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 這邊我們簡單先做出一個表格再來跟大家說明
 
-##結語
+## 結語
 
 會寫這篇其實跟以前在學時期玩過一陣子splunk有關，基本上splunk是一個收集記錄(log)或是任何資料(data)，經過處理與計算後以圖像或表單的方式來讓使用者更能看出一些現象的趨勢與探討出一些指標做出預測。Acer使用splunk做出了SOC的安全預測中心的一套偵測系統，而e-Travel(歐洲前十大網路旅行社)也透過splunkf去將它自有的巨量資料即時分析與搜尋的功能除了減少人工作業的時間與人力外，也降低了營運的成本。
 

@@ -34,7 +34,7 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 ---
 
-##優缺點與使用
+## 優缺點與使用
 
 那為什麼要有這個strict mode以及優缺點為何，簡單幫大家整理如下:
 
@@ -56,7 +56,7 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 ---
 
-##瀏覽器支援程度
+## 瀏覽器支援程度
 
 + Chrome13之後都有支援(最新19)
 + IE10,11有支援(但上面有10有bug)
@@ -71,13 +71,13 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 ---
 
-##常見用法之限制
+## 常見用法之限制
 
 比較常見的一些限制可以參考[微軟的中文文件](http://msdn.microsoft.com/zh-tw/library/ie/br230269(v=vs.94).aspx)(這幾年文件真的做很詳細還中文，糾甘心)
 
 幾個重點整理節錄來至[NCZOnline](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/) 用原本範例換成中文讓大家瞭解一下
 
-###消除 with 的用法
+### 消除 with 的用法
 
 不能使用*with*這個用法了，所以在使用*strict mode*時請先確認你沒有用下列的寫法
 
@@ -86,7 +86,7 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 	    alert(href);
 	}
 
-###變數使用需要先宣告
+### 變數使用需要先宣告
 
 在使用*strict mode*下不能用下面這樣的變數使用(下面的範例正確使用需要先透過var 宣告someUndeclaredVar才可以用)
 
@@ -97,7 +97,7 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 	}());
 
-###使用this前的注意事項
+### 使用this前的注意事項
 
 另外一個重點就是你不能使用在還沒宣告的時候給一個物件相關的this-value(沒宣告的定義是當該物件是null 或undefined時)，如下錯誤的示範
 
@@ -123,7 +123,7 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 	// Error in strict mode
 	var me = Person("Nicholas");
 
-###物件內不能重複定義相同名稱的屬性或是在變數宣告時定義重複的名稱
+### 物件內不能重複定義相同名稱的屬性或是在變數宣告時定義重複的名稱
 
 這通常是撰寫的時候誤打的，所以要注意下面兩個寫法在*strict mode*都是被禁止的
 	// Error in strict mode - duplicate arguments
@@ -139,7 +139,7 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 These are both syntax errors and so the error is thrown before the code is executed.
 
-###還是可以使用eval()，但有點小改變
+### 還是可以使用eval()，但有點小改變
 
 最大的改變是在eval()內宣告的變數(variables)與函式(functions)並不會在scope中存在，如下範例
 
@@ -165,7 +165,7 @@ These are both syntax errors and so the error is thrown before the code is execu
 
 	}());
 
-###對於不可改變的屬性無法在宣告後再對內容做彈性修改
+### 對於不可改變的屬性無法在宣告後再對內容做彈性修改
 如果屬性被設為read only 或 freezing，如果再去修改會拋出Error警示(在*non-strict mode*一樣實際的值不會改只是不會拋出Error警示)
 
 	var person = {};

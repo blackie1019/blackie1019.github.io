@@ -18,7 +18,7 @@ tags:
 
 ![iScroll.js](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/1.jpg)
 
-##前言
+## 前言
 
 通常有這需求大致上可能要完成下面幾個功能：
 
@@ -29,7 +29,7 @@ tags:
 
 當有以上需求的時候就可以透過iScroll.js來幫你完成
 
-##iScroll.js介紹
+## iScroll.js介紹
 他可以支援上述的點選縮放(pinch/zoom), 下拉更新(pull down to refresh)與滾動事件等來製作客製功能.
 
 這邊節錄官方的幾個重要功能,以下幾個功能用手機或平板操作比較好
@@ -71,7 +71,7 @@ tags:
 
 http://www.youtube.com/watch?v=pENszKvvGEg
 
-##祕技：一秒加速
+## 祕技：一秒加速
 
 接下來來示範一秒加速
 

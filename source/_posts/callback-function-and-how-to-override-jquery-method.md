@@ -32,7 +32,7 @@ tags:
 	    }
 	}
 
-##override jQuery method
+## override jQuery method
 
 這邊順邊說明如何override jQuery的method,我們以html()這個method來看，[.html()說明](https://api.jquery.com/html/)
 

@@ -17,7 +17,7 @@ tags:
 
 ![Logo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/logo.png)
 
-##Git 簡介
+## Git 簡介
 是目前最被大家推崇的版本管控工具，特色是利用分散發布的管理方式主要在乎檔案的整體性是否有改變，不強調需要到將檔案上傳到主機端管理，而是強調各分散管理的節點都能做好本身的檔案控管，並能靈活地交換各段節點的版本，以此來達成分散管理的好處。
 
 與市面上市占率依舊頗高的SVN比較的整理如下:
@@ -26,23 +26,23 @@ tags:
 
 以下來源至[A Successful git branching model](http://nvie.com/posts/a-successful-git-branching-model/)所提供的畫面節錄出成功的Git管控下各版本的樣貌:
 
-###Over view
+### Over view
 
 ![success git model over view](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/success%20git%20model%20overview.png)
 
-###Decentralized managed
+### Decentralized managed
 ![success git model part](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/centr-decentr.png)
 
-###Main branches
+### Main branches
 ![success git model Main branches](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/bm002.png)
 
-###Merge without new feature
+### Merge without new feature
 ![success git model Feature branches](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/merge-without-ff.png)
 
-###Hotfix branches
+### Hotfix branches
 ![success git model Hotix branches](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/hotfix-branches1.png)
 
-##Git遠端的協議
+## Git遠端的協議
 
 - file://：
 	- 直接使用本機進行操作
@@ -53,7 +53,7 @@ tags:
 - http:// or https://：
 	- 最簡單的操作但速度是裡面最差的
 
-##Git基本指令
+## Git基本指令
 
 預設的Branch叫作master，而預設的Remote叫作Origin
 
@@ -84,10 +84,10 @@ tags:
 - Log查詢
 	- `git log`
 
-##Git Client安裝與工具
+## Git Client安裝與工具
 Git主體程式請至[Git官網](http://git-scm.com/)下載，除了使用cmd指令的方式來更新外，另外也有幾個不錯的工具介紹給大家
 
-###[Git for Windows](http://msysgit.github.io/)
+### [Git for Windows](http://msysgit.github.io/)
 
 ![gw1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/gw1.png)
 
@@ -95,14 +95,14 @@ Git主體程式請至[Git官網](http://git-scm.com/)下載，除了使用cmd指
 
 除了強化傳統的Git BASH操作外，另外加上提供簡單的Git GUI操作畫面，輕量但高效率的傳輸是Windows使用者一定要安裝的套件
 
-###[GitHub Windows](http://windows.github.com/) 與 [GitHub Mac](https://mac.github.com/)
+### [GitHub Windows](http://windows.github.com/) 與 [GitHub Mac](https://mac.github.com/)
 
 ![windows](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/screenshot-overview%402x.png)
 ![Mac](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/screenshot-overview-mac%402x.png)
 
 由 GitHub 官方開發的工具，提供給對 Git 沒有很了解的人用的，用簡潔與好上手的的 GUI 介面，對 Git 完全沒有概念的人來說較好上手。
 
-###[SourceTree](http://www.sourcetreeapp.com/)
+### [SourceTree](http://www.sourcetreeapp.com/)
 
 ![tree](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/sourcetree_hero_win_full_interface_windows.png)
 
@@ -112,7 +112,7 @@ Git主體程式請至[Git官網](http://git-scm.com/)下載，除了使用cmd指
 
 其他更多的GUI工具可以參考官方整理[GUI Clients](http://git-scm.com/downloads/guis)
 
-##GitHub 介紹
+## GitHub 介紹
 
 ![GitHub](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/github-logo.jpg)
 
@@ -120,14 +120,14 @@ GitHub是一個共享雲端主機服務，提供一個線上的Git Server讓你�
 
 ![Git fee](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/git%20fee.PNG)
 
-##使用EC2建立Git Server
-###AWS EC2 簡介
+## 使用EC2建立Git Server
+### AWS EC2 簡介
 AWS Elastic Compute Cloud簡稱為EC2，是Amazon一個提供雲端電腦的服務，它可以讓你去管理屬於你自己的主機並在上面做你平常對電腦做的任何事情，只是在主機架設在Amazon那邊放在雲端上使用。
 
-##使用Azure建立Git Server
-###Microsoft Azure 簡介
+## 使用Azure建立Git Server
+### Microsoft Azure 簡介
 
-##實戰Git
+## 實戰Git
 
 - git clone URL LOCAL #  取得程式碼
 - git checkout -b BRANCH #  開個自己用的branch
@@ -137,7 +137,7 @@ AWS Elastic Compute Cloud簡稱為EC2，是Amazon一個提供雲端電腦的服�
 - git commit  #  送出 commit
 - git log #  看一下 log 是否程式碼已經成功 commit
 
-##學習資源整理
+## 學習資源整理
 
 這邊幫大家整理了一些好上手的學習資源
 

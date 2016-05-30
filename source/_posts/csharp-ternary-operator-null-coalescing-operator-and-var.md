@@ -15,7 +15,7 @@ tags:
 
 <!-- More -->
 
-##c#的?:
+## c#的?:
 
 這是傳統的三元運算子(ternary operator)的使用方式，
 
@@ -29,7 +29,7 @@ tags:
 
 透過三元運算子我們可以簡化不少反鎖的if statement，這讓我們的程式碼更容易被閱讀。
 
-##C#的??
+## C#的??
 
 而??這是C# 2.0之後出來運算子，主要用在判別test!=null(null coalescing operator)的情況,
 
@@ -51,7 +51,7 @@ tags:
 
 這樣是不是減少很多if statement與ternary operator!
 
-##var的用法
+## var的用法
 
 另外，在C# 3.0 變數宣告可透過隱含型別的方式來做為宣告，隱含型別區域變數是強型別 (Strongly Typed)，就和自行宣告型別一樣，差別在於隱含型別是由編譯器 (Compiler) 判斷型別。
 

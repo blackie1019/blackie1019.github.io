@@ -15,7 +15,7 @@ tags:
 
 <!-- More -->
 
-##MS SQL定序
+## MS SQL定序
 
 SQL Server的定序預設設定視安裝類型而定。一般而言，預設會選擇Windows 系統地區設定的 SQL Server 定序，以台灣繁體中文來說是Chinese_Taiwan_Stroke_CI_AS，所有的定序可以看[官方說明](http://technet.microsoft.com/en-us/library/ms188046.aspx)
 
@@ -43,7 +43,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 	當半形字與全型自被視為相同(A跟Ａ)，那就是Width Insensitive(WI)，反之就是Width sensitive。
 
 
-##定序轉換流程
+## 定序轉換流程
 
 在開始流程前要先知道定序可分為三部分
 
@@ -66,7 +66,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 在瞭解完其實定序最小單位是Column之後，來做定序修改的實作，以下操作流城市已有實際資料的情況下你要如何做定序轉換的流程。
 
-###流程步驟如下：
+### 流程步驟如下：
 
 1. 先備份原先資料庫(bak檔案)
 
@@ -82,7 +82,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 7. 完成定序修改並備份目前資料庫  
 
-###會使用到的指令有以下幾個：
+### 會使用到的指令有以下幾個：
 
 1.查出所有設為Chinese_Taiwan_Stroke_CI_AS的欄位
 
@@ -189,7 +189,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 ![14](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/14.PNG)
 
 
-##定序結果驗證
+## 定序結果驗證
 
 依照流程處理完資料後請依序驗證Database, Table與 Column的定序設定(透過指令1與指令5)都正確後可直接下查詢去檢查，以下列圖組為例：
 

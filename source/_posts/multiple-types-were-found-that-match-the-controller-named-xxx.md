@@ -15,7 +15,7 @@ tags:
 
 <!-- More -->
 
-##前言
+## 前言
 
 在MVC的架構，當我們要註冊一個routing時我們通常會用以下方法註冊
 
@@ -29,7 +29,7 @@ tags:
 
 ![controller](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140219/controller.png)
 
-##How to fix it
+## How to fix it
 
 解決辦法有兩種，一種是設定單一Routing的Controller Namespace
 

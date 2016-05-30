@@ -16,9 +16,9 @@ tags:
 
 <!-- More -->
 
-##iOS:(PNG only)
+## iOS:(PNG only)
 
-###preloading
+### preloading
 
 - 320 × 480 (iphone3gs) Default~iphone.png
 - 640 × 960 (iPhone4) Default@2x~iphone.png
@@ -28,7 +28,7 @@ tags:
 - 2048 × 1496 (Retina iPad)  Default-Landscape@2x~ipad.png
 - 640 × 1136 (iPhone 5)  Default-568h@2x~iphone.png
 
-###icon
+### icon
 
 - 57×57 (default iPhone) icon.png
 - 114×114 (Retina iPhone) icon@2x.png
@@ -36,17 +36,17 @@ tags:
 - 144×144 (Retina iPad) icon-72@2x.png
 - 512×512 (app store) application144x144.png
 
-##Android:
+## Android:
 
-###preloading(none or by device screen)
-###icon
+### preloading(none or by device screen)
+### icon
 - ldpi should be 36 x 36
 - mdpi should be 48 x 48
 - hdpi should be 72 x 72
 - xhdpi should be 96 x 96
 - xxhdpi should be 144 x 144
 
-##icon slayer
+## icon slayer
 
 這是一個可以你只要上傳一張圖就可以幫你產生不同尺寸iOS&android icons的網站(含光影與圓角效果等調整)
 

@@ -60,7 +60,7 @@ tags:
 
 	![6](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/6.png)
 
-##補充說明
+## 補充說明
 
 提醒一下，如果有人在Task List看不到自己在註解所加入的代辦事項的要確認是不是在Task List有選對歐(Comments或User Tasks)
 

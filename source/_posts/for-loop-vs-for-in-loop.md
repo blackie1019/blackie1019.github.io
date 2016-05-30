@@ -14,7 +14,7 @@ tags:
 <!-- More -->
 
 ![Logo](http://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130905/1.png)
-##for loop 介紹
+## for loop 介紹
 
 引用[W3C school](http://www.w3schools.com/js/js_loop_for.asp)上的內容
 
@@ -48,7 +48,7 @@ Often this is the case when working with arrays:
 
 可以看到在讀出屬性時他的順序的確是按照key值去排序，而不是按照我們宣告的順序(properties本來宣告也就沒再分順序)，使用時要稍微注意一下
 
-##更有效的使用for loop
+## 更有效的使用for loop
 
 原始的迴圈版本
 
@@ -84,7 +84,7 @@ Often this is the case when working with arrays:
 
 而*改善二*跟*改善三*在我桌機上(i7 3770) 基本上秒數是一樣差不了太多，效能改善跟原本的相比*改善二*跟*改善三*大概差了1%左右
 
-##結語
+## 結語
 
 以自己開發上來說我會盡量作*改善三*，少部分情況我也會只做*改善一*而已(迴圈內數量不大且沒雙層迴圈的情況)
 

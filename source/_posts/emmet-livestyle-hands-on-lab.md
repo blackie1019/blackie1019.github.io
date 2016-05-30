@@ -16,7 +16,7 @@ tags:
 
 <!-- More -->
 
-##Emmet and Emmet LiveStyle
+## Emmet and Emmet LiveStyle
 
 Emmet是一個網業開發的Toolkit，前身叫做Zen Coding，可以快速的幫你建立Html與CSS文件，還不清楚或想了解更多的人可以先到[Emmet官網](http://docs.emmet.io/)看介紹影片。
 
@@ -31,7 +31,7 @@ Emmet是一個網業開發的Toolkit，前身叫做Zen Coding，可以快速的�
 - 創新的CSS patching
 - 安裝與使用方便，完全不用修改工作流程(只有簡化)
 
-##Setup
+## Setup
 
 1. 下載[SublimeText](http://www.sublimetext.com/)
 2. 安裝[Package Control](https://sublime.wbond.net/installation)
@@ -51,7 +51,7 @@ Emmet是一個網業開發的Toolkit，前身叫做Zen Coding，可以快速的�
 
 	![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/4.png)
 
-##Hands on
+## Hands on
 
 1. 打開另一個網頁
 2. 開啟Chorme developer tool 勾選Enable LiveStyle for current page
@@ -67,6 +67,6 @@ Emmet是一個網業開發的Toolkit，前身叫做Zen Coding，可以快速的�
 
 	![7](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/demo.gif)
 
-##結語
+## 結語
 
 有這套神奇之後以往麻煩的前端也面修改要一直切換Browser與編輯器的過程可以跟他說掰掰瞜，而SublimeText支援前端的能力有多強小弟就不多贅言，大家還是趕快來動手玩玩吧!
