@@ -6,18 +6,18 @@
     "version": "3.2.0"
   },
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "^2.0.8",
-    "gulp-cli": "^1.2.1",
-    "gulp-htmlclean": "^2.7.6",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-load-plugins": "^1.2.4",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-minify-html": "^1.0.6",
-    "gulp-rename": "^1.2.2",
-    "gulp-shell": "^0.5.2",
-    "gulp-uglify": "^1.5.3",
+    // "gulp": "^3.9.1",
+    // "gulp-clean": "^0.3.2",
+    // "gulp-clean-css": "^2.0.8",
+    // "gulp-cli": "^1.2.1",
+    // "gulp-htmlclean": "^2.7.6",
+    // "gulp-htmlmin": "^2.0.0",
+    // "gulp-load-plugins": "^1.2.4",
+    // "gulp-minify-css": "^1.2.4",
+    // "gulp-minify-html": "^1.0.6",
+    // "gulp-rename": "^1.2.2",
+    // "gulp-shell": "^0.5.2",
+    // "gulp-uglify": "^1.5.3",
     "hexo": "^3.2.0",
     "hexo-deployer-git": "^0.1.0",
     "hexo-generator-archive": "^0.1.4",
@@ -32,13 +32,5 @@
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0"
-  },
-  "description": "> Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.",
-  "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
