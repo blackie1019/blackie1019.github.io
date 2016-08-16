@@ -3,7 +3,7 @@ node_js:
 - '0.12'
 branches:
   only:
-  - hexo
+  - Hexo_Source
 before_install:
 - npm install -g hexo-cli
 install:
