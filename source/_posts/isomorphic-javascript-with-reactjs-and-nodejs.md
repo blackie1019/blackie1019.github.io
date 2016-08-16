@@ -5,9 +5,16 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2016-07-23 22:47:48
-catagory:JavaScript, Web Application
-tags:JavaScript, NodeJS, Express, ReactJS, isomorphic
+date: 2016-08-16 22:47:48
+catagory:
+- JavaScript
+- Web Application
+tags:
+- JavaScript
+- NodeJS
+- Express
+- ReactJS
+- isomorphic
 ---
 
 #Isomorphic Javascript with ReactJS and NodeJS
