@@ -21,6 +21,8 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 
 <!-- More -->
 
+![header-img](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/building-isomorphic-javascript-apps-ndc-2015-12-638.jpg)
+
 > 
 Isomorphic JavaScript apps are JavaScript applications that can run both client-side and server-side.
 The backend and frontend share the same code.
