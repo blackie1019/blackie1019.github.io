@@ -14,9 +14,8 @@ script:
 after_success:
 - git config --global user.name "Blackie Tsai"
 - git config --global user.email "blackie1019@gmail.com"
-- sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
-  _config.yml
+- sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml _config.yml
 - hexo deploy
 env:
   global:
-    secure: daOZPAOJNOiozFOzXfRE2A+j641CDOxzo3vhlK2y7wP+QnGkKXzM0CvLjpGI4Xr9YveTyPHLujtfG51QhV4MplBWsQQdmjKqzefdwGwfl4w0Rx4pv9S1DfP64nyZXGMTF/D0eLi6mUi+tzNKEkhKVFy4cqTI8C5HFO8IrCB2Za6h/x/U9Mwpe2v/MEGk7ZW9uIOMPQ4KAP6/iMTMU3UYsR2d2OwN3tUk1vm5KLMuEO5rHEAdlAeHFkPXHno9D9ys4yMxvXsmJVOD7BTzQksxHF/T5qcZj1CMmog8oHkLlqh1S3DibCbOfsfj+UorlDzMGkMWyU2mWiR1UOhMBbJ0afx/w7IAZhp8xcQlnWjjbtMLweUcYRo4qmNOqUHSYneXWrOazsbiXoYGa46DEOfw2xp34pYyBwkxJPM/fX0kVjL4wyk3LoGCx+oJZmntSPEflP5oAC1jw5AMfpdQoxdlLc/kFaVRuOLtKZM0hd+wDbUnWqvyfB591VeGXN/IvWw0J5NX0J+7PARqKtq57zKJRwCkmT0eilhKKF5YMk7QyP0veNPgRtrloSEhiwTvruYDNUuSHL9Hlo1F2b17g2jQPROXfKpwlsItS/XHVjbnRn7Qn2IZ85xQSlkbK4Yd+C4J/b5FHy/qK7oHCmknEPWw7nsAMMgOggG+FyH4ZruK//c=
+    secure: LQD7RChdoD02jaxRnt62/QpKPsTJzoyEggHaOoVMQkpqFOTQKkxP+E8EjOh9RV+LO5IzW4NaCtPpShMwj9Fbm88bhLKB5+2nnUf/trgVbtOgQseIXhh4/V4Aau0uqvMSRx294JZbp9A/LBm/M7JeZvR/yHnikw5JairOGs9wAt/3U9Wdz21DWWg1roWJtWK28ftVKSy7zfTaE8DiOCEFkgGBuV/JYdPBbJSrSmismlqH8EUv6PIfI2HDz+iyGTmkBXVTJYbslBuYwC5XnhVx2cUMG4JdiyljxTFl0BIE7su64i/MJA3O+ldl6n6Plb3VzlAG/k8pgn3NHBS2u5slSKuR3D4SHVS1mTJOI31RtAB72JLRdW/LHDX8VfZ9VTOCYKAaBqbxhC+rBs/oOa7SmHqJZcvr4MUZIObMggfBSxHGB4auAgM0ptJWHCu7iPEvxpE7WCKf28HQmT/b+ZXA/6IgGCuyBBZsVXqbf4YkGterYdQRg4GB5z9J1FQJUOovckW+rn5qUxROQsD9C+DQ58JwksM3fJDMSjyKDD+Nm+qNWFl9Ci70Ic0oFS3hp7XIYOjwkCZ6Rap/5bONeY8LvE58FQklIGO2ZAqUbT0m4tchCI/tpo8Hzr3zhbV/6qdNhqYaGcTId70k5YWovtTp4gMukrzDnY/Rbdqjx5n9RY4=
