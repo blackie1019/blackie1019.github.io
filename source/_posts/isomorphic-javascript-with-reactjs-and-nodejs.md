@@ -517,7 +517,7 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 
 使用同一個開發語言做到跨類型的應用程式開發也是Universal JavaScript的核心精神。
 
-不同於Isomorphi JavaScriptc所強調網頁開發前後端的<em>共構部分</em>可以抽出來被重複使用，Universal JavaScript希望除了網頁應用程式之外，手機或是桌面應用程式是否也可以應用同一個語言做開發，減少跨語言的障礙並且加速開發。
+不同於Isomorphic JavaScript所強調網頁開發前後端的<em>共構部分</em>可以抽出來被重複使用，Universal JavaScript希望除了網頁應用程式之外，手機或是桌面應用程式是否也可以應用同一個語言做開發，減少跨語言的障礙並且加速開發。
 
 而JavaScript也同時能達到這兩個架構與精神，有興趣的朋友除了瞭解本篇的NodeJS與ReactJS外以下提供不同情境的整理了幾個Framework可以參考:
 
