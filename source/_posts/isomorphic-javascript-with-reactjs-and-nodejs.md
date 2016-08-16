@@ -43,7 +43,7 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 - CSS
 - JavaScript
 
-如果是動態網頁需要一些資料處理的能力大就需要再結合後端的程式來幫我們，所以原本的架構就會在疊加一個後段的語言(C# or Java or PHP or Ruby or Python or Go..etc)。但如果稍微大型的網頁應用程式在開發上多少都會使用網頁框架來加速與統一開發，如Xuenn使用的.Net MVC或Web form，而這樣又帶入了一個頁面語言Razer或是Web page, 結果則是變成下面
+如果是動態網頁需要一些資料處理的能力大就需要再結合後端的程式來幫我們，所以原本的架構就會疊加一個後端的語言(C# or Java or PHP or Ruby or Python or Go..etc)。但如果稍微大型的網頁應用程式在開發上多少都會使用網頁框架來加速與統一開發，如Xuenn使用的.Net MVC或Web form，而這樣又帶入了一個頁面語言Razer或是Web page, 結果則是變成下面
 
 ![front-end](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/Front-end.png)
 
@@ -525,6 +525,7 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 - [React Native](https://facebook.github.io/react-native/)
 	- Learn once, write Web and mobile apps with React
 	- Built on React Native: Facebook(iOS, Android), Facebook Ads Manager(iOS, Android), QQ(Android), CBS Sports Franchise Football(Android)...etc
+
 ### For Disktop Application(Windows, Mac, Linux) ###
 - [Electron](http://electron.atom.io/)
 	- Ship more with less code, Build apps for any device, Integrate technologies you already use
