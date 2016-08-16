@@ -21,8 +21,6 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 
 <!-- More -->
 
-#Isomorphic Javascript with ReactJS and NodeJS
-
 > 
 Isomorphic JavaScript apps are JavaScript applications that can run both client-side and server-side.
 The backend and frontend share the same code.
@@ -35,7 +33,7 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 
 使用這樣架構最有名的案例則是[Airbnb](http://www.slideshare.net/spikebrehm/the-evolution-of-airbnbs-frontend/56)本身的產品。
 
-##How to make a web application
+## How to make a web application ##
 
 在看開始新的架構時我們先回頭看一下一個網頁應用程式不能或缺的三元素為:
 
@@ -55,9 +53,9 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 
 接下來我們就從架構到實作一步一步的應用NodeJS與ReactJS來幫我們做出第一個Isomorphic web application.
 
-##Technical Overview
+## Technical Overview ##
 
-###ReactJS
+### ReactJS ###
 
 ReactJS是Facebook打造的framework，專注於解決view的問題，透過Virtual DOM 與單一流向的方式來加速與減少前端開發的問題。以往我們所知用更改一個DOM的Element來呈現畫面改變的這個方法在大型頻繁更新的網站上面是非常可怕的效能瓶頸。可以看到的是ReactJS要解決的是Web開發上面UI呈現的問題，隨者網頁功能越多與越多人互相使用與交流，FB遇到越來越多需要在同一個頁面即時更新的情況，ReactJS就是因此而誕生的一個Framework．
 
@@ -73,11 +71,11 @@ React是一個以JavaScript為主打照的語言，而這也產生一種為JSX�
 
 *提醒一下JSX只是一種選項，並非開發ReactJS一定要用JSX。*
 
-###NodeJS
+### NodeJS ###
 
 NodeJS本身透過HTTP模組已經可以簡單地去做網頁相關處理，但對於一個較為複雜的網站還是會建議額外加裝網頁應用程式模組，減少重複的開發。這邊我們使用NodeJS上面最常使用的Express作為我們的開發的框架，幫我們架設起第一個NodeJS網站。 如果考慮使用ES6/7，也推薦KOA這個框架。
 
-###Express-react-views
+### Express-react-views ###
 
 Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特點是語法非常的優雅，這是優點同時也是缺點。因為學習曲線較陡（跟HTML差挺多的），而且難以與其他人（像只懂HTML的設計人員）溝通。所以很多人喜歡把Jade換成更接近HTML的模版引擎，這邊我們會改用React來統一所有跟View相關的使用。
 
@@ -85,7 +83,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 沒錯，減少Server Side還要學習Jade語言而直接使用React，這也我們其中一個Isomorphic的地方。
 
-### Webpack
+### Webpack ###
 
 ![webpack](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/webpack-module-bundler.png)
 
@@ -98,7 +96,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 - 整合豐富的 loader 可以使用
 - 整合grunt, gulp, bower, karma等前端套件工具
 
-### Babel
+### Babel ###
 
 ![babel](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/babel.png)
 
@@ -106,7 +104,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 這就是Babel主要的使命，而這邊我們使用它來幫我們達到前端開發模組化的功能，因為NodeJS本身已經有模組化的架構了，但ReactJS則需要透過外部套件來幫助它做到這點。而它所帶來的ECMA6的語言特性與其他好處不在此篇多做說明。
 
-##Play by Steps
+## Play by Steps ##
 
 在開始前我們先簡單的描述一下我們要做出來的成品所需要符合的需求,
 
@@ -114,14 +112,14 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 - 前端:頁面顯示時間變化
 - 兩者時間格式必須相同
 
-####懶人DEMO
+### 懶人DEMO ###
 
 1. - 複製程式庫 :** *https://github.com/blackie1019/Isomorphic-JavaScript-Example.git***
 2. - 安裝套件 : ***npm install***
 3. - 啟動node : ***npm start***
 4. - 打開瀏覽器瀏覽 : ***http://localhost:9527***
 
-###Setup教學
+### Setup教學 ###
 
 ***以下指令如果在Windows環境下操作，建議執行在Git BASH上面，避免Windows不支援***
 
@@ -138,11 +136,11 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 ![package.json](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/packagejson.png)
 
 
-####一鍵安裝指令如下
+#### 一鍵安裝指令如下 ####
 
 	$ npm install --save express-react-views react react-dom express
 
-####或是我們一步步解說:
+#### 或是我們一步步解說: ####
 
 接著用NPM來安裝Express模組(安裝 Node 模組時，如果指定了 --save 選項，則會將這些模組新增至 package.json 檔中的 dependencies 清單。之後，當您在該目錄中執行 npm install 時，就會自動安裝相依關係清單中的模組)。
 
@@ -277,7 +275,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 到這邊，我們已經從無到有的建立了專案的底層，接下來就讓我們來開發這次的需求吧
 
-###Backend
+### Backend ###
 
 這邊只有一個需求是將目前的時間顯示到html的title裡面，這邊我們會使用javascripts目錄裡面的date-helper.js來幫我們。
 
@@ -331,7 +329,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 ![title](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/title.png)
 
-###Frontend
+### Frontend ###
 
 這邊我們同樣將date-helper.js載入後在demo.jsx頁面上顯示我們的時間，內容如下:
 
@@ -366,7 +364,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 主要是因為模組化是NodeJS預先就有支援的架構，但ReactJS如果要支援這樣的架構需要透過其他方式達成。這邊示範用Webpack來達成。
 
-### 加入Webpack與Babel
+### 加入Webpack與Babel ###
 
 安装 Webpack：
 	
@@ -456,7 +454,7 @@ entry.js則是我們希望webpack載入的入口，這邊我們可以開始加�
 	
 	 module.exports = IndexView;
 
-### Updated On The Fly 
+### Updated On The Fly ###
 
 這次我們要加入ReactJs的更新事件，讓時間動態在頁面更新。內容如下:
 
@@ -509,11 +507,11 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 
 ![update start](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/packagejson3.png)
 
-###End
+### End ###
 
 過程當中我們只運用了兩種語言HTML+JavaScript幫我們完成所有的功能，而其中我們學習如何使用Express與ReactJS這兩個框架以及運用統一的模組化方法Webpack+Babel協助我們開發，而這些都只專注在使用一種語言 - JavaScript。
 
-##Isomorphic JavaScript VS Universal JavaScript
+## Isomorphic JavaScript VS Universal JavaScript ##
 
 使用同一個開發語言做到跨類型的應用程式開發也是Universal JavaScript的核心精神。
 
@@ -521,11 +519,11 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 
 而JavaScript也同時能達到這兩個架構與精神，有興趣的朋友除了瞭解本篇的NodeJS與ReactJS外以下提供不同情境的整理了幾個Framework可以參考:
 
-###For Mobile Application(Android, iOS)
+### For Mobile Application(Android, iOS) ###
 - [React Native](https://facebook.github.io/react-native/)
 	- Learn once, write Web and mobile apps with React
 	- Built on React Native: Facebook(iOS, Android), Facebook Ads Manager(iOS, Android), QQ(Android), CBS Sports Franchise Football(Android)...etc
-###For Disktop Application(Windows, Mac, Linux)
+### For Disktop Application(Windows, Mac, Linux) ###
 - [Electron](http://electron.atom.io/)
 	- Ship more with less code, Build apps for any device, Integrate technologies you already use
 	- Built on Electron: Atom, Slack, VS Code, Kitematic, Postman...etc 
@@ -538,7 +536,7 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 
 想一步步把ReactJS學好的朋友可以關注[從零開始學 ReactJS（ReactJS 101）](https://kdchang.gitbooks.io/react101/)，作者群之後會陸續從開發環境到開發流程都一步步地帶你學習。
 
-##Next Steps
+## Next Steps ##
 
 ![gohome](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/go%20home.jpg)
 
@@ -552,7 +550,7 @@ Isomorphic JavaScript的架構則沿用了這樣的精神幫我們整合前後�
 
 Isomorphic 一直是 Node.js 開發者的夢想，如果有一個全新的專案需要做網頁應用程式且希望用JavaScript當作主要的開發語言的話不妨就試試看這樣的架構吧!
 
-##Reference
+## Reference ##
 
 - [Airbnb: Isomorphic JavaScript: The Future of Web Apps](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)
 - [How to Implement Node + React Isomorphic JavaScript & Why it Matters](https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters/)
