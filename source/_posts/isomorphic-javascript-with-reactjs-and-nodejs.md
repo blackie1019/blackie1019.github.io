@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2016-08-16 22:47:48
+date: 2016-08-16 00:29:45
 catagory:
 - JavaScript
 - Web Application
@@ -16,6 +16,10 @@ tags:
 - ReactJS
 - isomorphic
 ---
+
+Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限制與挑戰下我們會遇到無法重用我們既有的經驗與能力。但如果有機會讓我們再選一次，我們一定會先問有可以參考或是重用的嗎? Isomorphic正是強調這樣精神的一個架構
+
+<!-- More -->
 
 #Isomorphic Javascript with ReactJS and NodeJS
 
