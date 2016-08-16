@@ -1,3 +1,22 @@
+language: node_js
+node_js:
+- '0.12'
+branches:
+  only:
+  - hexo
+before_install:
+- npm install -g hexo-cli
+install:
+- npm install
+script:
+- hexo clean
+- hexo generate
+after_success:
+- git config --global user.name "Blackie Tsai"
+- git config --global user.email "blackie1019@gmail.com"
+- sed -i'' "/^ *repo/s~github\.com~${777a542d7c7d8aa94300c78c7945dd9ba91ee470}@github.com~"
+  _config.yml
+- hexo deploy
 env:
   global:
-    secure: G0h+vV9a+gh44Z+ZAnsai8mCgkS6Av8br1kzBIUqtt4fF39mQdVwt9AOhNc7wKEz5HPNrpFPsBEvzWSn0RrCj/0UNiz5kcKUPXy0m06VdjVf70z6dssOTfmjHNWlTgX3UWD1+IoWvdRAcMvCjnckU3pHEDzvvvd88MlTk1MmAa7mn2imOpSBSZk0DwjFgYYvQeiNIn5IHTIrddBYlVCZE76tWgzi/vFVG2Oa5CyCp6cYL7jBQEaKfoPcc1e1gAjuw2jZOenYrQXB2BLt4UyHWV/yi23MHSY+9SvGFDgmG1SkWRT4vFJso/OVw6/vKg94tIKiOtxdhpNuNJ8JvN+DEYqu1rWXhmL0dXcnRRLd+NpGef0YNNU1bCQgDEm9lfBLkuF4Vg3wRtkbeyIy1J3EKmFSgveWkqMBzmVKJZ/h3+KHCcIkQrnaBU2irmimIsOh0kzd8iegbTTcz8Zcb7a705ty78FsZ6V7dC+uina+LQRyC3DNG4hn23DXnBDJeBzEqPAK8oEjRIyBUI+g8NvDvpjqu1cJjwQgWpqzAbLyAz8w5znESGfHOgUM/y3+v5fgu4QgAracBL5bktmyVW2WPgunrjhueOGjWmKv/HOgB4uUa3jQH94QHu5bINZQQLErPryfGfkaxPJmI/9/psqy2a/C8J8VI/QEAtEZt6Zses0=
+    secure: daOZPAOJNOiozFOzXfRE2A+j641CDOxzo3vhlK2y7wP+QnGkKXzM0CvLjpGI4Xr9YveTyPHLujtfG51QhV4MplBWsQQdmjKqzefdwGwfl4w0Rx4pv9S1DfP64nyZXGMTF/D0eLi6mUi+tzNKEkhKVFy4cqTI8C5HFO8IrCB2Za6h/x/U9Mwpe2v/MEGk7ZW9uIOMPQ4KAP6/iMTMU3UYsR2d2OwN3tUk1vm5KLMuEO5rHEAdlAeHFkPXHno9D9ys4yMxvXsmJVOD7BTzQksxHF/T5qcZj1CMmog8oHkLlqh1S3DibCbOfsfj+UorlDzMGkMWyU2mWiR1UOhMBbJ0afx/w7IAZhp8xcQlnWjjbtMLweUcYRo4qmNOqUHSYneXWrOazsbiXoYGa46DEOfw2xp34pYyBwkxJPM/fX0kVjL4wyk3LoGCx+oJZmntSPEflP5oAC1jw5AMfpdQoxdlLc/kFaVRuOLtKZM0hd+wDbUnWqvyfB591VeGXN/IvWw0J5NX0J+7PARqKtq57zKJRwCkmT0eilhKKF5YMk7QyP0veNPgRtrloSEhiwTvruYDNUuSHL9Hlo1F2b17g2jQPROXfKpwlsItS/XHVjbnRn7Qn2IZ85xQSlkbK4Yd+C4J/b5FHy/qK7oHCmknEPWw7nsAMMgOggG+FyH4ZruK//c=
