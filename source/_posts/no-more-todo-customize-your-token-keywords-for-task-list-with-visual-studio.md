@@ -5,8 +5,8 @@ subtitle: ""
 date: 2013-12-19 00:29:45
 author: Blackie
 header-img: ""
-catagory:
-- Development
+categories:
+- Development&Coding
 tags:
 - Visual Studio
 ---

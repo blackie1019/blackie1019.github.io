@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-04-14 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - JavaScript
 tags:
 - Youtube API

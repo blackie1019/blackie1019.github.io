@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-12-31 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Testing
 tags:
 - Load Testing

@@ -5,8 +5,8 @@ subtitle: ""
 date: 2015-11-06 00:29:45
 author: Blackie
 header-img: ""
-catagory:
-- SourceCode Control
+categories:
+- Source Control
 tags:
 - Git
 - GitLab

@@ -5,7 +5,7 @@ subtitle: ""
 date: 2013-10-23 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Asp.Net
 tags:
 - Web MVC/WebApi

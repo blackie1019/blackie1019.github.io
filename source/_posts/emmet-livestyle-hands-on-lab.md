@@ -5,8 +5,8 @@ subtitle: ""
 date: 2014-08-03 00:29:45
 author: Blackie
 header-img: ""
-catagory:
-- Development
+categories:
+- Development&Coding
 tags:
 - Emmet
 - SublimeText

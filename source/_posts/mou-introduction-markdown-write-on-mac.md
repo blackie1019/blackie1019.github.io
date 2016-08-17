@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-11-14 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Tool
 tags:
 - MarkDown

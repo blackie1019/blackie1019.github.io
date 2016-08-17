@@ -5,7 +5,7 @@ subtitle: ""
 date: {{ date }}
 author: Blackie
 header-img: ""
-catagory:
+categories:
 tags:
 sitemap: true
 ---

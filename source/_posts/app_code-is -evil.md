@@ -5,7 +5,7 @@ subtitle: ""
 date: 2013-12-15 00:29:45
 author: Blackie
 header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131213/app_code.png"
-catagory:
+categories:
 - Asp.Net
 tags:
 - Web MVC/WebApi

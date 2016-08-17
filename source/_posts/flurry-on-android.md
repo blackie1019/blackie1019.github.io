@@ -5,7 +5,7 @@ subtitle: ""
 date: 2013-08-28 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Mobile
 tags:
 - Phonegap

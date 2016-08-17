@@ -5,8 +5,8 @@ subtitle: ""
 date: 2014-07-02 00:29:45
 author: Blackie
 header-img: ""
-catagory:
-- SourceCode Control
+categories:
+- Source Control
 tags:
 - Git
 ---

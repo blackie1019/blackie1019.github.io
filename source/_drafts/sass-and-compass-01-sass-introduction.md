@@ -5,7 +5,7 @@ subtitle: ""
 date: 2015-01-09 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - CSS
 tags: 
 - SASS

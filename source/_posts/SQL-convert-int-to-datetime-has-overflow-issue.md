@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SQL-convert-int-to-datetime-has-overflow-issue
+title: SQL convert int to datetime overflow issue
 subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
 date: 2013-08-26 14:56:37
-catagory:
+categories:
 - Database
 tags:
 - MSSQL

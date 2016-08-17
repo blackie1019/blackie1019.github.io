@@ -5,11 +5,11 @@ subtitle: ""
 date: 2013-12-27 00:29:45
 author: Blackie
 header-img: ""
-catagory:
-- Development
+categories:
+- Development&Coding
 tags:
 - Visual Studio
-- Nodejs
+- NodeJS
 ---
 
 NTVS是微軟上個月底新發行的一個VS tool，幫助開發者使用地表最強IDE工具開發NodeJS!除了支援可以一般的程式撰寫它還支援Intellisense, Profiling, npm，另外他在Debugging方面還支援 locally and remotely (Windows/MacOS/Linux)，最棒的是他整合了Azure Web Sites 與 Cloud Service.

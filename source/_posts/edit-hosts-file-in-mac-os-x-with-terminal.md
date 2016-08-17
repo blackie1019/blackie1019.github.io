@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-01-18 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Linux
 tags:
 - OSX

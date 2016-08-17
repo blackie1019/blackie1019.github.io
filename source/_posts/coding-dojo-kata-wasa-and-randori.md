@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-11-14 00:29:45
 author: Blackie
 header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/01.png"
-catagory:
+categories:
 - Development&Coding
 tags:
 - Scrum

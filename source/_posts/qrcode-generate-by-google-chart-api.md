@@ -5,7 +5,7 @@ subtitle: ""
 date: 2013-09-27 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - JavaScript
 tags:
 - Google Chart API

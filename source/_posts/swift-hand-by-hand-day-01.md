@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-07-23 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Mobile
 tags:
 - Swift

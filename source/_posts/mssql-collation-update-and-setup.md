@@ -5,7 +5,7 @@ subtitle: ""
 date: 2014-07-13 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Database
 tags:
 - MSSQL

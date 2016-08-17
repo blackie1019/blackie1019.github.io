@@ -5,7 +5,7 @@ subtitle: ""
 date: 2013-09-05 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - JavaScript
 tags:
 - Basic JS

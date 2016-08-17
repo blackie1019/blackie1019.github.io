@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Isomorphic Javascript with ReactJS and NodeJS
+title: Isomorphic Javascript with React and NodeJS
 subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
 date: 2016-08-16 00:29:45
-catagory:
+categories:
 - JavaScript
-- Web Application
+- Web Development
 tags:
-- JavaScript
 - NodeJS
-- Express
-- ReactJS
+- React
 - isomorphic
 ---
 

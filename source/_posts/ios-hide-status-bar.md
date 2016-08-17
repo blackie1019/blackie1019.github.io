@@ -5,7 +5,7 @@ subtitle: ""
 date: 2013-11-03 00:29:45
 author: Blackie
 header-img: ""
-catagory:
+categories:
 - Mobile
 tags:
 - iOS
