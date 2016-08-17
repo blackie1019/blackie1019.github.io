@@ -382,6 +382,7 @@ vendors:
 css: css
 js: js
 images: images
+bundle: bundle
 
 # Theme version
 version: 5.0.1

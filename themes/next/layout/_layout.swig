@@ -55,15 +55,12 @@
     </div>
   </div>
 
-  {% include '_scripts/vendors.swig' %}
-  {% include '_scripts/commons.swig' %}
+  <script type="text/javascript" src="{{ url_for('bundle') }}/all.min.js?v={{ theme.version }}"></script>
 
   {% set scheme_script = '_scripts/schemes/' + theme.scheme | lower + '.swig' %}
   {% include scheme_script %}
 
   {% block script_extra %}{% endblock %}
-
-  {% include '_scripts/boostrap.swig' %}
 
   {% include '_scripts/third-party/comments.swig' %}
   {% include '_scripts/third-party/tinysou.swig' %}

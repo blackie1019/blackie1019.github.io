@@ -129,9 +129,9 @@ hfc_html:
   exclude: 
 
 hfc_css:
-enable: true
-exclude: 
-  - '*.min.css'
+  enable: true
+  exclude: 
+    - '*.min.css'
 
 hfc_js:
   enable: true
