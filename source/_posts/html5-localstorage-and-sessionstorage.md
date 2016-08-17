@@ -7,9 +7,9 @@ header-img: ''
 sitemap: true
 date: 2013-07-17 15:25:21
 categories:
-- Web Development
-tags:
 - HTML5
+tags:
+- Web Storage
 ---
 
 HTML5新增了一些client資料儲存的功能，localStorage與sessionStorage，這邊將講解一下如何使用正確的使用他們。

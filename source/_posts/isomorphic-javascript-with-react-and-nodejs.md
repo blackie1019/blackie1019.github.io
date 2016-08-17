@@ -8,7 +8,6 @@ sitemap: true
 date: 2016-08-16 00:29:45
 categories:
 - JavaScript
-- Web Development
 tags:
 - NodeJS
 - React

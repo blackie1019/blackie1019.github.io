@@ -8,7 +8,7 @@ header-img: ""
 categories:
 - JavaScript
 tags:
-- Youtube API
+- API
 ---
 
 今天被一個朋友問起如何控制embed的YouTube影片，讓他可以自動撥放也可以在播放完後讓另外一個embed的影片也播放。
