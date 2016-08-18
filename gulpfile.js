@@ -83,13 +83,20 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest(bundle_css));
 })
 
-gulp.task('concat-css', function() {
+gulp.task('concat-essential-css', function() {
+    return gulp.src([
+            bundle_css + '/main.css'
+        ])
+        .pipe(concat('essential.css'))
+        .pipe(gulp.dest(bundle_dir));
+});
+
+gulp.task('concat-advance-css', function() {
     return gulp.src([
             bundle_css + '/jquery.fancybox.css',
             bundle_css + '/font-awesome.min.css',
-            bundle_css + '/main.css'
         ])
-        .pipe(concat('all.min.css'))
+        .pipe(concat('advance.css'))
         .pipe(gulp.dest(bundle_dir));
 });
 
@@ -98,5 +105,5 @@ gulp.task('finish-task', function() {
 });
 
 gulp.task('default', function() {
-    runSequence('clean', ['copy-js', 'copy-css','copy-font-awesome'], ['minify-js', 'minify-css'], ['concat-js', 'concat-css'],'finish-task');
+    runSequence('clean', ['copy-js', 'copy-css','copy-font-awesome'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
 });
