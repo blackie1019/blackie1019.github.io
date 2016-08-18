@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "del": "^2.2.2",
+    "fg-loadcss": "^1.2.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.0",

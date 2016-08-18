@@ -158,8 +158,8 @@ hfc_img:
   svgo: true
 
 hfc_favicons:
-  enable: true
-  src: img/logo.png
+  enable: false
+  src: 
   target: img/
   icons:
     android: true

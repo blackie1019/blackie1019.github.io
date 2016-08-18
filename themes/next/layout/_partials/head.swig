@@ -23,11 +23,6 @@
 {% endif %}
 
 
-<link href="{{ url_for('bundle') }}/all.min.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
-
-
-{% include "./head/external-fonts.swig" %}
-
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}
@@ -42,11 +37,6 @@
 {% endif %}
 {% if theme.rss %}
   <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ config.title }}" type="application/atom+xml" />
-{% endif %}
-
-
-{% if theme.favicon %}
-  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
 {% endif %}
 
 
@@ -65,6 +55,15 @@
   })
 }}
 
+{% include '../_scripts/third-party/loadCSS.swig' %}
+
+<link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="{{ url_for('bundle') }}/essential.css?v={{ theme.version }}" type="text/css" />
+<link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ url_for('bundle') }}/advance.css?v={{ theme.version }}" type="text/css" />
+<noscript><link rel="stylesheet" href="{{ url_for('bundle') }}/all.min.css?v={{ theme.version }}"></noscript>
+
+{% if theme.favicon %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for(theme.favicon) }}?v={{ theme.version }}" />
+{% endif %}
 
 {# Export some HEXO Configurations to Front-End #}
 <script type="text/javascript" id="hexo.configuration">

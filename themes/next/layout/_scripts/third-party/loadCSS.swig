@@ -1,0 +1,6 @@
+<script>
+// jscompress from fg-loadCSS
+
+!function(a){"use strict";var b=function(b,c,d){function j(a){return e.body?a():void setTimeout(function(){j(a)})}function l(){f.addEventListener&&f.removeEventListener("load",l),f.media=d||"all"}var g,e=a.document,f=e.createElement("link");if(c)g=c;else{var h=(e.body||e.getElementsByTagName("head")[0]).childNodes;g=h[h.length-1]}var i=e.styleSheets;f.rel="stylesheet",f.href=b,f.media="only x",j(function(){g.parentNode.insertBefore(f,c?g:g.nextSibling)});var k=function(a){for(var b=f.href,c=i.length;c--;)if(i[c].href===b)return a();setTimeout(function(){k(a)})};return f.addEventListener&&f.addEventListener("load",l),f.onloadcssdefined=k,k(l),f};if("undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b,a.loadCSS){var c=b.relpreload={};if(c.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(a){return!1}},c.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d),d.rel=null)}},!c.support()){c.poly();var d=a.setInterval(c.poly,300);a.addEventListener&&a.addEventListener("load",function(){a.clearInterval(d)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(d)})}}}("undefined"!=typeof global?global:this);
+
+</script>
