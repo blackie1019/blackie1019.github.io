@@ -52,12 +52,3 @@
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
 {% endblock %}
-
-
-{% block script_extra %}
-  {% if theme.use_motion %}
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  {% endif %}
-{% endblock %}

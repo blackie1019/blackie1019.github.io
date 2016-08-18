@@ -55,7 +55,7 @@
   })
 }}
 
-{% include '../_scripts/third-party/loadCSS.swig' %}
+{% include '../_scripts/loadCSS.swig' %}
 
 <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="{{ url_for('bundle') }}/essential.css?v={{ theme.version }}" type="text/css" />
 <link rel="preload" as="style" onload="this.rel='stylesheet'" href="{{ url_for('bundle') }}/advance.css?v={{ theme.version }}" type="text/css" />

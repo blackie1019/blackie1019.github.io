@@ -1,0 +1,1 @@
+$('.archive-year').velocity('transition.slideLeftIn');

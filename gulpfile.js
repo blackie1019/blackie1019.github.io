@@ -27,7 +27,9 @@ gulp.task('copy-js', function() {
              public_dir + '/js/src/motion.js',
              public_dir + '/js/src/bootstrap.js',
              public_dir + '/js/src/scrollspy.js',
-             public_dir + '/js/src/post-details.js'
+             public_dir + '/js/src/post-details.js',
+             public_dir + '/js/src/swig/localsearch.js',
+             public_dir + '/js/src/swig/achive-year.js'
 
         ])
         .pipe(gulp.dest(bundle_js));
@@ -52,6 +54,8 @@ gulp.task('concat-js', function() {
              bundle_js + '/bootstrap.js',
              bundle_js + '/scrollspy.js',
              bundle_js + '/post-details.js',
+             bundle_js + '/localsearch.js',
+             bundle_js + '/achive-year.js'
 
         ])
         .pipe(concat('all.min.js'))

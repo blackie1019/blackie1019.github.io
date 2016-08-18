@@ -55,7 +55,14 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="{{ url_for('bundle') }}/all.min.js?v={{ theme.version }}"></script>
+  <script>
+  var config = {
+    search_path : "{{ config.search.path }}",
+    root : "{{ config.root }}"
+  };
+  </script>
+
+  {% include '_scripts/loadJS.swig' %}
 
   {% set scheme_script = '_scripts/schemes/' + theme.scheme | lower + '.swig' %}
   {% include scheme_script %}
@@ -64,7 +71,6 @@
 
   {% include '_scripts/third-party/comments.swig' %}
   {% include '_scripts/third-party/tinysou.swig' %}
-  {% include '_scripts/third-party/localsearch.swig' %}
   {% include '_scripts/third-party/mathjax.swig' %}
   {% include '_scripts/third-party/lean-analytics.swig' %}
   {% include '_scripts/baidu-push.swig' %}
