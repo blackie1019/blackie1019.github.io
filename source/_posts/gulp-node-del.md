@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NodeJS del - sDelete Files and Folder
+title: 'NodeJS del - sDelete Files and Folder'
 subtitle: 'Using NodeJS del module to help we delete directory/files on Gulp'
 author: Blackie
 header-img: ''
