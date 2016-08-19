@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Gulp run-sequence - Run a Series of Dependent Gulp Tasks in Order
+title: 'Gulp run-sequence - Run a Series of Dependent Gulp Tasks in Order'
 subtitle: 'This function is designed to solve the situation where you have defined run-order'
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2016-08-19 10:00:00
+date: 2016-08-19 09:00:00
 categories: 
 - Development&Coding
 tags:
