@@ -44,7 +44,7 @@ SignalR can be hosted in standalone Windows client or Silverlight applications. 
 
 SignalR提供四種傳輸方式，依據瀏覽器的支援你可以自行設定(預設四種都支援，但會有先後順序的使用，Websocket最優先!)
 
-![type](http://blackie1019.github.io/2016/08/21/signalr-tuning-experience/type.png)
+![type](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/signalr-tuning-experience/type.png)
 
 - HTML 5 transports
 	- WebSocket
@@ -54,7 +54,7 @@ SignalR提供四種傳輸方式，依據瀏覽器的支援你可以自行設定(
 	- Forever Frame
 	- Long Polling
 
-![support](http://blackie1019.github.io/2016/08/21/signalr-tuning-experience/support.png)
+![support](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/signalr-tuning-experience/support.png)
 
 ### Config Transport ###
 
@@ -126,13 +126,13 @@ SignlaR本身可以開啟Logging機制，只要透過簡單的設定打開即可
 
 If still have connection issue, review web application design for SignalR scaleout design.
 
-	[ScaleOut In SignalR](http://www.asp.net/signalr/overview/performance/scaleout-in-signalr)
+[ScaleOut In SignalR](http://www.asp.net/signalr/overview/performance/scaleout-in-signalr)
 
 ## Performance Tuning with IIS and .net framework ##
 
 Sharing the tuning guide of official post.
 
-	[Performance Tuning SignalR](https://github.com/SignalR/SignalR/wiki/Performance)
+[Performance Tuning SignalR](https://github.com/SignalR/SignalR/wiki/Performance)
 
 ## Reference ##
 
