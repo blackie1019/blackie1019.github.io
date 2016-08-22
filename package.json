@@ -28,7 +28,6 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-livereload": "^0.2.0",
     "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.11",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-tag-codepen": "^0.2.2",
