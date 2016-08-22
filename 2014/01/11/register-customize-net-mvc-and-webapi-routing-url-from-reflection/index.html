@@ -1,0 +1,166 @@
+<!doctype html><html class="theme-next mist use-motion"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="keywords" content="Web MVC/WebApi,"><link rel="alternate" href="/atom.xml" title="Blackie's Failed Notes" type="application/atom+xml"><meta name="description" content="分享一下如何動態註冊客製的Routing"><meta property="og:type" content="article"><meta property="og:title" content="Register customize .NET MVC Web/WebAPI Routing URL from Reflection"><meta property="og:url" content="http://blackie1019.github.io/2014/01/11/register-customize-net-mvc-and-webapi-routing-url-from-reflection/index.html"><meta property="og:site_name" content="Blackie's Failed Notes"><meta property="og:description" content="分享一下如何動態註冊客製的Routing"><meta property="og:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140102/image.jpg"><meta property="og:updated_time" content="2016-08-22T13:47:23.663Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Register customize .NET MVC Web/WebAPI Routing URL from Reflection"><meta name="twitter:description" content="分享一下如何動態註冊客製的Routing"><meta name="twitter:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140102/image.jpg"><script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};if("undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t,e.loadCSS){var n=t.relpreload={};if(n.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},n.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!n.support()){n.poly();var r=e.setInterval(n.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(r)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(r)})}}}("undefined"!=typeof global?global:this)</script><link rel="stylesheet" as="style" onload='this.rel="stylesheet"' href="/bundle/essential.css?v=5.0.1" type="text/css"><link rel="preload" as="style" onload='this.rel="stylesheet"' href="/bundle/advance.css?v=5.0.1" type="text/css"><noscript><link rel="stylesheet" href="/bundle/all.min.css?v=5.0.1"></noscript><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1"><script type="text/javascript" id="hexo.configuration">var NexT=window.NexT||{},CONFIG={scheme:"Mist",sidebar:{position:"right",display:"always"},fancybox:!0,motion:!0,duoshuo:{userId:0,author:"Author"}}</script><title>Register customize .NET MVC Web/WebAPI Routing URL from Reflection | Blackie's Failed Notes</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="en"><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-38528893-3","auto"),ga("send","pageview")</script><div class="container one-collumn sidebar-position-right page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Blackie's Failed Notes</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.</p></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li><li class="menu-item menu-item-categories"><a href="/categories" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>Tags</a></li><li class="menu-item menu-item-search"><a href="#" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>Search</a></li></ul><div class="site-search"><div class="popup"><span class="search-icon fa fa-search"></span> <input type="text" id="local-search-input"><div id="local-search-result"></div><span class="popup-btn-close">close</span></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline">Register customize .NET MVC Web/WebAPI Routing URL from Reflection</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">Posted on</span> <time itemprop="dateCreated" datetime="2014-01-11T16:29:45+00:00" content="2014-01-12">2014-01-12 </time></span><span class="post-category">&nbsp; | &nbsp; <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Asp-Net/" itemprop="url" rel="index"><span itemprop="name">Asp.Net</span> </a></span></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2014/01/11/register-customize-net-mvc-and-webapi-routing-url-from-reflection/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2014/01/11/register-customize-net-mvc-and-webapi-routing-url-from-reflection/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>分享一下如何動態註冊客製的Routing</p><a id="more"></a><p><img src="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140102/image.jpg" alt="電線杆"></p><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因工作需求，需要將原本的預設Controller\Action\ID或api\Controller\Action\ID的Routing方式都改為只有Action的情況，說明如下:</p><p>有一個TestController裡面有一個叫做GetTest的Action Method在預設的Rouing裡面應該會註冊成下面的樣子，</p><p><em>http:\domain\Test\GetTest\</em></p><p>或是</p><p><em>http:\domain\api\Test\GetTest\</em></p><p>但這邊需求上面卻要<em>http:\domain\GetTest\</em>，這邊有兩種方式可以幫你達到這樣的需求:</p><ol><li>在App_Start裡面的RoueCofig.cs或是WebApiConfig.cs裡面針對需要改變的Action手動做額外的註冊</li><li>使用Reflection的方式找出共用的類別或是判斷方式後針對要註冊的method透過寫好的迴圈判斷條件做註冊</li></ol><p>這邊稍微為大家介紹一下如何使用Refactor的方式找出程式裡面既有的controller然後再透過controller裡面的Action去做MVC Web與WebAPI的Routing註冊</p><h2 id="About-MVC-WebAPI-Routing"><a href="#About-MVC-WebAPI-Routing" class="headerlink" title="About MVC/WebAPI Routing"></a>About MVC/WebAPI Routing</h2><p>傳統我們在針對.NET MVC的Routing做註冊時會直接增添或修改App_Start裡面的RoueCofig.cs或是WebApiConfig，預設專案裡面的設定應該會長的像下面這樣：</p><pre><code>routes.IgnoreRoute(&quot;{resource}.axd/{*pathInfo}&quot;);
+routes.MapRoute(
+    name: &quot;Default&quot;,
+    url: &quot;{controller}/{action}/{id}&quot;,
+    defaults: new { controller = &quot;Default&quot;, action = &quot;Index&quot;, id = UrlParameter.Optional }
+);
+</code></pre><p>或是</p><pre><code>//Register HttpRoute
+config.Routes.MapHttpRoute(
+    name: &quot;PostActionApi&quot;,
+    routeTemplate: &quot;api/{controller}/{action}&quot;
+);
+</code></pre><p>透過上面的兩個預設使用方式我們可以知道URL的組成預設就包含了一個Routing名稱、url filter格式、預設控制項(controller與actionName或其他參數等設定)，URL的組成如果有不懂可以看<a href="http://www.dotblogs.com.tw/blackie1019/archive/2013/11/04/126536.aspx" target="_blank" rel="external">這篇</a>，或<a href="http://blog.miniasp.com/post/2011/08/01/ASPNET-MVC-Developer-Note-Part-21-Routing-Concepts-and-Skills.aspx" target="_blank" rel="external">保哥的文章</a>‧</p><p>而上面有一段<code>routes.IgnoreRoute()</code>這是設定可以忽略的檔案與路徑(過濾掉路由規則定義)，有以下幾種用法</p><ul><li><p>過濾所有 *.aspx 的路徑</p><pre><code>routes.IgnoreRoute(&quot;{resource}.aspx/{*pathInfo}&quot;);
+</code></pre></li><li><p>過濾 Page 目錄下的所有程式與檔案 (會直接讓IIS 來決定要用何種 Handler 來處理這次 HTTP 要求 )</p><pre><code>routes.IgnoreRoute(&quot;Page/{*pathInfo}&quot;);
+</code></pre></li><li><p>忽略所有在 Page 目錄下的所有檔案 ( 保哥文章提供的另一種寫法 )</p><pre><code>routes.Add(new Route(&quot;Page/{*pathInfo}&quot;, new StopRoutingHandler()));
+</code></pre></li></ul><p>基本上我們要注意一個要點，.NET MVC的Routing與IIS的Rouing是兩件事情，所以使用上要稍微注意不是沒註冊就連不到檔案(有可能Rouing的URL與IIS的目錄結構剛好一樣)</p><h2 id="Register-customize-MVC-WebAPI-Routing"><a href="#Register-customize-MVC-WebAPI-Routing" class="headerlink" title="Register customize MVC/WebAPI Routing"></a>Register customize MVC/WebAPI Routing</h2><p>而當我們要新增一個customize的Routing的時候可以透過下面的方式寫在App_Start裡面的RoueCofig.cs或是WebApiConfig當中:</p><pre><code>routes.MapRoute(
+    &quot;Admin&quot;,
+    &quot;Admin/{action}&quot;,
+    new { controller=&quot;Admin&quot; },
+    new { OnlyLocalhostCanApply=new LocalhostConstraint() }
+);
+</code></pre><p>或</p><pre><code>config.Routes.MapHttpRoute(
+    name: &quot;PostActionApi&quot;,
+    routeTemplate: &quot;api/{controller}/{action}&quot;
+);
+</code></pre><p>所以回歸到今天的需求如果是只要連到<em>http:\domain\GetTest\</em>的Request都要轉到TestController下面的GetTest這個ActionName來接收，我們應該要註冊一個Routing如下(以WebAPI為例):</p><pre><code>config.Routes.MapHttpRoute(
+    name: &quot;GetTest&quot;,
+    routeTemplate: &quot;api/Test/GetTest&quot;
+);
+</code></pre><h2 id="Register-customize-MVC-WebAPI-Routing-from-Reflection"><a href="#Register-customize-MVC-WebAPI-Routing-from-Reflection" class="headerlink" title="Register customize MVC/WebAPI Routing from Reflection"></a>Register customize MVC/WebAPI Routing from Reflection</h2><p>如果你今天只有新增一個的話只要透過上面的方式來增加就可以了，但如果你今天是要把所有Controller都做這樣的設定一個一個手動設定實在太白吃了而且如果像我有手殘的情形就會導致頁面連不到的窘境，所以下面就分享如何透過Reflection來抓出所有ActionName後來做各別註冊。</p><p>先簡單說一下什麼是Reflection，Reflection官方翻譯反映或鏡射反映(這我比較喜歡)，主要是可應用在動態建立型別的執行個體、繫結型別至現有物件，或從現有物件取得型別，簡單來講就是你可以透過取得一個叫為抽象的類別並透過GetType方式來確認他的型別並建立該型別特有的一些處理行為，有點類似工廠的概念‧</p><p>使用Reflection可大幅簡化程式碼複雜度但會稍微付出一些代價，有興趣的可以參考黑大的<a href="http://blog.darkthread.net/post-2011-07-06-reflection-performance.aspx" target="_blank" rel="external">Reflection執行效能測試</a></p><p>這邊我直接show上我的controller與action register routing的程式碼</p><pre><code> public static class WebApiConfig
+{
+    public static void Register(HttpConfiguration config)
+    {
+
+        //Register HttpRoute
+        //config.Routes.MapHttpRoute(
+        //    name: &quot;PostActionApi&quot;,
+        //    routeTemplate: &quot;api/{controller}/{action}&quot;
+        //);
+
+        //RegisterMemberApi by Action to HttpRoute
+        RegisterMemberApiAction(config);
+
+    }
+    private static void RegisterMemberApiAction(HttpConfiguration config)
+    {
+        var excludedControllerNames = new List&lt;string&gt;();
+        excludedControllerNames.Add(&quot;DefaultController&quot;);
+        var controllers = MvcHelper.Instance.GetAllApiControllers(excludedControllerNames);
+        foreach (var c in controllers)
+        {
+            var actionNames = MvcHelper.Instance.GetActionNames(c);
+            foreach (var actionName in actionNames)
+            {
+                var controllerName = c.Name.Replace(&quot;Controller&quot;, &quot;&quot;);
+                config.Routes.MapHttpRoute(
+                    name: controllerName + actionName,
+                    routeTemplate: actionName,
+                    defaults: new
+                    {
+                        controller = controllerName,
+                        action = actionName
+                    },
+                    constraints: new { action = @&quot;^&quot; + actionName + &quot;&quot; }
+                );
+            }
+        }
+    }
+}
+</code></pre><p>MVCHelper.cs</p><pre><code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Web.Http;
+
+namespace Example.Util
+{
+    public class MvcHelper
+    {
+        private static MvcHelper _mvcHelper;
+
+        public static MvcHelper Instance
+        {
+            get
+            {
+                if (_mvcHelper == null)
+                {
+                    _mvcHelper = new MvcHelper();
+                }
+                return _mvcHelper;
+            }
+            set
+            {
+                _mvcHelper = value;
+            }
+        }
+
+        private static List&lt;Type&gt; GetSubClasses&lt;T&gt;()
+        {
+            return Assembly.GetCallingAssembly().GetTypes().Where(
+                type =&gt; type.IsSubclassOf(typeof(T))).ToList();
+        }
+
+        public List&lt;Type&gt; GetAllApiControllers(List&lt;string&gt; excludedControllerNames)
+        {
+            List&lt;Type&gt; controllers = new List&lt;Type&gt;();
+            GetSubClasses&lt;ApiController&gt;().ForEach(
+                type =&gt; controllers.Add(type));
+            foreach (var c in controllers)
+            {
+                if (excludedControllerNames.Contains(c.Name))
+                {
+                    controllers.Remove(c);
+                }
+            }
+            return controllers;
+        }
+
+        public List&lt;string&gt; GetActionNames(Type controllerType)
+        {
+            List&lt;string&gt; actionNames = new List&lt;string&gt;();
+            var methods = controllerType.GetMethods();
+            foreach (var m in methods)
+            {
+                if (m.IsPublic &amp;&amp; m.ReturnType.IsSubclassOf(typeof(BaseResponseModel)))
+                {
+                    actionNames.Add(m.Name);
+                }
+            }
+            return actionNames;
+        }
+    }
+}
+</code></pre><p>TestController.cs</p><pre><code>using System;
+using System.Web.Http;
+
+namespace Example.Controllers
+{
+    public class ServiceLocatorController : ApiController
+    {
+        [HttpPost]
+        public TestResponse GetTest(TestRequest request)
+        {
+            return GenTestRequest(request);
+        }
+    }
+}
+</code></pre><p>TestResponse.cs</p><pre><code>using System.Runtime.Serialization;
+namespace Example.Models
+{
+    [DataContract]
+    public class TestResponse : BaseResponseModel
+    {
+        [DataMember]
+        public string Value
+        {
+            get;
+            set;
+        }
+
+        public TestResponse(BaseResponseModel request)
+            : base(request)
+        {
+        }
+    }
+}
+</code></pre><p>這邊因為我所有的Respone與Request都有一個父類別來給他們繼承所以我直接找尋回傳符合父類別的Method就可以找到他的Controller並幫他註冊對應的Routing，所以透過RegisterMemberApiAction這個method我們就可以把所有符合的Controller跟ActionName註冊起來，很簡單吧。</p><h2 id="Combined-with-WebApi-HelpPage"><a href="#Combined-with-WebApi-HelpPage" class="headerlink" title="Combined with WebApi.HelpPage"></a>Combined with WebApi.HelpPage</h2><p>如果是開發WebAPI的朋友應該多少都會安裝WebApi.HelpPage，這邊要稍微注意一下，預設的HelpPage會去抓你已經註冊進入Routing的Method去幫你根據註解(comment)建立文件，所以記得要把vs專案預設建立的WebAPI routing注解或刪除，不然會有把每個method都註冊兩次歐!</p></div><div></div><div></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Web-MVC-WebApi/" rel="tag">#Web MVC/WebApi</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2013/12/31/using-git-bash-with-proxy-setting/" rel="next" title="Using Git bash with Proxy setting"><i class="fa fa-chevron-left"></i> Using Git bash with Proxy setting</a></div><div class="post-nav-prev post-nav-item"><a href="/2014/01/13/javascript-call-method/" rel="prev" title="Javascript call method(呼叫函式)">Javascript call method(呼叫函式) <i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="post-spread"></div></div></div><div class="comments" id="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview">Overview</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/img/avatar.png" alt="Blackie Tsai"><p class="site-author-name" itemprop="name">Blackie Tsai</p><p class="site-description motion-element" itemprop="description">Show me. Don't tell me.</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">59</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"><a href="/categories"><span class="site-state-item-count">14</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"><a href="/tags"><span class="site-state-item-count">43</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/blackie1019" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> </a></span><span class="links-of-author-item"><a href="https://www.facebook.com/chentien.tsai" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i> </a></span><span class="links-of-author-item"><a href="https://tw.linkedin.com/in/blackie1019" target="_blank" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i> </a></span><span class="links-of-author-item"><a href="https://www.slideshare.net/chentientsai" target="_blank" title="SlideShare"><i class="fa fa-fw fa-slideshare"></i></a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-globe"></i> Recommendation</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><a href="http://larrynung.github.io/" title="Larry - Level up" target="_blank">Larry - Level up</a></li><li class="links-of-blogroll-item"><a href="http://ouch1978.github.io/" title="Ouch - Developer ≈ Designer" target="_blank">Ouch - Developer ≈ Designer</a></li></ul></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#About-MVC-WebAPI-Routing"><span class="nav-number">2.</span> <span class="nav-text">About MVC/WebAPI Routing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Register-customize-MVC-WebAPI-Routing"><span class="nav-number">3.</span> <span class="nav-text">Register customize MVC/WebAPI Routing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Register-customize-MVC-WebAPI-Routing-from-Reflection"><span class="nav-number">4.</span> <span class="nav-text">Register customize MVC/WebAPI Routing from Reflection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Combined-with-WebApi-HelpPage"><span class="nav-number">5.</span> <span class="nav-text">Combined with WebApi.HelpPage</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2013 - <span itemprop="copyrightYear">2016</span> <span class="with-love"><i class="fa fa-child"></i> </span><span class="author" itemprop="copyrightHolder">Blackie Tsai</span></div><div class="powered-by">Powered by <a class="theme-link" href="http://hexo.io">Hexo</a></div><div class="theme-info">Theme - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script>var config={search_path:"search.xml",root:"/"}</script><script>function downloadJSAtOnload(){var d=document.createElement("script");d.src="/bundle/all.min.js?v=5.0.1",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload</script><script type="text/javascript">function run_disqus_script(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="//"+disqus_shortname+".disqus.com/"+e,(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}var disqus_shortname="blackie1019",disqus_identifier="2014/01/11/register-customize-net-mvc-and-webapi-routing-url-from-reflection/",disqus_title="Register customize .NET MVC Web/WebAPI Routing URL from Reflection",disqus_url="http://blackie1019.github.io/2014/01/11/register-customize-net-mvc-and-webapi-routing-url-from-reflection/";run_disqus_script("count.js"),run_disqus_script("embed.js")</script></body></html>

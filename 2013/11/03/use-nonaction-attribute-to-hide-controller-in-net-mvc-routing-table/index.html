@@ -1,0 +1,110 @@
+<!doctype html><html class="theme-next mist use-motion"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="keywords" content="Web MVC/WebApi,"><link rel="alternate" href="/atom.xml" title="Blackie's Failed Notes" type="application/atom+xml"><meta name="description" content="如果我們想要讓某一個Controller中的Action不要在路由表內被註冊的時候就可以透過NonAction的方式來實現"><meta property="og:type" content="article"><meta property="og:title" content="Use NonAction Attribute to Hide Controller in .NET MVC Routing Table"><meta property="og:url" content="http://blackie1019.github.io/2013/11/03/use-nonaction-attribute-to-hide-controller-in-net-mvc-routing-table/index.html"><meta property="og:site_name" content="Blackie's Failed Notes"><meta property="og:description" content="如果我們想要讓某一個Controller中的Action不要在路由表內被註冊的時候就可以透過NonAction的方式來實現"><meta property="og:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/1.PNG"><meta property="og:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/2.PNG"><meta property="og:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/3.PNG"><meta property="og:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/4.PNG"><meta property="og:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/5.PNG"><meta property="og:updated_time" content="2016-08-22T13:47:23.667Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Use NonAction Attribute to Hide Controller in .NET MVC Routing Table"><meta name="twitter:description" content="如果我們想要讓某一個Controller中的Action不要在路由表內被註冊的時候就可以透過NonAction的方式來實現"><meta name="twitter:image" content="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/1.PNG"><script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};if("undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t,e.loadCSS){var n=t.relpreload={};if(n.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},n.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!n.support()){n.poly();var r=e.setInterval(n.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(r)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(r)})}}}("undefined"!=typeof global?global:this)</script><link rel="stylesheet" as="style" onload='this.rel="stylesheet"' href="/bundle/essential.css?v=5.0.1" type="text/css"><link rel="preload" as="style" onload='this.rel="stylesheet"' href="/bundle/advance.css?v=5.0.1" type="text/css"><noscript><link rel="stylesheet" href="/bundle/all.min.css?v=5.0.1"></noscript><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1"><script type="text/javascript" id="hexo.configuration">var NexT=window.NexT||{},CONFIG={scheme:"Mist",sidebar:{position:"right",display:"always"},fancybox:!0,motion:!0,duoshuo:{userId:0,author:"Author"}}</script><title>Use NonAction Attribute to Hide Controller in .NET MVC Routing Table | Blackie's Failed Notes</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="en"><script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-38528893-3","auto"),ga("send","pageview")</script><div class="container one-collumn sidebar-position-right page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Blackie's Failed Notes</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.</p></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li><li class="menu-item menu-item-categories"><a href="/categories" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>Tags</a></li><li class="menu-item menu-item-search"><a href="#" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>Search</a></li></ul><div class="site-search"><div class="popup"><span class="search-icon fa fa-search"></span> <input type="text" id="local-search-input"><div id="local-search-result"></div><span class="popup-btn-close">close</span></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline">Use NonAction Attribute to Hide Controller in .NET MVC Routing Table</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">Posted on</span> <time itemprop="dateCreated" datetime="2013-11-03T16:29:45+00:00" content="2013-11-04">2013-11-04 </time></span><span class="post-category">&nbsp; | &nbsp; <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">In</span> <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/Asp-Net/" itemprop="url" rel="index"><span itemprop="name">Asp.Net</span> </a></span></span><span class="post-comments-count">&nbsp; | &nbsp; <a href="/2013/11/03/use-nonaction-attribute-to-hide-controller-in-net-mvc-routing-table/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2013/11/03/use-nonaction-attribute-to-hide-controller-in-net-mvc-routing-table/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p>如果我們想要讓某一個Controller中的Action不要在路由表內被註冊的時候就可以透過NonAction的方式來實現</p><a id="more"></a><p>在.NET MVC當中一個Controller通常會被對應到URL中並透過該Controller本身具有的Action來作為整個路由(Routing)註冊的樣式，以一個叫做SportController的範例來說可能如下:</p><p><img src="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/1.PNG" alt="1"></p><p>通常產生的Controller都會被註冊成上面這樣格式的路由至MVC的路由表中，而當我們的網頁在被使用者透過瀏覽器的URL連結進來的時候，會先檢查MVC的路由表裡面有沒有這樣格式的路由，如果沒有就會再去檢查IIS的路由是否有，如果也沒有就會回傳錯誤訊息404至使用者端。</p><p>而當我們想要讓某一個Controller中的Action不要在路由表內被註冊的時候就可以透過NonAction的方式來實現，使用的方式很簡單只要在你的Action上面加上[NonAction]就可以了</p><p><img src="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/2.PNG" alt="2"></p><ul><li><p>一般的結果如下:</p><p><img src="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/3.PNG" alt="3"></p></li><li><p>加入NonAction之後的如下:</p><p><img src="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/4.PNG" alt="4"></p></li></ul><p>這邊可以看到加上NonAction之後就真的不會註冊在MVC Routing Table當中當然就會去詢問IIS，如果IIS也沒有就會拋出404錯誤(這邊被我另外寫的ErrorPage所接收起來)</p><p>而MVC Error Page我這邊目前是透過Web.config來設定，如下:</p><ul><li><p>Web.config</p><p><img src="https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131104/5.PNG" alt="5"></p></li><li><p>ErrorController</p><pre><code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace BlackieStudio.Controllers
+{
+    public class ErrorController : Controller
+    {
+        public ActionResult Index()
+        {
+            return View(&quot;Error&quot;);
+        }
+        public ActionResult NotFound()
+        {
+            Response.StatusCode = 404;
+            return View(&quot;NotFound&quot;);
+        }
+        public ActionResult Forbidden()
+        {
+            Response.StatusCode = 403;
+            return View(&quot;Forbidden&quot;);
+        }
+        public ActionResult InternalError()
+        {
+            Response.StatusCode = 500;
+            return View(&quot;InternalError&quot;);
+        }
+
+    }
+}
+</code></pre></li><li><p>Forbidden.html</p><pre><code>@{
+    ViewBag.Title = &quot;Forbidden&quot;;
+    Layout = &quot;~/Views/Shared/_BootstrapLayout.cshtml&quot;;
+}
+
+&lt;div id=&quot;brief&quot; class=&quot;container&quot;&gt;
+    &lt;div class=&quot;starter-template&quot;&gt;
+    &lt;h1&gt;@ViewBag.Title&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li></ul><ul><li><p>Index.html</p><pre><code>@{
+    ViewBag.Title = &quot;Error&quot;;
+    Layout = &quot;~/Views/Shared/_BootstrapLayout.cshtml&quot;;
+}
+&lt;div id=&quot;brief&quot; class=&quot;container&quot;&gt;
+    &lt;div class=&quot;starter-template&quot;&gt;
+    &lt;h1&gt;@ViewBag.Title&lt;/h1&gt;
+    &lt;div class=&quot;list-sfs-holder&quot;&gt;
+        &lt;div class=&quot;alert alert-error&quot;&gt;
+            An unexpected error has occurred. Please contact the system administrator.&lt;/div&gt;
+        @if (Model != null &amp;&amp; HttpContext.Current.IsDebuggingEnabled)
+        {
+            &lt;div&gt;
+                &lt;p&gt;
+                    &lt;b&gt;Exception:&lt;/b&gt; @Model.Exception.Message&lt;br /&gt;
+                    &lt;b&gt;Controller:&lt;/b&gt; @Model.ControllerName&lt;br /&gt;
+                    &lt;b&gt;Action:&lt;/b&gt; @Model.ActionName
+                &lt;/p&gt;
+                &lt;div style=&quot;overflow:scroll&quot;&gt;
+                    &lt;pre&gt;
+                        @Model.Exception.StackTrace
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        }
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li></ul><ul><li><p>InternalError.html</p><pre><code>@{
+    ViewBag.Title = &quot;InternalError&quot;;
+    Layout = &quot;~/Views/Shared/_BootstrapLayout.cshtml&quot;;
+}
+
+&lt;div id=&quot;brief&quot; class=&quot;container&quot;&gt;
+    &lt;div class=&quot;starter-template&quot;&gt;
+    &lt;h1&gt;@ViewBag.Title&lt;/h1&gt;
+    &lt;div class=&quot;list-sfs-holder&quot;&gt;
+        &lt;div class=&quot;alert alert-error&quot;&gt;
+            An unexpected error has occurred. Please contact the system administrator.&lt;/div&gt;
+        @if (Model != null &amp;&amp; HttpContext.Current.IsDebuggingEnabled)
+        {
+            &lt;div&gt;
+                &lt;p&gt;
+                    &lt;b&gt;Exception:&lt;/b&gt; @Model.Exception.Message&lt;br /&gt;
+                    &lt;b&gt;Controller:&lt;/b&gt; @Model.ControllerName&lt;br /&gt;
+                    &lt;b&gt;Action:&lt;/b&gt; @Model.ActionName
+                &lt;/p&gt;
+                &lt;div style=&quot;overflow:scroll&quot;&gt;
+                    &lt;pre&gt;
+                        @Model.Exception.StackTrace
+                    &lt;/pre&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        }
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li><li><p>NotFound.html</p><pre><code>@{
+    ViewBag.Title = &quot;NotFound&quot;;
+    Layout = &quot;~/Views/Shared/_BootstrapLayout.cshtml&quot;;
+}
+
+&lt;div id=&quot;brief&quot; class=&quot;container&quot;&gt;
+    &lt;div class=&quot;starter-template&quot;&gt;
+    &lt;h1&gt;@ViewBag.Title&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></li></ul></div><div></div><div></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Web-MVC-WebApi/" rel="tag">#Web MVC/WebApi</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2013/11/02/ios-hide-status-bar/" rel="next" title="Cannot hide status bar in iOS7"><i class="fa fa-chevron-left"></i> Cannot hide status bar in iOS7</a></div><div class="post-nav-prev post-nav-item"><a href="/2013/11/12/using-html-raw-method-to-show-content-include-html-tags-in-net-mvc-with-razer-viewengine/" rel="prev" title="Using Html.Raw() method to show content include Html tags in .NET MVC(under Razor ViewEngine)">Using Html.Raw() method to show content include Html tags in .NET MVC(under Razor ViewEngine) <i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="post-spread"></div></div></div><div class="comments" id="comments"><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview">Overview</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/img/avatar.png" alt="Blackie Tsai"><p class="site-author-name" itemprop="name">Blackie Tsai</p><p class="site-description motion-element" itemprop="description">Show me. Don't tell me.</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">59</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-categories"><a href="/categories"><span class="site-state-item-count">14</span> <span class="site-state-item-name">categories</span></a></div><div class="site-state-item site-state-tags"><a href="/tags"><span class="site-state-item-count">43</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/blackie1019" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> </a></span><span class="links-of-author-item"><a href="https://www.facebook.com/chentien.tsai" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i> </a></span><span class="links-of-author-item"><a href="https://tw.linkedin.com/in/blackie1019" target="_blank" title="LinkedIn"><i class="fa fa-fw fa-linkedin"></i> </a></span><span class="links-of-author-item"><a href="https://www.slideshare.net/chentientsai" target="_blank" title="SlideShare"><i class="fa fa-fw fa-slideshare"></i></a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-globe"></i> Recommendation</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><a href="http://larrynung.github.io/" title="Larry - Level up" target="_blank">Larry - Level up</a></li><li class="links-of-blogroll-item"><a href="http://ouch1978.github.io/" title="Ouch - Developer ≈ Designer" target="_blank">Ouch - Developer ≈ Designer</a></li></ul></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><p class="post-toc-empty">This post does not have a Table of Contents</p></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2013 - <span itemprop="copyrightYear">2016</span> <span class="with-love"><i class="fa fa-child"></i> </span><span class="author" itemprop="copyrightHolder">Blackie Tsai</span></div><div class="powered-by">Powered by <a class="theme-link" href="http://hexo.io">Hexo</a></div><div class="theme-info">Theme - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script>var config={search_path:"search.xml",root:"/"}</script><script>function downloadJSAtOnload(){var d=document.createElement("script");d.src="/bundle/all.min.js?v=5.0.1",document.body.appendChild(d)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload</script><script type="text/javascript">function run_disqus_script(t){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/"+t,(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}var disqus_shortname="blackie1019",disqus_identifier="2013/11/03/use-nonaction-attribute-to-hide-controller-in-net-mvc-routing-table/",disqus_title="Use NonAction Attribute to Hide Controller in .NET MVC Routing Table",disqus_url="http://blackie1019.github.io/2013/11/03/use-nonaction-attribute-to-hide-controller-in-net-mvc-routing-table/";run_disqus_script("count.js"),run_disqus_script("embed.js")</script></body></html>
