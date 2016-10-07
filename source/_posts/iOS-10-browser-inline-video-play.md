@@ -13,9 +13,9 @@ tags:
 - Safari
 ---
 
-<!-- More -->
-
 在上個月iOS 10發佈後更新了safari上面支援inline播放的功能，這邊來解釋一下該如何使用。
+
+<!-- More -->
 
 ## Background ##
 
