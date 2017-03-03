@@ -10,14 +10,14 @@ categories:
 - Asp.Net
 tags: 
 - Asp.Net Core
-- Asp.Net Core Iron Man
+- Iron Man
 - C#
 ---
-
-<!-- More -->
 此為系列為文章第一篇，本系列文章將為大家介紹ASP.NET Core並將如何運用它跨平台的特性去開發Web App。
 
-此系列文章主要為參加[ITHome 8th Ironman](http://ithelp.ithome.com.tw/ironman)的系列文章，會在接下來的30天內與各位介紹與分享如何享受ASP.NET Core帶來的跨平台好處與其相關的生態圈。
+<!-- More -->
+
+此系列文章主要會在接下來的幾天內與各位介紹與分享如何享受ASP.NET Core帶來的跨平台好處與其相關的生態圈。
 下面為目前計畫內容(內容會根據開發需求做調整)，過程當中主旨是希望實作一個具有存取DB資料的Web App並發佈至雲端使用:
 
 - Before ASP.NET Core
@@ -44,7 +44,7 @@ tags:
 - Hosting ASP.NET Core Web Application on IIS
 - Hosting ASP.NET Core Web Application on Kestrel 
 - Developing ASP.NET Core With Visual Studio Code
-- 
+
 ### Mac/Linux ###
 
 - ASP.NET Core Install and Envrionment Setup on Mac
@@ -63,9 +63,9 @@ tags:
 - ASP.NET Core Hosting on AWS
 - ASP.NET core Hosting On Heroku
 
-## 30 days Project ##
+## Project Goal ##
 
-這邊為了對學習有個目標，我們就來明定過程當中要做出來的網站功能。 在這30天內我們將實作一個可以會員資料的app，可透過該平台查詢會員資料，並透過後臺來管理該系統的資料。
+這邊為了對學習有個目標，我們就來明定過程當中要做出來的網站功能。 在這接下來的日子內我們將實作一個可以會員資料的app，可透過該平台查詢會員資料，並透過後臺來管理該系統的資料。
 
 ###前台查詢系統###
 
@@ -79,11 +79,11 @@ tags:
 - 可以條列條列會員清單
 - 可以新增、刪除、修改會員資料
 
-30天的過程當中會加減帶到系統功能的開發，最後希望在活動結束的時候這個demo site也能同時上線
+過程當中會加減帶到系統功能的開發，最後希望在活動結束的時候這個demo site也能同時上線
 
 ## Learing Resource ##
 
-會將30天內找到學習資料統一更新至此處以便閱讀
+過程中找到學習資料統一更新至此處以便閱讀
 
 ## End ##
 
