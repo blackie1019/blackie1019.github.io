@@ -31,6 +31,7 @@
           <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
           <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
         </div>
+
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="{{ url_for(theme.menu.archives) }}">
@@ -95,6 +96,31 @@
         {% endif %}
 
         {# Blogroll #}
+
+        {% if theme.certification_enable %}
+        <div class="certification motion-element">
+          {% for name, link in theme.certification %}
+            <span class="links-of-cert-item">
+              <a href="{{link}}" target="_blank" title="{{ name }}">
+                <img class="side-image-cert-{{name}}" src="/images/cert.png" />
+              </a>
+            </span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if theme.course_enable %}
+        <div class="course sidebar-inner">
+          {% for name, link in theme.course %}
+            <span>
+              <a href="{{link}}" target="_blank" title="{{ name }}">
+                <img class="side-image-course-{{name}}" src="/images/course.png" />
+              </a>
+            </span>
+          {% endfor %}
+        </div>
+        {% endif %}
+
         {% if theme.links %}
           <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.links_layout | default('inline') }}">
             <div class="links-of-blogroll-title">
