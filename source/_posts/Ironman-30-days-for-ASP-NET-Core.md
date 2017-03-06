@@ -35,10 +35,9 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 ### Developement ###
 
 #### Setup ###
-- ASP.NET Core Install and Envrionment Setup
-- ASP.NET Core Install and Envrionment Setup on Mac
-- Developing ASP.NET Core With Visual Studio Code
-- ASP.NET Core HelloWorld
+- [ASP.NET Core Hello World on Windows](http://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
+- ASP.NET Core Hello World on Mac]
+- ASP.NET Core Hello World on Linux
 
 #### Basic ####
 - ASP.NET Core Middleware
@@ -92,8 +91,14 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 
 過程中找到學習資料統一更新至此處以便閱讀
 
+### .Net Core ###
 - [ASP.NET Core and .NET Core Overview](https://weblog.west-wind.com/posts/2016/jun/13/aspnet-core-and-net-core-overview)
 - [Overview of the new .NET Core and .NET Platform Standard](https://www.slideshare.net/AlexThissen/overview-of-the-new-net-core-and-net-platform-standard)
+
+### VS Code ###
+
+- [微軟良心之作——Visual Studio Code 開源免費跨平台代碼編輯器](http://blog.csdn.net/chinahuyong/article/details/46480995)
+
 ## End ##
 
 內容看起很多但主要是把目前實作一個網站會用到的大部分技術都包裹在內，希望能將此技術實際用在真實的商場上而非只將此當作實驗性質的技術為目標。對此系列內容有興趣或是有任何建議歡迎留言與討論!讓我們一起學習吧!
