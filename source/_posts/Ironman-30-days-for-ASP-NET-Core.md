@@ -17,13 +17,20 @@ tags:
 
 <!-- More -->
 
-此系列文章主要會在接下來的幾天內與各位介紹與分享如何享受ASP.NET Core帶來的跨平台好處與其相關的生態圈。
-下面為目前計畫內容(內容會根據開發需求做調整)，過程當中主旨是希望實作一個具有存取DB資料的Web App並發佈至雲端使用:
+## ASP.NET Core Introduction ##
 
-- Before ASP.NET Core
-- ASP.NET Core Introduction
+ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET Framework可以開發如電腦桌面程式、網頁應用程式、IoT應用程式與手機行動程式等不同的應用，並且正常運行在Windows, Mac與Linux上。
+而他也是完全的Open-source的Framework
+
+![overview](overview.png)
+
+- [Offical ASP.NET Core Github](https://github.com/aspnet/Home)
+- [ASP.NET Core Schedule and Roadmap](https://github.com/aspnet/Home/wiki/Roadmap)
 
 ## 30 Days Topic ##
+
+要會在接下來的幾天內與各位介紹與分享如何享受ASP.NET Core帶來的跨平台好處與其相關的生態圈。
+下面為目前計畫內容(內容會根據開發需求做調整)，過程當中主旨是希望實作一個具有存取DB資料的Web App並發佈至雲端使用:
 
 ### Developement ###
 
@@ -85,6 +92,8 @@ tags:
 
 過程中找到學習資料統一更新至此處以便閱讀
 
+- [ASP.NET Core and .NET Core Overview](https://weblog.west-wind.com/posts/2016/jun/13/aspnet-core-and-net-core-overview)
+- [Overview of the new .NET Core and .NET Platform Standard](https://www.slideshare.net/AlexThissen/overview-of-the-new-net-core-and-net-platform-standard)
 ## End ##
 
 內容看起很多但主要是把目前實作一個網站會用到的大部分技術都包裹在內，希望能將此技術實際用在真實的商場上而非只將此當作實驗性質的技術為目標。對此系列內容有興趣或是有任何建議歡迎留言與討論!讓我們一起學習吧!
