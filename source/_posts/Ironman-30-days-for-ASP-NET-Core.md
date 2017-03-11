@@ -38,8 +38,8 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 
 #### Setup ###
 - [ASP.NET Core Hello World on Windows](http://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
-- ASP.NET Core Hello World on Mac]
-- ASP.NET Core Hello World on Linux
+- ASP.NET Core Hello World on Mac
+- ASP.NET Core Hello World on Container
 
 #### Basic ####
 - ASP.NET Core Middleware
@@ -55,7 +55,7 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 - ASP.NET Core Working with MVC
 - ASP.NET Core Playing with WebAPI
 - Hosting ASP.NET Core Web Application on Kestrel 
-- Hosting ASP.NET Core Web Application on Kestrel with Mac
+- Hosting ASP.NET Core Web Application on Kestrel with Reverse Proxy
 
 #### Web Advance ####
 - ASP.NET Core Playing with React
@@ -65,8 +65,8 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 #### DevOps ####
 - ASP.NET Core Playing with Docker
 - ASP.NET Core Build up with Jenkins
-- ASP.NET Core Hosting on AWS
-- ASP.NET Core Hosting on Azure
+- ASP.NET Core Hosting on Cloud - AWS
+- ASP.NET Core Hosting on Cloud - Azure
 
 ## Project Goal ##
 
