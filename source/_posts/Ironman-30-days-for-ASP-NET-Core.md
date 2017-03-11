@@ -40,6 +40,7 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 - [ASP.NET Core Hello World on Windows](http://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
 - ASP.NET Core Hello World on Mac
 - ASP.NET Core Hello World on Container
+- [ASP.NET Core add Git Ignore File](http://blackie1019.github.io/2017/03/12/ASP-NET-Core-add-Git-Ignore-File/)
 
 #### Basic ####
 - ASP.NET Core Middleware
