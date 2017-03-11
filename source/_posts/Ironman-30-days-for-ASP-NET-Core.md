@@ -17,6 +17,8 @@ tags:
 
 <!-- More -->
 
+*文章持續更新，最新更新時間: 2017-03-12*
+
 ## ASP.NET Core Introduction ##
 
 ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET Framework可以開發如電腦桌面程式、網頁應用程式、IoT應用程式與手機行動程式等不同的應用，並且正常運行在Windows, Mac與Linux上。
@@ -94,6 +96,21 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 ### .Net Core ###
 - [ASP.NET Core and .NET Core Overview](https://weblog.west-wind.com/posts/2016/jun/13/aspnet-core-and-net-core-overview)
 - [Overview of the new .NET Core and .NET Platform Standard](https://www.slideshare.net/AlexThissen/overview-of-the-new-net-core-and-net-platform-standard)
+- [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/)
+- [ASP.NET Core quick build "dev" branch feed](http://myget.org/gallery/aspnetcidev ) 這是產品團隊所使用的 "開發版" 元件清單，也就是 GitHub 裡面 dev branch 的實際內容，你可以在這最快速的看到每個元件目前最新的版號與更新時間．
+
+### Web Host ###
+
+- [Kestrel](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel)
+- [Kestrel with IIS](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/aspnet-core-module)
+- [Kestrel with Nginx](https://docs.microsoft.com/en-us/aspnet/core/publishing/linuxproduction)
+- [Kestrel with Apache](https://docs.microsoft.com/en-us/aspnet/core/publishing/apache-proxy)
+- [WebListener](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/weblistener)
+- [Open Web Interface for .NET (OWIN) guide](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/owin)
+
+### Third Party Library ###
+
+-[Entity Framework Core](http://ef.readthedocs.io/en/latest/index.html)
 
 ### VS Code ###
 

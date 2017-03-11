@@ -10,7 +10,6 @@ categories:
 - Asp.Net
 tags: 
 - Asp.Net Core
-- Iron Man
 - C#
 ---
 
@@ -37,6 +36,22 @@ tags:
 2. 安裝完後可再輸入一次版本查詢安裝是否成功
 
 ![dotnet_cli_update](dotnet_cli_update.png)
+
+## Template的 --help指令 ##
+
+基本上官網沒有寫明dotnet cli所提供的template有哪些，不過我們可以透過--help幫我們查詢一下:
+
+    dotnet new --help
+
+![templates](templates.png)
+
+所以這邊我們就知道如果要建立一個新的ASP.NET Core Web API專案可以透過下面指令:
+
+    dotnet new webapi
+
+而如果你要過濾某個套件如Authority並指定framework版本，則需要透過下面指令:
+
+    dotnet new mvc --auth None --framework netcoreapp1.1
 
 ## 結語 ##
 

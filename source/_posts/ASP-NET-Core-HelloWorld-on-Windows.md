@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core HelloWorld o nWindows
+title: ASP.NET Core HelloWorld on Windows
 subtitle: ''
 author: Blackie
 header-img: ''
