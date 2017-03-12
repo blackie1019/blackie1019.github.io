@@ -38,7 +38,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 這對開發者來說是個好事，但不幸的是這還是有過渡期的
 
-![matrix_standard](matrix_standard.png)
+![standard_matrix](standard_matrix.png)
 
 目前發行的版本為.NET Standard 1.6，可以看到包含了.NET Framework 4.6.2與ASP.NET Core 1.0(目前最新的是1.1)，而2.0目標則是有下面的既定目標:
 
