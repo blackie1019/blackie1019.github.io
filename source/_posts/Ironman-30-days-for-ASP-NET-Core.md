@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-*文章持續更新，最新更新時間: 2017-03-12*
+*文章持續更新，最新更新時間: 2017-03-13*
 
 ## ASP.NET Core Introduction ##
 
@@ -28,6 +28,22 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 
 - [Offical ASP.NET Core Github](https://github.com/aspnet/Home)
 - [ASP.NET Core Schedule and Roadmap](https://github.com/aspnet/Home/wiki/Roadmap)
+
+### .NET Standard ###
+
+而這邊順便提起會有一個與ASP.NET Core有點關係的.NET Standard，簡單來講就是ASP.NET Core要呼叫的底層應用庫。
+
+![overview_standard](overview_standard.png)
+
+相較於先前那張一覽表，可以清楚地發現微軟想把目前三套不一樣的App Models運行在同一套底層應用庫，而非現在三套分別維護。
+
+這對開發者來說是個好事，但不幸的是這還是有過渡期的
+
+![matrix_standard](matrix_standard.png)
+
+目前發行的版本為.NET Standard 1.6，可以看到包含了.NET Framework 4.6.2與ASP.NET Core 1.0(目前最新的是1.1)，而2.0目標則是有下面的既定目標:
+
+![standard_2](standard_2.png)
 
 ## 30 Days Topic ##
 
