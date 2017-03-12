@@ -19,10 +19,9 @@ tags:
 
 *文章持續更新，最新更新時間: 2017-03-13*
 
-## ASP.NET Core Introduction ##
+## .NET Core and ASP.NET Core Introduction ##
 
-ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET Framework可以開發如電腦桌面程式、網頁應用程式、IoT應用程式與手機行動程式等不同的應用，並且正常運行在Windows, Mac與Linux上。
-而他也是完全的Open-source的Framework
+ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使用已知的.NET Framework的方式，可以開發如電腦桌面程式、網頁應用程式、IoT應用程式與手機行動程式等不同的應用，並且正常運行在Windows, Mac與Linux上。而他也是完全的Open-source的Framework
 
 ![overview](overview.png)
 
@@ -31,11 +30,11 @@ ASP.NET Core 是一個全新的跨平台Framework, 讓我們使用已知的.NET 
 
 ### .NET Standard ###
 
-而這邊順便提起會有一個與ASP.NET Core有點關係的.NET Standard，簡單來講就是ASP.NET Core要呼叫的底層應用庫。
+而這邊順便提起會有一個與ASP.NET Core有點關係的.NET Standard，簡單來講就是ASP.NET Core*"未來"*要呼叫的底層應用庫。
 
 ![overview_standard](overview_standard.png)
 
-相較於先前那張一覽表，可以清楚地發現微軟想把目前三套不一樣的App Models運行在同一套底層應用庫，而非現在三套分別維護。
+相較於先前那張一覽表，可以清楚地發現微軟想把目前三套不一樣的App Models運行在同一套底層應用庫，而非現在三套分別維護。而*"現在"*ASP.NET Core是跑在.NET Core上面的!
 
 這對開發者來說是個好事，但不幸的是這還是有過渡期的
 
