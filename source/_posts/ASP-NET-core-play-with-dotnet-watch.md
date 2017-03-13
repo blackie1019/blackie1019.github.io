@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET core play with dotnet-watch
+title: ASP.NET Core play with dotnet-watch
 subtitle: ''
 author: Blackie
 header-img: ''
