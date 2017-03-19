@@ -74,7 +74,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - Hosting ASP.NET Core Web Application on Kestrel with Reverse Proxy
 
 #### Web Advance ####
-- ASP.NET Core Playing with SPA
+- [ASP.NET Core Playing with SPA](http://blackie1019.github.io/2017/03/17/ASP-NET-Core-Playing-with-SPA/)
 - ASP.NET Core Playing with React
 - ASP.NET Core Web Session with Redis
 - ASP.NET Core Playing with SignalR Core
