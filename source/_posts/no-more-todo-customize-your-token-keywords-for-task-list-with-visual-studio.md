@@ -25,11 +25,11 @@ tags:
 
 這些預設字在使用上是不用分大小寫
 
-![TODO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/todo.png)
+![TODO](todo.png)
 
 如果使用的是C++在vs2010倒是有限制要完全一樣的大小寫！如果要開啓的話可到Tools -> Options -> Text Editor -> C/C++ -> Formatting -> Miscellaneous -> change Enumerate Comment Tasks將其設定為true
 
-![8](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/8.png)
+![8](8.png)
 
 而實際上你加入的這些task是被存放到在隱藏的solution文件(.suo)中
 
@@ -37,28 +37,28 @@ tags:
 
 1. Visual Studio 選擇上方Tools->Options
 
-	![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/1.png)
+	![1](1.png)
 
 
 2. Enviroment->Task List，這邊可以新增自己新的定義(NeedFinish)
 
-	![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/2.png)
+	![2](2.png)
 
 3. Visual Studio 選擇上方View->Task List，打開待處理事項清單
 
-	![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/3.png)
+	![3](3.png)
 
 4. 在程式上打上註解符號並使用剛剛新增的NeedFinish作為Task manager判斷分類
 
-	![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/4.png)
+	![4](4.png)
 
 5. 因為我們剛剛有設定priority的關係我們就可以看到NeedFinish這邊有標示出左邊的紅色驚嘆號！
 
-	![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/5.png)
+	![5](5.png)
 
 6. 透過設定priority，我們就可以使用它作為排序條件重整目前代辦事項(預設的關鍵字除了UnresolvedMergeConflict外都是normal)
 
-	![6](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/6.png)
+	![6](6.png)
 
 ## 補充說明
 
@@ -72,7 +72,7 @@ tags:
 
 	tasks entered as comments in your code, prefaced by a token keyword
 
-![7](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20131218/7.jpg)
+![7](7.jpg)
 
 另外，這個功能也是可以用在js與css的檔案上的，vs2012預設就有支援，vs2010的話要安裝一下[Web Essentials](http://visualstudiogallery.msdn.microsoft.com/6ed4c78f-a23e-49ad-b5fd-369af0c2107f)，而如果事前端開發者的話請開心使用[JSLint for vs2012](http://jslint4vs2010.codeplex.com/)或是用[resharper](http://www.jetbrains.com/resharper/)也有支援。
 

@@ -76,7 +76,7 @@ tags:
 
 這邊另外附上CPU, Thread與Task之間的關係!
 
-![123](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/ConcurrentQueue-Thread-safe-collections-in-NET/threads.gif)
+![threads](threads.gif)
 
 
 

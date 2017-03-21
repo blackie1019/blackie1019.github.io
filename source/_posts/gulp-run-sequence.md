@@ -198,7 +198,7 @@ This will run in this order:
 		'finish-task');
 	});
 
-![gulp-run-sequence](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/gulp-run-sequence/1.png)
+![gulp-run-sequence](1.png)
 
 以上是不是很簡單就可以建立出複雜的工作事項，並且可以讓他們同步或是依序執行，彈性相當高呢!
 

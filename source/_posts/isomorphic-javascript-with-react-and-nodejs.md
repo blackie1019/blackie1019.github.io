@@ -18,7 +18,7 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 
 <!-- More -->
 
-![header-img](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/building-isomorphic-javascript-apps-ndc-2015-12-638.jpg)
+![header-img](building-isomorphic-javascript-apps-ndc-2015-12-638.jpg)
 
 > 
 Isomorphic JavaScript apps are JavaScript applications that can run both client-side and server-side.
@@ -42,11 +42,11 @@ Reuse，這是developer最喜歡但也最難做到的部分，往往在一些限
 
 如果是動態網頁需要一些資料處理的能力大就需要再結合後端的程式來幫我們，所以原本的架構就會疊加一個後端的語言(C# or Java or PHP or Ruby or Python or Go..etc)。但如果稍微大型的網頁應用程式在開發上多少都會使用網頁框架來加速與統一開發，如Xuenn使用的.Net MVC或Web form，而這樣又帶入了一個頁面語言Razer或是Web page, 結果則是變成下面
 
-![front-end](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/Front-end.png)
+![front-end](Front-end.png)
 
 如先前說的Reuse實務上太難達到了，但如果能透過JavaScript幫忙統一後端開發與頁面使用的開發語言，這樣就可以幫我們重新使用我們已經會的技術與經驗來替換掉C#與Razer/Web pages，可以讓開發少點重複但不同語言的學習，多花時間用同一語言與經驗處理實際且進階的應用。 而架構也會變成如此:
 
-![front-end2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/front-end2.png)
+![front-end2](front-end2.png)
 
 我們有了可以Shared的Library，縮減Frontend與Backend開發重複功能的時間也避免了重複犯錯的機會，而Back-end這邊則是可以沿用JavaScript這個語言，用同一個開發語言除了減少學習上的分歧也代表我們能沿用這個語言大部分的解決方案(如最佳化, 測試與部屬等等)，而這也讓我們回歸到最基本的網頁應用程式的三個基礎元素。
 
@@ -84,7 +84,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 ### Webpack ###
 
-![webpack](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/webpack-module-bundler.png)
+![webpack](webpack-module-bundler.png)
 
 [Webpack](https://webpack.github.io/) 是一個模組打包工具（module bundler），主要功能： 
 
@@ -97,7 +97,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 ### Babel ###
 
-![babel](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/babel.png)
+![babel](babel.png)
 
 > The compiler for writing next generation JavaScript
 
@@ -126,13 +126,13 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
     $ node -v
 
-![node-v](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/node%20version.png)
+![node-v](node%20version.png)
 
 如果看到有正確的回應版本即代表安裝成功。 接者我們就透過指令並依序輸入資訊(或按enter帶入預設即可)後建立我們的package.json檔案
 
 	$ npm init
 
-![package.json](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/packagejson.png)
+![package.json](packagejson.png)
 
 
 #### 一鍵安裝指令如下 ####
@@ -149,7 +149,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 	"test": "node app.js"
 
-![addexpress](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/addexpress.png)
+![addexpress](addexpress.png)
 
 接著我們新增一個app.js的檔案作為我們預設的主程式，在這邊我們先簡單用3000 port來起一個Express網頁程式並顯示Hello World!
 
@@ -168,7 +168,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 	$ npm test
 
-![helloworld](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/helloworld.png)
+![helloworld](helloworld.png)
 
 最後我們安裝ReactJS套件，這邊要安裝react與react-dom
 
@@ -204,7 +204,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 	
 	</html>
 
-![helloworld](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/reacthelloworld.png)
+![helloworld](reacthelloworld.png)
 
 目前我們已經成功的把Express與ReactJS分別成功執行了，接下我們就來調整一下把他們合為一體吧。
 
@@ -214,7 +214,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 	$ npm install --save Express-react-views
 
-![expressreactview](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/reactappjs.png)
+![expressreactview](reactappjs.png)
 
 在原本的app.js中移除Jade並加入react為預設View Engine
 
@@ -266,11 +266,11 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 檢視一下我們的Package.json最後的樣子
 
-![package2.json](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/packagejson2.png)
+![package2.json](packagejson2.png)
 
 開發需求前我們重新檢視一下目前的專案結構
 
-![folder](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/Folder.png)
+![folder](Folder.png)
 
 到這邊，我們已經從無到有的建立了專案的底層，接下來就讓我們來開發這次的需求吧
 
@@ -326,7 +326,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 接著再次將網站運行就可以發現title已經被置換了
 
-![title](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/title.png)
+![title](title.png)
 
 ### Frontend ###
 
@@ -359,7 +359,7 @@ Jade模組是Express.js預設的模版引擎(Template Engine)。Jade最大的特
 
 這次卻出現了JS Error
 
-![error](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/module%20error.png)
+![error](module%20error.png)
 
 主要是因為模組化是NodeJS預先就有支援的架構，但ReactJS如果要支援這樣的架構需要透過其他方式達成。這邊示範用Webpack來達成。
 
@@ -402,7 +402,7 @@ Webpack 會載入 webpack.config.js 的設定文件來執行。 如果要編譯 
 
 接者我們調整一下我們的demo.jsx與date-help.js的路徑，並修改一下載入的位置
 
-![folder2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/Folder2.png)
+![folder2](Folder2.png)
 
 entry.js則是我們希望webpack載入的入口，這邊我們可以開始加入我們的套件讓他做載入
 
@@ -415,17 +415,17 @@ entry.js則是我們希望webpack載入的入口，這邊我們可以開始加�
 
 	webpack 
 
-![webpack](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/webpack%20success.png)
+![webpack](webpack%20success.png)
 
 或是監聽編譯指令，動態載入編譯來加速開發
  
 	webpack -d --watch
 
-![webpack watch](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/webpack%20watch%20success.png)
+![webpack watch](webpack%20watch%20success.png)
 
 當編譯成功後我們在使用npm start來啟動我們的網頁看一下畫面
 
-![page](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/react%20using%20helper.png)
+![page](react%20using%20helper.png)
 
 因為我們這邊已經將frontend所有js/jsx打包成一個bundle.js，所以我們也可以將原本index.jsx所載入的套件移除了
 
@@ -504,7 +504,7 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 	    "start": "webpack && node ./bin/www"
 	 }
 
-![update start](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/packagejson3.png)
+![update start](packagejson3.png)
 
 ### End ###
 
@@ -538,7 +538,7 @@ ReactDOM.render(<Demo />, document.getElementById('app'));
 
 ## Next Steps ##
 
-![gohome](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20160724/go%20home.jpg)
+![gohome](go%20home.jpg)
 
 Isomorphic JavaScript的架構則沿用了這樣的精神幫我們整合前後端開發把可以共用的程式重用來達到Do less but get more(=>多點穩定+少點線上支援+早點回家).
 

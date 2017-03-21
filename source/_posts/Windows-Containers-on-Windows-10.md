@@ -69,17 +69,20 @@ Windows Container 是 Microsoft 初次在 Windows Server 2016 提供的功能，
     
 到這邊容器的環境已經準備好了，有些磁碟資料夾與網路的設定就見仁見智了，如果是新手不知道怎麼設定建議下載Kitermatic，由它來幫你完成預設與UI操作即可達到的容器使用。
 
-## 補充說明 ##
+### Detail of Windows Container Prerequisites ###
 
-整個完整的Windows Container Prerequisites
+附上整個完整的Windows Container Prerequisites
 
 #### OS Requirements ####
+
 - The Windows container feature is only available on Windows Server 2016 (Core and with Desktop Experience), Nano Server, and Windows 10 Professional and Enterprise (Anniversary Edition).
 - The Hyper-V role must be installed before running Hyper-V Containers
 - Windows Server Container hosts must have Windows installed to c:. This restriction does not apply if only Hyper-V Containers will be deployed.
 
 #### Virtualized Container Hosts ####
+
 If a Windows container host will be run from a Hyper-V virtual machine, and will also be hosting Hyper-V Containers, nested virtualization will need to be enabled. Nested virtualization has the following requirements:
+
 - At least 4 GB RAM available for the virtualized Hyper-V host.
 - Windows Server 2016, or Windows 10 on the host system, and Windows Server (Full, Core) or Nano Server in the virtual machine.
 - A processor with Intel VT-x (this feature is currently only available for Intel processors).

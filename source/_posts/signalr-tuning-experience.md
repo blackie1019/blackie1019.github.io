@@ -44,7 +44,7 @@ SignalR can be hosted in standalone Windows client or Silverlight applications. 
 
 SignalR提供四種傳輸方式，依據瀏覽器的支援你可以自行設定(預設四種都支援，但會有先後順序的使用，Websocket最優先!)
 
-![type](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/signalr-tuning-experience/type.png)
+![type](type.png)
 
 - HTML 5 transports
 	- WebSocket
@@ -54,7 +54,7 @@ SignalR提供四種傳輸方式，依據瀏覽器的支援你可以自行設定(
 	- Forever Frame
 	- Long Polling
 
-![support](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/signalr-tuning-experience/support.png)
+![support](support.png)
 
 ### Config Transport ###
 

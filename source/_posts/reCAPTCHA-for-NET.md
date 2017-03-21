@@ -29,7 +29,7 @@ reCAPTCHA for .NET來實現該功能。
 
 架構流程:
 
-![流程](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/reCAPTCHA-for-NET/Recaptcha-api-diagram.gif)
+![流程](Recaptcha-api-diagram.gif)
 
 
 ## Google reCAPTCHA 演進 ##
@@ -40,23 +40,23 @@ reCAPTCHA for .NET來實現該功能。
 
 reCAPTCHA問題的所需的文字圖片，首先會由reCAPTCHA計畫網站利用Javascript API取得[6]，在終端使用者回答問題後，伺服器再連回reCAPTCHA計畫的主機驗證使用者的輸入是否正確。
 
-![g1_ori](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/reCAPTCHA-for-NET/reCaptcha_1_o.jpg)
+![g1_ori](reCaptcha_1_o.jpg)
 
 2012年起，reCAPTCHA除了原來的文字掃描圖片外，也採用Google街景拍攝的門牌號碼相片
 
-![g1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/reCAPTCHA-for-NET/reCaptcha_1.jpg)
+![g1](reCaptcha_1.jpg)
 
 ### 第二代 ###
 
 更新後的版本改用圖片來取代文字辨識率較差的問題，但有時圖片也不是真的很容易辨識..因為常常會有模擬兩可的答案...(畢竟不是自己拍的圖片呀)
 
-![g2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/reCAPTCHA-for-NET/reCaptcha_2.jpg)
+![g2](reCaptcha_2.jpg)
 
 ### 第三代 ###
 
 最新的版本在2014年底推出，這版只要勾選I'm not a rebot即可!是不是更簡單了
 
-![g3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/reCAPTCHA-for-NET/reCaptcha_3.png)
+![g3](reCaptcha_3.png)
 
 ## reCAPTCHA for .NET ###
 
@@ -194,7 +194,7 @@ reCAPTCHA問題的所需的文字圖片，首先會由reCAPTCHA計畫網站利�
 
 這邊就是我們完成的畫面
 
-![result](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/reCAPTCHA-for-NET/result.gif)
+![result](result.gif)
 
 ## Reference ##
 

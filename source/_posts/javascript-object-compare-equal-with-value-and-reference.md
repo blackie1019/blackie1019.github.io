@@ -97,21 +97,21 @@ Comparison operators
 
 - JavaScript設計模式
 
-	![JavaScript設計模式](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/A180.png)
+	![JavaScript設計模式](A301.png)
 
 - JavaScript優良部分
 
-	![JavaScript優良部分](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/A302.gif)
+	![JavaScript優良部分](A302.gif)
 
 - JavaScript深入精要
 
-	![JavaScript深入精要](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/A367.jpg)
+	![JavaScript深入精要](A367.jpg)
 
 如果看三本沒時間或太麻煩的話，建議直接看下面這本
 
 - Speaking JavaScript｜簡明完整的 JS 精要指南 (Speaking JavaScript)
 
-	![Speaking JavaScript](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/22.jpg)
+	![Speaking JavaScript](22.jpg)
 
 除此之外必讀就是Mozilla的[Core JavaScript 1.5 Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
@@ -119,15 +119,15 @@ Comparison operators
 
 - JavaScript高性能
 
-	![JavaScript高性能](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/s4538004.jpg)
+	![JavaScript高性能](s4538004.jpg)
 
 - Object-Oriented JavaScript - Second Edition
 
-	![Object-Oriented JavaScript - Second Edition](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/3127OT_Object%20Oriented%20JavaScript.jpg)
+	![Object-Oriented JavaScript - Second Edition](3127OT_Object%20Oriented%20JavaScript.jpg)
 
 最後強力推薦[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) 這系列的線上書籍(實體書本也有，英文已經出版，中文要等2017才會出完)
 
-![You Don't Know JS](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140105/JS_you_dont_know.png)
+![You Don't Know JS](JS_you_dont_know.png)
 
 如果對JavaScript有興趣，且願意把手弄髒去了解它實際原理的非常推薦你看完這些書籍。
 

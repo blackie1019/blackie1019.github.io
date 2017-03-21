@@ -23,7 +23,7 @@ tags:
 
 下面就是發生問題時的畫面
 
-![錯誤畫面](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/No-Access-Control-Allow-Origin-header-is-present-on-the-requested-resource/ori.png)
+![錯誤畫面](ori.png)
 
 ## Root Cause ##
 
@@ -78,4 +78,4 @@ Regular web pages can use the XMLHttpRequest object to send and receive data fro
 
 開啟來後就可以正常執行了
 
-![成功畫面](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/No-Access-Control-Allow-Origin-header-is-present-on-the-requested-resource/success.png)
+![成功畫面](success.png)

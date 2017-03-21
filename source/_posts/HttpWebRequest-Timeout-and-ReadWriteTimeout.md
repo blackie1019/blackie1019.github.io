@@ -22,13 +22,13 @@ tags:
 
 ### TCP datagrams ###
 
-![tcp](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/HttpWebRequest-Timeout-and-ReadWriteTimeout/tcp.png)
+![tcp](tcp.png)
 
 使用TCP協議來傳輸數據的HTTP是Web服務器和客戶端使用的特殊協議。而TCP在傳輸中會將封包拆成一份IP header與多份TCP segment(TCP header + TCP data)。
 
-![TCP+IPData](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/HttpWebRequest-Timeout-and-ReadWriteTimeout/TCP_segment.png)
+![TCP+IPData](TCP_segment.png)
 
-![TCP+IPData](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/HttpWebRequest-Timeout-and-ReadWriteTimeout/TCP_IPData.png)
+![TCP+IPData](TCP_IPData.png)
 
 簡單來看就是一個header來告訴你連線位置與請求狀況後，會切分成多份封包依序傳輸，當封包都接收完才算完成傳輸，並將傳輸內容整理成真實的檔案。
 
@@ -40,7 +40,7 @@ tags:
 
 也因為有此機制導致我們在寫程式時需要用一個stream來當緩衝接收所收到資料並把他讀出。
 
-![Chunked flow](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/HttpWebRequest-Timeout-and-ReadWriteTimeout/chunk_transfer.png)
+![Chunked flow](chunk_transfer.png)
 
 ### HttpWebRequest.Timeout ###
 
@@ -75,7 +75,7 @@ The time before which the client has to receive the entire body of the response 
 DOWNLOAD
 Download Test Files | 100Kb, 1Mb, 10Mb, 100Mb, 1Gb, 5Gb and 10 Gb.](http://engineerhammad.blogspot.tw/2015/04/Download-Test-Files.html)的10MB檔案做範例:
 
-![speed](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/HttpWebRequest-Timeout-and-ReadWriteTimeout/speed.png)
+![speed](speed.png)
 
 這邊建置一個MVC空的Action來測試，而執行的範例程式碼如下:
 - 設定HttpWebRequest.Timeout 確認連線建立不超過3秒
@@ -245,7 +245,7 @@ Download Test Files | 100Kb, 1Mb, 10Mb, 100Mb, 1Gb, 5Gb and 10 Gb.](http://engin
 
 結果如下:
 
-![exception](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/HttpWebRequest-Timeout-and-ReadWriteTimeout/Exception.png)
+![exception](Exception.png)
 
 ## Reference ##
 
