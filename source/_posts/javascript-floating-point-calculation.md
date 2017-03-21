@@ -1,6 +1,6 @@
 ---
 layout: post
-title: javascript Floating-Point calculation
+title: Javascript Floating-Point Calculation
 subtitle: ""
 date: 2015-02-28 00:29:45
 author: Blackie
@@ -15,7 +15,7 @@ tags:
 
 <!-- More -->
 
-## Problem Description
+## Problem Description ##
 
 在開始前我們直接看下面的範例就知道問題在哪邊
 
@@ -44,31 +44,31 @@ tags:
 
 ![flow](flp_addsub_block.gif)
 
-## Solution without plugin
+## Solution without plugin ## 
 
 簡單來講我們可以用Number.prototype.toFixed()這個數值型別的function來幫我們確認要計算到多精準的小數位
 
 開始前我們先參考[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)給我們的說明
 
-### Method of Number
+### Method of Number ### 
 
 Implemented in JavaScript 1.5
 
 ECMAScript Edition ECMAScript 3rd Edition
 
-### Syntax
+### Syntax ### 
 
 number.toFixed( [digits] )
 
-### Parameter
+### Parameter ### 
 
 digits The number of digits to appear after the decimal point; this may be a value between 0 and 20, inclusive, and implementations may optionally support a larger range of values. If this argument is omitted, it is treated as 0.
 
-### Returns
+### Returns ### 
 
 A string representation of number that does not use exponential notation and has exactly digits digits after the decimal place. The number is rounded if necessary, and the fractional part is padded with zeros if necessary so that it has the specified length. If number is greater than 1e+21, this method simply calls Number.toString() and returns a string in exponential notation.
 
-### Throws
+### Throws ### 
 
 RangeError If digits is too small or too large. Values between 0 and 20, inclusive, will not cause a RangeError. Implementations are allowed to support larger and smaller values as well. TypeError If this method is invoked on an object that is not a Number.
 
@@ -84,7 +84,7 @@ RangeError If digits is too small or too large. Values between 0 and 20, inclusi
 
 <a class="jsbin-embed" href="http://jsbin.com/jetizu/1/embed?js,console">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-## Solution using Math.js
+## Solution using Math.js ##
 ![logo](logo.png)
 
 這邊介紹一個方便的javascript plugin來幫大家解決數學計算的問題
@@ -101,5 +101,5 @@ RangeError If digits is too small or too large. Values between 0 and 20, inclusi
 
 [Math.js](http://mathjs.org/)
 
-## 結語
+## 結語 ##
 老實說學生時代只有印象中聽過浮點數計算透過二進位儲存有誤差，但我沒想到學問真的很大....也沒想到出社會還會看到這類型問題，也很感謝有遇到這樣的問題讓自已能夠在多收穫一些知識。

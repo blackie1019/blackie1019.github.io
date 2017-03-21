@@ -2,9 +2,10 @@
 layout: post
 title: GitLab Build up
 subtitle: ""
-date: 2015-11-06 00:29:45
 author: Blackie
 header-img: ""
+sitemap: true
+date: 2015-11-06 00:29:45
 categories:
 - Source Control
 tags:

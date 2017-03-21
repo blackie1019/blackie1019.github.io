@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ReactJS, AKA the V in MVC
+title:  ReactJS AKA the V in MVC
 subtitle: ""
 date: 2013-09-27 00:29:45
 author: Blackie

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FLUX架構介紹
+title: FLUX Intro
 subtitle: ""
 date: 2015-04-14 00:29:45
 author: Blackie
