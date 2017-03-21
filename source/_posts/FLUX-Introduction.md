@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FLUX Intro
+title: FLUX Introduction
 subtitle: ""
 date: 2015-04-14 00:29:45
 author: Blackie
