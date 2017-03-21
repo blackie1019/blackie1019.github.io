@@ -1,20 +1,6 @@
----
-layout: post
-title: GitLab Build up
-subtitle: ""
-date: 2015-11-06 00:29:45
-author: Blackie
-header-img: ""
-categories:
-- Source Control
-tags:
-- Git
-- GitLab
----
+# GitLabTest
 
 This is a step by step tourist for how to build up a GitLab from Bitnami VM
-
-<!-- More -->
 
 ## GitLab from Bitnami
 
@@ -25,7 +11,7 @@ This is a step by step tourist for how to build up a GitLab from Bitnami VM
 ## General Setup
 
 1. Update your apache for GitLab host to example.com
-
+	
 		$ sudo /opt/bitnami/apps/gitlab/bnconfig --machine_hostname example.com
 
 2. Add example.com to host
@@ -33,12 +19,12 @@ This is a step by step tourist for how to build up a GitLab from Bitnami VM
 		127.0.0.1    example.com
 
 3. Update GitLab setting to correct host display
-
+		
 		$ sudo vi /opt/bitnami/apps/gitlab/htdocs/config/gitlab.yml
 		host: example.com
 
 4. restart(need do this action once configuration change)
-
+	
 		$ sudo /opt/bitnami/ctlscript.sh restart
 
 ## SSH Setup
@@ -52,26 +38,26 @@ This is a step by step tourist for how to build up a GitLab from Bitnami VM
 
 	Setting>Network>Port Forwarding
 
-	![port](Port%20Forwarding.png)
+	![port](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Git%26GitLab/Port%20Forwarding.png)
 
 3. Client generate Key-pairs
 
 	- Linux & Mac
-
+	
 			$ sudo ssh-keygen
 	- Windows
-
+		
 		[PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
 4. Bidning Public key to GitLab account
 
 	SSH Keys>Add
 
-	![SSH public](ssh%20public.png)
+	![SSH public](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Git%26GitLab/ssh%20public.png)
 
 5. Open SourceTree and clone with SSH protocal
 
-	![Clone wih SSH](Clone%20with%20ssh.png)
+	![Clone wih SSH](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Git%26GitLab/Clone%20with%20ssh.png)
 
 	*Windows need add private key to computer first, can use [Pageant](http://the.earth.li/~sgtatham/putty/latest/x86/pageant.exe)*
 

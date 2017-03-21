@@ -77,6 +77,3 @@ tags:
 這邊另外附上CPU, Thread與Task之間的關係!
 
 ![threads](threads.gif)
-
-
-
