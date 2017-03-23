@@ -18,7 +18,7 @@ tags:
 
 ## gitignore plugin Introduction ##
 
-![gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)這個套件是透過抓取[https://github.com/github/gitignore](https://github.com/github/gitignore) repository取得各語言/framework/環境的gitignore設定來幫我們快速新增到目前專案中使用。
+[gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)這個套件是透過抓取[https://github.com/github/gitignore](https://github.com/github/gitignore) repository取得各語言/framework/環境的gitignore設定來幫我們快速新增到目前專案中使用。
 
 ## How to Use ##
 
