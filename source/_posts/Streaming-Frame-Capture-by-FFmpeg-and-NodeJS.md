@@ -62,4 +62,5 @@ tags:
 
 - [FFMPEG -- Source Code 學習心得](http://albert-oma.blogspot.com/2013/03/ffmpeg-source-code.html)
 - [FFmpeg 免費開源、功能強大的影音處理框架](https://magiclen.org/ffmpeg/)
+- [wiki:Creating multiple outputs](https://trac.ffmpeg.org/wiki/Creating%20multiple%20outputs)
 - [Benchmarking Socket.IO vs. Lightstreamer with Node.js](http://blog.lightstreamer.com/2013/05/benchmarking-socketio-vs-lightstreamer.html)
