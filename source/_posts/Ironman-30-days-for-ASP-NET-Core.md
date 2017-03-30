@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-*文章持續更新，最新更新時間: 2017-03-13*
+*文章持續更新，最新更新時間: 2017-03-30*
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -53,15 +53,20 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 #### Setup ###
 - [ASP.NET Core Hello World on Windows](http://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
-- ASP.NET Core Hello World on Mac
-- ASP.NET Core Hello World on Container
+- [ASP.NET Core Hello World on Mac](http://blackie1019.github.io/2017/03/27/ASP-NET-Core-nuget-can-t-restore-on-macOS/)
+- [ASP.NET Core Play with Docker](http://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - [ASP.NET Core add Git Ignore File](http://blackie1019.github.io/2017/03/12/ASP-NET-Core-add-Git-Ignore-File/)
 
 #### Basic ####
+
 - ASP.NET Core Middleware
 - ASP.NET Core Framework-Provided Services
 - ASP.NET Core IServiceCollection
 - ASP.NET Core Playing with Testing
+
+#### Data and Caching ####
+
+- ASP.NET Core Caching
 - ASP.NET Core Working with ADO.NET and Database
 - ASP.NET Core Working with Dapper and Database
 - ASP.NET Core Working with Redis
@@ -74,12 +79,15 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - Hosting ASP.NET Core Web Application on Kestrel with Reverse Proxy
 
 #### Web Advance ####
+
 - [ASP.NET Core Playing with SPA](http://blackie1019.github.io/2017/03/17/ASP-NET-Core-Playing-with-SPA/)
-- ASP.NET Core Playing with React
+- [ASP.NET Core Set Hosting Environment](http://blackie1019.github.io/2017/03/19/ASP-NET-Core-Set-Hosting-environment/)
+- ASP.NET Core Playing with React and Redux
 - ASP.NET Core Web Session with Redis
 - ASP.NET Core Playing with SignalR Core
 
 #### DevOps ####
+
 - ASP.NET Core Playing with Docker
 - ASP.NET Core Build up with Jenkins
 - ASP.NET Core Hosting on Cloud - AWS
@@ -127,8 +135,10 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 ### Third Party Library ###
 
--[Entity Framework Core](http://ef.readthedocs.io/en/latest/index.html)
-
+- [Entity Framework Core](http://ef.readthedocs.io/en/latest/index.html)
+- [ASP.NET Zero](https://aspnetzero.com/)
+- [ASP.NET Boilerplate](https://github.com/aspnetboilerplate/aspnetboilerplate)
+- [ASP.NET Boilerplate - Module Zero](https://github.com/aspnetboilerplate/module-zero)
 ### VS Code ###
 
 - [微軟良心之作——Visual Studio Code 開源免費跨平台代碼編輯器](http://blog.csdn.net/chinahuyong/article/details/46480995)
