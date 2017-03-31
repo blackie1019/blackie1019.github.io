@@ -2,7 +2,7 @@
 layout: post
 title:  ReactJS AKA the V in MVC
 subtitle: ""
-date: 2013-09-27 00:29:45
+date: 2015-05-03 00:29:45
 author: Blackie
 header-img: ""
 categories:
