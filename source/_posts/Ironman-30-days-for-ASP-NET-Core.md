@@ -63,14 +63,14 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core Framework-Provided Services
 - ASP.NET Core IServiceCollection
 - ASP.NET Core Playing with Testing
-
+- [ASP.NET Core using Nuget with Visual Studio Code](http://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-Nuget-with-Visual-Studio-Code/)
 #### Data and Caching ####
 
 - ASP.NET Core Caching
 - ASP.NET Core Working with ADO.NET and Database
 - ASP.NET Core Working with Dapper and Database
 - ASP.NET Core Working with Redis
-- ASP.NET Core Working with Mongo
+- [ASP.NET Core play with MongoDB and MongoDB .NET Driver](http://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
 
 #### Web ####
 - ASP.NET Core Playing with MVC
