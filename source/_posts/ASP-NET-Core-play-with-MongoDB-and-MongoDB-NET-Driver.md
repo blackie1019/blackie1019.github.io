@@ -7,7 +7,6 @@ header-img: ''
 sitemap: true
 date: 2017-03-31 10:09:20
 categories:
-categories:
 - Asp.Net
 tags: 
 - Asp.Net Core

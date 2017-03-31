@@ -7,7 +7,6 @@ header-img: ''
 sitemap: true
 date: 2017-03-30 16:26:50
 categories:
-- Asp.NET
 - Development&Coding
 tags: 
 - Asp.NET Core

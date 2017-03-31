@@ -8,7 +8,6 @@ sitemap: true
 date: 2017-03-13 10:00:01
 categories:
 - Asp.Net
-- Source Control
 tags: 
 - Asp.Net Core
 - C#
