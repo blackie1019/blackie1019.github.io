@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core Playing with SPA
+title: ASP.NET Core play with SPA
 subtitle: ''
 author: Blackie
 header-img: ''

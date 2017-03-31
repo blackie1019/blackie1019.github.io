@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core Play with Docker
+title: ASP.NET Core play with Docker
 subtitle: ''
 author: Blackie
 header-img: ''

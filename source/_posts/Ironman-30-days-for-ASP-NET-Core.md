@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-*文章持續更新，最新更新時間: 2017-03-30*
+*文章持續更新，最新更新時間: 2017-03-31*
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -135,14 +135,20 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 ### Third Party Library ###
 
+- [Awesome .NET Core](https://github.com/thangchung/awesome-dotnet-core)
 - [Entity Framework Core](http://ef.readthedocs.io/en/latest/index.html)
+
+### Architecture/Template/Framework ###
+
+- [Squidex is an open source headless CMS](https://github.com/Squidex/squidex)
 - [ASP.NET Zero](https://aspnetzero.com/)
 - [ASP.NET Boilerplate](https://github.com/aspnetboilerplate/aspnetboilerplate)
 - [ASP.NET Boilerplate - Module Zero](https://github.com/aspnetboilerplate/module-zero)
+
 ### VS Code ###
 
 - [微軟良心之作——Visual Studio Code 開源免費跨平台代碼編輯器](http://blog.csdn.net/chinahuyong/article/details/46480995)
-
+- [awesome-vscode](https://github.com/viatsko/awesome-vscode)
 ## End ##
 
 內容看起很多但主要是把目前實作一個網站會用到的大部分技術都包裹在內，希望能將此技術實際用在真實的商場上而非只將此當作實驗性質的技術為目標。對此系列內容有興趣或是有任何建議歡迎留言與討論!讓我們一起學習吧!
