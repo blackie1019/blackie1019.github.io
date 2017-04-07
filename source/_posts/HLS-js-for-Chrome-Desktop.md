@@ -17,6 +17,8 @@ tags:
 
 <!-- More -->
 
+今天工作上遇到一個問題是必須解決Chrome Desktop支援HLS的問題，並確保在flash被Chrome淘汰的情況下也不會受影響．這邊想起之前看過的一個套件hls.js可以做到這件事情，就稍微紀錄一下相關資料
+
 # HLS Introduction #
 
 HTTP Live Streaming（縮寫是HLS）是一個由蘋果公司提出的基於HTTP的流媒體網絡傳輸協議．
@@ -63,6 +65,8 @@ HLS 的協定本身運作方式相當好懂，其實就是透過一個 .m3u8 副
 我們可以透過npm快速幫我們安裝
 
     npm install --save hls.js
+
+接著我們到Chrome的setting裡面把Flash disable，確保HLS沒有透過任何的flash播放器來載入．
 
 hls.js 的使用很簡單，在載入套件並產生一個新的Hls物件後，透過attachMedia功能附加回去DOM即可．
 
