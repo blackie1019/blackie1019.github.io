@@ -22,13 +22,15 @@ tags:
 
 我們可以在 Chrome > More Tools > Developer Tools (Ctrl+Shift+i)　即可打開Dev Tools ：
 
-# Chrome Dev Tools - Network #
+如果對整個工具想有更近一步的認識可以參考[Chrome DevTools中文手册](https://www.gitbook.com/book/leeon/devtools/details)
+
+# Chrome Dev Tools - Network Tab #
 
 這邊我們可以透過Network這個tab來調整模擬不同的網路狀況(2G,3G,4G, Wifi等)
 
 ![network_ui](network_ui.png)
 
-# Chrome Dev Tools - Timeline #
+# Chrome Dev Tools - Timeline Tab #
 
 而剛剛提及的網路速度調節也可以從Timeline這邊調整
 
