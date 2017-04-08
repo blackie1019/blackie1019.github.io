@@ -36,9 +36,9 @@ Singleton Pattern 會導致程式與Singleton的instance 產生隱含的耦合�
 
 這邊參考[C# in Depth:Implementing the Singleton Pattern in C#](http://csharpindepth.com/Articles/General/Singleton.aspx)此篇文章的建議，分成兩種情況：
 
-## .NET Framework 4.0's Lazy<T> type ##
+## .NET Framework 4.0's Lazy ##
 
-如果你的.NET Framework版本在4.0之上或是使用ASP.NET Core那則放膽使用[System.Lazy<T>](https://msdn.microsoft.com/zh-tw/library/dd642331(v=vs.110).aspx):
+如果你的.NET Framework版本在4.0之上或是使用ASP.NET Core那則放膽使用[System.Lazy<T>](https://msdn.microsoft.com/zh-tw/library/dd642331.aspx):
 
     public sealed class Singleton
     {
