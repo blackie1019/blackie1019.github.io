@@ -77,7 +77,7 @@ public void Insert(Member dataObject)
 
 # MongoDB Remove #
 
-![crud-annotated-mongodb-delete](crud-annotated-mongodb-delete.png)
+![crud-annotated-mongodb-remove](crud-annotated-mongodb-remove.png)
 
 這邊稍微注意一下，由於MongoDB針對Update與Delete提供一樣的條件參數(criteria或 conditions)與表態式(syntax)，如果有不懂的需要確認可以參考[read operations](https://docs.mongodb.com/v3.0/core/read-operations/)
 
