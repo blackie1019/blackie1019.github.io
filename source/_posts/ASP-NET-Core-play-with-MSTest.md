@@ -36,7 +36,7 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
 - MongoCRUD.Core
 
     取用與操作MongoDB內資料的函式庫
-    
+
 - MongoCRUD.Test
 
     測試MongoCRUD.Core功能的測試專案
@@ -95,20 +95,20 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
 
 ### Member.cs ###
 
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+    using MongoDB.Bson;
+    using MongoDB.Bson.Serialization.Attributes;
 
-namespace MongoCRUD.Core.Pocos
-{
-    public class Member
+    namespace MongoCRUD.Core.Pocos
     {
-        public ObjectId Id { get; set; }
-        [BsonElement("name")]
-        public string Name { get; set; }
-        [BsonElement("balance")]
-        public decimal Balance { get; set; }
+        public class Member
+        {
+            public ObjectId Id { get; set; }
+            [BsonElement("name")]
+            public string Name { get; set; }
+            [BsonElement("balance")]
+            public decimal Balance { get; set; }
+        }
     }
-}
 
 ### MemberService.cs ###
 
@@ -155,7 +155,7 @@ namespace MongoCRUD.Core.Pocos
         }
     }
 
-這邊服務的部分是用Singleton的方式重複使用同一個連線實體，實務上這一個實體應該從外面傳入給建構子(constructr)才可以增加重複使用性與增加效能．
+這邊服務的部分是用Singleton的方式重複使用同一個連線實體，實務上這一個實體應該從外面傳入給建構子(constructor)才可以增加重複使用性與增加效能．
 
 ## Complete Test Case and Execute it ##
 
