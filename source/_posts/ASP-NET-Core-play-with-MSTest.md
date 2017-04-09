@@ -60,7 +60,7 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
     cd MongoCRUD.API
     dotnet new webapi
 
-![folded](foled.png)
+![folder](foler.png)
 
 ## Add Library Reference for Test Project and API Project ##
 
