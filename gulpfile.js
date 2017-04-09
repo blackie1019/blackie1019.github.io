@@ -23,14 +23,15 @@ gulp.task('copy-js', function() {
              public_dir + '/vendors/velocity/velocity.min.js',
              public_dir + '/vendors/velocity/velocity.ui.min.js',
              public_dir + '/vendors/fancybox/source/jquery.fancybox.pack.js',
+             public_dir + '/vendors/google-code-prettify/prettify.js',
              public_dir + '/js/src/utils.js',
              public_dir + '/js/src/motion.js',
              public_dir + '/js/src/bootstrap.js',
              public_dir + '/js/src/scrollspy.js',
              public_dir + '/js/src/post-details.js',
              public_dir + '/js/src/swig/localsearch.js',
-             public_dir + '/js/src/swig/achive-year.js'
-
+             public_dir + '/js/src/swig/achive-year.js',
+             public_dir + '/js/src/pretty-print.js'
         ])
         .pipe(gulp.dest(bundle_js));
 })
@@ -49,14 +50,15 @@ gulp.task('concat-js', function() {
              bundle_js + '/velocity.min.js',
              bundle_js + '/velocity.ui.min.js',
              bundle_js + '/jquery.fancybox.pack.js',
+             bundle_js + '/prettify.js',
              bundle_js + '/utils.js',
              bundle_js + '/motion.js',
              bundle_js + '/bootstrap.js',
              bundle_js + '/scrollspy.js',
              bundle_js + '/post-details.js',
              bundle_js + '/localsearch.js',
-             bundle_js + '/achive-year.js'
-
+             bundle_js + '/achive-year.js',
+             bundle_js + '/pretty-print.js'
         ])
         .pipe(concat('all.min.js'))
         .pipe(gulp.dest(bundle_dir));
@@ -66,6 +68,7 @@ gulp.task('copy-css', function() {
     return gulp.src([
             public_dir + '/vendors/fancybox/source/jquery.fancybox.css',
             public_dir + '/vendors/font-awesome/css/font-awesome.min.css',
+            public_dir + '/vendors/google-code-prettify/skins/prettify.css',
             public_dir + '/css/main.css'
         ])
         .pipe(gulp.dest(bundle_css));
@@ -99,6 +102,7 @@ gulp.task('concat-advance-css', function() {
     return gulp.src([
             bundle_css + '/jquery.fancybox.css',
             bundle_css + '/font-awesome.min.css',
+            bundle_css + '/prettify.css'
         ])
         .pipe(concat('advance.css'))
         .pipe(gulp.dest(bundle_dir));

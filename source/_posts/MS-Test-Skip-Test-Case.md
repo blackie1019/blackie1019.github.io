@@ -34,16 +34,18 @@ tags:
 
 而當我們在測試案例外層掛上[IgnoreAttribute]即可快速的skip掉特定的測試案例:
 
-        [IgnoreAttribute]
-        [TestMethod]
-        public void MemberRepository_Delete()
-        {
-            var id = "r2";
-            var data = MemberRepository.Instance.Delete(id);
+```csharp
+[IgnoreAttribute]
+[TestMethod]
+public void MemberRepository_Delete()
+{
+    var id = "r2";
+    var data = MemberRepository.Instance.Delete(id);
 
-            Assert.IsNotNull(data);
-            Assert.AreEqual(data.DeletedCount,1);
-        }
+    Assert.IsNotNull(data);
+    Assert.AreEqual(data.DeletedCount,1);
+}
+```
 
 而再次執行dotnet test結果如下：
 
