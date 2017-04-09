@@ -67,12 +67,10 @@ MongoDB的[ db.collection.insert() ](https://docs.mongodb.com/v3.0/reference/met
 ### Basic Insert ###
 
 ```csharp
-
 public void Insert(Member dataObject)
 {
     this.Collection.InsertOne(dataObject);
 }
-
 ```
 
 # MongoDB Remove #
@@ -86,7 +84,6 @@ public void Insert(Member dataObject)
 ## .NET MongoDB Driver Delete(Remove) Related Function ##
 
 ```csharp
-
 public DeleteResult Delete(string id)
 {
     var filter = this.GenerateFilterInput(id);
@@ -99,15 +96,13 @@ private FilterDefinition<Member> GenerateFilterInput(string id)
 {
     return Builders<Member>.Filter.Eq("_id", ObjectId.Parse(id));
 }
-
 ```
 
-## [補充] Member.CS ##
+# [補充] Member.CS #
 
 因為之後的新增, 查詢, 更新與刪除都會帶到這個class所以這邊在特別拿出來看一下
 
 ```csharp
-
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -122,7 +117,6 @@ namespace MongoCRUD.Core.Pocos
         public decimal Balance { get; set; }
     }
 }
-
 ```
 
 # Reference #
