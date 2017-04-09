@@ -11,6 +11,7 @@ categories:
 tags: 
 - Asp.Net Core
 - MongoDB
+- .NET MongoDB Driver
 ---
 
 記錄如何使用MongoDB .NET Driver 取用MongoDB內的資料
@@ -25,7 +26,27 @@ MongoDB .NET Driver是一個讓我們可以連接至MongoDB Instance的組件，
 
 ![mongodb](mongodb.jpg)
 
-MongoDB .NET Driver 的安裝可以透過NuGet幫我們完成．
+## Library Reference ##
+
+MongoDB .NET Driver 的安裝可以手動加入project reference後還原或是透過NuGet幫我們添加完成
+
+- ### Manually ###
+
+    在專案加入以下Reference:
+
+        <ItemGroup>
+            <PackageReference Include="MongoDB.Driver" version="2.4.3" />
+        </ItemGroup>
+
+- ### Dotnet CLI ###
+
+    我們也可以透過CLI直接加入
+
+        dotnet add package MongoDB.Driver
+
+這邊無論手動或自動皆需要執行還原指令將Library透過nuget作載入
+
+    dotnet restore
 
 ## Setup MongoClient ##
 
