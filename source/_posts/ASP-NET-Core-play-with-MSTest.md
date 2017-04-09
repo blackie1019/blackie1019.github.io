@@ -137,19 +137,19 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
 
             private MemberService()
             {
-                this.Credential = MongoCredential.CreateCredential("poker-band", "dbuser", "pass.123");
+                this.Credential = MongoCredential.CreateCredential(<instance name>, <user account>,<password>);
                 this.ClientSettings  = new MongoClientSettings
                 {
                     Credentials = new[] { this.Credential },
-                    Server = new MongoServerAddress("ds147070.mlab.com", 47070)
+                    Server = new MongoServerAddress(<domain>, <port>)
                 };
                 this.Client = new MongoClient(this.ClientSettings);
-                this.Database = this.Client.GetDatabase("poker-band");
+                this.Database = this.Client.GetDatabase(<database name>);
             }
 
             public List<Member> GetMember()
             {
-                var collection = this.Database.GetCollection<Member>("member");
+                var collection = this.Database.GetCollection<Member>(<collection name>);
                 return collection.Find(new BsonDocument()).ToList();
             }
         }
