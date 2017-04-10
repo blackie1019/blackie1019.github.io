@@ -11,10 +11,10 @@ categories:
 tags: 
 - Asp.Net Core
 - MongoDB
-- .NET MongoDB Driver
+- MongoDB .NET Driver
 ---
 
-針對MongoDB的Create(Insert)與Delete(Remove)進行介紹並應用.NET MongoDB Driver實作
+針對MongoDB的Create(Insert)與Delete(Remove)進行介紹並應用MongoDB .NET Driver實作
 
 <!-- More -->
 
@@ -62,7 +62,7 @@ MongoDB的[ db.collection.insert() ](https://docs.mongodb.com/v3.0/reference/met
 
 新增資料到MongoDB中，每筆record都會自動產生一個_id的參數(文字格式)，這是系統產生的唯一值，是在做查詢與交易時最佳的遍尋值．而這個在MongoDB .NET Driver當中是特別指定欄位為ObjectId這個class．
 
-## .NET MongoDB Driver Create(Insert) Related Function ##
+## MongoDB .NET Driver Create(Insert) Related Function ##
 
 ### Basic Insert ###
 
@@ -81,7 +81,7 @@ public void Insert(Member dataObject)
 
 而預設MongoDB的[ db.collection.remove() ](https://docs.mongodb.com/v3.0/reference/method/db.collection.remove/#db.collection.remove)行為則是移除所有符合條件的資料紀錄．
 
-## .NET MongoDB Driver Delete(Remove) Related Function ##
+## MongoDB .NET Driver Delete(Remove) Related Function ##
 
 ```csharp
 public DeleteResult Delete(string id)

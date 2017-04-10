@@ -11,7 +11,7 @@ categories:
 tags: 
 - Asp.Net Core
 - MongoDB
-- .NET MongoDB Driver
+- MongoDB .NET Driver
 ---
 
 記錄如何使用MongoDB .NET Driver 取用MongoDB內的資料

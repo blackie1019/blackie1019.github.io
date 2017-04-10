@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-*文章持續更新，最新更新時間: 2017-03-31*
+*文章持續更新，最新更新時間: 2017-04-10*
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -64,17 +64,24 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core IServiceCollection
 - ASP.NET Core Playing with Testing
 - [ASP.NET Core using Nuget with Visual Studio Code](http://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-Nuget-with-Visual-Studio-Code/)
+- [ASP.NET Core play with MSTest](http://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)
+
 #### Data and Caching ####
 
 - ASP.NET Core Caching
-- ASP.NET Core Working with ADO.NET and Database
-- ASP.NET Core Working with Dapper and Database
-- ASP.NET Core Working with Redis
+- ASP.NET Core play with Redis
+- ASP.NET Core Working with ADO.NET and MSSQL
+- ASP.NET Core Working with Dapper and MSSQL
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver](http://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
+- [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create](http://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/)
+- ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read
+- ASP.NET Core play with MongoDB and MongoDB .NET Driver - Update
 
 #### Web ####
-- ASP.NET Core Playing with MVC
-- ASP.NET Core Playing with WebAPI
+
+- ASP.NET Core play with MVC
+- ASP.NET Core play with WebAPI
+- [ASP.NET Core play with dotnet-watch](http://blackie1019.github.io/2017/03/13/ASP-NET-core-play-with-dotnet-watch/)
 - Hosting ASP.NET Core Web Application on Kestrel 
 - Hosting ASP.NET Core Web Application on Kestrel with Reverse Proxy
 
@@ -82,16 +89,17 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 - [ASP.NET Core Playing with SPA](http://blackie1019.github.io/2017/03/17/ASP-NET-Core-Playing-with-SPA/)
 - [ASP.NET Core Set Hosting Environment](http://blackie1019.github.io/2017/03/19/ASP-NET-Core-Set-Hosting-environment/)
-- ASP.NET Core Playing with React and Redux
+- [ASP.NET Core Playing with React and Redux](http://blackie1019.github.io/2017/03/28/ASP-NET-Core-SPA-Biobiolerplate-with-React-and-Redux/)
 - ASP.NET Core Web Session with Redis
-- ASP.NET Core Playing with SignalR Core
+- ASP.NET Core play with SignalR Core
 
-#### DevOps ####
+#### Continuous Delivery ####
 
 - ASP.NET Core Playing with Docker
 - ASP.NET Core Build up with Jenkins
-- ASP.NET Core Hosting on Cloud - AWS
 - ASP.NET Core Hosting on Cloud - Azure
+- ASP.NET Core Hosting on Cloud - AWS
+- ASP.NET Core Hosting on Cloud - Google Cloud
 
 ## Project Goal ##
 
@@ -122,7 +130,8 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET Core and .NET Core Overview](https://weblog.west-wind.com/posts/2016/jun/13/aspnet-core-and-net-core-overview)
 - [Overview of the new .NET Core and .NET Platform Standard](https://www.slideshare.net/AlexThissen/overview-of-the-new-net-core-and-net-platform-standard)
 - [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/)
-- [ASP.NET Core quick build "dev" branch feed](http://myget.org/gallery/aspnetcidev ) 這是產品團隊所使用的 "開發版" 元件清單，也就是 GitHub 裡面 dev branch 的實際內容，你可以在這最快速的看到每個元件目前最新的版號與更新時間．
+- [ASP.NET Core quick build "dev" branch feed](http://myget.org/gallery/aspnetcidev ) 
+    這是產品團隊所使用的 "開發版" 元件清單，也就是 GitHub 裡面 dev branch 的實際內容，你可以在這最快速的看到每個元件目前最新的版號與更新時間．
 
 ### Web Host ###
 
@@ -147,8 +156,20 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 ### VS Code ###
 
+#### General ####
+
 - [微軟良心之作——Visual Studio Code 開源免費跨平台代碼編輯器](http://blog.csdn.net/chinahuyong/article/details/46480995)
 - [awesome-vscode](https://github.com/viatsko/awesome-vscode)
+- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
+- [Guides](https://marketplace.visualstudio.com/items?itemName=spywhere.guides)
+- [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
+
+#### ASP.NET Core ####
+
+- [C#](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- [C# Extensions](https://marketplace.visualstudio.com/items?itemName=jchannon.csharpextensions)
+- [NuGet Package Manager](https://marketplace.visualstudio.com/items?itemName=jmrog.vscode-nuget-package-manager)
+
 ## End ##
 
 內容看起很多但主要是把目前實作一個網站會用到的大部分技術都包裹在內，希望能將此技術實際用在真實的商場上而非只將此當作實驗性質的技術為目標。對此系列內容有興趣或是有任何建議歡迎留言與討論!讓我們一起學習吧!
