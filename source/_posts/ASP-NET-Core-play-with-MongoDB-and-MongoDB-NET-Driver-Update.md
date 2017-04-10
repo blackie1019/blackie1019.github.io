@@ -18,13 +18,13 @@ tags:
 
 <!-- More -->
 
-前一篇[ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create and Delete](http://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/) 分享了如何做資料的新增與刪除，此篇文章我們來看一下如何做資料的更新
+先前一篇[ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create and Delete](http://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/) 分享了如何做資料的新增與刪除，此篇文章我們來看一下如何做資料的更新
 
 # MongoDB Update #
 
 ![crud-annotated-mongodb-update](crud-annotated-mongodb-update.png)
 
-在MongoDB中更新指令主要是透過一個主題與三個參數組成：
+在MongoDB中更新指令主要是透過一個主體與三個參數組成：
 
 - collection
 
@@ -127,4 +127,5 @@ public Member Update(Member dataObject)
 - [MONGODB MANUAL : Write Operations Overview](https://docs.mongodb.com/v3.0/core/write-operations-introduction/)
 - [MONGODB MANUAL : Indexes](https://docs.mongodb.com/manual/indexes/)
 - [MONGODB MANUAL : Atomicity and Transactions](https://docs.mongodb.com/v3.0/core/write-operations-atomicity/)
+- [MONGODB MANUAL : Update Data with C# Driver](https://docs.mongodb.com/getting-started/csharp/update/)
 - [MongoDB Map Property 'new' in findAndModify using FindOneAndUpdateOptions class C# Driver](http://stackoverflow.com/questions/30739596/mongodb-map-property-new-in-findandmodify-using-findoneandupdateoptions-class)

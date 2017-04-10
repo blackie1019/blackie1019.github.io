@@ -75,7 +75,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver](http://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create](http://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/)
 - ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read
-- ASP.NET Core play with MongoDB and MongoDB .NET Driver - Update
+- [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Update](http://blackie1019.github.io/2017/04/10/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Update/)
 
 #### Web ####
 
