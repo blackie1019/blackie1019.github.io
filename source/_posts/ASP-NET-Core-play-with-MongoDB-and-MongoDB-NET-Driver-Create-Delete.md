@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create
+title: ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create and Delete
 subtitle: ''
 author: Blackie
 header-img: ''
