@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-12 00:01:12
+date: 2017-04-12 02:01:12
 categories:
 - Cloud
 tags:
@@ -55,6 +55,8 @@ CDN則有另外一個：
 ![network_cdn](network_cdn.png)
 
 ### Zonal Coverage, Regional Coverage, and Multi-Regional Coverage ###
+
+針對High Availability與Disaster Recovery有分為幾種做法：
 
 #### Zonal Coverage ####
 
@@ -204,7 +206,7 @@ Cloud IAM的帳號可包含：
 - JSON Key
 - P12 Key
 
-建議使用JSON Key．專案內的Default Account建議不要刪除，因為刪除後如果需要還原需將專案下所有資源移除，這動作會相當於重開一個新專案...所以
+建議使用JSON Key．專案內的Default Account建議不要刪除，因為刪除後如果需要還原需將專案下所有資源移除，這動作會相當於重開一個新專案...所以以下這句話很重要(所以要講三次)：
 
 建議大家先不要將Default Account移除
 建議大家先不要將Default Account移除
@@ -262,7 +264,7 @@ Cloud IAM的帳號可包含：
 
 ## GCP Online Class ##
 
-[Google Cloud Platform - Training Materials Access](https://myclass.gcptrain.org/)
+[Google Cloud Platform - Training Materials Access](https://myclass.gcptrain.org/)，有提供GCP相關的教學文件下載
 
 目前已經有的課程：
 
@@ -280,7 +282,7 @@ Cloud IAM的帳號可包含：
 
 ## GCPUG.TW ##
 
-[GCPUG.TW](http://gcpug.tw/), GCPUP是從日本開始發起的社群，而台灣社群在幾位早期至官方受訓後的前輩建立，主要希望能夠跟開發者們與雲端服務使用者分享GCP上的好用服務．目前每個月第一個禮拜都會有meetup，有的會在google 台灣辦公室主辦，有興趣進去參觀的人一定要報名．
+[GCPUG.TW](http://gcpug.tw/), GCPUP是從日本開始發起的社群，而台灣社群在幾位早期至官方受訓後的前輩建立，主要希望能夠跟開發者們與雲端服務使用者分享GCP上的好用服務．目前每個月第一個禮拜都會有meetup，有時會在google 台灣辦公室主辦，有興趣進去台灣Google參觀的人不訪報名參加他們活動摟．
 
 # [補充]  APIs Explorer and OAuth Playground #
 
