@@ -2,7 +2,7 @@
 layout: post
 title: Mou Introduction
 subtitle: ""
-date: 2014-11-14 00:29:45
+date: 2013-08-31 00:29:45
 author: Blackie
 header-img: ""
 categories:
@@ -14,6 +14,8 @@ tags:
 在Mac 環境寫MarkDown的好物
 
 <!-- More -->
+
+![Logo](mou_logo.png)
 
 [Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載
 
