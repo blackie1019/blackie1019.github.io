@@ -86,6 +86,12 @@ public IList<Member> Get()
 }
 ```
 
+# RMDB Script compare with MongoDB Script #
+
+這邊找到網路上大大製作的一個ＭySQL與MongoDB查詢指令的對比圖：
+
+![MongoDB-part3-MySQL-to-MongoDB-mapping](MongoDB-part3-MySQL-to-MongoDB-mapping.jpg)
+
 # Reference #
 
 - [Introduction To MongoDB NoSQL Database For SQL Developers – Part 3](http://bicortex.com/page/12/)
