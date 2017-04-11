@@ -74,7 +74,7 @@ CDN則有另外一個：
 
 甚至自動在多個Region內做擴展，這邊雖然是多個但還是有地理位置的限制：
 
-![Multi-Regional Coverage](Multi-Regional Coverage.png)
+![Multi-Regional Coverage](Multi_Regional_Coverage.png)
 
 ## Customer-Friendly Pricing ##
 
