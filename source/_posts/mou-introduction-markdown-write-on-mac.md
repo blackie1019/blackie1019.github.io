@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Mou Introduction
-subtitle: ""
-date: 2013-08-31 00:29:45
+title: Mou Introduction - Write Markdown on Mac
+subtitle: ''
 author: Blackie
-header-img: ""
+header-img: ''
+sitemap: true
+date: 2017-08-31 09:52:01
 categories:
 - Tool
 tags:
-- MarkDown
+- Markdown
 ---
 
-在Mac 環境寫MarkDown的好物
+在Mac 環境寫Markdown的好物
 
 <!-- More -->
 
