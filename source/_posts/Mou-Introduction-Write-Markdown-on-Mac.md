@@ -6,6 +6,7 @@ author: Blackie
 header-img: ''
 sitemap: true
 date: 2013-08-31 21:40:20
+categories:
 - Tool
 tags:
 - Markdown
