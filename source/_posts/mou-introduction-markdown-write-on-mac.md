@@ -15,8 +15,6 @@ tags:
 
 <!-- More -->
 
-![Logo](mou_logo.png)
-
 [Mou-MarkdownCSS-Dotblog](http://github.com/blackie1019/Mou-MarkdownCSS-Dotblog)下載
 
 # Mou介紹 #
