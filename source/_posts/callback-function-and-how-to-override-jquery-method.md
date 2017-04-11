@@ -90,6 +90,6 @@ tags:
 
 從文件可以看到
 
-![typeof](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140218/typeof.PNG)
+![typeof](typeof.PNG)
 
 所以簡單來講回傳的就是文字瞜，所以就可以透過===來更嚴謹的作辦定條件。

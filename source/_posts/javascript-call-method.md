@@ -74,7 +74,7 @@ tags:
 
 從剛剛上面的範例我們看到結果是如下，可以看到其實他們是類似的東西:
 
-![applyandcall](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140115/applyandcall.PNG)
+![applyandcall](applyandcall.PNG)
 
 除了以上幾個四個用法外，常見的還有anonymous function(匿名函式)的呼叫，使用如下:
 
@@ -104,6 +104,6 @@ tags:
 
 結果如下:
 
-![remains](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140115/remains.PNG)
+![remains](remains.PNG)
 
 看到這邊你應該對javascript的函式使用不在陌生了，而透過apply,call與自我呼叫的方式你可以寫出更多可被重複使用的method或是將你的功能切成更多細項來互相交錯使用‧

@@ -19,9 +19,9 @@ Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的�
 
 在我們安裝完Git之後打開Git Bash，輸入`git config --list` 即可看到目前的設定
 
-![01](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141001/01.png)
+![01](01.png)
 
-![02](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141001/02.png)
+![02](02.png)
 
 這邊有三個重點要設定:
 
@@ -51,14 +51,14 @@ Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的�
 
 設定完後我們可以到隨意一個Github公開專案去複製他.git的位置(如下圖)
 
-![03](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141001/03.png)
+![03](03.png)
 
 然後同樣透過git bash我們輸入`git clone https://github.com/angular/angular.js.git` 的方式即可clone回來瞜，如下圖再跑進度表即可
 
-![05](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141001/05.png)
+![05](05.png)
 
 這邊順到一提如果你要再git bash 貼上文字的話要在git bash的邊框按下右鍵點選Edit>Paste
 
-![04](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141001/04.png)
+![04](04.png)
 
 同樣，如果要複製git bash內某段文字內容就點選Edit>Mark然後滑鼠左鍵選完後再按下右建複製即可。

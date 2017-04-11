@@ -16,7 +16,7 @@ tags:
 
 <!-- More -->
 
-![LOGO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jshint.png)
+![LOGO](jshint.png)
 
 ## JSLint VS JSHint
 
@@ -44,16 +44,16 @@ JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒�
 
 以下是原始版本：
 
-![sublime 1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jsHint_sublime_1.png)
+![sublime 1](jsHint_sublime_1.png)
 
 整理完的的版本：
 
-![sublime 2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jsHint_sublime_2.png)
+![sublime 2](jsHint_sublime_2.png)
 
 
 按下JSHint修改完的版本：
 
-![sublime 3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/jsHint_sublime_3.png)
+![sublime 3](jsHint_sublime_3.png)
 
 小小一段code 是不是差異很多啊！，最後的版本會看到它還是有提醒我有兩個沒通過的檢查，但因為這邊跟我使用AngularJS與AngularJS UI-Routing的套件有關，所以我們可以不用管它，這份code就可以開心上git摟!
 
@@ -61,7 +61,7 @@ JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒�
 
 如果對於預設的檢測需要做條件修改，可到上方的Tools->JSHint->Set Linting Preferences就可以進去修改了，如下：
 
-![Preferences](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/Perferences.png)
+![Preferences](Perferences.png)
 
 至於有什麼可以修改的就參考[官方說明](https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options)摟
 
@@ -69,7 +69,7 @@ JSLint 定義了一組比 ECMAScript Language Specification 第三版(應該沒�
 
 除了一般手動檢查外，我們也可以透過Tools->JSHint->Set Plug Options 設定Sublime Text2插件在環境的特殊選項，讓他在每次編輯或是存檔的時候幫我們做自動檢查。
 
-![env](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140119/env.png)
+![env](env.png)
 
 ## 結語
 
