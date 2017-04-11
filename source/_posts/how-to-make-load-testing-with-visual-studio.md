@@ -16,11 +16,11 @@ tags:
 
 <!-- More -->
 
-![0](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/0.jpg)
+![0](0.jpg)
 
 ## About Load Testing
 
-![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/1.png)
+![1](1.png)
 
 ### Performance testing
 
@@ -59,7 +59,7 @@ tags:
 在Load Testing實際執行當中，你會需要透過VS去建立一個 Load Testing Solution，接著將這Solution透過Test Controller來執行，而Test Controller會去控制它底下的 Test Agent ，分配對應的主機實際去跑你所安排的腳本。
 
 
-![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/2.jpg)
+![2](2.jpg)
 
 ## Create Visual Studio Load Testing Solution
 
@@ -87,9 +87,9 @@ tags:
 
 開啟VS後選擇File>New>Project>Web Performance and Load Test Project，建立一個新的Load Testing Solution
 
-![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/3.png)
+![3](3.png)
 
-![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/4.png)
+![4](4.png)
 
 ### Add Web Performance Testing
 
@@ -101,31 +101,31 @@ tags:
 
 -	step-1
 
-	![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/5.png)
+	![5](5.png)
 
 -	step-2
 
-	![6](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/6.png)
+	![6](6.png)
 
 -	step-3
 
-	![7](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/7.png)
+	![7](7.png)
 
 -	step-4
 
-	![8](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/8.png)
+	![8](8.png)
 
 -	step-5
 
-	![9](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/9.png)
+	![9](9.png)
 
 -	step-6
 
-	![10](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/10.png)
+	![10](10.png)
 
 -	step-7
 
-	![11](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/11.png)
+	![11](11.png)
 
 #### Create by Code
 
@@ -133,18 +133,18 @@ tags:
 
 ****這邊要稍微注意一下，我們可以將錄製的.webtest檔案產生CodeBase的測試腳本(.cs)，但沒辦法將任一個.cs檔案轉回.webtest。***
 
-![12](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/12.png)
+![12](12.png)
 
 ### Add Load Testing
 
 接著我們開始準備我們剛剛建立測試的主要檔案(.loadtest)。每一個.loadtest檔案可以在設定包含多個.webtest(或.cs)做為要執行Load Testing時候的腳本。
 
-![13](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/13.png)
+![13](13.png)
 #### Configure Scenario setting
 
 Once you create .loadtest file, it will added default scenario and you can add more with UI(right click to add).[MSDN:Load Test Scenario Properties](http://msdn.microsoft.com/en-us/library/ff406966.aspx)
 
-![14](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/14.png)
+![14](14.png)
 
 - **STEP-1:**
 
@@ -152,14 +152,14 @@ Once you create .loadtest file, it will added default scenario and you can add m
 	- The think profile is a setting that applies to a scenario in a load test. The setting determines whether the think times that are saved in the individual Web performance tests are used during the load test.
 	- If you want to use think times in some Web performance tests but not in others, you must place them in different scenarios.
 
-	![15](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/15.png)
+	![15](15.png)
 
 	[MSDN:Editing Think Times to Simulate Website Human Interaction Delays in Load Tests Scenarios](http://msdn.microsoft.com/en-us/library/dd997697.aspx)
 - **STEP-2:**
 
 	- The load pattern properties specify how the simulated user load is adjusted during a load test. Visual Studio Ultimate provides three built-in load patterns: constant, step, and goal-based.
 
-	![16](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/16.png)
+	![16](16.png)
 
 	[MSDN:Editing Load Patterns to Model Virtual User Activities](http://msdn.microsoft.com/en-us/library/dd997551.aspx)
 
@@ -167,7 +167,7 @@ Once you create .loadtest file, it will added default scenario and you can add m
 
 	- Specifies the test mix model that is used for the load test.
 
-	![17](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/17.png)
+	![17](17.png)
 
 	[MSDN:Editing the Test Mix to Specify Which Web Browsers Types in a Load Test Scenario](http://msdn.microsoft.com/en-us/library/dd997561.aspx)
 
@@ -177,7 +177,7 @@ Once you create .loadtest file, it will added default scenario and you can add m
 
 	- Specifies the network mix for the load test. You can specify which network types to include and their load distribution.
 
-	![18](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/18.png)
+	![18](18.png)
 
 	[MSDN:Specifying Virtual Network Types in a Load Test Scenario](http://msdn.microsoft.com/en-us/library/dd997557.aspx)
 
@@ -185,7 +185,7 @@ Once you create .loadtest file, it will added default scenario and you can add m
 
 	- Specifies the Web browser mix for the load test. You can specify different Web browser types and their load distribution.
 
-	![19](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/19.png)
+	![19](19.png)
 
 	[MSDN:Editing the Test Mix to Specify Which Web Browsers Types in a Load Test Scenario](http://msdn.microsoft.com/en-us/library/dd997561.aspx)
 
@@ -198,15 +198,15 @@ Open results of recently run tests
 -	*(Optional)* To view test result details, including any data and diagnostic adapter attachments, choose Run Details in the toolbar.
 -	*(Optional)* If you have Office excel 2010 or later, you can generate with excel add-in([guide](http://msdn.microsoft.com/en-us/library/dd997707.aspx))
 
-![20](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/20.png)
+![20](20.png)
 
 ### Open Load Testing Report
 
-![21](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/21.png)
+![21](21.png)
 
 ## Tips for setting
 
-![22j](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/22.jpg)
+![22j](22.jpg)
 
 ### Tip 1 – How to set User Load with gradually increased
 
@@ -240,13 +240,13 @@ Open results of recently run tests
 
 -	Using Context parameters to store data and binding it to next.
 
-![22p](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/22.png)
+![22p](22.png)
 
 ### Tip 4 – How to make binding data amd pick up with random
 
 -	If your source have grant data and you want pick up is random,  you can set it on data source directly.
 
-![23](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/23.png)
+![23](23.png)
 
 ### Tips 5 – Binding Data Source with CSV file but execute with Error
 
@@ -254,17 +254,17 @@ Open results of recently run tests
 -	Solution is update your .csv file with another title to make binding with correct encoding.
 -	You can confirm encoding is correct by generate code on .webtest file.
 
-![24](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/24.png)
+![24](24.png)
 
 ## One more thing about Load Testing
 
-![25](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/25.jpg)
+![25](25.jpg)
 
 ### Cowork with Test Controller and Test Agent
 
 一開始我們有稍微提到Test Controller 與 Test Agent 的關係，現在我們進一步的來看看實際上Test Controller怎麼去控制Test Agent來完成Load Testing.
 
-![26](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/26.png)
+![26](26.png)
 
 從上圖你可以看到其實Test Controller就是指派它底下的每一個Test Agent去Run Tests然後將資料取得回來放置Test controller這邊收集。
 
@@ -274,7 +274,7 @@ Open results of recently run tests
 
 實務上，在做Load Testing的時候通常我們都會針對類似實際運行架構(production environment)進行測試，以確保測試出來的數值是符合真實情況的，所以通常我們的Load Testing Controller 與 Test Agent我們會獨立建立一個Test Rig來分隔實際需要測試的環境。而我們可透過遠端(remote)或直接到Load Testing Controller那台執行我們的腳本。
 
-![27](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/27.png)
+![27](27.png)
 
 ### Load Testing in the Cloud (Windows Azure)
 
@@ -284,11 +284,11 @@ Open results of recently run tests
 
 #### Graphic
 
-![28](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/28.png)
+![28](28.png)
 
 #### Flow
 
-![29](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/29.jpg)
+![29](29.jpg)
 
 #### Hands on Lab
 
@@ -302,7 +302,7 @@ Open results of recently run tests
 6. Open the SampleLoadTest.loadtest file. From the 'Load Test' menu, select 'Run' -> 'Selected Test'
 7. The Load test from the cloud will now start and show you graphs of how your application is performing during the load test.
 
-![30](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141230/30.png)
+![30](30.png)
 
 搭配上面的Lab，這邊額外推薦大家使用[visual-studio-online](http://azure.microsoft.com/zh-tw/services/visual-studio-online/)
 ，優點如下摟:
