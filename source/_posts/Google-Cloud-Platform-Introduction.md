@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Play Google Cloud
+title: Google Cloud Platform Introduction
 subtitle: ''
 author: Blackie
 header-img: ''
