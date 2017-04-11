@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-*文章持續更新，最新更新時間: 2017-04-10*
+*文章持續更新，最新更新時間: 2017-04-11*
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -74,7 +74,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core Working with Dapper and MSSQL
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver](http://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create](http://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/)
-- ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read
+- [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read](ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Update](http://blackie1019.github.io/2017/04/10/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Update/)
 
 #### Web ####
@@ -95,7 +95,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 #### Continuous Delivery ####
 
-- ASP.NET Core Playing with Docker
+- [ASP.NET Core play with Docker](http://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - ASP.NET Core Build up with Jenkins
 - ASP.NET Core Hosting on Cloud - Azure
 - ASP.NET Core Hosting on Cloud - AWS
