@@ -37,19 +37,19 @@ Emmet是一個網業開發的Toolkit，前身叫做Zen Coding，可以快速的�
 2. 安裝[Package Control](https://sublime.wbond.net/installation)
 3. 在SublimeText中使用Package Control安裝LiveStyle
 
-	![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/1.png)
+	![1](1.png)
 
 	看到下面的說明代表安裝完成瞜
 
-	![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/2.png).
+	![2](2.png).
 
 4. 接著打開Chrome安裝[LiveStyle plugin](https://chrome.google.com/webstore/detail/emmet-livestyle/diebikgmpmeppiilkaijjbdgciafajmg?hl=zh-TW)
 
-	![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/3.png)
+	![3](3.png)
 
 5. 然後打開Chrome的開發者工具可以看到多一個LiveStyle的選項選擇開啟功能就可以來玩耍瞜
 
-	![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/4.png)
+	![4](4.png)
 
 ## Hands on
 
@@ -57,15 +57,15 @@ Emmet是一個網業開發的Toolkit，前身叫做Zen Coding，可以快速的�
 2. 開啟Chorme developer tool 勾選Enable LiveStyle for current page
 3. 這邊會顯示這一個網頁有多少公司是獨立的檔案可以被修改，這邊我們需要把他Mapping到我們SublimeText上面去
 
-	![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/5.png)
+	![5](5.png)
 
 4. 這時候如果我們在SublimeText開一份新文件就會發生原本沒有任何可以mapping的下拉選項出現了一個剛剛新開的檔案瞜
 
-	![6](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/6.png)
+	![6](6.png)
 
 5. 接著我們也來讓網頁選轉一下吧
 
-	![7](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140803/demo.gif)
+	![7](demo.gif)
 
 ## 結語
 

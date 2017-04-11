@@ -19,7 +19,7 @@ tags:
 
 >Fundamentally, D3 is an elegant piece of software that facilitates generation and manipulation of web documents with data. It does this by:
 
->- Loading data into the browser’s memory
+- Loading data into the browser’s memory
 - Binding data to elements within the document, creating new elements as needed
 - Transforming those elements by interpreting each element’s bound datum and setting its visual properties accordingly
 - Transitioning elements between states in response to user input
@@ -40,7 +40,9 @@ tags:
 
 接著我們來動手玩玩D3js吧,先到[官方Github](https://github.com/mbostock/d3/wiki)下載最新的code,使用上很簡單只要加入下面這段即可
 
-	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+'''js
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+'''
 
 這邊我們簡單先做出一個表格再來跟大家說明
 
@@ -54,7 +56,3 @@ tags:
 
 - [網頁互動式資料視覺化：使用 D3 (Interactive Data Visualization for the Web)](http://www.tenlong.com.tw/items/9862769858?item_id=887625)
 - [線上閱讀(英文版)](http://chimera.labs.oreilly.com/books/1230000000345/index.html)
-
-另外附上TonyQ大大的介紹與說明:
-
-- [d3.js介紹](http://www.youtube.com/watch?v=7nnZOIXIZ3k)
