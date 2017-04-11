@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-12 09:52:01
+date: 2017-04-20 09:52:01
 categories:
 - Asp.Net
 tags: 
@@ -21,9 +21,23 @@ tags:
 
 Google Container Engine (GKE) 是Google所推出的Container Host Cluster服務，GKE 一方面允許擴展可以使用的資源，另一方面則可以讓執行時候可以有容錯的可能性(避免單點錯誤的狀況發生)。而為什麼叫GKE而不是叫GCE勒，原因在於K指的是Google 自家的kubernetes系統。 Docker本身強調build, ship and run的觀念，透過K8S作完整的管理即可達到擴展性與可修復等特性。
 
+# Google App Type : GAE, GKE, and GCE #
+
+![Iaas_Paas](Iaas_Paas.png)
+
+## Google App Engine ##
+
+## Google Container Engine ##
+
+## Google Compute Engine ##
+
+## Deploying Comparison ##
+
+![deploying_comparison](deploying_comparison.png)
+
 # Kubernetes Introduction #
 
-Kubernetes (K8S) 是 Google 團隊發起並維護的Docker開源Container Host Cluster管理系統，它支援常見的雲平台(Google Cloud, AWS, Azure)，也支援內部架設。
+Kubernetes (K8S) 是 Google 團隊發起並維護的Docker開源Container Host Cluster管理系統，它支援常見的雲平台(Google Cloud, AWS, Azure)，也支援內部架設。而這個專案本身是起源至[Borg](https://research.google.com/pubs/pub43438.html)．有興趣要了解這個K8S的可以參考[K8S.io](https://kubernetes.io/)．
 
 Google 於2015年釋出K8S後，引起了話題。原先僅是屬於內部專案 – Borg，之後IT大廠如Redhat, CoreOS, IBM, 甚至 Amazon, Microsoft 這些公有雲端供應商都搶著整合進自己的服務中。
 
@@ -73,10 +87,52 @@ kubernetes pods 細節:
 
 ## 1. Register and Create Google Container Engine Project ##
 
-## 2. Google Clude SDK ##
+## 2. Google Cloud SDK ##
 
 ## 3. Publish ASP.NET Core MVC App to Cloud ##
 
+### Container for ASP.NET Core (1.1.0) ###
+
+接著我們使用App Engine來幫我們建立ASP.NET Core Web應用程式，而我們這邊會直接使用Cloud Shell來幫我們跑dotnet指令．
+
+# [補充] Google App Engine #
+
+Google App Engine 有兩個環境(Environment)類型:
+
+![app_engine_standard_flex](app_engine_standard_flex.png)
+
+## App Engine Standard Environment ##
+
+- Managed runtimes for specific versions of Java, Python, PHP & Go
+- Autoscale workloads to meet demand
+- Free daily quota, usage based pricing
+- SDKs for development, testing and deployment
+- Need to conform to sandbox constraints:
+
+    - No writing to local file system
+    - Request timeouts at 60 seconds
+    - Limit on 3rd-party software installations
+
+以下是官方以Web應用程式給的運作流程範例：
+
+![app_engine_standard_work_flow](app_engine_standard_work_flow.png)
+
+## App Engine Flexible Environment (Beta) ##
+
+- Build, deploy containerized apps with a click
+- Standard runtimes - Python, Java, Go, Node.js - with no sandbox constraints
+- Custom runtime support for any language that supports HTTP requests
+- During beta pricing based on Compute Engine usage
+- Local development relies on Docker
+- Standard runtimes can access App Engine services: Datastore, Memcache, task queues, logging, users, and so on
+
+Flexible Environment 因為可使用Custom runtime，我們就可以自行定義Container的dockerfile，而這樣的檔案也可以沿用到GKE的架構．
+
 # References #
+
 - [GKE 系列文章(一) – 為什麼使用 Kubernetes](https://www.cool3c.com/article/119184)
 - [Pokémon GO全球大賣的隱形關鍵](http://www.ithome.com.tw/voice/108907)
+- [Deploy an ASP.NET Core App to App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-aspnetcore/#0)
+- [GCPUG.TW-GCP Demos](https://github.com/gcpug-tw/gcp-demo)
+- [Docker學習筆記](https://www.gitbook.com/book/peihsinsu/docker-note-book/details)
+- [Kubernetes學習筆記](https://www.gitbook.com/book/gcpug-tw/kuberbetes-in-action/details)
