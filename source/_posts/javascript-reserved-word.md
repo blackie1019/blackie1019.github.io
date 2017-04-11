@@ -15,7 +15,7 @@ tags:
 
 <!-- More -->
 
-![reserved](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140114/reserved.jpg)
+![reserved](reserved.jpg)
 
 ## What is reserved word
 

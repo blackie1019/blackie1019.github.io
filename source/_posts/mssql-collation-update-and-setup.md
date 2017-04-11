@@ -2,7 +2,7 @@
 layout: post
 title: 如何做MS SQL定序(Collation) 轉換
 subtitle: ""
-date: 2014-07-13 00:29:45
+date: 2013-09-26 00:29:45
 author: Blackie
 header-img: ""
 categories:
@@ -62,7 +62,7 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 由上解說可以知道他們三者在預設上有依序繼承的關係，但你也可以分別設定，圖解如下圖：
 
-![定序架構圖](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/%E6%9E%B6%E6%A7%8B%E5%9C%96.png)
+![定序架構圖](%E6%9E%B6%E6%A7%8B%E5%9C%96.png)
 
 在瞭解完其實定序最小單位是Column之後，來做定序修改的實作，以下操作流城市已有實際資料的情況下你要如何做定序轉換的流程。
 
@@ -84,121 +84,129 @@ SQL Server的定序預設設定視安裝類型而定。一般而言，預設會�
 
 ### 會使用到的指令有以下幾個：
 
-1.查出所有設為Chinese_Taiwan_Stroke_CI_AS的欄位
+1. 查出所有設為Chinese_Taiwan_Stroke_CI_AS的欄位
 
-	SELECT Table_Name,CoLumn_name,collation_name,*
-	FROM INFORMATION_SCHEMA.COLUMNS
+```sql
+SELECT Table_Name,CoLumn_name,collation_name,*
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE collation_name='Chinese_Taiwan_Stroke_CI_AS'
+ORDER BY TABLE_NAME,COLUMN_NAME
+```
+
+2. 檢查單一table的欄位定序設定(NULL表示非文字)
+
+```sql
+SELECT name, collation_name
+FROM sys.columns
+WHERE OBJECT_ID IN ( SELECT OBJECT_ID
+FROM sys.objects
+WHERE type = 'U'
+AND name = 'actactivity')
+GO
+```
+
+3. 產生欄位定序修改的語法(這邊以Chinese_Taiwan_Stroke_CI_AS修改為Chinese_Taiwan_Stroke_BIN為例)
+
+```sql
+SELECT * from (
+	SELECT ('ALTER TABLE ' + quotename(TABLE_NAME) +
+	' ALTER COLUMN ' + quotename(COLUMN_NAME) + ' ' + 		quotename(DATA_TYPE) +
+	CASE WHEN CHARACTER_MAXIMUM_LENGTH = -1 then '(max)'
+	WHEN DATA_TYPE in ('text','ntext') then ''
+	WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL
+	THEN '('+(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH)+')' )
+	ELSE isnull(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH),' ') END
+	+'COLLATE Chinese_Taiwan_Stroke_BIN ' + CASE IS_NULLABLE
+	WHEN 'YES' THEN 'NULL'
+	ELSE 'NOT NULL'
+	END) AS script
+	from INFORMATION_SCHEMA.COLUMNS
 	WHERE collation_name='Chinese_Taiwan_Stroke_CI_AS'
-	ORDER BY TABLE_NAME,COLUMN_NAME
+) as Test
+WHERE script != 'NULL'
+```
 
+4. view的欄位改定序 (http://bretstateham.com/applying-a-collation-to-columns-in-a-view%E2%80%A6/)
 
-2.檢查單一table的欄位定序設定(NULL表示非文字)
+```sql
+YourColumnName COLLATE  chinese_taiwan_stroke_bin
+```
 
-	SELECT name, collation_name
-	FROM sys.columns
-	WHERE OBJECT_ID IN ( SELECT OBJECT_ID
-	FROM sys.objects
-	WHERE type = 'U'
-	AND name = 'actactivity')
-	GO
+5. 目前資料庫定序(MAS_Mobile_OpenGIP為你要查詢的Database名稱)
 
-3.產生欄位定序修改的語法(這邊以Chinese_Taiwan_Stroke_CI_AS修改為Chinese_Taiwan_Stroke_BIN為例)
-
-	SELECT * from (
-		SELECT ('ALTER TABLE ' + quotename(TABLE_NAME) +
-		' ALTER COLUMN ' + quotename(COLUMN_NAME) + ' ' + 		quotename(DATA_TYPE) +
-		CASE WHEN CHARACTER_MAXIMUM_LENGTH = -1 then '(max)'
-		WHEN DATA_TYPE in ('text','ntext') then ''
-		WHEN CHARACTER_MAXIMUM_LENGTH IS NOT NULL
-		THEN '('+(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH)+')' )
-		ELSE isnull(CONVERT(VARCHAR,CHARACTER_MAXIMUM_LENGTH),' ') END
-		+'COLLATE Chinese_Taiwan_Stroke_BIN ' + CASE IS_NULLABLE
-		WHEN 'YES' THEN 'NULL'
-		ELSE 'NOT NULL'
-		END) AS script
-		from INFORMATION_SCHEMA.COLUMNS
-		WHERE collation_name='Chinese_Taiwan_Stroke_CI_AS'
-	) as Test
-	WHERE script != 'NULL'
-
-4 view的欄位改定序 (http://bretstateham.com/applying-a-collation-to-columns-in-a-view%E2%80%A6/)
-
-	YourColumnName COLLATE  chinese_taiwan_stroke_bin
-
-5 目前資料庫定序(MAS_Mobile_OpenGIP為你要查詢的Database名稱)
-
-	SELECT DATABASEPROPERTYEX ('MAS_Mobile_OpenGIP' ,'Collation' )
-
+```sql
+SELECT DATABASEPROPERTYEX ('MAS_Mobile_OpenGIP' ,'Collation' )
+```
 
 以下Step by Step的圖解(以Chinese_Taiwan_Stroke_CI_AS修改為Chinese_Taiwan_Stroke_BIN為例)：
 
-1 修改Database定序
+1. 修改Database定序
 
-![1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/1.PNG)
+![1](1.PNG)
 
-2 修改完後查詢Table時小寫差無該Table
+2. 修改完後查詢Table時小寫差無該Table
 
-![2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/2.PNG)
+![2](2.PNG)
 
-3 大寫才查得到
+3. 大寫才查得到
 
-![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/3.PNG)
+![3](3.PNG)
 
-4 查詢欄位資料(用where對文字類型欄位用like查詢)沒分大小寫皆可查到
+4. 查詢欄位資料(用where對文字類型欄位用like查詢)沒分大小寫皆可查到
 
-![4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/4.PNG)
+![4](4.PNG)
 
-5 檢查該欄位確實還是Chinese_Taiwan_Stroke_CI_AS
+5. 檢查該欄位確實還是Chinese_Taiwan_Stroke_CI_AS
 
-![5](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/5.PNG)
+![5](5.PNG)
 
-6 透過指令3產生查詢語法
+6. 透過指令3產生查詢語法
 
-![6](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/6.PNG)
+![6](6.PNG)
 
-7 產生的查詢語法會包含Table與View的所有欄位(請將View的欄位先移除）
+7. 產生的查詢語法會包含Table與View的所有欄位(請將View的欄位先移除）
 
-![7](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/7.PNG)
+![7](7.PNG)
 
-8 直接執行全部指令會發生錯誤，因為如果欄位是PK,FK或是有關聯其他Table的欄位需要先將該設定移除才可以修改或是透過9的步驟以介面方式手動調整即可連動修改
+8. 直接執行全部指令會發生錯誤，因為如果欄位是PK,FK或是有關聯其他Table的欄位需要先將該設定移除才可以修改或是透過9的步驟以介面方式手動調整即可連動修改
 
-![8](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/8.PNG)
+![8](8.PNG)
 
-9 針對剛剛有問題的Table進去設計模式修改該Column的定序(右鍵->屬性->全文檢索規格中的定序)
+9. 針對剛剛有問題的Table進去設計模式修改該Column的定序(右鍵->屬性->全文檢索規格中的定序)
 
-![9](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/9.PNG)
+![9](9.PNG)
 
-10 若該修正有包括其他欄位的關聯則會聯動修改
+10. 若該修正有包括其他欄位的關聯則會聯動修改
 
-![10](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/10.PNG)
+![10](10.PNG)
 
-11 確認修改為我們要的Chinese_Taiwan_Stroke_BIN後儲存本次設計修正
+11. 確認修改為我們要的Chinese_Taiwan_Stroke_BIN後儲存本次設計修正
 
-![11](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/11.PNG)
+![11](11.PNG)
 
-12 如果到外面看該欄位為資料庫預設值這邊則要參考你該Database的設定(請用指令5確認目前Database定序設定為Chinese_Taiwan_Stroke_BIN)
+12. 如果到外面看該欄位為資料庫預設值這邊則要參考你該Database的設定(請用指令5確認目前Database定序設定為Chinese_Taiwan_Stroke_BIN)
 
-![12](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/12.PNG)
+![12](12.PNG)
 
-13 針對如果是View的修正無法使用上述流程，須手動將View重新建立(先取得所有View的Ceate Script後再將目前View全部刪除，再執行修改完的View Create Script)
+13. 針對如果是View的修正無法使用上述流程，須手動將View重新建立(先取得所有View的Ceate Script後再將目前View全部刪除，再執行修改完的View Create Script)
 
-![13](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/13.PNG)
+![13](13.PNG)
 
-14 修改View指令的方法為在Select欄位時，針對每個字串欄位做指令4的定序宣告
+14. 修改View指令的方法為在Select欄位時，針對每個字串欄位做指令4的定序宣告
 
-![14](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/14.PNG)
+![14](14.PNG)
 
 
 ## 定序結果驗證
 
 依照流程處理完資料後請依序驗證Database, Table與 Column的定序設定(透過指令1與指令5)都正確後可直接下查詢去檢查，以下列圖組為例：
 
-![check_1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/check_1.jpg)
+![check_1](check_1.jpg)
 
-![check_2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/check_2.jpg)
+![check_2](check_2.jpg)
 
-![check_3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/check_3.jpg)
+![check_3](check_3.jpg)
 
-![check_4](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130926/check_4.jpg)
+![check_4](check_4.jpg)
 
 以上即可證明完成定序資料轉換。

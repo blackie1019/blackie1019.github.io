@@ -2,7 +2,7 @@
 layout: post
 title: Git基本教學與使用AWS EC2( Elastic Compute Cloud ) /Microsoft Azure建立自己的Git Server
 subtitle: ""
-date: 2014-07-02 00:29:45
+date: 2014-07-12 00:29:45
 author: Blackie
 header-img: ""
 categories:
@@ -15,32 +15,32 @@ tags:
 
 <!-- More -->
 
-![Logo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/logo.png)
+![Logo](logo.png)
 
 ## Git 簡介
 是目前最被大家推崇的版本管控工具，特色是利用分散發布的管理方式主要在乎檔案的整體性是否有改變，不強調需要到將檔案上傳到主機端管理，而是強調各分散管理的節點都能做好本身的檔案控管，並能靈活地交換各段節點的版本，以此來達成分散管理的好處。
 
 與市面上市占率依舊頗高的SVN比較的整理如下:
 
-![git svn](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/git%20svn.PNG)
+![git svn](git%20svn.PNG)
 
 以下來源至[A Successful git branching model](http://nvie.com/posts/a-successful-git-branching-model/)所提供的畫面節錄出成功的Git管控下各版本的樣貌:
 
 ### Over view
 
-![success git model over view](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/success%20git%20model%20overview.png)
+![success git model over view](success%20git%20model%20overview.png)
 
 ### Decentralized managed
-![success git model part](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/centr-decentr.png)
+![success git model part](centr-decentr.png)
 
 ### Main branches
-![success git model Main branches](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/bm002.png)
+![success git model Main branches](bm002.png)
 
 ### Merge without new feature
-![success git model Feature branches](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/merge-without-ff.png)
+![success git model Feature branches](merge-without-ff.png)
 
 ### Hotfix branches
-![success git model Hotix branches](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/hotfix-branches1.png)
+![success git model Hotix branches](hotfix-branches1.png)
 
 ## Git遠端的協議
 
@@ -89,22 +89,22 @@ Git主體程式請至[Git官網](http://git-scm.com/)下載，除了使用cmd指
 
 ### [Git for Windows](http://msysgit.github.io/)
 
-![gw1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/gw1.png)
+![gw1](gw1.png)
 
-![gw2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/gw2.png)
+![gw2](gw2.png)
 
 除了強化傳統的Git BASH操作外，另外加上提供簡單的Git GUI操作畫面，輕量但高效率的傳輸是Windows使用者一定要安裝的套件
 
 ### [GitHub Windows](http://windows.github.com/) 與 [GitHub Mac](https://mac.github.com/)
 
-![windows](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/screenshot-overview%402x.png)
-![Mac](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/screenshot-overview-mac%402x.png)
+![windows](screenshot-overview%402x.png)
+![Mac](screenshot-overview-mac%402x.png)
 
 由 GitHub 官方開發的工具，提供給對 Git 沒有很了解的人用的，用簡潔與好上手的的 GUI 介面，對 Git 完全沒有概念的人來說較好上手。
 
 ### [SourceTree](http://www.sourcetreeapp.com/)
 
-![tree](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/sourcetree_hero_win_full_interface_windows.png)
+![tree](sourcetree_hero_win_full_interface_windows.png)
 
 是一套非常完整的Git GUI工具，整合完整的圖像表達與流程操作的方式，可以讓你對於整個專案的版本控管一目瞭然。所有的Git指令列功能都能夠過GUI 介面用滑鼠操作完成。
 
@@ -114,11 +114,11 @@ Git主體程式請至[Git官網](http://git-scm.com/)下載，除了使用cmd指
 
 ## GitHub 介紹
 
-![GitHub](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/github-logo.jpg)
+![GitHub](github-logo.jpg)
 
 GitHub是一個共享雲端主機服務，提供一個線上的Git Server讓你可以免費使用(儘可建立公開專案)或是付費可建立非公開的私人專案，目前已有許多Open Source的專案轉至GitHub上讓大家共同撰寫與維護。
 
-![Git fee](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/git%20fee.PNG)
+![Git fee](git%20fee.PNG)
 
 ## 使用EC2建立Git Server
 ### AWS EC2 簡介
@@ -143,11 +143,11 @@ AWS Elastic Compute Cloud簡稱為EC2，是Amazon一個提供雲端電腦的服�
 
 - [Git 版本控制系統](http://ihower.tw/git/)這提供了完整的Git教學與經驗分享，是新手上路老手挖寶的絕佳去處
 
-![ihower](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/ihower.PNG)
+![ihower](ihower.PNG)
 
 - [Learning Git Branching](http://pcottle.github.io/learnGitBranching)這是一個很酷的GitHub專案，目標再讓新手透過實作與動態展示的方式學習Git的各項指令與實際來解決問題，大家準備好來動手玩玩看了嗎?
 
-![Learning Git Branching](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140712/learn%20git%20branching.PNG)
+![Learning Git Branching](learn%20git%20branching.PNG)
 
 另外提供兩個學習EC2與Azure的參考連結幫大家快速上手
 

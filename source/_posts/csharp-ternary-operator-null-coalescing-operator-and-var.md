@@ -19,11 +19,14 @@ tags:
 
 這是傳統的三元運算子(ternary operator)的使用方式，
 
-     test ? expression1 : expression2
+	test ? expression1 : expression2
+
 
 範例如下:
 
-	int a= b > 1 ? b : c ;
+```csharp
+int a= b > 1 ? b : c ;
+```
 
 上面這個範例的意思就是宣告一個變數a，並判斷如果b的值>1就將b值給a，否則則將c值給a。
 
@@ -37,15 +40,21 @@ tags:
 
 這邊我們先用傳統的三元運算子寫出判別!=null的code:
 
-	object A = B != null ? B : C ;
+```csharp
+object A = B != null ? B : C ;
+```
 
 接著我們將上面用??改寫
 
-	object A =  B ?? C ;
+```csharp
+object A =  B ?? C ;
+```
 
 而??有另外一個特性就是可以直接串連，如下:
 
-	object A =  B ?? C ?? D ?? E ?? F;
+```csharp
+object A =  B ?? C ?? D ?? E ?? F;
+```
 
 意思就是B如果是null就傳C,C如果是null就穿D...最後如果BCDE都null就傳F。
 
@@ -55,13 +64,15 @@ tags:
 
 另外，在C# 3.0 變數宣告可透過隱含型別的方式來做為宣告，隱含型別區域變數是強型別 (Strongly Typed)，就和自行宣告型別一樣，差別在於隱含型別是由編譯器 (Compiler) 判斷型別。
 
-	// implicitly typed
-	var test = 100;
-	var test2 ="123";
+```csharp
+// implicitly typed
+var test = 100;
+var test2 ="123";
 
-	//explicitly typed
-	int test = 100;
-	string test2 ="123";
+//explicitly typed
+int test = 100;
+string test2 ="123";
+```
 
 對於這個部份的介紹小弟推薦另外一篇MVP-91 所撰寫的介紹文會更為詳細
 

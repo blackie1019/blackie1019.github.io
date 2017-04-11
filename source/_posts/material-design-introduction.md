@@ -19,11 +19,11 @@ tags:
 
 ## Goals
 
-![goals_1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-goals-swirlanddot_large_mdpi.png)
+![goals_1](materialdesign-goals-swirlanddot_large_mdpi.png)
 
 > Create a visual language that synthesizes classic principles of good design with the innovation and possibility of technology and science.
 
-![goals_2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-goals-cutrectangles_large_mdpi.png)
+![goals_2](materialdesign-goals-cutrectangles_large_mdpi.png)
 
 > Develop a single underlying system that allows for a unified experience across platforms and device sizes. Mobile precepts are fundamental, but touch, voice, mouse, and keyboard are all ﬁrst-class input methods.
 
@@ -31,7 +31,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 ## Principles - Material is the metaphor
 
-![](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-principles-layersquares_large_mdpi.png)
+![](materialdesign-principles-layersquares_large_mdpi.png)
 
 > The fundamentals of light, surface, and movement are key to conveying how objects move, interact, and exist in space in relation to each other. Realistic lighting shows seams, divides space, and indicates moving parts.
 
@@ -39,7 +39,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 ## Principles - Bold, graphic, intentional
 
-![](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-principles-circleplus_large_mdpi.png)
+![](materialdesign-principles-circleplus_large_mdpi.png)
 
 > An emphasis on user actions makes core functionality immediately apparent and provides waypoints for the user
 
@@ -47,7 +47,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 ## Principles - Motion provides meaning
 
-![](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/materialdesign-principles-flyingsquare_large_mdpi.png)
+![](materialdesign-principles-flyingsquare_large_mdpi.png)
 
 > All action takes place in a single environment. Objects are presented to the user without breaking the continuity of experience even as they transform and reorganize.
 
@@ -55,7 +55,7 @@ Material Design主要提供科技產品建置一跨平台與裝置的設計準�
 
 ## 感想
 
-![all_2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/all_2.jpg)
+![all_2](all_2.jpg)
 
 Google 所提倡的Material Design與Apple先前所提的Flat Design有一個絕大的不同點，在於物件相關性與合理性。
 
@@ -68,4 +68,4 @@ Google 所提倡的Material Design與Apple先前所提的Flat Design有一個絕
 
 這句話大概最能解釋Material Design所希望達成的目標。但不僅是Google想定義出底下各產品設備,網頁或app等有一個一樣的視覺感受，它同時也在撫平與連貫跨裝置的操作理念。
 
-![all_1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140713/all_1.png)
+![all_1](all_1.png)

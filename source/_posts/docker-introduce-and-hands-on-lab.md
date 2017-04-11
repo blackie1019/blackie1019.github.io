@@ -19,7 +19,7 @@ Build, Ship and Run. Any App, Anywhere! 這就是Docker寫在官網上面對自�
 
 [Docker官方連結](https://www.docker.com/)
 
-![log](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/logo.png)
+![log](logo.png)
 
 >Build, Ship and Run. Any App, Anywhere!
 
@@ -29,15 +29,19 @@ Docker是一個
 
 目前Docker有超過14,000公開的Applicaion，而其中很多知名大廠都已經有官方支援的Repository了，而最後的Hand on Lab也會教大家如何將自己的Applicaion與使用這些公開的Repository，來建置自己的環境。
 
-![Offical Repositories](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/Office%20repositories.png)
+![Offical Repositories](Office%20repositories.png)
 
-- #### Docker Engine
+- Docker Engine
+
 A portable, lightweight application runtime and packaging tool.
 
-- #### Docker Hub
+- Docker Hub
+
 A cloud service for sharing applications and automating workflows.
-![life cycle](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/life%20cycle.gif)
-http://blog.docker.com/2014/06/announcing-docker-hub-and-official-repositories/
+
+![life cycle](life%20cycle.gif)
+
+[ANNOUNCING DOCKER HUB AND OFFICIAL REPOSITORIES](http://blog.docker.com/2014/06/announcing-docker-hub-and-official-repositories/)
 
 ### Different with classic server virtualization
 
@@ -45,13 +49,17 @@ Docker的架構使用Container技術，雖然都屬於虛擬化的技術，且�
 
 這邊做簡單說明並用圖解做一個區分：
 
-- #### Classic Server Virtualization：
-傳統虛擬化技術如vSphere或Hyper-V是以作業系統為中心。目標是建立一個可以用來執行整套作業系統的沙箱獨立執行環境，習慣以虛擬機器（Virtual Machine）來稱呼，而虛擬機器需要安裝作業系統（安裝Guest OS）才能執行應用程式。
-![Server virtaulization](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/Server%20virtauliztion.png)
+- Classic Server Virtualization：
 
-- #### Container Virtualization:
+傳統虛擬化技術如vSphere或Hyper-V是以作業系統為中心。目標是建立一個可以用來執行整套作業系統的沙箱獨立執行環境，習慣以虛擬機器（Virtual Machine）來稱呼，而虛擬機器需要安裝作業系統（安裝Guest OS）才能執行應用程式。
+
+![Server virtaulization](Server%20virtauliztion.png)
+
+- Container Virtualization:
+
 以應用程式為中心的虛擬化技術。將所需的相關程式碼、函式庫、環境配置檔都打包起來建立沙箱執行環境，所產生的環境就叫做Container，Container內不需要安裝作業系統就能執行應用程式。不同於classic server virtualization在OS外建立虛擬環境，container virtualization是在OS內的核心系統層(System Core/Kernel)來打造虛擬執行環境，透過共用Host OS的作法，取代一個一個Guest OS的功用。
-![Container virtualization](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/Container%20virtualization.png)
+
+![Container virtualization](Container%20virtualization.png)
 
 ### Docker is Light-weight
 
@@ -87,15 +95,11 @@ Docker 使用一種叫做Microservices（微服務）的架構，把一個應用
 
 首先我們先去官方的[Tryit](https://www.docker.com/tryit/)，畫面如下：
 
-![Tryit](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/tryit.png)
+![Tryit](tryit.png)
 
 ### Docker with Windows
 
 因為Docker Engine是使用Linux-specific kernel，所以如果要在Windows上面使用的話還是需要先透過一個輕量的VM來作為載體。在這邊我們會用到[Boot2Docker](https://github.com/boot2docker/boot2docker)這個工具來幫我們。
-
-這邊安裝步驟如下：
-
--
 
 也附上官方Demo影片教你如何安裝
 
@@ -107,10 +111,11 @@ Docker 使用一種叫做Microservices（微服務）的架構，把一個應用
 
 另外，因為有人寫信問說blog的一些圖表跟流程圖用什麼工具畫的，我習慣上都用[Cacoo](https://cacoo.com)去畫圖，上面提供了很多基本的流程圖(包含UML)或是Mocup所需的框架元素(手機或是個項目Icon)。
 
-![Cacoo](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/Docker/Cacoo.png)
+![Cacoo](Cacoo.png)
 
 但也有很多漂亮一點的圖我都是找網路上大大的blog或表達意像的圖片，記得使用前要附上出處與禮貌的跟大神們請示一下能否分享瞜。
 
-## REF
+## References ##
+
 - [Docker Install on Windows](https://docs.docker.com/installation/windows/)
 - [Vagrant + Docker](https://blog.gslin.org/archives/2014/05/17/4656/%E7%B8%BD%E7%AE%97%E6%98%AF%E6%90%9E%E5%AE%9A-vagrant-docker/)
