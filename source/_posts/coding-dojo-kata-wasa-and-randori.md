@@ -4,7 +4,7 @@ title: Coding Dojo, Kata, Wasa, and Randori
 subtitle: ""
 date: 2014-11-14 00:29:45
 author: Blackie
-header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/01.png"
+header-img: "01.png"
 categories:
 - Development&Coding
 tags:
@@ -22,7 +22,7 @@ tags:
 
 以下稍微解說一下方式與角色：
 
-![02](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/02.png)
+![02](02.png)
 
 - Driver：主要負責寫Code的人，完成即可重回Spectators去準備下一輪挑選
 
@@ -38,31 +38,31 @@ tags:
 
 學習如何兩個人共同合作寫Code(此時Driver一組有兩個人)
 
-![03](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/03.jpg)
+![03](03.jpg)
 
 - TDD
 
 依照TDD的方式些撰寫測試案例再來完成功能進而改善code的品質
 
-![04](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/04.gif)
+![04](04.gif)
 
 - Step by Step
 
 以能滿足Test的方式一步步完成
 
-![05](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/05.PNG)
+![05](05.PNG)
 
 - Call Help
 
 如果真的遇到問題絕對不要害怕向Navigator提出求救
 
-![06](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/06.JPG)
+![06](06.JPG)
 
 ## Code Kata
 
 這名詞也指的是招式(套路)，通常在學武功的時候都會有幾招固定招式，如下
 
-![08](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/08.JPG)
+![08](08.JPG)
 
 相同的概念放到Software development裡面其實就是給一些已知的問題讓你練習，如
 
@@ -82,13 +82,13 @@ tags:
 
 ## Wasa
 
-![10](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/10.JPG)
+![10](10.JPG)
 
 一個寫測試，另外一個人寫程式通過測試，但經過一段時間後兩者調換身分，以此練習TDD與pair programming的開發方式與默契.
 
 ## Randori
 
-![Randori](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20141114/xpug-coding-dojo-katayahtzee-in-ocp-way-4-728.jpg)
+![Randori](xpug-coding-dojo-katayahtzee-in-ocp-way-4-728.jpg)
 
 - Coder：就是1，負責寫Code的人
 
