@@ -74,13 +74,28 @@ tags:
 
 ## Create User ##
 
-我們可以透過以下指令建立一個新的user並綁定readWrite與dbAdmin兩個角色
+我們可以透過下面指令建立一個擁有dbOwner權限的帳號
+
+    db.createUser(
+    {
+        user: "dbdemo",
+        pwd: "pass.123",
+        roles: [ { role: "dbOwner", db: "demo" } ]
+    }
+    )
+
+![mongo_shell_create_dbOwner](mongo_shell_create_dbOwner.png)
+
+由於dbOwner這個role是預設建立(built-in)的角色，包括了readWrite, dbAdmin 與 userAdmin這三個角色的權限．對於role這邊可以參考[Built-In Roles](https://docs.mongodb.com/manual/reference/built-in-roles/)瞭解更多預設角色．
+
+我們也可以透過以下指令建立一個新的user並只綁定readWrite與dbAdmin兩個角色
 
     db.createUser(
         {
             user: "dbAdmin",
             pwd: "pass.123",
-            roles: [ "readWrite", "dbAdmin" ]
+            roles: [ { role: "readWrite", db: "demo" },
+                    { role: "dbAdmin", db: "demo"} ]
         }
     )
 
@@ -88,7 +103,22 @@ tags:
 
 細節參考[User Management Methods](https://docs.mongodb.com/manual/reference/method/js-user-management/)
 
+## Using User login(Auth) ##
+
+當我們新增user給指定database後我們就可以使用該user登入，而在登入前我們可以使用下面指令測試登入：
+
+    db.auth("user name","password")
+
+![mongo_shell_auth](mongo_shell_auth.png)
+
+而登我們下次登入時則可使用-u, -p 與--authenticationDatabase參數，用該user做登入：
+
+mongo --port 27017 -u "user name" -p "password" --authenticationDatabase "demo"
+
+![mongo_shell_login_auth](mongo_shell_login_auth.png)
+
 # References #
 
 - [MONGODB MANUAL : mongo Shell](https://docs.mongodb.com/manual/mongo/#introduction)
 - [MongoDB Tutorial](https://www.tutorialspoint.com/mongodb/)
+- [MONGODB MANUAL : mongo Shell Quick Reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
