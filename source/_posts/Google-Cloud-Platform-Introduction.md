@@ -52,7 +52,7 @@ GCP在台灣最大的優勢是在彰濱有建立Data Center，加上Google積極
 
 CDN則有另外一個：
 
-![network_cdn](network_cdn.png)
+![network_cdn](network_cdn_point.png)
 
 ### Zonal Coverage, Regional Coverage, and Multi-Regional Coverage ###
 
