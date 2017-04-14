@@ -107,7 +107,10 @@ namespace App.MSTest
 
     dotnet test --list 
 
-而當我們只要執行特定單一測試案例時，我們可以透過　--filter　的參數加上我們指定的查詢pattern
+而當我們只要執行特定單一測試案例時，我們可以透過　--filter　的參數加上我們指定的查詢pattern(FullyQualifiedName=App.MSTest.UnitTest1.Test_Calculator_Add"
+Namespace.Class.Method):
+
+    dotnet test --filter "FullyQualifiedName=App.MSTest.UnitTest1.Test_Calculator_Add"
 
 ![dotnet_test_filter](dotnet_test_filter.png)
 
