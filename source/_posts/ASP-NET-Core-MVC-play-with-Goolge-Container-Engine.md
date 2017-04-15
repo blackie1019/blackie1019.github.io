@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-20 09:52:01
+date: 2017-04-30 09:52:01
 categories:
 - Asp.Net
 tags: 
@@ -136,3 +136,4 @@ Flexible Environment 因為可使用Custom runtime，我們就可以自行定義
 - [GCPUG.TW-GCP Demos](https://github.com/gcpug-tw/gcp-demo)
 - [Docker學習筆記](https://www.gitbook.com/book/peihsinsu/docker-note-book/details)
 - [Kubernetes學習筆記](https://www.gitbook.com/book/gcpug-tw/kuberbetes-in-action/details)
+- [Managing containerized ASP.NET Core apps with Kubernetes](https://cloudplatform.googleblog.com/2016/10/managing-containerized-ASP.NET-Core-apps-with-Kubernetes.html)
