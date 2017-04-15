@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-30 09:52:01
+date: 2017-04-15 23:52:01
 categories:
 - Asp.Net
 tags: 
@@ -19,7 +19,13 @@ tags:
 
 <!-- More -->
 
-Google Container Engine (GKE) 是Google所推出的Container Host Cluster服務，GKE 一方面允許擴展可以使用的資源，另一方面則可以讓執行時候可以有容錯的可能性(避免單點錯誤的狀況發生)。而為什麼叫GKE而不是叫GCE勒，原因在於K指的是Google 自家的kubernetes系統。 Docker本身強調build, ship and run的觀念，透過K8S作完整的管理即可達到擴展性與可修復等特性。
+[Google Cloud免費試用](https://cloud.google.com/free/?hl=zh-tw)可以讓我們一個月有免費獲得 $300 美元的試用額度，並且這包含平台中的所有服務．甚至到免費試用期結束後不會自動延續服務收費．
+
+而Google Container Engine (GKE) 是Google所推出的Container Host Cluster服務，GKE 一方面允許擴展可以使用的資源，另一方面則可以讓執行時候可以有容錯的可能性(避免單點錯誤的狀況發生)。而為什麼叫GKE而不是叫GCE勒，原因在於K指的是Google 自家的kubernetes系統。Docker本身強調build, ship and run的觀念，透過K8S作完整的管理即可達到擴展性與可修復等特性。
+
+這次分享如何將ASP.NET Core運行在GKE上，對於Google Cloud Platform的基本介紹可以參考先前的[Google Cloud Platform Introduction](http://blackie1019.github.io/2017/04/11/Google-Cloud-Platform-Introduction/)
+
+運行起來的網站連結=>[demo網站](http://35.185.170.247:8080/)
 
 # Google App Type : GAE, GKE, and GCE #
 
@@ -83,19 +89,180 @@ kubernetes pods 細節:
 
 ![kubernetes pods_detail](kubernetes pods_detail.png)
 
-# Setup up Google Container Engine #
+# ASP.NET Core MVC Play with GKE #
 
-## 1. Register and Create Google Container Engine Project ##
+## Create ASP.NET Core MVC Project ##
 
-## 2. Google Cloud SDK ##
+首先我們先建立專案資料夾
 
-## 3. Publish ASP.NET Core MVC App to Cloud ##
+    mkdir AspNetDockerDemo
 
-### Container for ASP.NET Core (1.1.0) ###
+接著我們就透過dotnet CLI工具幫我們建立mvc專案
 
-接著我們使用App Engine來幫我們建立ASP.NET Core Web應用程式，而我們這邊會直接使用Cloud Shell來幫我們跑dotnet指令．
+    dotnet new mvc
 
-# [補充] Google App Engine #
+專案建立後我們就透過nuget幫我們還原專案有關的類別庫並執行它
+
+    dotnet restore
+    dotnet run
+
+這邊我們執行該專案如果可以看到以下畫面就代表網站建立成功了
+
+![mvcsite](mvcsite.png)
+
+## Publish Release Version Application ##
+
+實務上在正式環境運行時我們會將ASP.NET Core編譯成release的版本才做發佈，所以這邊我們先編譯release並發佈該版本
+
+    dotnet publish -c Release
+
+當成功建立後我們先確認一下現在建立的專案目錄：
+
+![project](project.png)
+
+這邊可以看到我們的程式已經編譯且放在bin>Release>netcoreapp1.1>publish中
+
+我們可以透過以下方式將網站再次運行確認打包出來的東西是否正確
+
+    cd bin\Release\netcoreapp1.1\publish
+    dotnet AspNetDocker.dll
+
+## Containerize Application into Docker Container ##
+
+當我們程式都確定撰寫完畢且編譯成Release發佈後，我們就可以到該發佈的資料夾內建立Dockerfile(注意檔名為大寫且沒有副檔名)
+
+    touch Dockerfile
+
+Dockerfile內容如下:
+
+    FROM microsoft/dotnet:1.1.1-runtime
+    COPY . /app
+    WORKDIR /app
+    EXPOSE 8080/tcp
+    ENV  ASPNETCORE_URLS http://*:8080
+    ENTRYPOINT ["dotnet","AspNetDockerDemo.dll"]
+
+這邊我們特別指定使用ASP.NET Core 1.1.1-runtime的版本而非SDK版，兩者的差異可以看[Docker Hub上的說明](https://hub.docker.com/r/microsoft/dotnet/)．
+
+接著我們在資料夾路徑內建立該docker image：
+
+    docker build -t blackie1019/aspnetcoredemo:gke .
+
+建立完成後我們將該映像檔實際運行起來看看是否正常:
+
+    docker run -d -p 8080:8080 -t blackie1019/aspnetcoredemo:gke
+
+執行成功後確認一下是否正常運行(-a是為了列出正在執行跟沒有執行的所有container)：
+
+    docker image -a
+
+![docker_running_container](docker_running_container.png)
+
+如果都沒問題我們就可以到[localhost:8080](localhost:8080)實際看到我們的網站．接下來我們將開始設定google cloud platform
+
+## Register and Create Google Cloud Project ##
+
+首先到[Google Cloud Platform](https://cloud.google.com/)進行帳號註冊
+
+Google Cloud Platform不同於AWS與Azure在網頁介面上是把每個服務分類後在單一服務裡面呈現所有與該服務有關的專案，它採用專案導向的方式建立服務，所以我們需要建立一個專案(project)才可以針對該專案建立相關服務．
+
+至[Dashboard](https://console.cloud.google.com/home/dashboard)我們先建立一個新的專案，建立完後我們可以看到該專案的project-id
+
+![gcp_dashboard](gcp_dashboard.png)
+
+![gcp_project_id](gcp_project_id.png)
+
+## Download and Setup Google Cloud SDK ##
+
+[Google Cloud SDK](https://cloud.google.com/sdk/)是一個官方推出的Command-line工具
+
+小編這邊用的電腦是macOS的系統，須先將python更新至2.7版以上，然後依序執行下面指令
+
+    curl https://sdk.cloud.google.com | bash
+
+重啟shell或是透過下面指令直接重啟
+
+    exec -l $SHELL
+
+接著我們初始化sdk，這個步驟會將登入資料跟設定記憶在該電腦環境中
+
+    gcloud init
+
+## Publish ASP.NET Core MVC App to Cloud ##
+
+### Create a Kubernetes Cluster ###
+
+在安裝Google Cloud SDK後我們需要安裝kubectl這個元件(components)：
+
+    docker components install kubectl
+
+之後可以透過該工具來幫我們建立Kubernetes Cluster:
+
+    gcloud container clusters create gcd-demo-cluster --zone asia-east1-a
+
+--zone參數是讓我們指定要建立的region位置，實際上能用的region我們可以透過下面指令查詢：
+
+    gcloud compute zones list
+
+![gcloud_compute_zoon](gcloud_compute_zoon.png)
+
+如果不想透過指令建立也可以透過GUI介面建置：
+
+![gcp_container_engine](gcp_container_engine.png)
+
+### Config kubectl command line Access to the Kubernetes Cluster ###
+
+在使用前我們需要先透過[get-credentials](https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials)設定要使用的Kubernetes Cluster
+
+    gcloud container clusters get-credentials gcd-demo-cluster --zone "asia-east1-a" -project gcddemo-164215
+
+![gcloud_contain_cluster_after](gcloud_contain_cluster_after.png)
+
+這邊如果我們沒有按照上一步建立Kubernetes Cluster或是打錯名稱就會出現下面找不到的錯誤：
+
+![gcloud_contain_cluster_before](gcloud_contain_cluster_before.png)
+
+### Push Image to Goole Container Registry ###
+
+接著我們將先前建立好的docker 映像檔上傳至[Goole Container Registry](https://cloud.google.com/container-registry/)，但在運行前我們先將剛剛的映像檔加入新的tag方便gcloud指令可以找到它：
+
+    docker tag blackie1019/aspnetcoredemo:gke gcr.io/gcddemo-164215
+
+![docker_tag_after](docker_tag_after.png)
+
+然後我們用docker -- push的方式上傳至Goole Container Registry
+
+    gcloud docker -- push gcr.io/gcddemo-164215
+
+![gcloud_docker_upload](gcloud_docker_upload.png)
+
+### Deploy App to Google Container Engine ###
+
+當我們將上面docer映像檔上傳完成後，就可以透過下面指令將它實際運行起來：
+
+    kubectl run net-core-mvc-demo --image=grc.io/gcddemo-164215 \ --port=8080 deployment "net-core-mvc-demo" created
+
+![kubectl_run](kubectl_run.png)
+
+我們可以用get deployments與get pods查看剛剛建立的情況
+
+![kubectl_get_deployments](kubectl_get_deployments.png)
+
+這邊pods的建立需要時間所以當我們確認他狀態為running後才表示真的可以用
+
+![kubectl_get_pods](kubectl_get_pods.png)
+
+當pods正常運行後我們還須多做一個設定將我們的8080 port開發對外
+
+    kubectl expose deployment net-core-mvc-demo --port=8080 --type="LoadBalancer" service "net-core-mvc-demo" exposed
+
+該指令執行後由於建立service需要一點時間所以我們可以透過下面指令查看目前狀態(從pending=>給ip)：
+
+![kubectl_service](kubectl_service.png)
+
+當我們看到它被指派了external-ip後我們就可以到這個ip與搭配的port好去看該網站了，[http://35.185.170.247:8080/](http://35.185.170.247:8080/)
+
+# [補充] Google App Engine Environment #
 
 Google App Engine 有兩個環境(Environment)類型:
 

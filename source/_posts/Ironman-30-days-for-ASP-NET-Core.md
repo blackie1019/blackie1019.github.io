@@ -82,7 +82,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core play with MVC
 - ASP.NET Core play with WebAPI
 - [ASP.NET Core play with dotnet-watch](http://blackie1019.github.io/2017/03/13/ASP-NET-core-play-with-dotnet-watch/)
-- Hosting ASP.NET Core Web Application on Kestrel 
+- Hosting ASP.NET Core Web Application on Kestrel
 - Hosting ASP.NET Core Web Application on Kestrel with Reverse Proxy
 
 #### Web Advance ####

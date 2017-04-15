@@ -42,6 +42,19 @@ Docker 充分地發揮.NET Core的跨環境的特色，讓我們不管在任何�
 
 ## Create Dockerfile ##
 
+這邊我們取用[microsoft/dotnet](https://hub.docker.com/r/microsoft/dotnet/)的映像檔，官方提供的映像檔有三種：
+
+- microsoft/dotnet:<version>-sdk
+
+    這版本會包含：
+
+    - .NET Core
+    - .NET Core command line tools
+
+- microsoft/dotnet:<version>-runtime
+
+    針對實際環境用(包含runtime 與 libraries)做最佳化的映像檔
+
 接著我們在專案的根目錄建立新的Dockerfile(這邊需要注意，副檔名格式不要存成.txt或其他類型)
 
     touch Dockerfile
