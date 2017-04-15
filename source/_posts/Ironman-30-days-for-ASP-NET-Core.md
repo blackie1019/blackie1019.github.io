@@ -99,7 +99,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core Build up with Jenkins
 - ASP.NET Core Hosting on Cloud - Azure
 - ASP.NET Core Hosting on Cloud - AWS
-- ASP.NET Core Hosting on Cloud - Google Cloud
+- [ASP.NET Core Hosting on Cloud - Google Cloud](http://blackie1019.github.io/2017/04/15/ASP-NET-Core-MVC-play-with-Goolge-Container-Engine/)
 
 ## Project Goal ##
 

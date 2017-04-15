@@ -31,11 +31,19 @@ tags:
 
 ![Iaas_Paas](Iaas_Paas.png)
 
-## Google App Engine ##
+針對不同的彈性與管理/開發上的用途，Google Cloud Platform上可以Hosting的服務有以下三種:
 
-## Google Container Engine ##
+## Google Compute Engine(GCE) ##
 
-## Google Compute Engine ##
+等同於用VM的觀念來使用Google Cloud
+
+## Google App Engine(GAE) ##
+
+Google App Engine(GAE) 讓使用者可以在Google的基礎架構之上執行網路應用程式，分為Standard與Flexible兩種不同的Runtime。對於能使用的開發的語言有所限制，但相對GCE來講，可以更簡單且快速的將你的程式做部屬，且也針對network, security,monitoring與performace tuning做了設定與調整。
+
+## Google Container Engine(GKE) ##
+
+讓你可以使用Docker與k8s做更彈性的動態拓展，實現containerlize
 
 ## Deploying Comparison ##
 
@@ -200,7 +208,7 @@ Google Cloud Platform不同於AWS與Azure在網頁介面上是把每個服務分
 
     gcloud container clusters create gcd-demo-cluster --zone asia-east1-a
 
---zone參數是讓我們指定要建立的region位置，實際上能用的region我們可以透過下面指令查詢：
+[--zone參數](https://cl$ gcloud container clusters get-credentials hello-dotnet-cluster \ --zone europe-west1-b --project <PROJECT_ID>oud.google.com/sdk/gcloud/reference/compute/zones/list)是讓我們指定要建立的region位置，實際上能用的region我們可以透過下面指令查詢：
 
     gcloud compute zones list
 
@@ -266,8 +274,6 @@ Google Cloud Platform不同於AWS與Azure在網頁介面上是把每個服務分
 
 Google App Engine 有兩個環境(Environment)類型:
 
-![app_engine_standard_flex](app_engine_standard_flex.png)
-
 ## App Engine Standard Environment ##
 
 - Managed runtimes for specific versions of Java, Python, PHP & Go
@@ -295,8 +301,13 @@ Google App Engine 有兩個環境(Environment)類型:
 
 Flexible Environment 因為可使用Custom runtime，我們就可以自行定義Container的dockerfile，而這樣的檔案也可以沿用到GKE的架構．
 
+## Standard and Flexible Environment Comparison ##
+
+![app_engine_comparison](app_engine_comparison.png)
+
 # References #
 
+- [Google Cloud Computing compares GCE, GAE and GKE](https://www.slideshare.net/peihsinsu/google-cloud-computing-compares-gce-gae-and-gke)
 - [GKE 系列文章(一) – 為什麼使用 Kubernetes](https://www.cool3c.com/article/119184)
 - [Pokémon GO全球大賣的隱形關鍵](http://www.ithome.com.tw/voice/108907)
 - [Deploy an ASP.NET Core App to App Engine](https://codelabs.developers.google.com/codelabs/cloud-app-engine-aspnetcore/#0)
@@ -304,3 +315,6 @@ Flexible Environment 因為可使用Custom runtime，我們就可以自行定義
 - [Docker學習筆記](https://www.gitbook.com/book/peihsinsu/docker-note-book/details)
 - [Kubernetes學習筆記](https://www.gitbook.com/book/gcpug-tw/kuberbetes-in-action/details)
 - [Managing containerized ASP.NET Core apps with Kubernetes](https://cloudplatform.googleblog.com/2016/10/managing-containerized-ASP.NET-Core-apps-with-Kubernetes.html)
+- [Google Cloud Platform - Pushing to Container Registry](https://cloud.google.com/container-registry/docs/pushing)
+- [Kubernetes从Private Registry中拉取容器镜像的方法](http://tonybai.com/2016/11/16/how-to-pull-images-from-private-registry-on-kubernetes-cluster/)
+- [Using a Service to Access an Application in a Cluster](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address-service/)
