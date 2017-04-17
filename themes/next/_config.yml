@@ -8,6 +8,7 @@ favicon: /images/favicon.ico
 # Set default keywords (Use a comma to separate)
 # keywords: "blackie, blackie1019, chen-tien tsai"
 keywords:
+titleKeywords: "Recently, I interested in Software Architecture, React, ASP.NET Core,and Cloud Solution"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -27,10 +28,10 @@ since: 2013
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories
+  categories: /categories/
   #about: /about
-  archives: /archives
-  tags: /tags
+  archives: /archives/
+  tags: /tags/
   #commonweal: /404.html
 
 

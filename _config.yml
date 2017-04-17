@@ -18,10 +18,9 @@ search:
 
 # Sitemap
 sitemap:
-    path: sitemap.xml
-baidusitemap:
-    path: baidusitemap.xml
-    
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+
 # RSS
 feed:
   type: atom
@@ -92,8 +91,6 @@ tag_generator:
 theme: next
 
 ## Plugins: https://hexo.io/plugins/
-plugins:
-- hexo-generator-robotstxt
 
 # https://github.com/leecrossley/hexo-generator-robotstxt
 robotstxt:
