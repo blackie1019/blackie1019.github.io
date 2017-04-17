@@ -24,7 +24,6 @@ gulp.task('copy-js', function() {
              public_dir + '/vendors/velocity/velocity.ui.min.js',
              public_dir + '/vendors/fancybox/source/jquery.fancybox.pack.js',
              public_dir + '/vendors/google-code-prettify/prettify.js',
-             public_dir + '/vendors/firebase/firebase.js',
              public_dir + '/js/src/utils.js',
              public_dir + '/js/src/motion.js',
              public_dir + '/js/src/bootstrap.js',

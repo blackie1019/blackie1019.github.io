@@ -4,10 +4,9 @@
 
 # Site
 title: Blackie's Failed Notes
-subtitle : Interested in JavaScript, ASP.NET Core, Cloud and Solution Architecture.
-description: Blackie loves coding and sharing what he knows. His career goal is to be an "Excellent" developer and drive team/company to achieve the business goal as an architect/technical manager.
+subtitle : Show me. Don't tell me.
+description: Interested in JavaScript, ASP.NET Core, Cloud and Solution Architecture.
 quote: Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better. 
-quote_sub: Let's Show me. Don't tell me.
 author: Blackie Tsai
 avatar: img/avatar.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 language: en

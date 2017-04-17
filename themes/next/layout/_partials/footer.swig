@@ -18,7 +18,3 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
-
-{% if theme.firebase %}
-  {% include '../_scripts/analytics/visit.swig' %}
-{% endif %}
