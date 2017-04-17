@@ -8,7 +8,6 @@ favicon: /images/favicon.ico
 # Set default keywords (Use a comma to separate)
 # keywords: "blackie, blackie1019, chen-tien tsai"
 keywords:
-titleKeywords: "Recently, I interested in Software Architecture, React, ASP.NET Core,and Cloud Solution"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -18,8 +17,9 @@ rss:
 # Specify the date when the site was setup
 since: 2013
 
-
-
+twitter: 211427260
+fb_admins: 1227534428
+fb_app_id: 1912565115693515
 
 # ---------------------------------------------------------------
 # Menu Settings
