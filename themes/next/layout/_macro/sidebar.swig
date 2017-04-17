@@ -102,7 +102,7 @@
           {% for name, link in theme.certification %}
             <span class="links-of-cert-item">
               <a href="{{link}}" target="_blank" title="{{ name }}">
-                <img class="side-image-cert-{{name}}" src="/images/cert.png" />
+                <img class="side-image-cert-{{name}}" alt="{{name}}" src="/images/cert.png" />
               </a>
             </span>
           {% endfor %}
@@ -114,7 +114,7 @@
           {% for name, link in theme.course %}
             <span>
               <a href="{{link}}" target="_blank" title="{{ name }}">
-                <img class="side-image-course-{{name}}" src="/images/course.png" />
+                <img class="side-image-course-{{name}}" alt="{{name}}" src="/images/course.png" />
               </a>
             </span>
           {% endfor %}

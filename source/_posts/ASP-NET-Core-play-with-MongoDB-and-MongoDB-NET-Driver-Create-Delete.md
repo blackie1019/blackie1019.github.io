@@ -20,8 +20,8 @@ tags:
 
 關於專案環境請先下面兩篇文章
 
-- [ASP.NET Core play with MongoDB and MongoDB .NET Driver](http://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
-- [ASP.NET Core play with MSTest](http://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)
+- [ASP.NET Core play with MongoDB and MongoDB .NET Driver](https://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
+- [ASP.NET Core play with MSTest](https://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)
 
 # MongoDB Data Model Overview #
 

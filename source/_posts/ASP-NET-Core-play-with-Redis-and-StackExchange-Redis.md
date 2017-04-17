@@ -35,7 +35,7 @@ tags:
 
 這邊一樣我們透過dotnet new 指令幫我們建立classlib與xunit專案進行開發與測試
 
-這邊可以參考前一篇[ASP.NET Core play with Solution File](http://blackie1019.github.io/2017/04/16/ASP-NET-Core-play-with-Solution-File/)使用.sln的方式將兩個專案關聯起來一起方便日後管理與還原
+這邊可以參考前一篇[ASP.NET Core play with Solution File](https://blackie1019.github.io/2017/04/16/ASP-NET-Core-play-with-Solution-File/)使用.sln的方式將兩個專案關聯起來一起方便日後管理與還原
 
 ## Create Redis Instance on RedisLabs ##
 

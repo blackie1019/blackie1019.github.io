@@ -18,7 +18,7 @@ tags:
 
 <!-- More -->
 
-先前有介紹過[如何幫ASP.NET Core加入Web Single Page Application的架構](http://blackie1019.github.io/2017/03/17/ASP-NET-Core-Playing-with-SPA/)
+先前有介紹過[如何幫ASP.NET Core加入Web Single Page Application的架構](https://blackie1019.github.io/2017/03/17/ASP-NET-Core-Playing-with-SPA/)
 
 這邊稍微再補充一下React&Redux的開發環境。
 

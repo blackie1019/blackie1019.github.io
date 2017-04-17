@@ -6,7 +6,8 @@
 favicon: /images/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "blackie, blackie1019, chen-tien tsai"
+# keywords: "blackie, blackie1019, chen-tien tsai"
+keywords:
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -41,9 +42,9 @@ menu:
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  home: home
+  home: code
   about: user
-  categories: th
+  categories: th-list
   tags: tags
   archives: archive
   commonweal: heartbeat
@@ -116,9 +117,9 @@ font:
 # Certifications and Passed Course
 
 certification:
-  pmp: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/Certification_PMP.pdf
-  acp: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/Certification_ACP.pdf
-  csm: none
+  pmp: https://1drv.ms/b/s!Arq-faMowY2FhyBxM_l9auIc4UfU
+  acp: https://1drv.ms/b/s!Arq-faMowY2FhxxkCdSCxrFkCu10
+  csm: https://1drv.ms/b/s!Arq-faMowY2FhxxkCdSCxrFkCu10
   mcsd-app-2017: https://www.youracclaim.com/badges/a9365dac-0a86-4471-9fea-255d33c0e09c
   mcsa-web:  https://www.youracclaim.com/badges/92e7fd9c-03b2-486c-90dd-db495c637ad9
 #mcsd-web: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/Microsoft%20Certified%20Solutions%20Developer_Web%20Applications.pdf
@@ -201,7 +202,8 @@ links_layout: block
 links:
   Larry - Level up : http://larrynung.github.io/
   Ouch - Developer ≈ Designer : http://ouch1978.github.io/
-
+  JohnWu : http://blog.johnwu.cc/
+  JimmyWu : http://blog.jimmywu.cc/
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------
@@ -303,11 +305,11 @@ duoshuo_info:
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
 facebook_sdk:
-  enable: false
-  app_id:       #<app_id>
-  fb_admin:     #<user_id>
-  like_button:  #true
-  webmaster:    #true
+  enable: true
+  app_id:       1912565115693515
+  fb_admin:     1227534428
+  like_button:  true
+  webmaster:    true
 
 
 # Show number of visitors to each article.

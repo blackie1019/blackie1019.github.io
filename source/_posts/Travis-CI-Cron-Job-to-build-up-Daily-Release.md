@@ -49,4 +49,4 @@ Cron作業可以每天，每週或每月運行，這實際上是指在所選時�
 
 # Reference #
 - [Travis CI - Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/)
-- [Travis CI build daily with nightli.es](http://blackie1019.github.io/2016/08/19/Travis-CI-build-daily-with-nightli-es/)
+- [Travis CI build daily with nightli.es](https://blackie1019.github.io/2016/08/19/Travis-CI-build-daily-with-nightli-es/)

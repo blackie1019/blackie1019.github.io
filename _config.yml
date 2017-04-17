@@ -27,26 +27,9 @@ feed:
   limit: 20
   hub:
 
-# Robotstxt
-robotstxt:
-  useragent: "*"
-  disallow:
-    - /vendors/
-    - /js/
-    - /css/
-    - /fonts/
-    - /vendors/
-    - /fancybox/
-  allow:
-    - /
-    - /archives/
-    - /categories/
-    - /tags/
-  sitemap: /sitemap.xml
-
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blackie1019.github.io
+url: https://blackie1019.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -103,9 +86,30 @@ tag_generator:
   per_page: 50
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+## Plugins: https://hexo.io/plugins/
+plugins:
+- hexo-generator-robotstxt
+
+# https://github.com/leecrossley/hexo-generator-robotstxt
+robotstxt:
+  useragent: "*"
+  disallow:
+    - /css/
+    - /images/
+    - /img/
+    - /js/
+    - /fonts/
+    - /vendors/
+    - /fancybox/
+  allow:
+    - /
+    - /archives/
+    - /categories/
+    - /tags/
+  sitemap: /sitemap.xml
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

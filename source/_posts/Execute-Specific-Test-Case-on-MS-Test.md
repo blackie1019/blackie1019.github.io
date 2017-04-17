@@ -19,7 +19,7 @@ tags:
 
 <!-- More -->
 
-我們簡單的做一個計算機並提供兩個計算功能，因為呼叫方便用了[Lazy實作Singleton Pattern](http://blackie1019.github.io/2017/04/03/Singleton-Pattern-Implementation-In-CSharp/)：
+我們簡單的做一個計算機並提供兩個計算功能，因為呼叫方便用了[Lazy實作Singleton Pattern](https://blackie1019.github.io/2017/04/03/Singleton-Pattern-Implementation-In-CSharp/)：
 
 ```csharp
 using System;

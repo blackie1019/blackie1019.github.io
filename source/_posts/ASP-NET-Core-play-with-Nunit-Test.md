@@ -19,7 +19,7 @@ tags:
 
 <!-- More -->
 
-先前介紹過[MS Test](http://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)，今天讓我們來嘗試用另外一套在.NET也十分流行的Nunit測試。
+先前介紹過[MS Test](https://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)，今天讓我們來嘗試用另外一套在.NET也十分流行的Nunit測試。
 
 # Nunit Test #
 
@@ -36,7 +36,7 @@ tags:
 
 ## Write Function and Test it ##
 
-我們簡單的做一個計算機並提供兩個計算功能，因為呼叫方便用了[Lazy實作Singleton Pattern](http://blackie1019.github.io/2017/04/03/Singleton-Pattern-Implementation-In-CSharp/)：
+我們簡單的做一個計算機並提供兩個計算功能，因為呼叫方便用了[Lazy實作Singleton Pattern](https://blackie1019.github.io/2017/04/03/Singleton-Pattern-Implementation-In-CSharp/)：
 
 ```csharp
 using System;

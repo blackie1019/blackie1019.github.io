@@ -18,7 +18,7 @@ tags:
 
 <!-- More -->
 
-先前一篇[ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create and Delete](http://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/) 分享了如何做資料的新增與刪除，此篇文章我們來看一下如何做資料的更新
+先前一篇[ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create and Delete](https://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/) 分享了如何做資料的新增與刪除，此篇文章我們來看一下如何做資料的更新
 
 # MongoDB Update #
 

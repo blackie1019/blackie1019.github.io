@@ -23,7 +23,7 @@ tags:
 
 而Google Container Engine (GKE) 是Google所推出的Container Host Cluster服務，GKE 一方面允許擴展可以使用的資源，另一方面則可以讓執行時候可以有容錯的可能性(避免單點錯誤的狀況發生)。而為什麼叫GKE而不是叫GCE勒，原因在於K指的是Google 自家的kubernetes系統。Docker本身強調build, ship and run的觀念，透過K8S作完整的管理即可達到擴展性與可修復等特性。
 
-這次分享如何將ASP.NET Core運行在GKE上，對於Google Cloud Platform的基本介紹可以參考先前的[Google Cloud Platform Introduction](http://blackie1019.github.io/2017/04/11/Google-Cloud-Platform-Introduction/)
+這次分享如何將ASP.NET Core運行在GKE上，對於Google Cloud Platform的基本介紹可以參考先前的[Google Cloud Platform Introduction](https://blackie1019.github.io/2017/04/11/Google-Cloud-Platform-Introduction/)
 
 運行起來的網站連結=>[demo網站](http://35.185.170.247:8080/)
 
