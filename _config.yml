@@ -86,7 +86,7 @@ archive_generator:
   monthly: true
 tag_generator:
   per_page: 50
-
+  
 # Extensions
 ## Themes: https://hexo.io/themes/
 theme: next
@@ -109,8 +109,8 @@ robotstxt:
     - /archives/
     - /categories/
     - /tags/
-  sitemap: /sitemap.xml
-
+  sitemap: https://blackie1019.github.io/sitemap.xml
+  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

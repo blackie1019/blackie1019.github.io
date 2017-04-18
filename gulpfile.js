@@ -15,6 +15,11 @@ gulp.task('clean', function() {
     return del([bundle_dir + '/*']);
 });
 
+gulp.task('copy-htaccess', function() {
+    return gulp.src('source/.htaccess')
+        .pipe(gulp.dest(public_dir));
+})
+
 gulp.task('copy-js', function() {
     return gulp.src([
              public_dir + '/vendors/jquery/index.js',
@@ -113,5 +118,5 @@ gulp.task('finish-task', function() {
 });
 
 gulp.task('default', function() {
-    runSequence('clean', ['copy-js', 'copy-css','copy-font-awesome'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
+    runSequence('clean', ['copy-htaccess','copy-js', 'copy-css','copy-font-awesome'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
 });

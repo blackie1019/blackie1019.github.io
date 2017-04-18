@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{http_host} ^blackie1019.github.io [NC]
+RewriteRule ^(.*)$ https://blackie1019.github.io/$1 [L,R=301]
+
+CNAME
+blackie1019.github.io
