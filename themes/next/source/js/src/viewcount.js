@@ -37,7 +37,6 @@ $(function () {
 
                 if (selector.length > 0) {
                     $(selector).html(count);
-                    console.log(tag, count);
                 };
 
             });
@@ -51,7 +50,7 @@ $(function () {
             ? true
             : false;
         var tag = "page" + (isPostPage ? curPath : $(element).find(".post-title-link").attr('href'));
-        console.log(tag,isUpdate);
+
         readData( tag, $(element).find("#pageviews .count"), isUpdate);
     }, this);
 });

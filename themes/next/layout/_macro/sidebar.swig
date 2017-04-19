@@ -33,6 +33,11 @@
         </div>
 
         <nav class="site-state motion-element">
+          <div class="site-state-item site-state-visitors" id="visitors">
+              <span class="site-state-item-count count">0</span>
+              <span class="site-state-item-name">visitors</span>
+          </div>
+
           <div class="site-state-item site-state-posts">
             <a href="{{ url_for(theme.menu.archives) }}">
               <span class="site-state-item-count">{{ site.posts.length }}</span>

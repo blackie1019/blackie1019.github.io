@@ -82,7 +82,7 @@
 
           <span id="pageviews">
             &nbsp; | &nbsp;
-            <i class="fa fa-eye"></i>
+            <i class="fa fa-star"></i>
             <span class="count"></span>
           </span>
 
