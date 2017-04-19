@@ -80,7 +80,7 @@
             </span>
           {% endif %}
 
-          <span id="visitors">
+          <span id="pageviews">
             &nbsp; | &nbsp;
             <i class="fa fa-eye"></i>
             <span class="count"></span>
