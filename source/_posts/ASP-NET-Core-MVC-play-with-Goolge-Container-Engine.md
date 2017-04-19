@@ -270,6 +270,10 @@ Google Cloud Platform不同於AWS與Azure在網頁介面上是把每個服務分
 
 當我們看到它被指派了external-ip後我們就可以到這個ip與搭配的port好去看該網站了，[http://35.185.170.247:8080/](http://35.185.170.247:8080/)
 
+整個弄完後Recap一下整個架構會如下圖：
+
+![gke-concepts](gke-concepts.png)
+
 # [補充] Google App Engine Environment #
 
 Google App Engine 有兩個環境(Environment)類型:
@@ -318,3 +322,4 @@ Flexible Environment 因為可使用Custom runtime，我們就可以自行定義
 - [Google Cloud Platform - Pushing to Container Registry](https://cloud.google.com/container-registry/docs/pushing)
 - [Kubernetes从Private Registry中拉取容器镜像的方法](http://tonybai.com/2016/11/16/how-to-pull-images-from-private-registry-on-kubernetes-cluster/)
 - [Using a Service to Access an Application in a Cluster](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address-service/)
+- [GCPUG.TW : GKE基本操作](https://gcpug-tw.gitbooks.io/google-cloud-platform-in-practice/content/container-engine/gke-basics.html)

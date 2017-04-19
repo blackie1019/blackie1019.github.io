@@ -43,7 +43,7 @@ React : Rethinking Best Practices. 這是我覺得對於ReactJS還不錯的一�
 - React 的設計 - 每個更新UI(View)等同於整個畫面重新繪製
 - React 的實作 - Virtual DOM與Event
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/key/9yHWlcJx1bWShG" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/floydophone/react-preso-v2" title="Rethinking Best Practices" target="_blank">Rethinking Best Practices</a> </strong> from <strong><a href="http://www.slideshare.net/floydophone" target="_blank">floydophone</a></strong> </div>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/9yHWlcJx1bWShG" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="http://www.slideshare.net/floydophone/react-preso-v2" title="Rethinking Best Practices" target="_blank">Rethinking Best Practices</a> </strong> from <strong><a href="http://www.slideshare.net/floydophone" target="_blank">floydophone</a></strong> </div>
 
 其中第4-6頁的簡單幾句話已經明確說明它的定位。
 
