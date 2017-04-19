@@ -40,7 +40,7 @@ $(function () {
                     symbol: "M"
                 }, {
                     value: 1E3,
-                    symbol: "k"
+                    symbol: "K"
                 }
             ],
             rx = /\.0+$|(\.[0-9]*[1-9])0+$/,
