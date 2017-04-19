@@ -15,7 +15,7 @@ ReactJS是Facebook推出的framework, 再搭配FLUX的架構下讓FB網頁上面
 
 <!-- More -->
 
-![ReactJS](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/FLUX%2BReactJS/02/ReactJS.png)
+![ReactJS](ReactJS.png)
 
 ## ReactJS Introduciton
 這邊用官網的三段特色描述來簡單介紹：
@@ -95,7 +95,7 @@ React為了讓開發方便就同時提出了一個JSX syntax的方式，接下�
 
 因為如果使用一般的JS Bin會出現下面的錯誤
 
-![Error](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/FLUX%2BReactJS/02/JS%20Bin%20Error.png)
+![Error](JS%20Bin%20Error.png)
 
 這邊為了做出JSX可以在JS Bin上面執行的結果使用了[6to5 JS Bin](http://react.rocks/example/6to5_JSBin)
 
