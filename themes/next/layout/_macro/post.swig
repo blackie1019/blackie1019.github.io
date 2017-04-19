@@ -80,6 +80,11 @@
             </span>
           {% endif %}
 
+          <span id="visitors">
+            <span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
+            <span class="count"></span>
+          </span>
+
           {% if post.comments %}
             {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
               <span class="post-comments-count">
@@ -96,11 +101,6 @@
                 </a>
               </span>
             {% endif %}
-          {% endif %}
-
-          {% if not is_index and theme.facebook_sdk.enable and theme.facebook_sdk.like_button %}
-            &nbsp; | &nbsp;
-            <div class="fb-like" data-layout="button_count" data-share="true"></div>
           {% endif %}
 
           {# LeanCould PageView #}
@@ -205,6 +205,10 @@
         </div>
       {% endif %}
 
+      {% if not is_index and theme.facebook_sdk.enable and theme.facebook_sdk.like_button %}
+        <div class="fb-like" data-layout="button_count" data-share="true"></div>
+      {% endif %}
+
       {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
@@ -230,6 +234,7 @@
         <div class="post-eof"></div>
       {% endif %}
     </footer>
+    
   </article>
 
 {% endmacro %}

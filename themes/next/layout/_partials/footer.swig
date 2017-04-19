@@ -6,6 +6,11 @@
     <i class="fa fa-child"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <span id="pageviews">
+    <span class="post-meta-item-icon"><i class="fa fa-star"></i></span>
+    <span class="count"></span>
+  </span>
+
 </div>
 
 <div class="powered-by">
