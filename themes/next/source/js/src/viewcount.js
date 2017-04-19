@@ -12,42 +12,46 @@ $(function () {
     firebase.initializeApp(config);
 
     var database = firebase.database();
-    var domain = window.location.host;
+    var homeKey = "home";
 
-    var curUrl = domain + window.location.pathname;
-    var isPostPage = curUrl.length > 1;
+    var curPath = window.location.pathname;
+    var isPostPage = curPath.length > 1;
     var rootSelector = isPostPage
         ? $('#pageviews')
         : $('#item-pageviews');
     var items = $('.post-header');
 
-    function readData(url, selector, isUpdate) {
-        var db_key = decodeURI(url.replace(new RegExp('\\/|\\.', 'g'), "_"));
+    function readData(tag, selector, isUpdate) {
+        var db_key = decodeURI(tag.replace(new RegExp('\\/|\\.', 'g'), "_"));
         database
             .ref(db_key)
             .once("value")
             .then(function (result) {
                 var count = parseInt(result.val() || 0) + 1;
 
-                if (selector.length > 0) {
-                    //$(selector).html(count);
-                    console.log(url, count);
-                };
                 if (isUpdate) {
                     database
                         .ref(db_key)
                         .set(count);
                 }
+
+                if (selector.length > 0) {
+                    $(selector).html(count);
+                    console.log(tag, count);
+                };
+
             });
     }
 
-    readData(domain, $("#visitors .count"), true);
+    readData(homeKey, $("#visitors .count"), true);
 
     $(items).map(function () {
         var element = this;
         var isUpdate = isPostPage
             ? true
             : false;
-        readData("page" + $(element).find(".post-title-link").attr('href'), $(element).find("#pageviews .count"), isUpdate);
+        var tag = "page" + (isPostPage ? curPath : $(element).find(".post-title-link").attr('href'));
+        console.log(tag,isUpdate);
+        readData( tag, $(element).find("#pageviews .count"), isUpdate);
     }, this);
 });
