@@ -12,9 +12,13 @@ $(function () {
     firebase.initializeApp(config);
 
     var database = firebase.database();
-    var oriUrl = window.location.host; 
-    var curUrl = oriUrl + window.location.pathname;
-    
+    var domain = window.location.host; 
+
+    var curUrl = domain + window.location.pathname;
+    var isPostPage = curUrl.length > 1;
+    var rootSelector = isPostPage ? $('#pageviews'): $('#item-pageviews');
+    var items = $('.post-header');
+
     function readData(url, selector) {
         var db_key = decodeURI(url.replace(new RegExp('\\/|\\.', 'g'), "_"));
         database
@@ -32,10 +36,9 @@ $(function () {
             });
     }
     
-    readData(oriUrl, $("#visitors .count"));
+    readData(domain, $("#visitors .count"));
 
-    if (curUrl != "_") {
-        readData("page/" + curUrl, $("#pageviews .count"));
-    }
-
+    $(items).map(function() {
+        readData("page/" + $(this).find(".post-title-link").attr('href'), $(this).find("#pageviews .count"));
+    }, this);
 });
