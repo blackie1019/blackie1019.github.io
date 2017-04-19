@@ -7,7 +7,8 @@
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
   <span id="pageviews">
-    <span class="post-meta-item-icon"><i class="fa fa-star"></i></span>
+    &nbsp; | &nbsp;
+    <i class="fa fa-star"></i>
     <span class="count"></span>
   </span>
 

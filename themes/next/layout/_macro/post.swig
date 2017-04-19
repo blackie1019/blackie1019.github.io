@@ -81,7 +81,8 @@
           {% endif %}
 
           <span id="visitors">
-            <span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
+            &nbsp; | &nbsp;
+            <i class="fa fa-eye"></i>
             <span class="count"></span>
           </span>
 
