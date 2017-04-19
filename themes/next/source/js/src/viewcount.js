@@ -12,33 +12,42 @@ $(function () {
     firebase.initializeApp(config);
 
     var database = firebase.database();
-    var domain = window.location.host; 
+    var domain = window.location.host;
 
     var curUrl = domain + window.location.pathname;
     var isPostPage = curUrl.length > 1;
-    var rootSelector = isPostPage ? $('#pageviews'): $('#item-pageviews');
+    var rootSelector = isPostPage
+        ? $('#pageviews')
+        : $('#item-pageviews');
     var items = $('.post-header');
 
-    function readData(url, selector) {
+    function readData(url, selector, isUpdate) {
         var db_key = decodeURI(url.replace(new RegExp('\\/|\\.', 'g'), "_"));
         database
             .ref(db_key)
             .once("value")
             .then(function (result) {
                 var count = parseInt(result.val() || 0) + 1;
-                database
-                    .ref(db_key)
-                    .set(count);
 
                 if (selector.length > 0) {
-                    $(selector).html(count);
+                    //$(selector).html(count);
+                    console.log(url, count);
                 };
+                if (isUpdate) {
+                    database
+                        .ref(db_key)
+                        .set(count);
+                }
             });
     }
-    
-    readData(domain, $("#visitors .count"));
 
-    $(items).map(function() {
-        readData("page/" + $(this).find(".post-title-link").attr('href'), $(this).find("#pageviews .count"));
+    readData(domain, $("#visitors .count"), true);
+
+    $(items).map(function () {
+        var element = this;
+        var isUpdate = isPostPage
+            ? true
+            : false;
+        readData("page" + $(element).find(".post-title-link").attr('href'), $(element).find("#pageviews .count"), isUpdate);
     }, this);
 });
