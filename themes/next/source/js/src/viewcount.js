@@ -21,6 +21,43 @@ $(function () {
         : $('#item-pageviews');
     var items = $('.post-header');
 
+    function nFormatter(num, digits) {
+        var si = [
+                {
+                    value: 1E18,
+                    symbol: "E"
+                }, {
+                    value: 1E15,
+                    symbol: "P"
+                }, {
+                    value: 1E12,
+                    symbol: "T"
+                }, {
+                    value: 1E9,
+                    symbol: "G"
+                }, {
+                    value: 1E6,
+                    symbol: "M"
+                }, {
+                    value: 1E3,
+                    symbol: "k"
+                }
+            ],
+            rx = /\.0+$|(\.[0-9]*[1-9])0+$/,
+            i;
+
+        for (i = 0; i < si.length; i++) {
+            if (num >= si[i].value) {
+                return (num / si[i].value)
+                    .toFixed(digits)
+                    .replace(rx, "$1") + si[i].symbol;
+            }
+        }
+        return num
+            .toFixed(digits)
+            .replace(rx, "$1");
+    }
+
     function readData(tag, selector, isUpdate) {
         var db_key = decodeURI(tag.replace(new RegExp('\\/|\\.', 'g'), "_"));
         database
@@ -36,7 +73,7 @@ $(function () {
                 }
 
                 if (selector.length > 0) {
-                    $(selector).html(count);
+                    $(selector).html(nFormatter(count,2));
                 };
 
             });
@@ -49,8 +86,10 @@ $(function () {
         var isUpdate = isPostPage
             ? true
             : false;
-        var tag = "page" + (isPostPage ? curPath : $(element).find(".post-title-link").attr('href'));
+        var tag = "page" + (isPostPage
+            ? curPath
+            : $(element).find(".post-title-link").attr('href'));
 
-        readData( tag, $(element).find("#pageviews .count"), isUpdate);
+        readData(tag, $(element).find("#pageviews .count"), isUpdate);
     }, this);
 });

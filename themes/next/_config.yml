@@ -195,6 +195,7 @@ sidebar:
   #display: hide
   #display: remove
 
+links_icon: thumbs-o-up
 
 # Blogrolls
 links_title: Recommendation
@@ -203,8 +204,10 @@ links_layout: block
 links:
   Larry - Level up : http://larrynung.github.io
   Ouch - Developer ≈ Designer : http://ouch1978.github.io
-  JohnWu : http://blog.johnwu.cc
-  JimmyWu : http://blog.jimmywu.cc
+  JimmyWu - 不受限的技術狂人 : http://blog.jimmywu.cc
+  JohnWu - 簡單不想寫，太難不會寫 : http://blog.johnwu.cc
+  Max W - Retry : http://retrydb.blogspot.tw/
+
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------
