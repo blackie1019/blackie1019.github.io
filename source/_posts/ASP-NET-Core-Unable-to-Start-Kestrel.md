@@ -72,7 +72,7 @@ tags:
 
 [官方說明](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/weblistener)，之後也會花點時間在這個題目上跟大家分享。
 
-### Reference ###
+### References ###
 
 - [Kestrel](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel)
 - [Kestrel with IIS](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/aspnet-core-module)

@@ -330,7 +330,7 @@ Open results of recently run tests
 
 記住，Load Testing可由多個Web Performance Test組成，所以不用一個包山包海的Test，猜開成多個透過設定不同的混和或序列執行模式可以更加有彈性的建立符合實際情況的Load Testing，如此才能真實的反應你所想要知道的訊息。
 
-## Ref ##
+## References ##
 
 - [效能/負載/壓力測試的分別（Performance vs. load vs. stress testing）](http://www.prudentman.idv.tw/2011/01/performance-vs-load-vs-stress-testing.html)
 - [Setting Up Test Machines to Run Tests or Collect Data](http://msdn.microsoft.com/en-us/library/dd293551.aspx)

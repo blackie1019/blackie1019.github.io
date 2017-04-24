@@ -110,7 +110,7 @@ MVC普遍被大家用在目前的網站開發專案當中，因為它簡單方�
 
 如果對FLUX有心得的朋友也麻煩指導小弟一下，看看是不是有什麼誤解，也感謝大家的指教。
 
-## Ref ##
+## References ##
 
 - [What is Flux?](http://fluxxor.com/what-is-flux.html)
 - [Facebook：MVC不适合大规模应用，改用Flux](http://www.infoq.com/cn/news/2014/05/facebook-mvc-flux)

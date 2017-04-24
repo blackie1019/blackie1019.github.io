@@ -550,7 +550,7 @@ Isomorphic JavaScript的架構則沿用了這樣的精神幫我們整合前後�
 
 Isomorphic 一直是 Node.js 開發者的夢想，如果有一個全新的專案需要做網頁應用程式且希望用JavaScript當作主要的開發語言的話不妨就試試看這樣的架構吧!
 
-## Reference ##
+## References ##
 
 - [Airbnb: Isomorphic JavaScript: The Future of Web Apps](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)
 - [How to Implement Node + React Isomorphic JavaScript & Why it Matters](https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters/)

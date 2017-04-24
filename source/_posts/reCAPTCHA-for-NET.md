@@ -196,7 +196,7 @@ reCAPTCHA問題的所需的文字圖片，首先會由reCAPTCHA計畫網站利�
 
 ![result](result.gif)
 
-## Reference ##
+## References ##
 
 - [ReCAPTCHA](https://zh.wikipedia.org/wiki/ReCAPTCHA)
 - [Google釋出新版reCAPTCHA機制，只要點「我不是機器人」！](http://www.ithome.com.tw/news/92757)

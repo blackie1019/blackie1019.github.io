@@ -87,7 +87,7 @@ tags:
 
 ![execute](execute.png)
 
-## Reference ##
+## References ##
 
 - [Developing ASP.NET Core apps using dotnet watch](https://docs.microsoft.com/en-us/aspnet/core/tutorials/dotnet-watch)
 - [Github - dotnet-watch](https://github.com/aspnet/DotNetTools/blob/dev/src/Microsoft.DotNet.Watcher.Tools/README.md)

@@ -134,7 +134,7 @@ Sharing the tuning guide of official post.
 
 [Performance Tuning SignalR](https://github.com/SignalR/SignalR/wiki/Performance)
 
-## Reference ##
+## References ##
 
 - [Introduction to SignalR](http://www.asp.net/signalr/overview/getting-started/introduction-to-signalr)
 - [Identifying the SignalR Transport Medium](http://dailydotnettips.com/2014/03/20/identifying-the-signalr-transport-medium/)

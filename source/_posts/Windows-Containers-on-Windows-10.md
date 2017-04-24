@@ -101,7 +101,7 @@ If a Windows container host will be run from a Hyper-V virtual machine, and will
 容器是未來開發跟部屬的重要一部分，也是目前整體的趨勢。如何做好CI與CD去提供一個有品質且高效彈性部屬的應用程式，這中間最重要的一塊就是容器的運用。
 而針對ASP.NET Core之後的文章也會以容器為開發的主體去跟大家做分享。
 
-## Reference ##
+## References ##
 
 - [Windows Containers on Windows 10](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10)
 - [New Windows Server containers and Azure support for Docker](https://azure.microsoft.com/en-us/blog/new-windows-server-containers-and-azure-support-for-docker/)

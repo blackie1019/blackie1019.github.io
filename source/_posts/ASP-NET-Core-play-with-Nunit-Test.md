@@ -123,7 +123,7 @@ namespace App.Test
 
 *由於該套件還在alpha階段，如果在windows的環境使用Visaul Studio的Nuget Management的話記得要選擇show prereleases才能找到該套件。*
 
-# Reference #
+# References #
 
 - [Github - Nunit](https://github.com/nunit)
 - [Unit testing with .NET Core](https://cmatskas.com/unit-testing-with-net-core/)

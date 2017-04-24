@@ -90,6 +90,6 @@ SPA是目前Web開發的一個主流，幾年前也寫過系列的文章介紹�
 
 同樣的，當專案樣板建立完成別忘記要還原套件才可以建置與運行!
 
-# Reference #
+# References #
 - [Building Single Page Applications on ASP.NET Core with JavaScriptServices](https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/) 
 - [Github - JavaScriptServices](https://github.com/aspnet/JavaScriptServices)

@@ -58,7 +58,7 @@ tags:
 
 原始碼公開至[streaming-snapshot](https://github.com/blackie1019/streaming-snapshot)
 
-# Reference #
+# References #
 
 - [FFMPEG -- Source Code 學習心得](http://albert-oma.blogspot.com/2013/03/ffmpeg-source-code.html)
 - [FFmpeg 免費開源、功能強大的影音處理框架](https://magiclen.org/ffmpeg/)

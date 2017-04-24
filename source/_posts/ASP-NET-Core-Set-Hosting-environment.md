@@ -86,6 +86,6 @@ Linux可以使用export這個指令，而這指令也可以用在macOS上
 
     export ASPNETCORE_ENVIRONMENT=Development
 
-# Reference #
+# References #
 - [Working with multiple environments](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/environments)
 - [How to set the hosting environment in ASP.NET Core](https://andrewlock.net/how-to-set-the-hosting-environment-in-asp-net-core/)

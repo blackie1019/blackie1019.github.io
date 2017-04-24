@@ -47,6 +47,6 @@ Cron作業可以每天，每週或每月運行，這實際上是指在所選時�
 
 這樣的好處讓我們可以把Hexo的特定文章日期設為未來時間，透過這樣固定的發布就可以在我們在未來時間真的到的時候才做發布，達到部落格排程發佈的效果!!
 
-# Reference #
+# References #
 - [Travis CI - Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/)
 - [Travis CI build daily with nightli.es](https://blackie1019.github.io/2016/08/19/Travis-CI-build-daily-with-nightli-es/)

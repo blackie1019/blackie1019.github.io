@@ -72,7 +72,7 @@ ASP.NET Core則有一份官方的[ASP.NET&ASP.NET Core共用版本](https://gith
 
 (注意:OSX it is *Code* > *Preferences* > *File Icon Theme* > *VSCode Icons*.)
 
-## Reference ##
+## References ##
 
 - [Git - 忽略檔案](https://zlargon.gitbooks.io/git-tutorial/content/file/ignore.html)
 - [[GIT] 設定.gitignore 忽略檔案不被track](http://italwaysrainonme.blogspot.tw/2013/01/git-gitignore-commit.html)
