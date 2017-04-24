@@ -2,8 +2,8 @@
 layout: post
 title: ASP.NET Core play with Firebase
 subtitle: ''
+header-img: ''
 author: Blackie
-header-img: 'header.png'
 sitemap: true
 date: 2017-04-20 07:55:14
 categories:
@@ -24,28 +24,37 @@ Firebase原本是2011年開始提供雲端服務的一間公司，主要是考�
 
 今天在介紹Firebase的同時，也會透過*FirebaseDatabase.net*實作與*ASP.NET Core*的整合來感受一下Firebase的*Realtime Database*功能
 
+![header.png](header.png)
+
 ## Firebase Introduction ##
 
 Firebase 是一個同時支援 Android、iOS 及網頁的 app 雲端開發平台，協助 app 開發者在雲端快速建置後端服務，提供即時資料庫，有效縮短應用程式的開發時間，並幫助開發者更專注在本身應用程式(前端網頁與行動應用程式或是任何獨立且面相使用者的應用程式)的優化．
 
+![firebase_intro](firebase_intro.jpg)
+
 Google目前免費開放使用Firebase的服務，不論是網頁、應用系統或目前最熱門的手機，都能透過Firebase所提供的API儲存或讀取在雲端上的資料，開發人員不需要自己建置資料庫與設計伺服器端的程式，就能快速地讓自己的應用程式能夠將資料儲存在雲端上。
+
+![Firebase_mobile](Firebase_mobile.png)
 
 想知道透過Firebase能實際做到什麼功能可以參考官方的[Case Studies](https://firebase.google.com/customers/)
 
 Firebase[目前提供的功能](https://firebase.google.com/docs/)，依據不同層面可以分為以下功能：
 
-### Analysis ### 
-- Analytics
-    提供行動數據分析。而這邊很有趣的一點，如果你的app有使用*Google Analytics(GA)*的朋友，Google 官方則是[建議改用Firebase來取代Google Analytics](https://support.google.com/analytics/answer/2587087?hl=en)，兩者的比較可以參考下表整理:
+### Analysis ###
 
-    | Firebase Analytics                                                           | Google Analytics 360                                                                                               | 
-    |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
-    | Event-based data collection model, designed specifically for apps            | Screenview/pageview data collection model                                                                          | 
-    | Free, unlimited event reporting                                              | Analytics 360 hit volume limits and pricing apply to all data that is sent to Analytics 360 from websites or apps. | 
-    | Integrated feature of Firebase, Google's mobile developer platform           | Standalone analytics product, part of Google Analytics 360 Suite                                                   | 
-    | Automatic measurement of "first open", in-app purchase, and [other key events](https://support.google.com/firebase/answer/6317485) | Developer must explicitly initialize screenview tracking and manually instrument events in the app                 | 
-    | No roll-up of multiple apps                                                  | Roll-up properties (including roll-up of both web and mobile app properties)                                       | 
-    | Not covered under Analytics 360 SLAs                                         | Covered under Analytics 360 SLAs                                                                                   | 
+- Analytics
+    提供行動數據分析。
+
+而這邊很有趣的一點，如果你的app有使用*Google Analytics(GA)*的朋友，Google 官方則是[建議改用Firebase來取代Google Analytics](https://support.google.com/analytics/answer/2587087?hl=en)，兩者的比較可以參考下表整理:
+
+| Firebase Analytics                                                           | Google Analytics 360                                                                                               | 
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| 
+| Event-based data collection model, designed specifically for apps            | Screenview/pageview data collection model                                                                          | 
+| Free, unlimited event reporting                                              | Analytics 360 hit volume limits and pricing apply to all data that is sent to Analytics 360 from websites or apps. | 
+| Integrated feature of Firebase, Google's mobile developer platform           | Standalone analytics product, part of Google Analytics 360 Suite                                                   | 
+| Automatic measurement of "first open", in-app purchase, and other key events | Developer must explicitly initialize screenview tracking and manually instrument events in the app                 | 
+| No roll-up of multiple apps                                                  | Roll-up properties (including roll-up of both web and mobile app properties)                                       | 
+| Not covered under Analytics 360 SLAs                                         | Covered under Analytics 360 SLAs                                                                                   | 
 
 如果有興趣感受一下差異的可以看看這個 [Firebase Overview - Google I/O 2016](https://www.youtube.com/watch?v=tb2GZ3Bh4p8)
 
@@ -89,10 +98,10 @@ Firebase[目前提供的功能](https://firebase.google.com/docs/)，依據不�
 
 - Notifications
 
-    不同於Cloud Messaging有提供client與server APIs來呼叫使用。Notification就是一個工具來幫我們排程的發送推播訊息並作相對的管理。這邊從[stackOverflow](http://stackoverflow.com/questions/37338560/whats-the-difference-between-firebase-cloud-messaging-firebase-notifications)上面找到一篇不錯的解釋:
+    不同於Cloud Messaging有提供client與server APIs來呼叫使用。Notification就是一個工具來幫我們排程的發送推播訊息並作相對的管理。這邊從[Stack Overflow](http://stackoverflow.com/questions/37338560/whats-the-difference-between-firebase-cloud-messaging-firebase-notifications)上面找到一篇不錯的解釋:
 
-        - Firebase Cloud Messaging is the library that you need to use in your application to receive cloud messages. It includes client APIs (multi-platform) to receive messages, and server APIs (HTTP and XMPP) to send messages.
-        - Firebase Notifications is the tool integrated in the Firebase Console to schedule cloud messages. This also includes the integration with Firebase Analytics to target analytics-based audiences and track opening and conversion events.
+    - *Firebase Cloud Messaging* is the library that you need to use in your application to receive cloud messages. It includes client APIs (multi-platform) to receive messages, and server APIs (HTTP and XMPP) to send messages.
+    - *Firebase Notifications* is the tool integrated in the Firebase Console to schedule cloud messages. This also includes the integration with Firebase Analytics to target analytics-based audiences and track opening and conversion events.
 
 - Remote Config
 
@@ -346,7 +355,7 @@ namespace app.test
 
 #### Security Rules ####
 
-Firebase預設只有已經驗證過的帳號才能夠讀取(read)或寫入(write)記錄到指定資料庫，因此，在目前的設定下是無法讓後續開發的應用程式讀取聯絡資料的，為了測試，筆者暫時將讀寫開放為任何對象都可存取，但請在設計產品APP時訂定符合安全原則的規則，請將read與write的值都更改為「true」後，按下「發佈」，即可套用新的規則。
+Firebase預設只有已經驗證過的帳號才能夠讀取(read)或寫入(write)記錄到指定資料庫，因此，在目前的設定下是無法讓後續開發的應用程式讀取聯絡資料的，為了測試，筆者暫時將讀寫開放為任何對象都可存取，**但請在設計產品APP時訂定符合安全原則的規則**，請將read與write的值都更改為「true」後，按下「發佈」，即可套用新的規則。
 
 這邊針對專案的相關設定檢查可以參考[Firebase Dynamic Links](https://f這邊針對專案的相關設定檢查可以參考)
 
@@ -371,15 +380,16 @@ Firebase預設只有已經驗證過的帳號才能夠讀取(read)或寫入(write
 - 首先你會取得 User 的登入資訊(帳號名稱/密碼)並交給你的伺服器產生Authentication Token
 - 將資訊傳給 Firebase Authentication SDK 來驗證
 - 驗證成功你就可以取得 User 所提供的資訊，預設情況下
--  User 驗證成功後可以讀寫 Firebase Realtime Database 和 Firebase Storage
+- User 驗證成功後可以讀寫 Firebase Realtime Database 和 Firebase Storage
 
-所以上面就可以看到其實我們還是需要一個app service/api提供驗證 Authentication Token。
+所以上面就可以看到其實我們還是需要一個 *service* 或*api*提供驗證 Authentication Token。
 
 而除此之外如果對Firebase的應用感興趣也可以上官方[CodeLab](https://codelabs.developers.google.com/?cat=Firebase)來練習一下，而筆者也會再陸續更新Firebase與ASP.NET Core上面的實戰整合跟各位分享。
 
 ## References ##
 
 - [Google - Firebase](https://firebase.google.com/docs/)
+- [Firebase slide](https://www.slideshare.net/ApaichonPunopas/firebase-slide)
 - [Firebase C# library](https://medium.com/step-up-labs/firebase-c-library-5c342989ad18)
 - [Firebase 心得（Realtime Database）](http://jasonchiucc.github.io/2016/07/20/firebase-tutorial-realtime-database/)
 - [Firebase is Your Product's API](https://www-staging.firebase.com/blog/2013-08-23-firebase-is-your-products-api.html)
