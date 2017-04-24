@@ -14,7 +14,7 @@ tags:
 - GCP
 ---
 
-介紹GCP上的Firebase服務，並實作與ASP.NET Core整合
+介紹GCP上的Firebase服務，並實作與ASP.NET Core整合的一個範例
 
 <!-- More -->
 
