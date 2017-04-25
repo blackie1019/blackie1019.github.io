@@ -11,7 +11,7 @@ categories:
 tags: 
 - Asp.Net Core
 - Firebase
-- GCP
+- Google Cloud
 ---
 
 <!-- More -->

@@ -11,7 +11,7 @@ categories:
 tags: 
 - Asp.Net Core
 - Firebase
-- GCP
+- Google Cloud
 ---
 
 介紹GCP上的Firebase服務，並介紹實作如何與ASP.NET Core整合
