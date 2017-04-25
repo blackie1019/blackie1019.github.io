@@ -7,13 +7,17 @@ header-img: ''
 sitemap: true
 date: 2017-04-12 00:31:12
 categories:
-- Cloud
+- Google Cloud Platform
 tags:
-- Google Cloud
+- Cloud
+- ASP.NET
+- GCP
+- GCE
+- Google Compute Engine
 - macOS
 ---
 
-介紹一下Google Cloud與建設第一個ASP.NET雲端應用程式
+介紹一下Google Cloud與透過Google Compute Engine建設第一個ASP.NET雲端應用程式
 
 <!-- More -->
 

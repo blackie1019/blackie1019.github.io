@@ -7,11 +7,11 @@ author: Blackie
 sitemap: true
 date: 2017-04-20 07:55:14
 categories:
-- Asp.Net
+- Google Cloud Platform
 tags: 
 - Asp.Net Core
+- GCP
 - Firebase
-- Google Cloud
 ---
 
 介紹GCP上的Firebase服務，並介紹實作如何與ASP.NET Core整合

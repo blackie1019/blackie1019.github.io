@@ -7,11 +7,12 @@ header-img: ''
 sitemap: true
 date: 2017-04-15 23:52:01
 categories:
-- Asp.Net
+- Google Cloud Platform
 tags: 
 - Asp.Net Core
-- Google Cloud
-- Container Engine
+- GCP
+- GKE
+- Google Container Engine
 - Docker
 ---
 

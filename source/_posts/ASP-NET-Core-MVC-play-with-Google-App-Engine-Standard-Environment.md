@@ -7,11 +7,12 @@ header-img: ''
 sitemap: true
 date: 2017-04-21 20:44:48
 categories:
-- Asp.Net
+- Google Cloud Platform
 tags: 
 - Asp.Net Core
-- Google Cloud
-- App Engine
+- GCP
+- GAE
+- Google App Engine
 ---
 
 先前為大家介紹了Google Cloud Platform，這次將介紹如何實際將ASP.NET Core MVC專案放置在Google App Engine(GAE)的Standard環境運行。

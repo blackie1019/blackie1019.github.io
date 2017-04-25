@@ -7,11 +7,11 @@ header-img: ''
 sitemap: true
 date: 2017-04-31 08:02:21
 categories:
-- Asp.Net
+- Google Cloud Platform
 tags: 
 - Asp.Net Core
+- GCP
 - Firebase
-- Google Cloud
 ---
 
 <!-- More -->
