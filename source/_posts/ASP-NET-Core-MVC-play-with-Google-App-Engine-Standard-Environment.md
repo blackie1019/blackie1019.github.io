@@ -30,15 +30,15 @@ GCP的服務基本上從需要較多環境/設備管理控制的IaaS到平台服
 
 這邊我們先簡單看一下IaaS, PaaS甚至SaaS的差別:
 
-- IaaS: Infrastructure as a Service - 基礎設施即服務
+- *IaaS*: Infrastructure as a Service - 基礎設施即服務
 
     提供基礎架構的雲端服務，包含硬體資源給客戶，包括：運算 技術、儲存、網路、…等等資源。用於安全的使用環境並給予合理的運算機性能、儲存機能、網路環境等基礎建設。
 
-- PaaS: Platform as a Service - 平台即服務
+- *PaaS*: Platform as a Service - 平台即服務
 
     PaaS在網上提供各種開發和分發應用的解決方案，比如虛擬伺服器和作業系統。這節省了在硬體上的費用，也讓之間的合作變得更加容易。包括網頁應用管理，應用設計，應用虛擬主機，存儲，安全以及應用開發協作工具等。
 
-- SaaS：Software-as-a-Service - 軟體即服務
+- *SaaS*：Software-as-a-Service - 軟體即服務
 
     一種通過Internet提供軟體的模式，用戶不用再購買軟體，而改用向提供商租用基於Web的軟體，如[G Suit](https://gsuite.google.com/intl/zh-tw/)
     
@@ -48,13 +48,13 @@ Google在2008年推出GAE，讓開發者可以在遵循一定的開發原則/規
 
 目前 GAE 服務面向已經可以整合開發者整個完整的開發生命流程，包含開發、測試、部署，甚至協市場的AB測試、版本更新的發佈等動作，都可以完整的在GAE上運作。
 
-GAE本身可以分為兩個, Standard Environment 與 Flexible Environment:
+GAE本身可以分為兩個, *Standard Environment* 與 *Flexible Environment*:
 
 - *Standard Environment*
 
     Standard Environment是延續GAE一開始推出的語言與功能持續加強各項功能的PaaS服務，目前支援Java 7, Python 2.7, PHP 5.5, Go 1.6 等四種程式語言與版本，透過Google建置好的平台可以快速的達到自動的橫向擴展，並提供即時的監控資料。
 
-    **另外，Standard Environment提供每天28個instance hour(s)的免費額度**，還有其他的的免費額度優惠，讓開發者可以在免費的範圍內開發與測試自己的應用程式，其他詳情請參考[https://cloud.google.com/appengine/quotas](https://cloud.google.com/appengine/quotas)
+    另外，**Standard Environment提供每天28個instance hour(s)的免費額度**，還有其他的的免費額度優惠，讓開發者可以在免費的範圍內開發與測試自己的應用程式，其他詳情請參考[https://cloud.google.com/appengine/quotas](https://cloud.google.com/appengine/quotas)
 
 - *Flexible Environment*
 
@@ -68,25 +68,25 @@ GAE本身可以分為兩個, Standard Environment 與 Flexible Environment:
 
 - *Standard environment instances*:
 
-    | Instance class | Cost per hour per instance | 
-    |----------------|----------------------------| 
-    | B1             | $0.05                      | 
-    | B2             | $0.10                      | 
-    | B4             | $0.20                      | 
-    | B4_1G          | $0.30                      | 
-    | B8             | $0.40                      | 
-    | F1             | $0.05                      | 
-    | F2             | $0.10                      | 
-    | F4             | $0.20                      | 
-    | F4_1G          | $0.30                      | 
+| Instance class | Cost per hour per instance | 
+|----------------|----------------------------| 
+| B1             | $0.05                      | 
+| B2             | $0.10                      | 
+| B4             | $0.20                      | 
+| B4_1G          | $0.30                      | 
+| B8             | $0.40                      | 
+| F1             | $0.05                      | 
+| F2             | $0.10                      | 
+| F4             | $0.20                      | 
+| F4_1G          | $0.30                      | 
 
 - *Flexible environment instances*:
 
-    | Resource        | Unit             | Unit cost | 
-    |-----------------|------------------|-----------| 
-    | vCPU            | per core hour    | $0.0526   | 
-    | Memory          | per GB hour      | $0.0071   | 
-    | Persistent disk | per GB per month | $0.0400   | 
+| Resource        | Unit             | Unit cost | 
+|-----------------|------------------|-----------| 
+| vCPU            | per core hour    | $0.0526   | 
+| Memory          | per GB hour      | $0.0071   | 
+| Persistent disk | per GB per month | $0.0400   | 
 
 這邊可以看到Standard的計算就很簡單了，單看你在什麼規模執行多久，但Flexible就需要針對使用的資源做計算了。
 
@@ -122,29 +122,15 @@ GAE本身可以分為兩個, Standard Environment 與 Flexible Environment:
 
 目前預載的工具:
 
-| Type                                                    | Tool                             | 
-|---------------------------------------------------------|----------------------------------| 
-| Linux shell interpreters                                | bash                             | 
-| sh                                                      |                                  | 
-| Linux utilities                                         | Standard Debian system utilities | 
-| Google SDKs and tools                                   | Google App Engine SDK            | 
-| Google Cloud SDK including the gcloud command-line tool |                                  | 
-| gsutil for Cloud Storage                                |                                  | 
-| Text editors                                            | Emacs                            | 
-| Vim                                                     |                                  | 
-| Nano                                                    |                                  | 
-| Build and package tools                                 | Gradle                           | 
-| Make                                                    |                                  | 
-| Maven                                                   |                                  | 
-| npm                                                     |                                  | 
-| nvm                                                     |                                  | 
-| pip                                                     |                                  | 
-| Source control tools                                    | Git                              | 
-| Mercurial                                               |                                  | 
-| Additional tools                                        | Docker                           | 
-| iPython                                                 |                                  | 
-| MySQL client                                            |                                  | 
-| gRPC compile                                            |                                  | 
+| Type                     | Tool                                                                                                     | 
+|--------------------------|----------------------------------------------------------------------------------------------------------| 
+| Linux shell interpreters | bash, sh                                                                                                 | 
+| Linux utilities          | Standard Debian system utilities                                                                         | 
+| Google SDKs and tools    | Google App Engine SDK, Google Cloud SDK including the gcloud command-line tool, gsutil for Cloud Storage | 
+| Text editors             | Emacs, Vim, Nano                                                                                         | 
+| Build and package tools  | Gradle, Make, Maven, npm, nvm, pip                                                                       | 
+| Source control tools     | Git, Mercurial                                                                                           | 
+| Additional tools         | Dockerm, iPython, MySQL client, gRPC compiler                                                            | 
 
 #### SDKs ####
 
