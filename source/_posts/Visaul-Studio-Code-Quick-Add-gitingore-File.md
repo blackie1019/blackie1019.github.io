@@ -10,6 +10,7 @@ categories:
 - Tool
 tags:
 - VSCode
+- Git
 ---
 
 使用git一定會使用到gitignore檔案來幫我們忽略一些檔案，不要加入版本控管。介紹如何使用VSCode的套件 - gitignore 快速新增gitignore
