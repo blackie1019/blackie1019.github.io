@@ -6,8 +6,11 @@ author: Blackie
 header-img: ''
 sitemap: true
 date: 2017-04-19 12:57:41
-categories:
+categories: 
+- Development&Coding
 tags:
+- Gulp
+- Front-End Optimization
 ---
 
 介紹Gulp套件與展示一個網頁最佳化的demo，並且透過concat的套件解決兩個獨立的js檔案但有循環參考的解法

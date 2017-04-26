@@ -10,6 +10,7 @@ categories:
 - Development&Coding
 tags:
 - Gulp
+- Front-End Optimization
 ---
 
 讓Gulp可以建立有相依性的系列工作，協助我們解決在有必要依序執行的工作上做更彈性的設置
