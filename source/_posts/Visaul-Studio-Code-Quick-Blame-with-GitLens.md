@@ -25,7 +25,9 @@ tags:
 
 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 的安裝請參考之前的文章，或是 VS Code Quick Open (⌘+P)輸入*ext install gitlens* 即可．
 
-## Git Blame ##
+## git blame ##
+
+此套件主要是建立在*git blame*的功能上，而當我們使用Git作為我們版本管控的工具後，你可以用 git blame 來檢視標注該檔案，查看檔案的每一行分別是由哪一位人員在哪一天修改的commit進去版控的。
 
 ## How to Use GitLens ##
 
