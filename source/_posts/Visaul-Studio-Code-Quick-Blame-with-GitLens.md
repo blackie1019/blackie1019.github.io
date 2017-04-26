@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-30 08:47:04
+date: 2017-04-22 08:47:04
 categories:
 - Tool
 tags:
@@ -25,11 +25,37 @@ tags:
 
 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 的安裝請參考之前的文章，或是 VS Code Quick Open (⌘+P)輸入*ext install gitlens* 即可．
 
+![gitlens-preview1](gitlens-preview1.gif)
+
+![gitlens-preview2](gitlens-preview2.gif)
+
 ## git blame ##
 
 此套件主要是建立在*git blame*的功能上，而當我們使用Git作為我們版本管控的工具後，你可以用 git blame 來檢視標注該檔案，查看檔案的每一行分別是由哪一位人員在哪一天修改的commit進去版控的。
 
+    git blame <targetfile>
+
+![git_blame](git_blame.png)
+
+如上我們就可以看出各別誰commit的，但這真的很難一目了然...
+
 ## How to Use GitLens ##
+
+而如果我們安裝了GitLens則變成簡單多了，我們先看還沒安裝前這篇文章的在VSCode的呈現
+
+![before](before.png)
+
+安裝後
+
+![after](after.png)
+
+是不是Magic! 
+
+安裝完後，我們編輯器的每個file的右上角也會多出一個*Toggle Blame Annotation*來幫助我們展開各行詳細的commit區塊:
+
+![test](test.gif)
+
+當然還有更多功能，就麻煩上官網去發掘並給予五星回饋肯定作者的貢獻吧!
 
 ## References ##
 
