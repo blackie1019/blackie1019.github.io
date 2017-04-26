@@ -10,6 +10,7 @@ categories:
 - Google Cloud Platform
 tags: 
 - Asp.Net Core
+- .Net Core
 - GCP
 - Firebase
 ---

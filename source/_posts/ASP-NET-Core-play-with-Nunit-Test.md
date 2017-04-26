@@ -10,6 +10,7 @@ categories:
 - Asp.Net
 tags: 
 - Asp.Net Core
+- .Net Core
 - Nunit Test
 - Unit Testing
 - Automation Testing
