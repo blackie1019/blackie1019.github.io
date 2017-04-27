@@ -5,12 +5,12 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-31 08:02:21
+date: 2017-05-31 08:02:21
 categories:
 - Google Cloud Platform
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - GCP
 - Firebase
 ---

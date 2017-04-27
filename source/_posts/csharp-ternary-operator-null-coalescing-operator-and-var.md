@@ -6,9 +6,10 @@ date: 2014-05-05 00:29:45
 author: Blackie
 header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140505/main.JPG"
 categories:
-- Asp.Net
+- .NET
 tags:
 - C#
+- ASP.NET
 ---
 
 在寫程式中往往會遇到一些簡化程式碼的簡寫，如foreach在C# 3.0有了LinQ與Lambda表態是後就漸漸的被少用了(在大型的開發架構下看的懂程式碼的架構才是第一步最重要的,除了效能考量外)

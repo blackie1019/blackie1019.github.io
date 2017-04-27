@@ -7,10 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-04-11 01:35:10
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - MongoDB
 - MongoDB .NET Driver
 ---

@@ -7,9 +7,9 @@ header-img: ''
 sitemap: true
 date: 2017-04-07 20:03:58
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
+- ASP.NET Core
 - MSTest
 - Unit Testing
 - Automation Testing

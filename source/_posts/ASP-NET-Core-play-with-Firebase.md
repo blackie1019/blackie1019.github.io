@@ -9,8 +9,8 @@ date: 2017-04-20 07:55:14
 categories:
 - Google Cloud Platform
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - GCP
 - Firebase
 ---

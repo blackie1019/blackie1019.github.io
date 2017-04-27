@@ -9,8 +9,8 @@ date: 2017-03-30 16:26:50
 categories:
 - Development&Coding
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - VSCode
 - Nuget
 ---

@@ -7,10 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-03-19 12:47:20
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - C#
 - VSCode
 ---

@@ -7,8 +7,9 @@ header-img: ''
 sitemap: true
 date: 2017-04-18 21:22:32
 categories:
-- Asp.Net
+- .NET
 tags: 
+- ASP.NET
 - Nuget
 ---
 

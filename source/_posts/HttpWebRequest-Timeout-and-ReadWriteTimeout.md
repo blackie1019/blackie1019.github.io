@@ -7,8 +7,9 @@ header-img: ''
 sitemap: true
 date: 2016-08-22 16:26:34
 categories:
-- Asp.Net
+- .NET
 tags:
+- ASP.NET
 - C#
 ---
 

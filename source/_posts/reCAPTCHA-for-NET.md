@@ -7,10 +7,11 @@ header-img: ''
 sitemap: true
 date: 2016-08-22 10:59:06
 categories:
-- Asp.Net
+- .NET
 tags:
 - CAPTCHA
 - Web MVC/WebApi
+- ASP.NET
 ---
 
 reCAPTCHA計畫原本是由卡內基美濃大學所發展的系統，後來普遍被發展到防止非人為行為的自動程式上，包含Facebook與Twitter都有使用。此篇跟大家分享如何在Asp.Net上使用

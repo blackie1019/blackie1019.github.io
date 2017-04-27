@@ -10,6 +10,7 @@ categories:
 - Cotainer & VM
 tags:
 - Docker
+- Container
 - Windows Container
 - Windows 10
 ---

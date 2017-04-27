@@ -6,9 +6,10 @@ date: 2014-02-17 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Asp.Net
+- .NET
 tags:
 - Web MVC/WebApi
+- ASP.NET
 ---
 
 關於MVC架構下的Default Page的機制

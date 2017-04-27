@@ -9,12 +9,13 @@ date: 2017-04-15 23:52:01
 categories:
 - Google Cloud Platform
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - GCP
 - GKE
 - Google Container Engine
 - Docker
+- Container
 ---
 
 使用Google Container Engine 是Google所推出的Container Host Cluster服務，讓Docker(Cotainer)透過Cluster環境來執行你所寫的ASP.NET Core MVC程式。

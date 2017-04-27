@@ -7,10 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-03-06 21:07:15
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - Iron Man
 - C#
 ---

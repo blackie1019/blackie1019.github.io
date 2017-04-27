@@ -7,10 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-04-30 11:55:26
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - Nunit Test
 - Unit Testing
 - Automation Testing

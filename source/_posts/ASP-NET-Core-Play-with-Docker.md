@@ -7,11 +7,12 @@ header-img: ''
 sitemap: true
 date: 2017-03-26 11:46:37
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - Docker
+- Container
 ---
 
 紀錄一下如何透過Docker來Deploy .NET Core環境

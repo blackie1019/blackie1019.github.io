@@ -6,8 +6,9 @@ date: 2013-10-23 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Asp.Net
+- .NET
 tags:
+- ASP.NET
 - Web MVC/WebApi
 ---
 MVC 開發環境與基本知識

@@ -9,8 +9,8 @@ date: 2017-04-21 20:44:48
 categories:
 - Google Cloud Platform
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - GCP
 - GAE
 - Google App Engine

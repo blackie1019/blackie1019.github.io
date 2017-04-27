@@ -7,10 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-04-14 17:03:35
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - Dotnet CLI
 ---
 

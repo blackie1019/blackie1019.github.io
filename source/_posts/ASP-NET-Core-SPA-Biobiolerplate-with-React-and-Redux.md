@@ -7,10 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-03-29 02:06:35
 categories:
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
-- .Net Core
+- ASP.NET Core
+- .NET Core
 - React
 - Redux
 ---

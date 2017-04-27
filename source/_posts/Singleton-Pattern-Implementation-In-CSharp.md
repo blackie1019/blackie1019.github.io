@@ -7,10 +7,11 @@ header-img: ''
 sitemap: true
 date: 2017-04-03 08:58:41
 categories:
-- Asp.Net
+- .NET
 tags:
 - C#
-- Asp.Net Core
+- ASP.NET
+- ASP.NET Core
 - Design Pattern
 ---
 

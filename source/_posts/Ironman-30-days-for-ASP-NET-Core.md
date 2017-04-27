@@ -7,9 +7,9 @@ header-img: ''
 sitemap: true
 date: 2016-11-30 10:23:57
 categories: 
-- Asp.Net
+- .NET
 tags: 
-- Asp.Net Core
+- ASP.NET Core
 - Iron Man
 - C#
 ---

@@ -6,9 +6,10 @@ date: 2014-01-12 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Asp.Net
+- .NET
 tags:
 - Web MVC/WebApi
+- ASP.NET
 ---
 
 分享一下如何動態註冊客製的Routing

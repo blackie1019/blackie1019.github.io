@@ -6,9 +6,10 @@ date: 2014-01-15 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Asp.Net
+- .NET
 tags: 
 - C#
+- ASP.NET
 ---
 
 <!-- More -->

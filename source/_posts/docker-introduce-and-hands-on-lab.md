@@ -9,6 +9,7 @@ categories:
 - Cotainer & VM
 tags:
 - Docker
+- Container
 ---
 
 Build, Ship and Run. Any App, Anywhere! 這就是Docker寫在官網上面對自己最簡單的描述。
