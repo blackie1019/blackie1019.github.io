@@ -37,7 +37,7 @@ top: -50px;
 padding: 0px;
 }
 /*箭頭右*/
-.mwt_border .arrow_r_int{
+.signature .mwt_border .arrow_r_int{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -48,7 +48,7 @@ padding: 0px;
 	right:-30px;
 }
 /*箭頭右-邊框*/
-.mwt_border .arrow_r_out{
+.signature .mwt_border .arrow_r_out{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -60,7 +60,7 @@ padding: 0px;
 }
 
 /*箭頭左*/
-.mwt_border .arrow_l_int{
+.signature .mwt_border .arrow_l_int{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -71,7 +71,7 @@ padding: 0px;
 	left:-30px;
 }
 /*箭頭左-邊框*/
-.mwt_border .arrow_l_out{
+.signature .mwt_border .arrow_l_out{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -83,7 +83,7 @@ padding: 0px;
 }
 
 /*箭頭上*/
-.mwt_border .arrow_t_int{
+.signature .mwt_border .arrow_t_int{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -94,7 +94,7 @@ padding: 0px;
 	left:40px;
 }
 /*箭頭上-邊框*/
-.mwt_border .arrow_t_out{
+.signature .mwt_border .arrow_t_out{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -106,7 +106,7 @@ padding: 0px;
 }
 
 /*箭頭下*/
-.mwt_border .arrow_b_int{
+.signature .mwt_border .arrow_b_int{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -117,7 +117,7 @@ padding: 0px;
 	right:50px;
 }
 /*箭頭下-邊框*/
-.mwt_border .arrow_b_out{
+.signature .mwt_border .arrow_b_out{
 	width:0px;
 	height:0px;
 	border-width:15px;
@@ -126,7 +126,12 @@ padding: 0px;
 	position:absolute;
 	bottom:-29px;
 	right:50px;
-}</style>
+}
+.signature .signature-profile{
+	width: 60px; 
+	height: 60px;
+}
+</style>
 <!--簽名檔HTML(http://www.minwt.com/css/8996.html)-->
 <hr />
 <div class="signature">

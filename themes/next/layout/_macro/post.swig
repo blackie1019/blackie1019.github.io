@@ -210,6 +210,18 @@
         <div class="fb-like" data-layout="button_count" data-share="true"></div>
       {% endif %}
 
+      {% if theme.signature.enable %}
+      <hr />
+      <div class="signature">
+        <img class="signature-profile" alt="profile2" src="{{url_for(theme.signature.profile)}}" />
+        <div class="mwt_border">
+          <span class="arrow_l_int"></span>
+          <span class="arrow_l_out"></span>
+          <p>{{theme.signature.comment}}</p>
+        </div>
+      </div>
+      {% endif %}
+
       {% if not is_index and (post.prev or post.next) and not navlessPost %}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
