@@ -12,6 +12,8 @@ menu:
   tags: Тэги
   about: О сайте
   search: поиск
+  .net: .NET
+  gcp: GCP
 
 sidebar:
   overview: Обзор

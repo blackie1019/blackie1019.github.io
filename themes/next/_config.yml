@@ -28,6 +28,8 @@ fb_app_id: 1912565115693515
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
+  .net: /categories/NET
+  gcp: /categories/Google-Cloud-Platform
   categories: /categories
   #about: /about
   archives: /archives
@@ -40,6 +42,7 @@ menu:
 #   Map a menu item to a specific FontAwesome icon name.
 #   Key is the name of menu item and value is the name of FontAwsome icon. Key is case-senstive.
 #   When an question mask icon presenting up means that the item has no mapping icon.
+# Added Software Icon: http://fizzed.com/oss/font-mfizz
 menu_icons:
   enable: true
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
@@ -49,6 +52,8 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
+  .net: icon-csharp
+  gcp:  icon-google-developers
 
 
 
@@ -167,7 +172,7 @@ signature:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-avatar: /img/avatar.jpg
+avatar: /img/avatar.png
 
 
 # Table Of Contents in the Sidebar

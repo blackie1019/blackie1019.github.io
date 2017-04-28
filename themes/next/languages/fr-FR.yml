@@ -12,6 +12,8 @@ menu:
   tags: Tags
   about: A propos
   search: recherche
+  .net: .NET
+  gcp: GCP
 
 sidebar:
   overview: Ensemble

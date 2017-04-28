@@ -12,7 +12,8 @@ menu:
   tags: 標籤
   about: 關於
   search: 檢索
-
+  .net: .NET
+  gcp: GCP
 
 sidebar:
   overview: 本站概覽

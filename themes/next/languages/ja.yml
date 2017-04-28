@@ -12,6 +12,8 @@ menu:
   tags: タグ
   about: About
   search: 検索
+  .net: .NET
+  gcp: GCP
 
 sidebar:
   overview: 概要

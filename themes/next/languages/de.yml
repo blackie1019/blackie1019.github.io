@@ -13,6 +13,8 @@ menu:
   about: Über
   feed: RSS
   search: Suche
+  .net: .NET
+  gcp: GCP
 
 sidebar:
   overview: Übersicht

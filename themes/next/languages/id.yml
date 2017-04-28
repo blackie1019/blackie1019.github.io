@@ -12,6 +12,8 @@ menu:
   tags: Tags
   about: Tentang
   search: Pencarian
+  .net: .NET
+  gcp: GCP
 
 sidebar:
   overview: Ikhtisar

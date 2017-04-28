@@ -77,6 +77,7 @@ gulp.task('copy-css', function() {
     return gulp.src([
             public_dir + '/vendors/fancybox/source/jquery.fancybox.css',
             public_dir + '/vendors/font-awesome/css/font-awesome.min.css',
+            public_dir + '/vendors/font-mfizz/css/font-mfizz.css',
             public_dir + '/vendors/google-code-prettify/skins/prettify.css',
             public_dir + '/css/main.css'
         ])
@@ -86,6 +87,11 @@ gulp.task('copy-css', function() {
 
 gulp.task('copy-font-awesome', function() {
     return gulp.src(public_dir + '/vendors/font-awesome/fonts/**.*')
+        .pipe(gulp.dest(bundle_fonts));
+})
+
+gulp.task('copy-font-mfizz', function() {
+    return gulp.src(public_dir + '/vendors/font-mfizz/fonts/**.*')
         .pipe(gulp.dest(bundle_fonts));
 })
 
@@ -111,6 +117,7 @@ gulp.task('concat-advance-css', function() {
     return gulp.src([
             bundle_css + '/jquery.fancybox.css',
             bundle_css + '/font-awesome.min.css',
+            bundle_css + '/font-mfizz.css',
             bundle_css + '/prettify.css'
         ])
         .pipe(concat('advance.css'))
@@ -122,5 +129,5 @@ gulp.task('finish-task', function() {
 });
 
 gulp.task('default', function() {
-    runSequence('clean', ['copy-htaccess','copy-js', 'copy-css','copy-font-awesome'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
+    runSequence('clean', ['copy-htaccess','copy-js', 'copy-css','copy-font-awesome','copy-font-mfizz'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
 });
