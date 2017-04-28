@@ -11,7 +11,8 @@ tags:
 - ASP.NET
 - Web MVC/WebApi
 ---
-MVC 開發環境與基本知識
+
+MVC 4開發環境與基本知識
 
 <!-- More -->
 
@@ -59,9 +60,9 @@ VS2012已經自動加入了，而透過NuGet做專案內的套件管理，這邊
 
 ## MVC架構
 
-![mvc](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/ASP.Net%20MVC/01/MVC.png)
+![mvc](MVC.png)
 
-![mvc2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/ASP.Net%20MVC/01/MVC2.png)
+![mvc2](MVC2.png)
 
 ## 目錄架構(以Internet Application Template為例):
 - App_Data
