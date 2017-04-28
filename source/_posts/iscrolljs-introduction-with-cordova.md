@@ -16,7 +16,7 @@ tags:
 
 <!-- More -->
 
-![iScroll.js](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/1.jpg)
+![iScroll.js](1.jpg)
 
 ## 前言
 
@@ -59,13 +59,13 @@ tags:
 這樣就可以生成一個支援點選縮放的區塊了，如下示意：
 
 一開始：
-![demo圖-1](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/4.png)
+![demo圖-1](4.png)
 
 點選：
-![demo圖-2](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/5.png)
+![demo圖-2](5.png)
 
 雙指放大：
-![demo圖-3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/6.png)
+![demo圖-3](6.png)
 
 好吧，看圖說故事是沒用的，來看影片吧哈哈
 
@@ -77,12 +77,12 @@ http://www.youtube.com/watch?v=pENszKvvGEg
 
 將下面打開iScroll.js並將103行的useTransition從false改為true就好
 
-![加速](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/2.png)
+![加速](2.png)
 
 一秒搞定真給力！其實是參考K大的文章-[iScroll.js的scroll不順怎麼辦？](http://www.icoding.co/2012/03/iscroll-js%E7%9A%84scroll%E4%B8%8D%E9%A0%86%E6%80%8E%E9%BA%BC%E8%BE%A6%EF%BC%9F)
 
 現在最新版的iScroll5 也在beta了，目前已經有的demo非常多，看來功能真的變強大了
 
-![demo圖](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130910/3.png)
+![demo圖](3.png)
 
 有興趣的可以上他們[Github](https://github.com/cubiq/iscroll)關註一下

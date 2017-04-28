@@ -19,43 +19,43 @@ tags:
 
 除了傳統的直接互叫web service 服務之外，現在只要是google提供的API都有做動態載入的功能，使用上如下
 
+```js
+  <!--載入 AJAX API-->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
 
-	 <!--載入 AJAX API-->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
+    //動態載入 Visualization API 與 piechart package.
+    google.load('visualization', '1.0', {'packages':['corechart']});
 
-      //動態載入 Visualization API 與 piechart package.
-      google.load('visualization', '1.0', {'packages':['corechart']});
+    // 設定 Google Visualization API 成功載入時的callback function
+    google.setOnLoadCallback(drawChart);
 
-      // 設定 Google Visualization API 成功載入時的callback function
-      google.setOnLoadCallback(drawChart);
+    // 執行畫圖
+    function drawChart() {
 
-      // 執行畫圖
-      function drawChart() {
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['Mushrooms', 3],
+        ['Onions', 1],
+        ['Olives', 1],
+        ['Zucchini', 1],
+        ['Pepperoni', 2]
+      ]);
 
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['Mushrooms', 3],
-          ['Onions', 1],
-          ['Olives', 1],
-          ['Zucchini', 1],
-          ['Pepperoni', 2]
-        ]);
+      // 設定畫圖相關屬性
+      var options = {'title':'How Much Pizza I Ate Last Night',
+                      'width':400,
+                      'height':300};
 
-        // 設定畫圖相關屬性
-        var options = {'title':'How Much Pizza I Ate Last Night',
-                       'width':400,
-                       'height':300};
-
-        // 傳入畫圖相關數興趣產生畫圖的instance並將結果畫在指定內容上
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-
+      // 傳入畫圖相關數興趣產生畫圖的instance並將結果畫在指定內容上
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+```
 ## 範例
 
 這邊帶大家看一個QRCode的範例，此範例是用呼叫服務的方式產生
