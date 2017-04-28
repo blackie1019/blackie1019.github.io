@@ -41,7 +41,7 @@ tags:
 
 本身的相依也不多:
 
-    ![dependency](dependency.png)
+![dependency](dependency.png)
 
 接著讓我們嘗試用它來解決一個實例．
 
