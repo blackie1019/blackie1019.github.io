@@ -12,12 +12,14 @@ tags:
 - Visual Studio
 ---
 
+介紹如何在Visual Studio使用JSHint
+
 <!-- More -->
 
 ![LOGO](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140120/jshint_vs.png)
 
 上一篇文章介紹了[Work with JSHint using Sublime Text 2
-](http://www.dotblogs.com.tw/blackie1019/archive/2014/01/18/141678.aspx)，這次要補充如何在Visual Studio也使用JSHint來幫我們達到一樣的效果，畢竟地表最強IDE不是叫假的啊！
+](https://blackie1019.github.io/2014/01/17/work-with-jshint-using-sublime-text/)，這次要補充如何在Visual Studio也使用JSHint來幫我們達到一樣的效果，畢竟地表最強IDE不是叫假的啊！
 
 ##Visual Studio版本
 
@@ -28,8 +30,3 @@ tags:
 1. 下載並安裝VS
 2. 下載並安裝JSLint.VS2012 extension
 3. 設定JSLint檢查條件
-
-###使用
-
-
-##結語

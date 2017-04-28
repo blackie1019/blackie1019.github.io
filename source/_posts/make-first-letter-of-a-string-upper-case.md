@@ -20,17 +20,22 @@ tags:
 
 使用前先稍微了解一下這個TextInfo類別的
 
-## TextInfo 類別(.net framework後 2.0開始使用)
+## TextInfo 類別(.NET Framework後 2.0開始使用) ##
+
 - 定義文字屬性和行為，例如書寫系統特有的大小寫。
 - 使用方式:
 
-		string testStr = ABC;
-		var convertStr = Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(gameType.ToString().ToLower());
+```csharp
+string testStr = ABC;
+var convertStr = Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(gameType.ToString().ToLower());
+```
 
 這邊要稍微注意一下，這個方法只能將第一個字變大寫，如果像範例原本就是三個大寫的字卻希望只有開頭大寫的話就要先做一次.ToLower()將文字都轉換成小寫在透過.ToTitleCase()將第一個字轉換為大寫。
 
 關於TextInfo類別的其他方法(Method):
 
-![Method](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140309/TextInfo.PNG)
+![Method](TextInfo.PNG)
 
-[MSDN:TextInfo類別](http://msdn.microsoft.com/zh-tw/library/System.Globalization.TextInfo(v=vs.110).aspx)
+## References ##
+
+- [MSDN:TextInfo類別](http://msdn.microsoft.com/zh-tw/library/System.Globalization.TextInfo(v=vs.110).aspx)

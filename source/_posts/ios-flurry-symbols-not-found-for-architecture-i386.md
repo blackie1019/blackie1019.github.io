@@ -25,4 +25,4 @@ Flurry更新設定
 
 ![3](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93blog/blogs/20131011/3.jpg)
 
-這邊要稍微注意一下如果你還是有遇到iOS實機執行的問題可以參考小弟之前另外一篇[[iOS]Xcode4 upgrade to Xcode5:ld: symbol(s) not found for architecture armv7 or armv7s linker error](http://www.dotblogs.com.tw/blackie1019/archive/2013/10/07/123346.aspx)
+這邊要稍微注意一下如果你還是有遇到iOS實機執行的問題可以參考小弟之前另外一篇[[iOS]Xcode4 upgrade to Xcode5:ld: symbol(s) not found for architecture armv7 or armv7s linker error](https://blackie1019.github.io/2013/10/10/xcode4-upgrade-to-xcode5-symbol-not-found-for-architecture-armv7-or-armv7s-linker-error/)

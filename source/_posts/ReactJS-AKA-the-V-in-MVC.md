@@ -120,8 +120,7 @@ React為了讓開發方便就同時提出了一個JSX syntax的方式，接下�
 	- 強化小模組單一功能的component。這除了縮小每個功能的開發範圍與可重複利用重組任意
 	Component，也讓測試可以被執行也應該要以測試為前提進行開發(TDD)
 
-下一次會用簡單的Demo解說React如何使用FLUX這個架構，有興趣先了解FLUX的流程可以先參考另外一篇[[FLUX]FLUX架構介紹與實作FLUX架構
-](http://www.dotblogs.com.tw/blackie1019/archive/2015/04/14/151049.aspx)
+下一次會用簡單的Demo解說React如何使用FLUX這個架構，有興趣先了解FLUX的流程可以先參考另外一篇[FLUX Introduction](https://blackie1019.github.io/2015/04/13/FLUX-Introduction/)
 
 ## Ref
 

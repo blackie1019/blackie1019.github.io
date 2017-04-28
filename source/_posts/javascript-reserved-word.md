@@ -83,7 +83,7 @@ reserved word就是在程式裡預先保留的文字，大多有特殊用途與�
 
 ### strict 模式中的未來保留字
 
-以下是僅限於 strict 模式中的未來保留字。 如需 strict 模式的詳細了解，請參考之前的文章[[JavaScript]use strict(嚴格模式)-strict mode 介紹](http://www.dotblogs.com.tw/blackie1019/archive/2013/08/30/115977.aspx)
+以下是僅限於 strict 模式中的未來保留字。 如需 strict 模式的詳細了解，請參考之前的文章[[JavaScript]use strict(嚴格模式)-strict mode 介紹](https://blackie1019.github.io/2013/08/29/javascript-strick-mode-introduction/)
 
 - implements
 - interface

@@ -11,7 +11,7 @@ tags:
 - Basic JS
 ---
 
-先前寫過一篇[[Javascript]Call method(呼叫函式)](http://www.dotblogs.com.tw/blackie1019/archive/2014/01/14/139926.aspx)關於函數宣告,這邊進階一下做一個比較。
+先前寫過一篇[[Javascript]Call method(呼叫函式)](https://blackie1019.github.io/2014/01/13/javascript-call-method/)關於函數宣告,這邊進階一下做一個比較。
 
 <!-- More -->
 
@@ -22,19 +22,23 @@ tags:
 
 ### 第一種 - declaration (函式運算式)
 
-	function callTest(){
-		console.log(123);
-	}
+```csharp
+function callTest(){
+	console.log(123);
+}
 
-	callTest();
+callTest();
+```
 
 ### 第二種 - function expression(函式陳述式)
 
-	var callTest=function(){
-		console.log(123);
-	}
+```csharp
+var callTest=function(){
+	console.log(123);
+}
 
-	callTest();
+callTest();
+```
 
 大致上常見的有上面兩種, 其中第二種的變形使用很多變化，下面歸納兩點差異讓大家分辨
 
@@ -43,21 +47,24 @@ tags:
 - 1
 
 	function declaration (函式運算式)最大差異就是呼叫自定函式時可在function前，如剛剛的第一種我們可以改成下面的樣子依舊可以正常執行
+	
+	```csharp
+	callTest();
 
-		callTest();
-
-		function callTest(){
-			console.log(123);
-		}
+	function callTest(){
+		console.log(123);
+	}
+	```
 
 	但如果改用function expression(函式陳述式)成下面這樣就會發現出現問題(變數未宣告)
 
-		callTest();
+	```csharp
+	callTest();
 
-		var callTest=function(){
-			console.log(123);
-		}
-
+	var callTest=function(){
+		console.log(123);
+	}
+	```
 
 - 2
 
@@ -65,21 +72,24 @@ tags:
 
 	- declaration (函式運算式)直接被回收
 
-			（function(val){
-				console.log(val);
-			 })(123);
+	```csharp
+	（function(val){
+		console.log(val);
+	})(123);
+	```
 
 	- function expression(函式陳述式)變數被回收
+	
+	```csharp
+	var callTest=function(){
+		console.log(123);
+	}
 
-			var callTest=function(){
-				console.log(123);
-			}
-
-			callTest();
-			callTest=null;
-			callTest();
-
+	callTest();
+	callTest=null;
+	callTest();
+	```
 
 ## 結語
 
-看完定義跟比較後應該很明確的可以知道以後什麼情況要用function expression與declaration了，不要再誤用或以為都一樣摟！
+看完定義跟比較後應該很明確的可以知道以後什麼情況要用 *Function Expression* 與 *Declaration* 了，不要再誤用或以為都一樣摟！

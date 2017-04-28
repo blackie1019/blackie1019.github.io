@@ -48,4 +48,4 @@ tags:
 這邊要注意一點，一般Debug的时候“Build Active Architecture Only”如果你選擇YES，這是讓你以目前架構看程式是否有问题，而你如果是要Release的时候一定要選擇NO，因为需要配合其他的機型來使用，而且不選額no的話也不能讓你打包的歐！這點要千萬注意。
 
 關於Build Active Architecture Only如何設定可以參考[[iOS]Xcode4 upgrade to Xcode5:ld: symbol(s) not found for architecture armv7 or armv7s linker error
-](http://www.dotblogs.com.tw/blackie1019/archive/2013/10/07/123346.aspx)
+](https://blackie1019.github.io/2013/10/10/xcode4-upgrade-to-xcode5-symbol-not-found-for-architecture-armv7-or-armv7s-linker-error/)

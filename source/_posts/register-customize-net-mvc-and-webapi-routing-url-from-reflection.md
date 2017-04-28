@@ -56,7 +56,7 @@ tags:
         routeTemplate: "api/{controller}/{action}"
     );
 
-透過上面的兩個預設使用方式我們可以知道URL的組成預設就包含了一個Routing名稱、url filter格式、預設控制項(controller與actionName或其他參數等設定)，URL的組成如果有不懂可以看[這篇](http://www.dotblogs.com.tw/blackie1019/archive/2013/11/04/126536.aspx)，或[保哥的文章](http://blog.miniasp.com/post/2011/08/01/ASPNET-MVC-Developer-Note-Part-21-Routing-Concepts-and-Skills.aspx)‧
+透過上面的兩個預設使用方式我們可以知道URL的組成預設就包含了一個Routing名稱、url filter格式、預設控制項(controller與actionName或其他參數等設定)，URL的組成如果有不懂可以看[這篇](https://blackie1019.github.io/2013/11/03/use-nonaction-attribute-to-hide-controller-in-net-mvc-routing-table/)，或[保哥的文章](http://blog.miniasp.com/post/2011/08/01/ASPNET-MVC-Developer-Note-Part-21-Routing-Concepts-and-Skills.aspx)‧
 
 而上面有一段`routes.IgnoreRoute()`這是設定可以忽略的檔案與路徑(過濾掉路由規則定義)，有以下幾種用法
 
