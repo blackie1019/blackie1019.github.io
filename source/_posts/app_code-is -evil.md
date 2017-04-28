@@ -6,7 +6,7 @@ date: 2013-12-15 00:29:45
 author: Blackie
 header-img:
 categories:
-- ASP.NET
+- .NET
 tags:
 - ASP.NET
 - Web MVC/WebApi
