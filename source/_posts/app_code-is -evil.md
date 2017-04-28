@@ -18,7 +18,7 @@ tags:
 
 <!-- More -->
 
-"app_code.png"
+![app_code](app_code.png)
 
 ## 前言 ##
 
@@ -86,7 +86,7 @@ FXCK!是哪裡不一樣的類型(class)了啦，見鬼了！！！
 
 其中Web application專案不使用App_Code這個資料夾，而且預設也不會幫你加入該資料夾(但你要手動加入的話是不會阻擋的...)
 
-為什麼Web application不適用可以參考[App_Code 資料夾不適用於 Web 應用程式專案](http://vishaljoshi.blogspot.tw/2009/07/appcode-folder-doesnt-work-with-web.html)，這邊節錄重點整理如下：
+為什麼Web application不適用可以參考[App_Code 資料夾不適用於 Web 應用程式專案](http://vishaljoshi.blogspot.tw/2009/07/appcode-folder-doesnt-work-with-web.html。
 
 ## 結語 ##
 

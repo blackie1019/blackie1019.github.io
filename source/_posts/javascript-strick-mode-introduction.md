@@ -17,14 +17,16 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 使用上很簡單，只要加上即可，先呈現一個使用範例
 
-	"use strict";//使用strict mode(嚴格模式)
-	function tryFunction(){
-	    var tryValue = 123;
-	    return tryValue;
-	}
+```js
+"use strict";//使用strict mode(嚴格模式)
+function tryFunction(){
+	var tryValue = 123;
+	return tryValue;
+}
 
-	// This causes a syntax error.
-	testvar = 123;
+// This causes a syntax error.
+testvar = 123;
+```
 
 這邊如果你用瀏覽器看後會發現一個被拋出的錯誤
 
@@ -43,18 +45,18 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 在使用上除了剛剛一開始的範例外你也可把`"use strict";`這個用在function裡面，就不會變成全域都嚴格模式，範例如下:
 
-	function tryFunction(){
-		"use strict";//使用strict mode(嚴格模式)
-	    tryValue = 123;
-	    return tryValue;
-	}
+```js
+function tryFunction(){
+	"use strict";//使用strict mode(嚴格模式)
+	tryValue = 123;
+	return tryValue;
+}
 
-	// This worked fine.
-	testvar = 123;
-	// This causes a syntax error
-	tryFunction();
-
----
+// This worked fine.
+testvar = 123;
+// This causes a syntax error
+tryFunction();
+```
 
 ## 瀏覽器支援程度
 
@@ -81,61 +83,71 @@ JavaScript 的核心是基於[ECMAScript](http://zh.wikipedia.org/wiki/ECMAScrip
 
 不能使用*with*這個用法了，所以在使用*strict mode*時請先確認你沒有用下列的寫法
 
-	// Causes a syntax error in strict mode
-	with (location) {
-	    alert(href);
-	}
-
+```js
+// Causes a syntax error in strict mode
+with (location) {
+	alert(href);
+}
+```
 ### 變數使用需要先宣告
 
 在使用*strict mode*下不能用下面這樣的變數使用(下面的範例正確使用需要先透過var 宣告someUndeclaredVar才可以用)
 
-	// Throws an error in strict mode
-	(function() {
+```js
+// Throws an error in strict mode
+(function() {
 
-	    someUndeclaredVar = "foo";
+	someUndeclaredVar = "foo";
 
-	}());
+}());
+```
 
 ### 使用this前的注意事項
 
 另外一個重點就是你不能使用在還沒宣告的時候給一個物件相關的this-value(沒宣告的定義是當該物件是null 或undefined時)，如下錯誤的示範
 
-	window.color = "red";
-	function sayColor() {
-	    alert(this.color);
-	}
+```js
+window.color = "red";
+function sayColor() {
+	alert(this.color);
+}
 
-	// Throws an error in strict mode, "red" otherwise
-	sayColor();
+// Throws an error in strict mode, "red" otherwise
+sayColor();
 
-	// Throws an error in strict mode, "red" otherwise
-	sayColor.call(null);
+// Throws an error in strict mode, "red" otherwise
+sayColor.call(null);
+```
 
 基於[變數使用需要先宣告](#變數使用需要先宣告)的原則不能直接使用上方的this的寫法因為你沒先宣告this的物件為何
 
 下面這段也是一樣有錯誤，如果要透過constructor來產生的話要透過new的方式來告訴它this為何物件
 
-	function Person(name) {
-	    this.name = name;
-	}
+```js
+function Person(name) {
+	this.name = name;
+}
 
-	// Error in strict mode
-	var me = Person("Nicholas");
+// Error in strict mode
+var me = Person("Nicholas");
+```
 
 ### 物件內不能重複定義相同名稱的屬性或是在變數宣告時定義重複的名稱
 
 這通常是撰寫的時候誤打的，所以要注意下面兩個寫法在*strict mode*都是被禁止的
-	// Error in strict mode - duplicate arguments
-	function doSomething(value1, value2, value1) {
-	    //code
-	}
 
-	// Error in strict mode - duplicate properties
-	var object = {
-	    foo: "bar",
-	    foo: "baz"
-	};
+```js
+// Error in strict mode - duplicate arguments
+function doSomething(value1, value2, value1) {
+	//code
+}
+
+// Error in strict mode - duplicate properties
+var object = {
+	foo: "bar",
+	foo: "baz"
+};
+```
 
 These are both syntax errors and so the error is thrown before the code is executed.
 
@@ -143,39 +155,44 @@ These are both syntax errors and so the error is thrown before the code is execu
 
 最大的改變是在eval()內宣告的變數(variables)與函式(functions)並不會在scope中存在，如下範例
 
-	(function() {
+```js
+(function() {
 
-	    eval("var x = 10;");
+	eval("var x = 10;");
 
-	    // Non-strict mode, alerts 10
-	    // Strict mode, throws an error because x is undeclared
-	    alert(x);
+	// Non-strict mode, alerts 10
+	// Strict mode, throws an error because x is undeclared
+	alert(x);
 
-	}());
+}());
+```
 
 上面的範例可以透過return value的方式把x傳回給scope呈現，
 如下範例
 
-	(function() {
+```js
+(function() {
 
-	    var result = eval("var x = 10, y = 20; x + y");
+	var result = eval("var x = 10, y = 20; x + y");
 
-	    // Works in strict and non-strict mode (30)
-	    alert(result);
+	// Works in strict and non-strict mode (30)
+	alert(result);
 
-	}());
+}());
+```
 
 ### 對於不可改變的屬性無法在宣告後再對內容做彈性修改
 如果屬性被設為read only 或 freezing，如果再去修改會拋出Error警示(在*non-strict mode*一樣實際的值不會改只是不會拋出Error警示)
 
-	var person = {};
-	Object.defineProperty(person, "name", {
-	    writable: false,
-	    value: "Nicholas"
-	});
+```js
+var person = {};
+Object.defineProperty(person, "name", {
+	writable: false,
+	value: "Nicholas"
+});
 
-	// Fails silently in non-strict mode, throws error in strict mode
-	person.name = "John";
+// Fails silently in non-strict mode, throws error in strict mode
+person.name = "John";
+```
 
----
-以上希望對大家有幫助，如果有錯的地方也麻煩指導一下小弟，一起進步
+以上希望對大家有幫助，*如果有錯的地方也麻煩指導一下小弟*，**一起進步**

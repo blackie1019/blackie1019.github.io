@@ -10,6 +10,8 @@ categories:
 - HTML5
 tags:
 - Web Storage
+- localStorage
+- sessionStorage
 ---
 
 HTML5新增了一些client資料儲存的功能，localStorage與sessionStorage，這邊將講解一下如何使用正確的使用他們。
@@ -44,7 +46,7 @@ HTML5新增了一些client資料儲存的功能，localStorage與sessionStorage�
 
 	Web SQL Database支援用SQL存取，操作很像資料庫，是基於SQLite修改的，但目前是被W3C捨棄，不算是一個標準，IE和Firefox都不支援，操作速度也頗慢
 
-IndexedDB是W3C用來取代Web SQL Database的新規範，但目前仍在制定階段
+*IndexedDB* 是W3C用來取代Web SQL Database的新規範，但目前仍在制定階段
 使用上可以參考[這篇](http://msdn.microsoft.com/zh-cn/library/ie/hh779017(v=vs.85).aspx)
 
 詳細支援程度可參考[http://www.html5rocks.com/it/features/storage](http://www.html5rocks.com/it/features/storage)
@@ -55,7 +57,7 @@ IndexedDB是W3C用來取代Web SQL Database的新規範，但目前仍在制定�
  
 首先我們先看一下支援度，[參考](http://www.quirksmode.org/dom/html5.html)
 
-![support](https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20130717/20137711575447.png)
+![support](20137711575447.png)
 
 從上面我可以知道幾乎目前主流的瀏覽器都支援了Web Storage(localStorage and sessionStorage)，[市佔參考](http://thenextweb.com/apps/2013/01/01/ie10-below-1-market-share-firefox-back-under-20-chrome-recovers-from-three-months-of-losses/)。
  
@@ -63,16 +65,16 @@ IndexedDB是W3C用來取代Web SQL Database的新規範，但目前仍在制定�
 
  {% codepen blackie1019|anonymous|anon qhaIl 7928 result 300 100% %}
 
-上面我可以在輸入框輸入值後透過get來alert值，而當我們remove之後再用get則會出現null，是不是很簡單使用
+上面我可以在輸入框輸入值後透過 get 來 alert 值，而當我們 remove 之後再用 get 則會出現 **null** ，是不是很簡單使用
 
-seesionStorage也是如此歐，只是把window.localStorage.getItem換成(set,remove以此類推）
+seesionStorage 也是如此歐，只是把window.localStorage.getItem換成(set,remove以此類推）
 
 	windows.sessionStorage.getItem
 
  {% codepen blackie1019|anonymous|anon LykfE 7928 result 300 100% %}
 
-因為是key-value的架構，所以在實務上我習慣將儲存進去的item設為是一個json的格式，如此一來之後要取用就很方便摟（而且可以一次拿多個值勒）
-這邊要稍微注意在get跟set的時候要做一下資料處理
+因為是 *key-value* 的架構，所以在實務上我習慣將儲存進去的item設為是一個 **json** 的格式，如此一來之後要取用就很方便摟（而且可以一次拿多個值勒）
+這邊要稍微注意在 *get* 跟 *set* 的時候要做一下資料處理
 存進去前的值要做
 	
 	JSON.stringify()

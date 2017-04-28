@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Visual Studio Code Find and Replace with New Line(\r or \n)"
+title: "Visual Studio Code Find and Replace with New Line"
 subtitle: ''
 author: Blackie
 header-img: ''

@@ -26,3 +26,5 @@ tags:
 - [Understanding .NET Core, NETStandard, .NET Core applications and ASP.NET Core](https://andrewlock.net/understanding-net-core-netstandard-and-asp-net-core/)
 - [Gestión de errores en ASP.NET MVC](http://oscarsotorrio.com/2012/09/default.aspx)
 - [Planning Web Solutions Today: Web Forms, ASP.NET MVC, Web API, and OWIN. Oh My!](http://www.codemag.com/Article/1312051)
+- [.NET Standard 2.0 是什麼？可以吃嗎？](http://blog.darkthread.net/post-2016-09-27-net-standard-2-0.aspx)
+- [再來多聊一點 .Net Standard](https://dotblogs.com.tw/aspnetshare/2017/02/26/20170225-netstandardagain)
