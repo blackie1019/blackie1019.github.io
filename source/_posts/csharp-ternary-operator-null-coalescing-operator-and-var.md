@@ -4,7 +4,7 @@ title: c# ternary operator, null coalescing operator and var
 subtitle: ""
 date: 2014-05-05 00:29:45
 author: Blackie
-header-img: "https://dl.dropboxusercontent.com/u/20925528/%E6%8A%80%E8%A1%93Blog/blogs/20140505/main.JPG"
+header-img: "https://blackie1019.github.io/2014/05/04/csharp-ternary-operator-null-coalescing-operator-and-var/main.JPG"
 categories:
 - .NET
 tags:

@@ -97,7 +97,7 @@ Comparison operators
 
 - JavaScript設計模式
 
-	![JavaScript設計模式](A301.png)
+	![JavaScript設計模式](A301.jpg)
 
 - JavaScript優良部分
 
@@ -125,7 +125,7 @@ Comparison operators
 
 	![Object-Oriented JavaScript - Second Edition](3127OT_Object%20Oriented%20JavaScript.jpg)
 
-最後強力推薦[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) 這系列的線上書籍(實體書本也有，英文已經出版，中文要等2017才會出完)
+最後強力推薦[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) 這系列的線上書籍(實體書本也有，英文已經出版，中文要等**2017**才會出完)
 
 ![You Don't Know JS](JS_you_dont_know.png)
 
