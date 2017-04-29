@@ -165,7 +165,7 @@ social_icons:
 
 # Signature
 signature:
-  enable: false
+  enable: true
   profile: /img/profile2.jpg
   comment: 如果覺得還不錯麻煩請在文章上面給予推薦，支持是小弟持續努力產出的動力
 
