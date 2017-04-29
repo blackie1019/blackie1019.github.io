@@ -210,7 +210,7 @@
         <div class="fb-like" data-layout="button_count" data-share="true"></div>
       {% endif %}
 
-      {% if theme.signature.enable %}
+      {% if not is_index and theme.signature.enable %}
       <hr />
       <div class="signature">
         <img class="signature-profile" alt="profile2" src="{{url_for(theme.signature.profile)}}" />
