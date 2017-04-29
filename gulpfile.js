@@ -84,6 +84,13 @@ gulp.task('copy-css', function() {
         .pipe(gulp.dest(bundle_css));
 })
 
+gulp.task('copy-fanctbox', function() {
+    return gulp.src([
+            public_dir + '/vendors/font-awesome/fonts/**.png',
+            public_dir + '/vendors/font-awesome/fonts/**.gif',
+        ])
+        .pipe(gulp.dest(bundle_dir));
+})
 
 gulp.task('copy-font-awesome', function() {
     return gulp.src(public_dir + '/vendors/font-awesome/fonts/**.*')
@@ -129,5 +136,5 @@ gulp.task('finish-task', function() {
 });
 
 gulp.task('default', function() {
-    runSequence('clean', ['copy-htaccess','copy-js', 'copy-css','copy-font-awesome','copy-font-mfizz'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
+    runSequence('clean', ['copy-htaccess','copy-js', 'copy-css','copy-font-awesome','copy-font-mfizz','copy-fanctbox'], ['minify-js', 'minify-css'], ['concat-js', 'concat-essential-css','concat-advance-css'],'finish-task');
 });
