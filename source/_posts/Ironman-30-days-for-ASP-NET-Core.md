@@ -127,11 +127,15 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 過程中找到學習資料統一更新至此處以便閱讀
 
 ### .Net Core ###
+
 - [ASP.NET Core and .NET Core Overview](https://weblog.west-wind.com/posts/2016/jun/13/aspnet-core-and-net-core-overview)
 - [Overview of the new .NET Core and .NET Platform Standard](https://www.slideshare.net/AlexThissen/overview-of-the-new-net-core-and-net-platform-standard)
 - [Introduction to ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/)
 - [ASP.NET Core quick build "dev" branch feed](http://myget.org/gallery/aspnetcidev ) 
+    
     這是產品團隊所使用的 "開發版" 元件清單，也就是 GitHub 裡面 dev branch 的實際內容，你可以在這最快速的看到每個元件目前最新的版號與更新時間．
+    
+- [dotnetthoughts](http://dotnetthoughts.net/)
 
 ### Web Host ###
 
