@@ -19,6 +19,8 @@ tags:
 
 <!-- More -->
 
+![header](header.png)
+
 建立一個新專案往往都會有些習慣性會加入的套件或是修改，如果每次都要重複一樣的步驟是很煩人的．如網站開發常常會用到的資料儲存的套件，或是API開發會需要使用到的說明與測試套件等．
 
 而在.NET Core的部份可透過.NET CLI幫忙建立客製化的專案樣板，達到輕鬆重複建立同類型新專案環境的需求．而在.NET Core的部份可透過.NET CLI幫忙建立客製化的專案樣板，達到輕鬆重複建立同類型新專案環境的需求．
@@ -153,14 +155,15 @@ template.json
 
 ### Remove Customize Project ###
 
-很遺憾與不方便的是目前 *.NET CLI* 沒有題國單獨移除的方法，變向能達到的移除指令只有下面：
+很遺憾與不方便的是目前 *.NET CLI* 沒有單獨移除的方法，目前能達到的移除效果的指令只有還原，請參考下面：
 
     dotnet new --debug:reinit
 
-但這會將我們的設定都還原，所以使用上要特別注意一下．
+再次提醒！這會將我們的設定都還原(原先安裝的其他templates也會因為恢復而被移除)，所以使用上要特別注意一下．
 
 ## References ##
 
 - [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)
 - [Create a dotnet new project template in dotnet core](http://dotnetthoughts.net/create-a-dot-net-new-project-template-in-dot-net-core/)
 - [Custom Project Templates Using dotnet new](http://rehansaeed.com/custom-project-templates-using-dotnet-new/)
+- [.NET Blog : How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)
