@@ -111,17 +111,17 @@ namespace NetCoreTemplateDemo
 
 ![swagger](swagger.png)
 
-到此專案的框架已經準備好，接著我們透過 *.NET CLI幫我們建立樣板
+到此專案的框架已經準備好，接著我們透過 *.NET CLI* 幫我們建立樣板
 
 ## Build New Customize Project Template ##
 
-開始前先看一夏我們等等要新增資料夾的結構：
+開始前先看一下等等要新增資料夾的結構：
 
 ![structure_folder](structure_folder.png)
 
 ### dotnet new -i <template folder> ###
 
-這邊最簡單的做法是透過 *.template.config*資料夾並在裡面新增 *template.json* 的方式建立新樣板結構:
+這邊最簡單的做法是透過 *.template.config* 資料夾並在裡面新增 *template.json* 的方式建立新樣板結構:
 
 template.json
 ```json

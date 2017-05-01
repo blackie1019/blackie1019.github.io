@@ -92,9 +92,9 @@ tags:
 
 而除了錢的考量外，考量到ASP.NET Core本身就是一個跨平台的技術，如果不能跨*雲端平台*被綁死在微軟自己體系下豈不是有點可惜嗎？
 
-ASP.NET Core天生就與Azure的整合應該是最好的（如果不是，好像只能請問微軟自己了)，而使用AWS的人又佔了雲端50%以上的用戶，不缺與AWS整合的文章或學習資源．
+ASP.NET Core天生就與Azure的整合應該是最好的，而使用AWS的人又佔了雲端50%以上的用戶，不缺與AWS整合的文章或學習資源．
 
-所以為了更多元的推廣ASP.NET Core這樣的一個好技術與雲端平台的另一個選擇，我開始這一ASP.NET Core + GCP 系列的文章．之後我也會將更多ASP.NET Core能與GCP服務整合的實際案例分享出來，給予整體架構選擇上的一另一個考量！
+所以為了多元的推廣 *ASP.NET Core* 這樣一個好技術與雲端平台的其他選擇，我開始了這一系列[Google Cloud Platform](http://blackie1019.github.io/categories/Google-Cloud-Platform)的文章．之後我分享更多ASP.NET Core能與GCP服務整合的實務案例，提供整體架構選擇上的一另一種組合！
 
 ## References ##
 
