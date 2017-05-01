@@ -102,7 +102,7 @@ kubernetes pods 細節:
 
 對於上述說明看不太懂的朋友，誠摯的推薦花8分鐘看下面的影片！
 
-<iframe src="//www.bilibili.com/blackboard/player.html?aid=10087636&cid=16669885&page=1" scrolling="no" border="0" frameborder="no" framespacing="0"></iframe>
+[写给孩子看的 Kubernetes 动画指南【中英字幕】](http://www.bilibili.com/blackboard/player.html?aid=10087636&cid=16669885&page=1)
 
 # ASP.NET Core MVC Play with GKE #
 
