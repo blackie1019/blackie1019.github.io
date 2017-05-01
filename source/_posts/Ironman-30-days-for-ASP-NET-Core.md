@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ironman 30 days for ASP.NET Core
+title: Ironman for ASP.NET Core
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -13,11 +13,11 @@ tags:
 - Iron Man
 - C#
 ---
-此為系列為文章第一篇，本系列文章將為大家介紹ASP.NET Core並將如何運用它跨平台的特性去開發Web App。
+此為系列為文章目錄，本系列文章將為大家介紹.NET Core 與 ASP.NET Core並將如何運用它跨平台的特性去開發 Web App 並將其推至真實世界的雲端服務之上運行。最後會用一個專案實例如帶大家從系統的設計到架構運行，如何做到持續整合與開發並用最少的成本發揮最大的效能運行．
 
 <!-- More -->
 
-*文章持續更新，最新更新時間: 2017-04-11*
+文章持續更新，最新更新時間: **2017-04-30**
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -44,34 +44,39 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 ![standard_2](standard_2.png)
 
-## 30 Days Topic ##
+## Goal and Subject ##
 
-要會在接下來的幾天內與各位介紹與分享如何享受ASP.NET Core帶來的跨平台好處與其相關的生態圈。
+要會在接下來的幾天會介紹與分享如何享受ASP.NET Core帶來的跨平台好處與其相關的生態圈。
+
+由於開發上我們會在 *macOS* + *visual studio code* 為主來開發，所以對VSCode有興趣的朋友歡迎參考另外的[VSCode分類](http://blackie1019.github.io/tags/VSCode/)
+
 下面為目前計畫內容(內容會根據開發需求做調整)，過程當中主旨是希望實作一個具有存取DB資料的Web App並發佈至雲端使用:
 
 ### Developement ###
 
-#### Setup ###
+#### .NET Core Setup ###
+
 - [ASP.NET Core Hello World on Windows](https://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
 - [ASP.NET Core Hello World on Mac](https://blackie1019.github.io/2017/03/27/ASP-NET-Core-nuget-can-t-restore-on-macOS/)
 - [ASP.NET Core Play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - [ASP.NET Core add Git Ignore File](https://blackie1019.github.io/2017/03/12/ASP-NET-Core-add-Git-Ignore-File/)
+- [ASP.NET Core play with Solution File](ASP.NET Core play with Solution File)
 
 #### Basic ####
 
 - ASP.NET Core Middleware
 - ASP.NET Core Framework-Provided Services
 - ASP.NET Core IServiceCollection
-- ASP.NET Core Playing with Testing
 - [ASP.NET Core using Nuget with Visual Studio Code](https://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-Nuget-with-Visual-Studio-Code/)
 - [ASP.NET Core play with MSTest](https://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)
+- [ASP.NET Core Create New Project Template](http://blackie1019.github.io/2017/04/27/ASP-NET-Core-Create-New-Project-Template/)
 
 #### Data and Caching ####
 
 - ASP.NET Core Caching
-- ASP.NET Core play with Redis
 - ASP.NET Core Working with ADO.NET and MSSQL
 - ASP.NET Core Working with Dapper and MSSQL
+- [ASP.NET Core play with Redis and StackExchange.Redis](http://blackie1019.github.io/2017/04/16/ASP-NET-Core-play-with-Redis-and-StackExchange-Redis/)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver](https://blackie1019.github.io/2017/03/31/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver/)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Create](https://blackie1019.github.io/2017/04/08/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Create-Delete/)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read](ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read)
@@ -122,7 +127,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 過程當中會加減帶到系統功能的開發，最後希望在活動結束的時候這個demo site也能同時上線
 
-## Learing Resource ##
+## References ##
 
 過程中找到學習資料統一更新至此處以便閱讀
 
@@ -134,7 +139,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET Core quick build "dev" branch feed](http://myget.org/gallery/aspnetcidev ) 
     
     這是產品團隊所使用的 "開發版" 元件清單，也就是 GitHub 裡面 dev branch 的實際內容，你可以在這最快速的看到每個元件目前最新的版號與更新時間．
-    
+
 - [dotnetthoughts](http://dotnetthoughts.net/)
 
 ### Web Host ###
@@ -150,9 +155,12 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 - [Awesome .NET Core](https://github.com/thangchung/awesome-dotnet-core)
 - [Entity Framework Core](http://ef.readthedocs.io/en/latest/index.html)
+- [StackExchange.Redis](https://stackexchange.github.io/StackExchange.Redis/)
+- [MongoDB .NET Driver](https://github.com/mongodb/mongo-csharp-driver)
 
 ### Architecture/Template/Framework ###
 
+- [Microsoft.AspNetCore.SpaServices](https://github.com/aspnet/JavaScriptServices/tree/dev/src/Microsoft.AspNetCore.SpaServices#server-side-prerendering)
 - [Squidex is an open source headless CMS](https://github.com/Squidex/squidex)
 - [ASP.NET Zero](https://aspnetzero.com/)
 - [ASP.NET Boilerplate](https://github.com/aspnetboilerplate/aspnetboilerplate)
@@ -167,6 +175,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
 - [Guides](https://marketplace.visualstudio.com/items?itemName=spywhere.guides)
 - [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore)
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 #### ASP.NET Core ####
 

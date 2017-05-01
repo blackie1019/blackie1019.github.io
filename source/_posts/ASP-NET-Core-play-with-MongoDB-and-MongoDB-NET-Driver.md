@@ -23,9 +23,11 @@ tags:
 
 # MongoDB .NET Driver #
 
-MongoDB .NET Driver是一個讓我們可以連接至MongoDB Instance的組件，架構如下：
+[MongoDB .NET Driver](https://github.com/mongodb/mongo-csharp-driver)是一個讓我們可以連接至MongoDB Instance的組件，架構如下：
 
 ![mongodb](mongodb.jpg)
+
+它從V2.3.0 開始支援.NET Core的開發．
 
 ## Library Reference ##
 
