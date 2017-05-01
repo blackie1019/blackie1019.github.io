@@ -1,21 +1,11 @@
 ---
-layout: post
-title: Ironman for ASP.NET Core
-subtitle: ''
-author: Blackie
-header-img: ''
-sitemap: true
-date: 2016-11-30 10:23:57
-categories: 
-- .NET
-tags: 
-- ASP.NET Core
-- Iron Man
-- C#
+layout: "about"
+title: "About"
+date: 2016-04-21 04:48:33
+description: "Hey, this is Kaijun."
+header-img: "img/about-bg.jpg"
 ---
 此為系列為文章目錄，本系列文章將為大家介紹.NET Core 與 ASP.NET Core並將如何運用它跨平台的特性去開發 Web App 並將其推至真實世界的雲端服務之上運行。最後會用一個專案實例如帶大家從系統的設計到架構運行，如何做到持續整合與開發並用最少的成本發揮最大的效能運行．
-
-<!-- More -->
 
 文章持續更新，最新更新時間: **2017-04-30**
 
