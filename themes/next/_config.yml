@@ -28,7 +28,7 @@ fb_app_id: 1912565115693515
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  .net: /categories/NET
+  dotnet: /2016/11/30/Ironman-30-days-for-ASP-NET-Core/
   gcp: /categories/Google-Cloud-Platform
   categories: /categories
   #about: /about
@@ -52,7 +52,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
-  .net: icon-csharp
+  dotnet: icon-csharp
   gcp:  icon-google-developers
 
 

@@ -13,7 +13,7 @@ menu:
   about: Über
   feed: RSS
   search: Suche
-  .net: .NET
+  dotnet: .NET Core
   gcp: GCP
 
 sidebar:

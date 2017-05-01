@@ -12,7 +12,7 @@ menu:
   tags: Tags
   about: A propos
   search: recherche
-  .net: .NET
+  dotnet: .NET Core
   gcp: GCP
 
 sidebar:

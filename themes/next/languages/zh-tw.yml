@@ -12,7 +12,7 @@ menu:
   tags: 標籤
   about: 關於
   search: 檢索
-  .net: .NET
+  dotnet: .NET Core
   gcp: GCP
 
 sidebar:
