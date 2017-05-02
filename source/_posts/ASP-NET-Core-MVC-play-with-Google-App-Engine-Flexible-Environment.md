@@ -286,11 +286,15 @@ tags:
 
 ![netcore_latest_result](netcore_latest_result.png)
 
-
-
 ## [補充] Why Google Cloud Platform ##
 
 身為一個.NET的愛好者來說，Azure應該是首選，但為什麼我會積極的介紹GCP呢？理由很簡單：錢與擴充性！
+
+而各個主流 Cloud 的選擇可以參考下面的文章：
+
+- [該選哪朵雲？比較兩大雲端供應商 GCP 與 AWS](https://blog.gcp.expert/google-cloud-v-aws/#more-127)
+- [An AWS user’s take on AWS vs. Microsoft Azure and Google Cloud Platform](http://cloudacademy.com/blog/aws-vs-microsoft-azure-google-cloud/)
+- [A Side-by-Side Comparison of AWS, Google Cloud and Azure](https://www.sitepoint.com/a-side-by-side-comparison-of-aws-google-cloud-and-azure/)
 
 一個雲端服務除了一開始的技術與架構門檻跨過後，剩下的大概就是三個問題：錢、錢、錢
 
