@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-04-29 13:42:49
+date: 2017-04-30 13:42:49
 categories:
 - Testing
 tags:
@@ -21,6 +21,10 @@ tags:
 
 <!-- More -->
 
+行動裝置上的應用程式測試，往往碰到最大的困擾就是手機的種類太多、太雜、甚至作業系統與相關應用程式還有版本問題，而以往在進行測試後，最常遇到客戶的反應就是：某某牌沒辦法安裝、另外一個牌沒辦法登入、還有不同作業系統一開就閃退等等奇怪的問題。但這些在QA測試過程中並不一定會發現，因為QA手上有的機種是有限的，有些甚至還在 **人工**測試的階段，根本不要提機器不夠了，這些主要測試的工人也不夠...。但別提公司根本沒有提供足夠的行動裝置給開發人員或是測試人員可以安心地交付產品，因為這些裝置是買不完的。但今天做手機應用程式真的要這麼徒法煉鋼嗎？
+
+今天就來看看 *AWS Device Farm* 如何協助我們脫離這樣困境吧。
+
 ![cover](cover.png)
 
 AWS Device Farm 是AWS 在2015年推出的服務，提供 Mobile App 與 Web 於實體的行動載具上的進行遠端測試的服務，讓我們可以一次在無數個真實的裝置上測試 Android、iOS 或 Web 應用程式並與其做真實的互動，或問題重現。
@@ -33,14 +37,18 @@ AWS Device Farm 是AWS 在2015年推出的服務，提供 Mobile App 與 Web 於
 
 AWS Device Farm 透過在實際裝置運行時所側錄的完整測試影片、Log、資源與效能紀錄、以及裝置實際運行的截圖我們能在開發完後即時的對市面上所有既有的裝置進行實機測試，而不用先花錢買大量的行動裝置來達到實機測試的效果。
 
-在目前的裝置清單上已經具備超過2000種(型號與作業系統版本)，而它也有提供客製化需求，為你量身購買你想要的機型、硬體規格與搭載的作業系統。
+在目前的裝置清單上已經具備超過300種(型號與作業系統版本)，而它也有提供客製化需求，為你量身購買你想要的機型、硬體規格與搭載的作業系統。
 
 透過該服務我們就不用一直重複購買機器、APP 測試環境安裝與OS設定升降版的動作，我們可以選擇上傳APP後測試 Native App或是 Hybrid App ，也可以直接透過手機內的瀏覽器測試 Web 應用程式。開好帳號就可以透過瀏覽器直接遠端進實體機器中操作觀看結果。或是，我們可以撰寫可重複執行的自動測試將其測試案例在上百台以上的實體機器中執行，如此我們便可以快速且方便的地拿到測試結果。
 
 ![aws_device_farm_hld_overview](aws_device_farm_hld_overview.jpg)
 
-而我們上傳到AWS的 Mobile APP 會在 *30天* 後自動移除，而所有的測試報告與紀錄會保留 *15 個月*
 
+而 Mobile App　的 CI與CD 也是可以跟 Web 或是 Desktop　應用程式一樣更聰明的自動化被建立與整合的：
+
+![cicd_testing](cicd_testing.png)
+
+接下來介紹一些相關名詞。
 ### Device Pools ###
 
 Device Pools 是將多個實體機器建立測試群組的概念，透過 Device Pools 我們可以建立特定的機器群組並指派要執行的測試行為，這方便我們在職行測試時不用每次都一個一個點選加入，可以將常用的機器建立 Device Pools ，並直接下拉選即可。
@@ -106,6 +114,8 @@ Device Pools 是將多個實體機器建立測試群組的概念，透過 Device
 都結束可以回到Project > Setting 去看目前剩餘的小時與相關的執行報告等:
 
 ![aws_device_farm_setting_remain](aws_device_farm_setting_remain.png)
+
+這邊要注意的一下，我們上傳到AWS的 Mobile APP 會在 *30天* 後自動移除，而所有的測試報告與紀錄會保留 *15 個月*。
 
 ### Supported Devices ###
 
@@ -177,8 +187,6 @@ Device Slot 是指機器同時執行數量，例如我們買10個單位的 Devic
 
 AWS 還能針對客製化的需求(CPU, RAM, OS或是其他設定)的 *Private Device* 選項。 Private Device 與 Public Device 是可以混合使用的，每個 Private Device 一個月是 $200 的費用，但我們可以隨時將起停用避免帳單多出費用。
 
-#### Con ####
-
 這邊要在強調一個雲端服務的重點，那就是:
 
 ![pay_as_you_using](pay_as_you_using.jpg)
@@ -190,3 +198,4 @@ AWS 還能針對客製化的需求(CPU, RAM, OS或是其他設定)的 *Private D
 - [AWS Device Farm](https://aws.amazon.com/tw/device-farm/)
 - [AWS Device Farm FAQs](https://aws.amazon.com/device-farm/faq/)
 - [Limits in AWS Device Farm](http://docs.aws.amazon.com/devicefarm/latest/developerguide/limits.html)
+- [AWS re:Invent 2016: Test and Debug Your Mobile Apps on Real Android and iOS Devices in the Cloud with AWS Device Farm (MBL205)](https://www.slideshare.net/AmazonWebServices/aws-reinvent-2016-test-and-debug-your-mobile-apps-on-real-android-and-ios-devices-in-the-cloud-with-aws-device-farm-mbl205)
