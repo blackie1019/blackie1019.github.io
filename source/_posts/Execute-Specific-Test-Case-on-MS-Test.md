@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Execute Specific Test Case on MS Test
+title: Execute Specific Test Case on MSTest
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -10,12 +10,12 @@ categories:
 - .NET
 tags: 
 - ASP.NET Core
-- MS Test
+- MSTest
 - Unit Testing
 - Automation Testing
 ---
 
-紀錄一下ASP.NET Core如何透過MS Test如何執行特定Test Case
+紀錄一下ASP.NET Core如何透過MSTest如何執行特定Test Case
 
 <!-- More -->
 

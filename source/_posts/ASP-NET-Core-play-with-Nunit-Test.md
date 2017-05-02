@@ -20,7 +20,7 @@ tags:
 
 <!-- More -->
 
-先前介紹過[MS Test](https://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)，今天讓我們來嘗試用另外一套在.NET也十分流行的Nunit測試。
+先前介紹過[MSTest](https://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)，今天讓我們來嘗試用另外一套在.NET也十分流行的Nunit測試。
 
 # Nunit Test #
 

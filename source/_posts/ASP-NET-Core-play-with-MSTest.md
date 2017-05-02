@@ -20,15 +20,15 @@ tags:
 
 <!-- More -->
 
-在ASP.NET Core開發環境上預設支援兩種測試框架MS Test與Nunit Test，首先來看看如何使用MS Test如何撰寫測試
+在ASP.NET Core開發環境上預設支援兩種測試框架MSTest與Nunit Test，首先來看看如何使用MSTest如何撰寫測試
 
-# MS Test #
+# MSTest #
 
 MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試框架(Test Framework)，在親生老爸的支援下跟IDE的整合度高，且在大多使用情境皆可應付．如果偏好使用Total Solution或是剛入門測試框架的新手，可以使用此框架嘗試看看如何撰寫測試案例來協助開發品質．
 
 # First Unit Test on ASP.NET Core and MSTest #
 
-而這邊就實作如何在ASP.NET Core 上添加 MS Test專案並執行測試
+而這邊就實作如何在ASP.NET Core 上添加 MSTest專案並執行測試
 
 ## Create Source Project ##
 
@@ -51,7 +51,7 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
     cd MongoCRUD.Core
     dotnet new classlib
 
-接者我們建立MS Test類型專案給MongoCRUD.Test
+接者我們建立MSTest類型專案給MongoCRUD.Test
 
     cd MongoCRUD.Test
     dotnet new mstest
@@ -172,9 +172,9 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
 
 結果顯示我們的測試有一個失敗的案例
 
-# MS Test and Nunit Test #
+# MSTest and Nunit Test #
 
-先總結個人的喜好，MS Test雖然是比較陽春且微軟特有的測試框架，但絕對足夠做日常的測試開發．但如果要強調跨語言/環境的測試與負責的測試驗證，或許Nunit Test目前還是首選．
+先總結個人的喜好，MSTest雖然是比較陽春且微軟特有的測試框架，但絕對足夠做日常的測試開發．但如果要強調跨語言/環境的測試與負責的測試驗證，或許Nunit Test目前還是首選．
 
 對於其他比較跟功能可以參考附錄其他網路大大幫忙整理的心得，以下節錄兩者使用的Attribue與Assert表幫助大家快速了解，參考來源：
 
@@ -299,4 +299,4 @@ n/a|n/a|ThrowsAnyAsync
 # References #
 
 - [Unit testing with MSTest and .NET Core](https://docs.microsoft.com/en-us/dotnet/articles/core/testing/unit-testing-with-mstest)
-- [对比MS Test与NUnit Test框架](http://www.cnblogs.com/ColdJokeLife/p/3158812.html)
+- [对比MSTest与NUnit Test框架](http://www.cnblogs.com/ColdJokeLife/p/3158812.html)

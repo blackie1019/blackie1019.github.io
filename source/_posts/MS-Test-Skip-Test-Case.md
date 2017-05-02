@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MS Test Skip Test Case
+title: MSTest Skip Test Case
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -15,7 +15,7 @@ tags:
 - Automation Testing
 ---
 
-如何在MS Test 中跳過特定測試案例
+如何在MSTest 中跳過特定測試案例
 
 <!-- More -->
 
