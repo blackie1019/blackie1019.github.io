@@ -10,7 +10,7 @@ categories:
 tags:
 - AngularJS
 - NodeJS
-- mongoDB
+- MongoDB
 - MAN
 - Yeoman
 ---
@@ -25,7 +25,7 @@ tags:
 
 - MongoDB
 - Express
-- Angular
+- AngularJS
 - NodeJS
 - Grunt
 - Bower

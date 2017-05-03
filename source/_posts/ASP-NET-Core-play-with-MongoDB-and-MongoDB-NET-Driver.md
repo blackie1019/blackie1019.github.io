@@ -41,7 +41,7 @@ MongoDB .NET Driver 的安裝可以手動加入project reference後還原或是�
             <PackageReference Include="MongoDB.Driver" version="2.4.3" />
         </ItemGroup>
 
-- ### Dotnet CLI ###
+- ### .NET CLI ###
 
     我們也可以透過CLI直接加入
 

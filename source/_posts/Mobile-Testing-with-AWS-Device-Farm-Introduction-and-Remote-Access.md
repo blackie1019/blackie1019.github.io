@@ -199,3 +199,4 @@ AWS 還能針對客製化的需求(CPU, RAM, OS或是其他設定)的 *Private D
 - [AWS Device Farm FAQs](https://aws.amazon.com/device-farm/faq/)
 - [Limits in AWS Device Farm](http://docs.aws.amazon.com/devicefarm/latest/developerguide/limits.html)
 - [AWS re:Invent 2016: Test and Debug Your Mobile Apps on Real Android and iOS Devices in the Cloud with AWS Device Farm (MBL205)](https://www.slideshare.net/AmazonWebServices/aws-reinvent-2016-test-and-debug-your-mobile-apps-on-real-android-and-ios-devices-in-the-cloud-with-aws-device-farm-mbl205)
+- [AWS re:Invent 2016: Test and Debug Your Apps on Real Android and iOS Devices in the Cloud (MBL205)](https://www.youtube.com/watch?v=Y0WbKMJ6M6I)
