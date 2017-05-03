@@ -87,8 +87,6 @@ log4net 有五種主要的組件:
 
 而當我們有了足夠的 log 後，我們就可以考慮採用 ELK 的架構幫我們建立起強大的分析與監控機制，有興趣的可以參考好友的文章：[ELK 教學 - 從無到有安裝 ELK (CentOS/Red Hat)](https://blog.johnwu.cc/article/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-centos-red-hat.html)．而筆者之後也會分享 *ELK* 與 *ASP.NET Core* 這塊的整合與做法．
 
-![log4net_tag](log4net_tag.jpg)
-
 ## Hands on Lab ##
 
 [Demo Source Code](https://github.com/blackie1019/DEMO-AspNETCore-Log4Net)
