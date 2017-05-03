@@ -12,7 +12,7 @@ tags:
 - ASP.NET Core
 - .NET Core
 - C#
-- DotNetTools
+- .NET Tools
 ---
 
 紀錄並介紹一下DotNetTools的其中一項工具 - dotnet-watch

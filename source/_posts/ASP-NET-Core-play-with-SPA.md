@@ -14,7 +14,7 @@ tags:
 - C#
 - SPA
 - React
-- Angular
+- AngularJS
 ---
 
 今天來介紹一下如何幫ASP.NET Core加入Web Single Page Application的架構。
