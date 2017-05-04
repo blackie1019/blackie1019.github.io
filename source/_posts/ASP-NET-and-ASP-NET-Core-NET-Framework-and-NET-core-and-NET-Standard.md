@@ -16,7 +16,68 @@ tags:
 - .NET Standard
 ---
 
+介紹 .NET Core 與 .NET Framework 與 ASP.NET Core的差別
+
 <!-- More -->
+
+![cover.png](cover.png)
+
+最近在推廣 .NET Core 上最常遇到的幾個問題：
+
+- .NET Core 與 .NET Framework 的差別？
+- .NET Core 與 Mono 的差別？
+- .NET Core 與 ASP.NET Core 的差別？
+- 什麼是 .NET Standard?
+- .NET Standard 與 .NET Core 的關係？
+- 現在在用的 ASP.NET MVC5 & WebAPI2 跟 ASP.NET Core 的差別？
+
+因為這個些問題是學習 .NET Core 的必要知識，所以就整理了一篇與大家分享．
+
+## .NET Overview ##
+
+整個.NET 的開發我們可以從下面這張圖看到這幾年到未來的一個趨勢：
+
+![future-innovation_detail.png](future-innovation_detail.png)
+
+當我們加入了開發工具來看整個微軟針對開發的佈局就如下圖：
+
+![future-innovation_detail](future-innovation_detail.png)
+
+### .NET Framework ###
+
+### Mono ###
+
+### .NET Core ###
+
+### .NET Standard ###
+
+### ASP.NET and ASP.NET Core ###
+
+#### ASP.NET Overview ####
+
+![Web_Overview](Web_Overview.bmp)
+
+#### ASP.NET Web Form and ASP.NET MVC Different ####
+
+![WebForms_WebMVC.gif](WebForms_WebMVC.gif)
+
+### ASP.NET MVC and ASP.NET WebAPI Different ###
+
+
+
+## Q&A ##
+
+### Q: .NET Core 與 .NET Framework 的差別 ###
+
+### Q: .NET Core 與 Mono 的差別？###
+
+### Q: .NET Core 與 ASP.NET Core 的差別？###
+
+### Q: 什麼是 .NET Standard? ###
+
+### Q: .NET Standard 與 .NET Core 的關係？###
+
+### Q: 現在在用的 ASP.NET MVC5 & WebAPI2 跟 ASP.NET Core 的差別？###
 
 ## References ##
 
