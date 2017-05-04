@@ -153,6 +153,34 @@ Device Pools 是將多個實體機器建立測試群組的概念，透過 Device
 | Samsung Galaxy Tab 3 10.1" (WiFi) (4.4.2)    |                                  | 
 | Samsung Galaxy Tab 3 7.0" (T-Mobile) (4.4.4) |                                  | 
 
+但這邊很殘酷的對比一下Microsoft的 *Xamarin Test Cloud* 目前所提供測試的機器數量，完全比不上...
+
+目前 AWS Device Farm 與 Xamarin Test Cloud 的裝置數量比為 397 : ** 2613 ** 
+
+#### AWS Device Farm ####
+
+![device_list_aws](device_list_aws.png)
+
+[Device List](http://awsdevicefarm.info/)
+
+以小米品牌的手機為例:
+
+AWS 上找不到:
+
+![xiaomi_aws](xiaomi_aws.png)
+
+#### Xamarin Test Cloud ####
+
+![device_list_xamarin](device_list_xamarin.png)
+
+[Device List](https://testcloud.xamarin.com/devices)
+
+以小米品牌的手機為例:
+
+Xamarin 上找到6台不同型號 :
+
+![xiaomi_xamarin](xiaomi_xamarin.png)
+
 ### Limits in AWS Device Farm ###
 
 - 每個上傳測試的 Mobile App 不能大於 *4 GB* .
