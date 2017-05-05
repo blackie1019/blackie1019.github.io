@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual Studio Code Customize your Activity Bar Color
+title: Visual Studio Code Customize your Own Edit Theme
 subtitle: ''
 author: Blackie
 header-img: ''
