@@ -18,7 +18,7 @@ tags:
 
 ![cover](cover.png)
 
-在 20170504 這天 Microsoft 發佈了新版的 VScode (Version 1.12.1 ) 增添了 *Workbench theming* 的功能，可以讓我們客製化整個編輯器的配色．
+在 April 2017 Microsoft 發佈了新版的 VScode (Version 1.12.1 ) 增添了 *Workbench theming* 的功能，可以讓我們客製化整個編輯器的配色．
 
 ![vscode_latest_version](vscode_latest_version.png)
 
