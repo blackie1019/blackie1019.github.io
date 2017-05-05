@@ -18,7 +18,7 @@ tags:
 
 ![cover](cover.png)
 
-在 20170504 這天 Microsoft 發佈了新版的VScode (Version 1.12.1 ) 增添了 *Workbench theming* 的功能，可以讓我們客製化整個編輯器的配色．
+在 20170504 這天 Microsoft 發佈了新版的 VScode (Version 1.12.1 ) 增添了 *Workbench theming* 的功能，可以讓我們客製化整個編輯器的配色．
 
 ![vscode_latest_version](vscode_latest_version.png)
 
@@ -84,7 +84,7 @@ tags:
     cd vscode-theme-generator-quick-start
     npm install
 
-然後透過下方程式碼修改 index.ts ：
+然後透過下方程式碼修改 *index.ts* ：
 
 ```js
 import { generateTheme, IColorSet } from 'vscode-theme-generator';
@@ -101,13 +101,13 @@ const colorSet: IColorSet = {
 generateTheme('Blackie Theme', colorSet, path.join(__dirname, 'theme.json'));
 ```
 
-接著我們透過下方指令即可快速產生 theme.json 檔案
+接著我們透過下方指令即可快速產生 *theme.json* 檔案
 
     npm start
 
 ![theme_generator_result](theme_generator_result.png)
 
-套用的Theme結果如下：
+套用的 Theme 結果如下：
 
 ![theme_example](theme_example.png)
 
