@@ -39,7 +39,7 @@ tags:
 
 影片參考(前面三分鐘)：
 
-[![youtube](youtube.png)](https://www.youtube.com/embed/48J9JLvesVE?ecver= "Adding dotnet-watch and Entity Framework Core 1.0 - Click to Watch!")
+<iframe width="420" height="315" src="https://www.youtube.com/embed/48J9JLvesVE" frameborder="0" allowfullscreen></iframe>
 
 ## Install ##
 

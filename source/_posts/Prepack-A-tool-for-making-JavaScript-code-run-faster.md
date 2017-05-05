@@ -97,7 +97,7 @@ result = 108;
 
 如果要設定產出的檔案名稱可以透過 --out 參數
 
-prepack test.js --out test-processed.js
+  prepack test.js --out test-processed.js
 
 我們也可以將其套件載入後交給 Webpack 或是Gulp 等套件做處理，如下:
 
