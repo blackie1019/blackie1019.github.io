@@ -7,7 +7,12 @@ header-img: ''
 sitemap: true
 date: 2017-05-06 00:28:25
 categories:
+- Tool
 tags:
+- VSCode
+- ASP.NET Core
+- .NET Core
+- C#
 ---
 
 介紹如何使用 VSCode 中 Workspace Recommended Extension Configuration 這項功能來幫我們迅速的建立 VSCode 的開發環境．
@@ -74,7 +79,7 @@ Recommended Extension 也可以分別運作在不同的專案，依據專案設�
 
 ## Build up ASP.NET Core Development Editor ##
 
-而這邊就來分享小編在 ASP.NET Core 開發的環境所需要 Extensions 跟大家分享，有興趣的請直接拿去用摟．
+而這邊就來分享小編在 ASP.NET Core 開發的環境所需要 Extensions ，有興趣的請直接拿去用摟．
 
 載點：[dot-net-core-vscode-extensions](https://github.com/blackie1019/dot-net-core-vscode-extensions)
 
