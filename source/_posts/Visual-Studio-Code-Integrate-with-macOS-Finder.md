@@ -33,6 +33,6 @@ tags:
 
 而以後要在 Finder 內開啟 VSCode 只要針對要開啟的檔案或資料夾選擇後按下該按鈕即可
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EC6Xhh1bEWc?ecver=2" frameborder="0" allowfullscreen></iframe>
+<iframe width='560' height='315' src='https://www.youtube.com/embed/EC6Xhh1bEWc?ecver=2' frameborder='0' allowfullscreen></iframe> 
 
 是不是簡單很多啊，趕快下載來使用吧！記得不要吝嗇到 Github 給作者回應感謝摟～
