@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core Develop with VSCode and Workspace Recommended Extension Configuration to Build up Development Editor
+title: ASP.NET Core Develop with VSCode and Workspace Recommended Extension Configuration to Build up Project/Team Editor
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -14,10 +14,9 @@ tags:
 
 <!-- More -->
 
-今天看到 [本週的Editor 編輯者#9](https://www.youtube.com/watch?v=zzon9KS90Dk&lc=z125zvf5swr2itnc123silawimnzwhwht04)的影片，介紹了 VSCode 中 Workspace Recommended Extension
-Configuration 這項功能，而本篇將接續分享如何透過這項功能來幫我們迅速的建立 VSCode 的開發環境．
+今天看到 [本週的Editor 編輯者#9](https://www.youtube.com/watch?v=zzon9KS90Dk&lc=z125zvf5swr2itnc123silawimnzwhwht04)的影片，介紹了 VSCode 中 **Workspace Recommended Extension Configuration** 這項功能，而本篇將接續分享如何透過這項功能來幫我們迅速的建立 VSCode 的開發環境．
 
-建議對 *VSCode* 有興趣的朋友一定要去看一夏影片！
+建議對 *VSCode* 有興趣的朋友一定要去看一下影片！
 
 ## VSCode Extensions and Recommended Extension feature ##
 
