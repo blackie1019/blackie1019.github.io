@@ -63,7 +63,7 @@ tags:
 
 而當我們加入了開發工具來看整個微軟針對開發的佈局就如下圖：
 
-![future-innovation_detail](future-innovation_detail.png)
+![future-innovation](future-innovation.jpg)
 
 從右邊的開發工具我們可以看到除了傳統號稱*地表最強IDE*的 Visual Studio 外， Visual Studio 其實還有一個線上版本的整合開發環境(IDE) Visual Studio Online 讓我們可以不用安裝任何東西，透過瀏覽器即可開始開發，而這邊要稍微注意的是 Visual Studio Online 以功能與定位來看，它其實是線上版的 **Team Foundation Service**．線上編輯*只是輔助*的功能．而Visual Studio Online 已於 2015/11 月改名為 Visual Studio Team Services – VSTS．
 
@@ -78,7 +78,7 @@ tags:
 - Common Language Runtime則是.NET Framework的基礎，可視為程式執行期間管理程式碼的代理程式，提供記憶體的管理、執行緒的執行、程式碼的執行、程式碼安全驗證及編譯等服務。
 - Microsoft .NET Framework類別庫是作業系統層級的物件導向類別庫，與Common Language Runtime緊密整合，可供程式語言呼叫。所有支援.NET的程式語言都可以使用.NET Framework類別庫，減少學習新語言的時間。
 
-![introduction-to-net-framework](introduction-to-net-framework)
+![introduction-to-net-framework](introduction-to-net-framework.png)
 
 最為人詬病的兩點：只能跑在 *Ｗindows* 平台與*各版本的套件不一定相容*，後著問題在 .NET Framework 4.0 開始已經逐漸達到向前相容了 (相容 2.0 到 當前下載的版本，但不包括 1.1 版本)．
 
