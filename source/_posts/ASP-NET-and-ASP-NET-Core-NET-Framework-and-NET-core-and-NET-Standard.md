@@ -264,7 +264,11 @@ ASP.NET MVC5 與 WebAPI2 甚至是 ASP.NET Web Form 等專案目前都是跑在 
 
 而由於 .NET Core 跨平台的特性，在使用 Container 作為開發與部屬環境時即可不用限制地跑任何一個 Windows 或 macOS 甚至 Linux 的環境，也方便我們部署到任何一個雲端供應商，如：AWS 與 Google Cloud Platform．
 
-另外 ASP.NET Core 有著超高的效能，
+另外 ASP.NET Core 有著超高的效能，每秒能處理115萬個請求，是ASP.NET with .NET Framework 4.6 的 23 倍之多，有興趣的可以參考 [ASP.NET Core – 2300% More Requests Served Per Second](http://www.ageofascent.com/asp-net-core-exeeds-1-15-million-requests-12-6-gbps/)
+
+![performace](performace.jpg)
+
+對於 web 框架評比有興趣的朋友可以參考[https://www.techempower.com/benchmarks/](https://www.techempower.com/benchmarks)
 
 對於 ASP.NET Core 與 Google Cloud Platform 整合部署有興趣的朋友可以參考 [Google Cloud Platform](http://blackie1019.github.io/categories/Google-Cloud-Platform) 系列文章．
 
