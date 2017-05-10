@@ -17,7 +17,7 @@ tags:
 
 <!-- More -->
 
-文章持續更新，最新更新時間: **2017-04-30**
+文章持續更新，最新更新時間: **2017-05-10**
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -54,11 +54,12 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 ### Developement ###
 
-#### .NET Core Setup ###
+#### Prerequisite ###
 
+- [ASP.NET and ASP.NET Core, .NET Framework and .NET core and .NET Standard](http://blackie1019.github.io/2017/04/29/ASP-NET-and-ASP-NET-Core-NET-Framework-and-NET-core-and-NET-Standard/)
 - [ASP.NET Core Hello World on Windows](https://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
 - [ASP.NET Core Hello World on Mac](https://blackie1019.github.io/2017/03/27/ASP-NET-Core-nuget-can-t-restore-on-macOS/)
-- [ASP.NET Core Play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
+- [ASP.NET Core play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - [ASP.NET Core add Git Ignore File](https://blackie1019.github.io/2017/03/12/ASP-NET-Core-add-Git-Ignore-File/)
 - [ASP.NET Core play with Solution File](ASP.NET Core play with Solution File)
 
@@ -82,6 +83,10 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read](ASP.NET Core play with MongoDB and MongoDB .NET Driver - Read)
 - [ASP.NET Core play with MongoDB and MongoDB .NET Driver - Update](https://blackie1019.github.io/2017/04/10/ASP-NET-Core-play-with-MongoDB-and-MongoDB-NET-Driver-Update/)
 
+#### Logging ####
+
+- [ASP.NET Core play with log4net](http://blackie1019.github.io/2017/05/02/ASP-NET-Core-play-with-Log4Net/)
+
 #### Web ####
 
 - ASP.NET Core play with MVC
@@ -92,9 +97,9 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 #### Web Advance ####
 
-- [ASP.NET Core Playing with SPA](https://blackie1019.github.io/2017/03/17/ASP-NET-Core-Playing-with-SPA/)
 - [ASP.NET Core Set Hosting Environment](https://blackie1019.github.io/2017/03/19/ASP-NET-Core-Set-Hosting-environment/)
-- [ASP.NET Core Playing with React and Redux](https://blackie1019.github.io/2017/03/28/ASP-NET-Core-SPA-Biobiolerplate-with-React-and-Redux/)
+- [ASP.NET Core play with SPA](https://blackie1019.github.io/2017/03/17/ASP-NET-Core-play-with-SPA/)
+- [ASP.NET Core SPA Biobiolerplate with React and Redux](https://blackie1019.github.io/2017/03/28/ASP-NET-Core-SPA-Biobiolerplate-with-React-and-Redux/)
 - ASP.NET Core Web Session with Redis
 - ASP.NET Core play with SignalR Core
 
@@ -102,9 +107,15 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 - [ASP.NET Core play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - ASP.NET Core Build up with Jenkins
+- ASP.NET Core Build up with TravisCI
+
+#### Hosting and Cloud ####
+
+這邊都會以專欄的方式介紹，有興趣的朋友請到各專欄閱讀：
+
 - ASP.NET Core Hosting on Cloud - Azure
 - ASP.NET Core Hosting on Cloud - AWS
-- [ASP.NET Core Hosting on Cloud - Google Cloud](https://blackie1019.github.io/2017/04/15/ASP-NET-Core-MVC-play-with-Goolge-Container-Engine/)
+- [ASP.NET Core play with Google Cloud Platform](http://blackie1019.github.io/categories/Google-Cloud-Platform/)
 
 ## Project Goal ##
 
@@ -157,6 +168,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [Entity Framework Core](http://ef.readthedocs.io/en/latest/index.html)
 - [StackExchange.Redis](https://stackexchange.github.io/StackExchange.Redis/)
 - [MongoDB .NET Driver](https://github.com/mongodb/mongo-csharp-driver)
+- [log4net](http://logging.apache.org/log4net/)
 
 ### Architecture/Template/Framework ###
 
