@@ -78,7 +78,7 @@ tags:
 - Common Language Runtime則是.NET Framework的基礎，可視為程式執行期間管理程式碼的代理程式，提供記憶體的管理、執行緒的執行、程式碼的執行、程式碼安全驗證及編譯等服務。
 - Microsoft .NET Framework類別庫是作業系統層級的物件導向類別庫，與Common Language Runtime緊密整合，可供程式語言呼叫。所有支援.NET的程式語言都可以使用.NET Framework類別庫，減少學習新語言的時間。
 
-![introduction-to-net-framework](introduction-to-net-framework.png)
+![introduction-to-net-framework](introduction-to-net-framework.jpg)
 
 最為人詬病的兩點：只能跑在 *Ｗindows* 平台與*各版本的套件不一定相容*，後著問題在 .NET Framework 4.0 開始已經逐漸達到向前相容了 (相容 2.0 到 當前下載的版本，但不包括 1.1 版本)．
 
