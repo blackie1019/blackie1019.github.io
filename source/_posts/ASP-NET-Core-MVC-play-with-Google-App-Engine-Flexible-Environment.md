@@ -30,7 +30,7 @@ tags:
 
 簡單來講如果想獲得比較彈性的環境與願意付較多的錢，GAE 的 *Standard Environment* 給予我們一個最簡單上手的應用程式架設過程，但客製化的程度很低，如.NET Core的版本我們也不能指定．
 
-而另外一個服務 GKE 則是讓你透過 *Container* ＋ *K8S* 的方式自己的喜好架設與設定強大的 Container Cluster ，將你的應用程式擺放上去．有興趣的人可以參考先前的[ASP.NET Core MVC play with Goolge Container Engine](http://blackie1019.github.io/2017/04/15/ASP-NET-Core-MVC-play-with-Goolge-Container-Engine/)
+而另外一個服務 GKE 則是讓你透過 *Container* ＋ *K8S* 的方式自己的喜好架設與設定強大的 Container Cluster ，將你的應用程式擺放上去．有興趣的人可以參考先前的[ASP.NET Core MVC play with Google Container Engine](http://blackie1019.github.io/2017/04/15/ASP-NET-Core-MVC-play-with-Goolge-Container-Engine/)
 
 而相對於GKE自己設定K8S的難度比起來，GAE 的 *Flexible Environment* 能給予你更大的彈性但依舊免去維運上的負擔，持續專心在主要的應用開發上。架構上他透過下方的方式運作:
 
@@ -182,7 +182,7 @@ tags:
 
 這邊我們就需要在本機安裝 [Google Cloud SDK](https://cloud.google.com/sdk/), [.NET Core 1.1 SDK](https://go.microsoft.com/fwlink/?linkid=847009) 與選擇性安裝 [Docker](https://www.docker.com/community-edition) (如果你不要驗證可以不用安裝)．
 
-這邊接下來的步驟與先前的[ASP.NET Core MVC play with Goolge Container Engine](http://blackie1019.github.io/2017/04/15/ASP-NET-Core-MVC-play-with-Goolge-Container-Engine/) 的部分雷同，如果想看詳細描述可以參考此篇．
+這邊接下來的步驟與先前的[ASP.NET Core MVC play with Google Container Engine](http://blackie1019.github.io/2017/04/15/ASP-NET-Core-MVC-play-with--Container-Engine/) 的部分雷同，如果想看詳細描述可以參考此篇．
 
 ### Publish the ASP.NET Core 1.1 app ###
 

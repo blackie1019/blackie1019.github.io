@@ -118,7 +118,7 @@ CDN則有另外一個：
 
 而如果你還有經銷商的Partner Credit，則可以上[Google Platform Partner Credit](https://cloud.google.com/partners/partnercredit/)貼寫申請．這邊送出後會有人工審核，審核完才會提供redem code．
 
-# Goolge Cloud Platform Project #
+# Google Cloud Platform Project #
 
 所有的GCP services are associated with a project that is used to:
 

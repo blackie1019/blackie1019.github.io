@@ -70,4 +70,4 @@ tags:
 
 想知道還可以做到什麼更多的內容，請參考[此](https://google-developers.appspot.com/chart/interactive/docs/gallery)
 
-想要線上玩玩Goolge的Chart API 可以到[此](https://code.google.com/apis/ajax/playground/?type=visualization#pie_chart)
+想要線上玩玩Google的Chart API 可以到[此](https://code.google.com/apis/ajax/playground/?type=visualization#pie_chart)
