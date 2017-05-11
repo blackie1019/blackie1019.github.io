@@ -19,6 +19,8 @@ tags:
 
 <!-- More -->
 
+![cover](cover.png)
+
 # StackExchange.Redis #
 
 [StackExchange.Redis](https://stackexchange.github.io/StackExchange.Redis/) 是由Stack Overflow所開發維護的Redis Driver與Framework，它提供了我們有效且方便的介面去操作Redis資料．
