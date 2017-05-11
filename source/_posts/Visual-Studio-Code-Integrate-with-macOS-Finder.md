@@ -23,7 +23,7 @@ tags:
 
 這邊我們使用網路上熱心人士提供的解決辦法：
 
-先至!['open in' buttons for MacOS X Finder toolbar](https://github.com/cnstntn-kndrtv/open-in-buttons-for-finder-toolbar)下載整個專案．解壓所後可以看到下面的資料夾：
+先至['open in' buttons for MacOS X Finder toolbar](https://github.com/cnstntn-kndrtv/open-in-buttons-for-finder-toolbar)下載整個專案．解壓所後可以看到下面的資料夾：
 
 ![folder](folder.png)
 
