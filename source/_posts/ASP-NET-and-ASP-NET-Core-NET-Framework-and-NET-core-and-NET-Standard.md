@@ -218,11 +218,6 @@ ASP.NET Web Form 是微軟早期主打的 Web 應用程式服務框架，這也�
 
 ![request_life_cycle_all](request_life_cycle_all.png)
 
-完整細節請參考 ：
-
-- [ASP.NET WebAPI 2 Life Cycle](aspnet-web-api-poster.pdf)
-- [ASP.NET MVC 5 Life Cycle](lifecycle-of-an-aspnet-mvc-5-application.pdf)
-
 ## Q&A ##
 
 ### Q: .NET Core 與 .NET Framework 的差別 ###
