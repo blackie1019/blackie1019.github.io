@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core MVC play with Google App Engine - Flexible Environment
+title: ASP.NET Core MVC play with Google App Engine - Flexible Environment with Custom Runtime
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -20,7 +20,7 @@ tags:
 
 <!-- More -->
 
-這邊因為還是在GAE的功能範圍，所以本篇只會針對 *Flexible Environment* 做細節的介紹，有關於GAE的全貌與不同Environment的請參考[ASP.NET Core MVC play with Google App Engine - Standard Environment](http://blackie1019.github.io/2017/04/21/ASP-NET-Core-MVC-play-with-Google-App-Engine-Standard-Environment/)
+這邊因為還是在GAE的功能範圍，所以本篇只會針對 *Flexible Environment* 做細節的介紹，有關於GAE的全貌與不同Environment的請參考[ASP.NET Core MVC play with Google App Engine - Standard Environment](http://blackie1019.github.io/2017/04/21/ASP-NET-Core-MVC-play-with-Google-App-Engine-Flexible-Environment-and-google-runtime/)
 
 ## Recap : The Difference Between Standard Environment and Flexible Environment ##
 
@@ -42,7 +42,7 @@ tags:
 
 ## Flexible Environment with ASP.NET Core 1.0.1 ##
 
-以下環境建置步驟會快速帶過，如果對各指令不懂可以參考先前的[ASP.NET Core MVC play with Google App Engine - Standard Environment](http://blackie1019.github.io/2017/04/21/ASP-NET-Core-MVC-play-with-Google-App-Engine-Standard-Environment/)[.NET Core 系列](http://blackie1019.github.io/2016/11/30/Ironman-30-days-for-ASP-NET-Core/)．
+以下環境建置步驟會快速帶過，如果對各指令不懂可以參考先前的[ASP.NET Core MVC play with Google App Engine - Standard Environment](http://blackie1019.github.io/2017/04/21/ASP-NET-Core-MVC-play-with-Google-App-Engine-Flexible-Environment-and-google-runtime/)[.NET Core 系列](http://blackie1019.github.io/2016/11/30/Ironman-30-days-for-ASP-NET-Core/)．
 
 另外，再次提醒各位．由於 *Google Cloud Shell* 目前預載的 *.NET CLI* 是 .NET Core 1.0.0 - Preview 2，而微軟在2017/3發行了最新的.NET Core 1.1.1 ，並包含 .NET Core 1.1.1 與 .NET Core 1.0.1 SDK 版本的更新，所以這邊指令會有點不一樣，而很遺憾的目前沒有辦法幫 Google Cloud Shell 升級．在實作下面範例時請特別注意指令的差異．
 
@@ -233,7 +233,7 @@ tags:
 
 ![gae_local_docker](gae_local_docker.png)
 
-### Create app.yaml for App Engine flexible ###
+### Create app.yaml for App Engine flexible and Custom Runtime ###
 
 接著我們新增 app.yaml 並添加下面設定：
 

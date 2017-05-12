@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core MVC play with Google App Engine - Standard Environment
+title: ASP.NET Core MVC play with Google App Engine - Flexible Environment and google Runtime
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -94,7 +94,7 @@ GAE本身可以分為兩個, *Standard Environment* 與 *Flexible Environment*:
 
 詳細的計算可以參考[Google Cloud Platform Pricing Calculator](https://cloud.google.com/products/calculator/#tab=app-engine)。
 
-## Standard Environment with ASP.NET Core ##
+## Flexible Environment with ASP.NET Core and Google Runtime ##
 
 ### Google Cloud Shell ###
 
@@ -202,11 +202,33 @@ GAE本身可以分為兩個, *Standard Environment* 與 *Flexible Environment*:
 
 ![editor_3](editor_3.png)
 
-## [補充說明] GAE - Standard Environment Support ASP.NET Core 1.0.1 Only ##
+接著我們只要透過下面的指令發行 Release 版本的 .dll
 
-這邊要特別說明一下GCP上的App Engine目前僅支援 [1.0.1](https://github.com/dotnet/core/releases/tag/1.0.1)而這個版本的對應是.NET Core 1.0.0 與 .NET Core 1.0.0 SDK - Preview 2，是在2016年的9月推出的，有賴於社群的積極貢獻與回饋，在短短的7個月官方就推出了新版的[.NET Core 1.1.1](https://github.com/dotnet/core/releases/tag/1.1.1)包含了.NET Core 1.1.1 與 .NET Core 1.0.1 SDK．
+    dotnet publish --configuration Release
 
-很遺憾的目前還沒找到可以幫App Engine升級的方法，而支援.NET Core這部分也由於還在Beta所以已經請求官方upgrade到1.1之後的版本．如果想用新版開發的話可以嘗試 GAE的 - Flexible Environment，這部分也會在之後的文章為大家介紹與分享。
+接著我們到剛剛 Release 版本的資料夾中新增並編輯 app.yaml 檔案
+
+    cd bin/Release/netcoreapp1.0/publish/
+    vi app.yaml
+
+這邊我們使用 Google 自己的 *aspnetcore* Runtime:
+
+    runtime: aspnetcore
+    env: flex
+
+因為目前 aspnetcore 這個 Runtime 還處於 **beta** 階段，所以需要透過 ** beta ** 這個套件來幫我們識別相關指令與設定
+
+    gcloud beta app deploy
+
+成功後輸入下面指令即可看到網頁
+
+    gcloud app browse
+
+## [補充說明] GAE - Flexible Environment Support ASP.NET Core 1.0.4 Only ##
+
+這邊要特別說明一下GCP上的App Engine目前 beta 中的 **aspnetcore** Runtime 僅支援 [1.0.4](https://github.com/dotnet/core/releases/tag/1.0.4)而這個版本的對應是.NET Core 1.0.0 與 .NET Core 1.0.0 SDK - Preview 2，是在2016年的9月推出的，有賴於社群的積極貢獻與回饋，在短短的7個月官方就推出了新版的[.NET Core 1.1.1](https://github.com/dotnet/core/releases/tag/1.1.1)包含了.NET Core 1.1.1 與 .NET Core 1.0.1 SDK．
+
+很遺憾的目前還沒找到可以幫App Engine升級的方法，而支援.NET Core這部分也由於還在Beta所以已經請求官方upgrade到1.1之後的版本．如果想用新版開發的話可以嘗試 GAE的 - [Flexible Environment with Custom Runtime](http://blackie1019.github.io/2017/04/28/ASP-NET-Core-MVC-play-with-Google-App-Engine-Flexible-Environment/)，這部分也會在之後的文章為大家介紹與分享。
 
 ## References ##
 
