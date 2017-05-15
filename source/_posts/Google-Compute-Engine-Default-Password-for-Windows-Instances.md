@@ -7,7 +7,13 @@ header-img: ''
 sitemap: true
 date: 2017-05-11 21:16:27
 categories:
+- Google Cloud Platform
 tags:
+- Cloud
+- GCP
+- GCE
+- Google Compute Engine
+- Windows Server
 ---
 
 解決在 Google Compute Engine 啟用 Windows Server VM 需要 RDP 登入時的預設密碼問題
