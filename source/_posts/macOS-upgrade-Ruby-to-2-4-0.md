@@ -55,6 +55,6 @@ tags:
 
     ruby -v
 
-![result](result.ong)
+![result](result.png)
 
 這邊要注意如果先前沒有將 rbenv 加入到 *bash* 中，則當下查詢的版本會不正確需要重啟 terminal．

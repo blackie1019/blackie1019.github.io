@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core MVC play with Google App Engine - Flexible Environment and google Runtime
+title: ASP.NET Core MVC play with Google App Engine - Flexible Environment and Google Runtime
 subtitle: ''
 author: Blackie
 header-img: ''
