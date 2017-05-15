@@ -14,7 +14,7 @@ tags:
 
 <!-- More -->
 
-![cover](cover.png)
+![cover](cover.jpg)
 
 當我們在 Google Compute Engine 透過 *cloud launcher* 快速啟用 ASP.NET + Windows Server + SQL Server 的 VM Instance ：
 
