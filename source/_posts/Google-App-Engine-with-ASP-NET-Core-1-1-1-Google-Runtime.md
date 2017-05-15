@@ -38,6 +38,12 @@ tags:
 
 ![docker_pull](docker_pull.png)
 
+接著我們可以查看當前的所有 Docker 映像檔有哪些 :
+
+    docker images
+
+![docker_images](docker_images.png)
+
 ## Running GCR Container with ASP.NET Core on Local ##
 
 首先我們一樣先透過 *.NET Core CLI* 快速建立
