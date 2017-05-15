@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google App Engine with ASP.NET Core 1.1.1 Google Runtime
+title: Google App Engine with ASP.NET Core 1.1.1 on Google Runtime
 subtitle: ''
 author: Blackie
 header-img: ''
