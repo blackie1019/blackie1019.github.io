@@ -5,12 +5,13 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-05-16 18:48:31
+date: 2017-05-14 18:48:31
 categories:
 - .NET
 tags: 
 - .NET Core
 - .NET Core CLI
+- .NET Core SDK
 ---
 
 介紹如何用 global.json 去切換當前 Dotnet Core CLI 的 SDK 版本
@@ -41,7 +42,7 @@ tags:
     dotnet --version
     dotnet new --help
 
-![donet_before](donet_before.png)
+![dotnet_before.png](dotnet_before.png)
 
 ## References ##
 
