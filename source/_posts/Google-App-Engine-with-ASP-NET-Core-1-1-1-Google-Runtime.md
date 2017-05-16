@@ -42,7 +42,7 @@ tags:
 
     docker images
 
-![docker_images](docker_images.png)
+![docker_images](docker_images.jpg)
 
 ## Running GCR Container with ASP.NET Core on Local ##
 
