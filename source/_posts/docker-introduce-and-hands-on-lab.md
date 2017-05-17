@@ -6,7 +6,7 @@ date: 2014-04-18 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Cotainer & VM
+- Container & VM
 tags:
 - Docker
 - Container

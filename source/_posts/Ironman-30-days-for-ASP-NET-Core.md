@@ -17,7 +17,25 @@ tags:
 
 <!-- More -->
 
-文章持續更新，最新更新時間: **2017-05-10**
+文章持續更新，最新更新時間: **2017-05-17**
+
+## Sharing Events with Blackie ##
+
+### GCPUG.TW #25 ###
+
+Introduce ASP.NET Core and sharing how to host .NET application on GCP.
+- Online Presentation
+    [SpeakerDeck : GCPUG.TW Meetup #25 - ASP.NET Core with GCP](https://speakerdeck.com/blackie1019/gcpug-dot-tw-meetup-number-25-asp-dot-net-core-with-gcp)
+- Online Streaming
+    [YouTube : GCPUG.TW #25 ASP.NET Core with Google Cloud Platform](https://www.youtube.com/watch?v=6gMCB380h2A)
+- Slide 
+    [PDF : GCPUG Taiwan Meetup #25 - ASP.NET Core with GCP by Blackie Tsai](https://drive.google.com/open?id=0ByZH69bRVHlzUzV6YjN4TnNEcW8)
+- Demo Code
+    [Github : GCPUG-Meetup-Demo](https://github.com/blackie1019/GCPUG-Meetup-Demo)
+
+### XY - .NET Study Group ###
+
+TBD
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -25,7 +43,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 ![overview](overview.png)
 
-- [Offical ASP.NET Core Github](https://github.com/aspnet/Home)
+- [Official ASP.NET Core Github](https://github.com/aspnet/Home)
 - [ASP.NET Core Schedule and Roadmap](https://github.com/aspnet/Home/wiki/Roadmap)
 
 ### .NET Standard ###
