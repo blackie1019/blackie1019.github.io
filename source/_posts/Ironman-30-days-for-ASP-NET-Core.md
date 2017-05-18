@@ -77,6 +77,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET and ASP.NET Core, .NET Framework and .NET core and .NET Standard](http://blackie1019.github.io/2017/04/29/ASP-NET-and-ASP-NET-Core-NET-Framework-and-NET-core-and-NET-Standard/)
 - [ASP.NET Core Hello World on Windows](https://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
 - [ASP.NET Core Hello World on Mac](https://blackie1019.github.io/2017/03/27/ASP-NET-Core-nuget-can-t-restore-on-macOS/)
+- [ASP.NET Core Development via Container](http://blackie1019.github.io/2017/05/10/ASP-NET-Core-Development-via-Container/)
 - [ASP.NET Core play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - [ASP.NET Core add Git Ignore File](https://blackie1019.github.io/2017/03/12/ASP-NET-Core-add-Git-Ignore-File/)
 - [ASP.NET Core play with Solution File](ASP.NET Core play with Solution File)
@@ -126,7 +127,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET Core play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - ASP.NET Core Build up with Jenkins
 - ASP.NET Core Build up with TravisCI
-
+- [.NET Core CLI switch to Different SDK Version by global.json](http://blackie1019.github.io/2017/05/14/NET-Core-CLI-switch-to-Different-SDK-Version-by-global-json/)
 #### Hosting and Cloud ####
 
 這邊都會以專欄的方式介紹，有興趣的朋友請到各專欄閱讀：
