@@ -9,7 +9,7 @@ date: 2017-05-04 11:44:54
 categories:
 - JavaScript
 tags:
-- Front-End Optimized
+- Front-End Optimization
 - Prepack
 ---
 
