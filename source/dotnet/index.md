@@ -10,7 +10,25 @@ header-img: "img/about-bg.jpg"
 
 <!-- More -->
 
-文章持續更新，最新更新時間: **2017-05-10**
+文章持續更新，最新更新時間: **2017-05-18**
+
+## Sharing Events with Blackie ##
+
+### GCPUG.TW #25 ###
+
+Introduce ASP.NET Core and sharing how to host .NET application on GCP.
+- Online Presentation
+    [SpeakerDeck : GCPUG.TW Meetup #25 - ASP.NET Core with GCP](https://speakerdeck.com/blackie1019/gcpug-dot-tw-meetup-number-25-asp-dot-net-core-with-gcp)
+- Online Streaming
+    [YouTube : GCPUG.TW #25 ASP.NET Core with Google Cloud Platform](https://www.youtube.com/watch?v=6gMCB380h2A)
+- Slide 
+    [PDF : GCPUG Taiwan Meetup #25 - ASP.NET Core with GCP by Blackie Tsai](https://drive.google.com/open?id=0ByZH69bRVHlzUzV6YjN4TnNEcW8)
+- Demo Code
+    [Github : GCPUG-Meetup-Demo](https://github.com/blackie1019/GCPUG-Meetup-Demo)
+
+### XY - .NET Study Group ###
+
+TBD
 
 ## .NET Core and ASP.NET Core Introduction ##
 
@@ -44,7 +62,6 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 由於開發上我們會在 *macOS* + *visual studio code* 為主來開發，所以對VSCode有興趣的朋友歡迎參考另外的[VSCode分類](http://blackie1019.github.io/tags/VSCode/)
 
 下面為目前計畫內容(內容會根據開發需求做調整)，過程當中主旨是希望實作一個具有存取DB資料的Web App並發佈至雲端使用:
-
 ### Developement ###
 
 #### Prerequisite ###
@@ -52,6 +69,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET and ASP.NET Core, .NET Framework and .NET core and .NET Standard](http://blackie1019.github.io/2017/04/29/ASP-NET-and-ASP-NET-Core-NET-Framework-and-NET-core-and-NET-Standard/)
 - [ASP.NET Core Hello World on Windows](https://blackie1019.github.io/2017/03/06/ASP-NET-Core-HelloWorld-on-Windows/)
 - [ASP.NET Core Hello World on Mac](https://blackie1019.github.io/2017/03/27/ASP-NET-Core-nuget-can-t-restore-on-macOS/)
+- [ASP.NET Core Development via Container](http://blackie1019.github.io/2017/05/10/ASP-NET-Core-Development-via-Container/)
 - [ASP.NET Core play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - [ASP.NET Core add Git Ignore File](https://blackie1019.github.io/2017/03/12/ASP-NET-Core-add-Git-Ignore-File/)
 - [ASP.NET Core play with Solution File](ASP.NET Core play with Solution File)
@@ -101,7 +119,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - [ASP.NET Core play with Docker](https://blackie1019.github.io/2017/03/26/ASP-NET-Core-Play-with-Docker/)
 - ASP.NET Core Build up with Jenkins
 - ASP.NET Core Build up with TravisCI
-
+- [.NET Core CLI switch to Different SDK Version by global.json](http://blackie1019.github.io/2017/05/14/NET-Core-CLI-switch-to-Different-SDK-Version-by-global-json/)
 #### Hosting and Cloud ####
 
 這邊都會以專欄的方式介紹，有興趣的朋友請到各專欄閱讀：
