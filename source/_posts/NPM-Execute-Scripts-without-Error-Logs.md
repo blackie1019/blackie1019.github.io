@@ -20,7 +20,7 @@ tags:
 
 ![npm_scripts](npm_scripts.png)
 
-如此即可在 terminal 輸入我們建立的簡單指令 npm run <script name> 的方式來運行，如下：
+如此即可在 terminal 輸入我們建立的簡單指令 npm run <scriptname> 的方式來運行，如下：
 
 ![npm_run_script](npm_run_script.png)
 
@@ -41,7 +41,7 @@ tags:
 
     alias npm='npm -s '
 
-這樣所有運行 npm run <script name> 的指令都會跑在*silent mode*
+這樣所有運行 npm run <scriptname> 的指令都會跑在*silent mode*
 
 ## References ##
 
