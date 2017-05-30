@@ -107,15 +107,15 @@ tags:
 - Download [CLOUD SDK](https://cloud.google.com/sdk/)
 - Init CMD:
     
-    gcloud init
+        gcloud init
 
 - Setup gcloud SDK account
 
-    gcloud config configurations create <config-name>
-    gcloud config configurations activate <config-name>
-    gcloud config set account <google-account>
-    gcloud config set project <project-id>
+        gcloud config configurations create <config-name>
+        gcloud config configurations activate <config-name>
+        gcloud config set account <google-account>
+        gcloud config set project <project-id>
 
 - Deploy to GAE
 
-    gcloud app deploy
+        gcloud app deploy
