@@ -19,7 +19,7 @@ tags:
 
 <!-- More -->
 
-![cover](cover.png)
+![cover](cover.jpg)
 
 # StackExchange.Redis #
 
