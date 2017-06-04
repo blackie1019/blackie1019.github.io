@@ -110,7 +110,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 - [ASP.NET Core Set Hosting Environment](https://blackie1019.github.io/2017/03/19/ASP-NET-Core-Set-Hosting-environment/)
 - [ASP.NET Core play with SPA](https://blackie1019.github.io/2017/03/17/ASP-NET-Core-play-with-SPA/)
-- [ASP.NET Core SPA Biobiolerplate with React and Redux](https://blackie1019.github.io/2017/03/28/ASP-NET-Core-SPA-Biobiolerplate-with-React-and-Redux/)
+- [ASP.NET Core SPA Boilerplate with React and Redux](https://blackie1019.github.io/2017/03/28/ASP-NET-Core-SPA-Biobiolerplate-with-React-and-Redux/)
 - ASP.NET Core Web Session with Redis
 - ASP.NET Core play with SignalR Core
 
@@ -120,6 +120,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core Build up with Jenkins
 - ASP.NET Core Build up with TravisCI
 - [.NET Core CLI switch to Different SDK Version by global.json](http://blackie1019.github.io/2017/05/14/NET-Core-CLI-switch-to-Different-SDK-Version-by-global-json/)
+
 #### Hosting and Cloud ####
 
 這邊都會以專欄的方式介紹，有興趣的朋友請到各專欄閱讀：

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core SPA Biobiolerplate with React and Redux
+title: ASP.NET Core SPA Boilerplate with React and Redux
 subtitle: ''
 author: Blackie
 header-img: ''
