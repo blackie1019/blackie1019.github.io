@@ -313,7 +313,7 @@ module.exports  = {
 
 ```json
 "scripts": {
-    "dev": "webpack --config ./webpack.config.dev.js",
+    "dev": "webpack --config ./webpack/webpack.config.dev.js",
     "dev-watch": "webpack-dev-server --port 8081 --hot --config ./webpack/webpack.config.dev.js",
     "dotnet-watch": "dotnet watch run",
     "start": "concurrently \"npm run dev-watch\" \"npm run dotnet-watch\""
