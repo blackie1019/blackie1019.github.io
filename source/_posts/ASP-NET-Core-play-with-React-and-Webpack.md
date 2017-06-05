@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-06-05 23:04:42
+date: 2017-06-10 23:04:42
 categories:
 - .NET
 tags: 
@@ -220,9 +220,10 @@ Index.cshtml 頁面則是全部清空，改為以下的內容(About.cshtml 與 C
 
 ![swagger_test2](swagger_test2.png)
 
-接著我們在加入 *Microsoft.DotNet.Watcher.Tools* 幫我們做到 ASP.NET Core 熱載入的功能，詳細使用可以參考先前的[ASP.NET Core play with dotnet-watch](https://blackie1019.github.io/2017/03/13/ASP-NET-core-play-with-dotnet-watch/)
+接著加入 *Microsoft.DotNet.Watcher.Tools* 幫我們做到 ASP.NET Core 熱載入的功能，詳細使用可以參考先前的[ASP.NET Core play with dotnet-watch](https://blackie1019.github.io/2017/03/13/ASP-NET-core-play-with-dotnet-watch/)
 
 而我們接者只要將啟動指令從 dotnet run 改為 dotnet watch run 即可
+
 
 到這邊 ASP.NET Core 的環境設定到一個段落，接著我們開始設定 React 的環境．
 
@@ -232,7 +233,13 @@ Index.cshtml 頁面則是全部清空，改為以下的內容(About.cshtml 與 C
 
     npm init
 
+接著我們安裝 React 的開發環境，這邊使用 Babel + Webpack 的組合
+
+    npm install --save-dev babel-cli babel-core babel-loader babel-polyfill babel-preset-react react-hot-loader webpack webpack-dev-server
+
 ### Hot Load ASP.NET Core and React ###
+
+
 
 ### Import Microsoft.AspNetCore.Mvc.TagHelpers for Different Environment View Section ###
 
