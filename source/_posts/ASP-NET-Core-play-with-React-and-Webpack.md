@@ -252,7 +252,7 @@ namespace boilerplate_dotnetcore_mvc_react
 
 接著我們安裝 React 的開發環境，這邊使用 Babel + Webpack 的組合：
 
-    npm install --save-dev babel-cli babel-core babel-loader babel-polyfill babel-preset-react react-hot-loader webpack webpack-dev-server concurrently
+    npm install --save-dev babel-cli babel-core babel-loader babel-polyfill babel-preset-es2015 babel-preset-react react-hot-loader webpack webpack-dev-server concurrently
 
 接著再加入 react 與 react-dom 套件：
 
