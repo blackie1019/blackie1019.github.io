@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2017-06-31 08:02:21
+date: 2018-06-31 08:02:21
 categories:
 - Google Cloud Platform
 tags: 
