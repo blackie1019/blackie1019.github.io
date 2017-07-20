@@ -7,7 +7,9 @@ header-img: ''
 sitemap: true
 date: 2017-07-20 10:21:07
 categories:
+- Development&Coding
 tags:
+- Visual Studio
 ---
 
 介紹一個最簡單且有效學習 Visual Studio 快速鍵的套件
