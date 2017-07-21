@@ -22,7 +22,7 @@ tags:
 
 ![banner](banner.png)
 
-MSTest V2從 2016
+MSTest V2從 2016 開始開放測試後有不少下載量，而.NET Core也是將 *MSTest V2* 列為預設的支援測試框架之一。
 
 以往 MSTest 與其他測試框架:xUnit, NUnit比較起來，差別最大的就是 DataRow Support。
 
