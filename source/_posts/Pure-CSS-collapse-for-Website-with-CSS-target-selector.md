@@ -18,11 +18,7 @@ date: 2017-07-23 10:06:07
 
 ![banner](banner.gif)
 
-在網頁開發時難免會需要製作收闔(Collapse)的可摺疊效果，如下:
-
-<iframe width="420" height="315" src="https://www.w3schools.com/bootstrap/bootstrap_collapse.asp" frameborder="0" allowfullscreen></iframe>
-
-但上面的範例是 *w3schools.com* 呈現的 *Bootstrap Collapse* 的範例，使用上非常簡單。
+在網頁開發時難免會需要製作收闔(Collapse)的可摺疊效果，如 *w3schools.com* 呈現的 *Bootstrap Collapse* 的[範例](https://www.w3schools.com/bootstrap/bootstrap_collapse.asp)，使用上非常簡單。
 
 而如果我們今天想自己刻一個類似的 Collapse 其實也沒太複雜，只是會HTML醜一點。這邊就是示範如何使用CSS Selector的 **:target** 來實作 Collapse 效果。
 
@@ -47,7 +43,7 @@ date: 2017-07-23 10:06:07
 
 ## Other Alternatives ##
 
-除了上面的 *CSS Selector* 的做法，如果不考慮部分瀏覽器的相容性(IE, Edge與Opera Mini)，單用HTML5的 *<summary>* 與 *<detail>* 標籤就可以達成我們的需求:
+除了上面的 *CSS Selector* 的做法，如果不考慮部分瀏覽器的相容性(IE, Edge與Opera Mini)，單用HTML5的 *summary* 與 *detail* 標籤就可以達成我們的需求:
 
 <iframe width="420" height="315" src="https://codepen.io/blackie1019/pen/ayoVxe" frameborder="0" allowfullscreen></iframe>
 
