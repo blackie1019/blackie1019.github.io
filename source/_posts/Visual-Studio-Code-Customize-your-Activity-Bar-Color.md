@@ -72,7 +72,7 @@ tags:
 
 如何切換不同 Theme 請參考下方影片：
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/0L47rFf8JhU?ecver=2" frameborder="0" allowfullscreen></iframe>
+<iframe width="90%" height="315" src="https://www.youtube.com/embed/0L47rFf8JhU?ecver=2" frameborder="0" allowfullscreen></iframe>
 
 ## VSCode Theme Generator ##
 

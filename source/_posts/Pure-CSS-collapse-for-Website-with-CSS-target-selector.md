@@ -28,7 +28,7 @@ date: 2017-07-23 10:06:07
 
 實作請參考下方:
 
-<iframe width="420" height="315" src="https://codepen.io/blackie1019/pen/xLKPoK" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://codepen.io/blackie1019/pen/xLKPoK" frameborder="0" allowfullscreen></iframe>
 
 使用上的語意與結構不難，就是將我們原本的 <a> 的 *href* 屬性指定到特定錨點ID(如:範例的#hide, #show) 就是我們對應的 id 為 *hide* 與 *show* 的屬性為我們的更改目標，並套購 :target 內的 CSS 屬性值。
 
@@ -45,7 +45,7 @@ date: 2017-07-23 10:06:07
 
 除了上面的 *CSS Selector* 的做法，如果不考慮部分瀏覽器的相容性(IE, Edge與Opera Mini)，單用HTML5的 *summary* 與 *detail* 標籤就可以達成我們的需求:
 
-<iframe width="420" height="315" src="https://codepen.io/blackie1019/pen/ayoVxe" frameborder="0" allowfullscreen></iframe>
+<iframe width="90%" height="315" src="https://codepen.io/blackie1019/pen/ayoVxe" frameborder="0" allowfullscreen></iframe>
 
 光就解決辦法來看，這個寫法比較漂亮也不會撰寫重複的HTML內容。而這個解決的詳細相容性參考[Browser support varies](http://caniuse.com/#feat=details)
 

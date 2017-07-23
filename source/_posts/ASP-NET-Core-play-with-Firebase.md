@@ -59,7 +59,7 @@ Firebase[目前提供的功能](https://firebase.google.com/docs/)，依據不�
 
 如果有興趣感受一下差異的可以看看這個：
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/tb2GZ3Bh4p8" frameborder="0" allowfullscreen></iframe>
+<iframe width="90%" height="315" src="https://www.youtube.com/embed/tb2GZ3Bh4p8" frameborder="0" allowfullscreen></iframe>
 
 至於選擇上的推薦，小弟是覺得還是要秉持*基金投資有賺有賠，申辦前請先詳讀公開說明書*的方式建議大家再次看看Firebase的[收費方式](https://firebase.google.com/pricing/)與[SDK細節](https://firebase.google.com/docs/analytics/)才做決定。
 

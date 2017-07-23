@@ -69,7 +69,7 @@ tags:
 
 好吧，看圖說故事是沒用的，來看影片吧哈哈
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/pENszKvvGEg" frameborder="0" allowfullscreen></iframe>
+<iframe width="90%" height="315" src="https://www.youtube.com/embed/pENszKvvGEg" frameborder="0" allowfullscreen></iframe>
 
 ## 祕技：一秒加速
 
