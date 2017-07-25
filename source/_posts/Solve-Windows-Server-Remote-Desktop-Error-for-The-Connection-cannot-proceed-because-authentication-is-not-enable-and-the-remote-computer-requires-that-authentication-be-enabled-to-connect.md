@@ -30,7 +30,7 @@ tags:
 
 1. 前往控制台(Control Panel)
 2. 於右上方的查詢輸入 *remote* 
-3. 點選 ** 後取消勾選 **Allow connections only from computes running Remote Desktop with Network Level Authentiication(recommended)**
+3. 點選 *Allow remote access to your computer* 後取消勾選 **Allow connections only from computes running Remote Desktop with Network Level Authentiication(recommended)**
 4. 儲存後重啟該電腦
 
 ![setting](setting.png)
@@ -41,7 +41,7 @@ tags:
 
 1. 開啟 *RegEdit*
 2. 找到 Key : HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp
-3. 將預設值 2 修改 **SecurityLayer** 為 0
+3. 將預設值 2 修改 *SecurityLayer* 為 **0**
 4. 儲存後重啟該電腦
 
 ![registry](registry.png)
