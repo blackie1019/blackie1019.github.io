@@ -12,8 +12,6 @@ sitemap: true
 date: 2017-07-31 11:42:18
 ---
 
-<!-- More -->
-
 分享如何切換 TFS Web Access的語系顯示
 <!-- More -->
 
