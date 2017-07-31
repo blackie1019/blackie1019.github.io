@@ -7,10 +7,11 @@ header-img: ""
 sitemap: true
 date: 2015-11-06 00:29:45
 categories:
-- Source Control
+- CI&CD
 tags:
 - Git
 - GitLab
+- Source Control
 ---
 
 This is a step by step tourist for how to build up a GitLab from Bitnami VM

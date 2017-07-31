@@ -6,9 +6,10 @@ date: 2014-01-01 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Source Control
+- CI&CD
 tags:
 - Git
+- Source Control
 ---
 
 Git一般在使用上都是直接安裝就可以Clone, Pull或Push你想要的專案了，但如果你所在的開發環境需要透過Proxy才可以連外的話，你也必須幫Git設定一些參數才可以方便他透過Proxy來幫你取得外部設定

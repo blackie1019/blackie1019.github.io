@@ -6,9 +6,10 @@ date: 2014-07-12 00:29:45
 author: Blackie
 header-img: ""
 categories:
-- Source Control
+- CI&CD
 tags:
 - Git
+- Source Control
 ---
 
 這篇文章主要是帶大家在雲端服務上建立一個Git Server，並透過一個範例簡單帶大家瞭解一下Git基本指令
@@ -137,7 +138,7 @@ AWS Elastic Compute Cloud簡稱為EC2，是Amazon一個提供雲端電腦的服�
 - git commit  #  送出 commit
 - git log #  看一下 log 是否程式碼已經成功 commit
 
-## 學習資源整理
+## References ##
 
 這邊幫大家整理了一些好上手的學習資源
 

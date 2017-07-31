@@ -7,9 +7,10 @@ header-img: ''
 sitemap: true
 date: 2017-03-17 14:31:08
 categories:
-- Continuous Integration
+- CI&CD
 tags:
 - Travis CI
+- Continuous Integration
 ---
 
 介紹Travis CI官方的Cron Job功能，讓固定週期佈署可以一鍵完成。

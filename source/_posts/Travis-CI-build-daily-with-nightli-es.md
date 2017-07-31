@@ -7,9 +7,10 @@ header-img: ''
 sitemap: true
 date: 2016-08-20 00:01:00
 categories:
-- Continuous Integration
+- CI&CD
 tags: 
 - Travis CI
+- Continuous Integration
 ---
 
 協助Travis CI建立每24小時至少建置一次的行為，確保外部套件或內部程序可正常被建置
