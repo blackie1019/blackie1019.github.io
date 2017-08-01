@@ -14,8 +14,6 @@ sitemap: true
 date: 2017-08-01 09:47:55
 ---
 
-<!-- More -->
-
 介紹 Service Worker 並分享如何實作 Service Worker 來幫網頁建立快取加速頁面回應
 <!-- More -->
 
