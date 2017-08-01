@@ -38,6 +38,8 @@ Service Worker 是一個可程式化的網頁代理(programmable network proxy)�
 
 在開始前有興趣先體驗一下速度差異的朋友可以至 [Trained-to-thrill](https://jakearchibald.github.io/trained-to-thrill/) 這個網站感受一下(記得先關閉browser的cache功能才能體驗到差異)。
 
+以下內容的教學投影片請[參考](https://www.slideshare.net/chentientsai/web-optimization-with-service-woker)，完整原始碼請參考[service-worker-demo](https://github.com/blackie1019/service-worker-demo)，[範例線上成果](https://blackie1019.github.io/service-worker-demo/)。
+
 ## Service Worker Introduction ##
 
 在開始實作前，稍微介紹一下整個技術的背景與觀念。
