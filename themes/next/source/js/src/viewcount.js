@@ -73,7 +73,7 @@ $(function () {
                 }
 
                 if (selector.length > 0) {
-                    $(selector).html(nFormatter(count,2));
+                    $(selector).html(nFormatter(count,1));
                 };
 
             });

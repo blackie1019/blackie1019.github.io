@@ -105,7 +105,7 @@
         {% if theme.microsoft_mvp_enable %}
         <div class="microsoft_mvp motion-element">
          <span class="links-of-cert-item">
-              <a href="{{theme.certification.link}}" target="_blank" title="microsoft-mvp" rel="external nofollow">
+              <a href="{{theme.microsoft_mvp.link}}" target="_blank" title="microsoft-mvp" rel="external nofollow">
                 <img class="side-image-microsoft-mvp" alt="microsoft-mvp" src="/images/cert.png" />
               </a>
             </span>
@@ -116,7 +116,7 @@
         <div class="certification motion-element">
           <details>
             <summary><i class="fa fa-fw fa-certificate"></i>Management/Agile Certifications</summary>
-          {% for name, link in theme.certification-management %}
+          {% for name, link in theme.certification_management %}
             <span class="links-of-cert-item">
               <a href="{{link}}" target="_blank" title="{{ name }}" rel="external nofollow">
                 <img class="side-image-cert-{{name}}" alt="{{name}}" src="/images/cert.png" />
@@ -126,7 +126,7 @@
             </details>
           <details>
             <summary><i class="fa fa-fw fa-trophy"></i>Technical Certifications</summary>
-            {% for name, link in theme.certification-technical %}
+            {% for name, link in theme.certification_technical %}
             <span class="links-of-cert-item">
               <a href="{{link}}" target="_blank" title="{{ name }}" rel="external nofollow">
                 <img class="side-image-cert-{{name}}" alt="{{name}}" src="/images/cert.png" />
