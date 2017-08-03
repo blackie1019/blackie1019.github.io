@@ -115,8 +115,8 @@
         {% if theme.certification_enable %}
         <div class="certification motion-element">
           <details>
-            <summary>Management/Agile Certifications</summary>
-          {% for name, link in theme.certification.management %}
+            <summary><i class="fa fa-fw fa-certificate"></i>Management/Agile Certifications</summary>
+          {% for name, link in theme.certification-management %}
             <span class="links-of-cert-item">
               <a href="{{link}}" target="_blank" title="{{ name }}" rel="external nofollow">
                 <img class="side-image-cert-{{name}}" alt="{{name}}" src="/images/cert.png" />
@@ -125,8 +125,8 @@
           {% endfor %}
             </details>
           <details>
-            <summary>Technical Certifications</summary>
-            {% for name, link in theme.certification.technical %}
+            <summary><i class="fa fa-fw fa-trophy"></i>Technical Certifications</summary>
+            {% for name, link in theme.certification-technical %}
             <span class="links-of-cert-item">
               <a href="{{link}}" target="_blank" title="{{ name }}" rel="external nofollow">
                 <img class="side-image-cert-{{name}}" alt="{{name}}" src="/images/cert.png" />
