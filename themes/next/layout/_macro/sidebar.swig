@@ -102,8 +102,20 @@
 
         {# Blogroll #}
 
+        {% if theme.microsoft_mvp_enable %}
+        <div class="microsoft_mvp motion-element">
+         <span class="links-of-cert-item">
+              <a href="{{theme.certification.link}}" target="_blank" title="microsoft-mvp" rel="external nofollow">
+                <img class="side-image-microsoft-mvp" alt="microsoft-mvp" src="/images/cert.png" />
+              </a>
+            </span>
+        </div>
+        {% endif %}
+
         {% if theme.certification_enable %}
         <div class="certification motion-element">
+          <details>
+            <summary>My certifications</summary>
           {% for name, link in theme.certification %}
             <span class="links-of-cert-item">
               <a href="{{link}}" target="_blank" title="{{ name }}" rel="external nofollow">
@@ -111,6 +123,7 @@
               </a>
             </span>
           {% endfor %}
+            </details>
         </div>
         {% endif %}
 

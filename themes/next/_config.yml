@@ -121,17 +121,18 @@ font:
 # ---------------------------------------------------------------
 
 # Certifications and Passed Course
+microsoft-mvp:
+  link: https://mvp.microsoft.com/en-us/PublicProfile/5002726
+microsoft_mvp_enable: true
 
 certification:
-  pmp: https://1drv.ms/b/s!Arq-faMowY2FhyBxM_l9auIc4UfU
-  acp: https://1drv.ms/b/s!Arq-faMowY2FhxxkCdSCxrFkCu10
-  csm: https://1drv.ms/b/s!Arq-faMowY2FhxxkCdSCxrFkCu10
+  pmp: https://www.youracclaim.com/badges/0971684d-561b-4294-8161-351794f7aa6b
+  acp: https://www.youracclaim.com/badges/47cf7d59-1000-4566-94de-ee1f73f5dfee
+  csm: https://www.scrumalliance.org/community/profile/ctsai16
+  cspo: https://www.scrumalliance.org/community/profile/ctsai16
   mcsd-app-2017: https://www.youracclaim.com/badges/a9365dac-0a86-4471-9fea-255d33c0e09c
   mcsa-web:  https://www.youracclaim.com/badges/92e7fd9c-03b2-486c-90dd-db495c637ad9
-#mcsd-web: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/Microsoft%20Certified%20Solutions%20Developer_Web%20Applications.pdf
-#mcitp-db-2008: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/Microsoft%20Certified%20IT%20ProfessionalDatabase%20Developer%202008.pdf
-#bsi-iso27001: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/ISO27001.jpg
-#bsi-iso20000: https://dl.dropboxusercontent.com/u/20925528/CertificateofCompletion/ISO20000.jpg
+
 certification_enable: true
 
 course:
@@ -200,8 +201,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggler.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
