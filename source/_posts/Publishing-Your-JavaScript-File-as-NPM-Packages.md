@@ -4,14 +4,14 @@ title: Publishing Your JavaScript File as NPM Packages
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - CI&CD
+tags:
+  - npm
+  - Continuous Integration
+  - JavaScript
 sitemap: true
 date: 2017-08-04 10:54:39
-categories:
-- CI&CD
-tags:
-- npm
-- Continuous Integration
-- JavaScript
 ---
 
 介紹一下如何自行建立透過 npm 建立自己的 js 類別庫，解除開發與部屬的相依性
