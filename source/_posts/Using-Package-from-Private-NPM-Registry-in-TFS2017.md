@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use a Package from a Private NPM Regisry in TFS2017
+title: Use Package from Private NPM Regisry in TFS2017
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -80,13 +80,13 @@ date: 2017-08-06 11:42:07
 而我們只要將該組完封不動的貼到 *.npmrc* 檔案內就可以。
 
 ```
-registry=http://172.16.45.64/DefaultCollection/_packaging/XY-Common/npm/registry/
+registry=http://tfs.domain/DefaultCollection/_packaging/XY-Common/npm/registry/
 always-auth=true
 email = blackie.tsai@xuenn.com
 ; Treat this auth token like a password. Do not share it with anyone, including Microsoft support. This token expires on or before 11/5/2017.
 ; begin auth token
 //tfs.domain/DefaultCollection/_packaging/XY-Common/npm/registry/:_authToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImIzbVlSY21DL....
-//172.16.45.64/DefaultCollection/_packaging/XY-Common/npm/:_authToken=eyJ0eXAiOiJKV1QiLCzbVlSY21DLXpZNFJGTzFCb3VWY0R5....
+//tfs.domain/DefaultCollection/_packaging/XY-Common/npm/:_authToken=eyJ0eXAiOiJKV1QiLCzbVlSY21DLXpZNFJGTzFCb3VWY0R5....
 ; end auth token
 ```
 
