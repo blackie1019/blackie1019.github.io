@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use Package from Private NPM Regisry in TFS2017
+title: Using Package from Private NPM Regisry in TFS2017
 subtitle: ''
 author: Blackie
 header-img: ''
