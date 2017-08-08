@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Package from Private NuGet Registry in TFS2017
+title: Using Package from Private NuGet Server in TFS2017
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -14,7 +14,7 @@ sitemap: true
 date: 2017-08-03 21:08:41
 ---
 
-分享如何透過 TFS 建立 Private NuGet Registry 並將程式碼封裝後發佈給其他應用程式使用
+分享如何透過 TFS 建立 Private NuGet Server 並將程式碼封裝後發佈給其他應用程式使用
 
 <!-- More -->
 
@@ -61,7 +61,6 @@ date: 2017-08-03 21:08:41
 ![code_utility.png](code_utility.png)
 
 BlackieUtility.cs
-
 ```csharp
 namespace XY.Common.Library
 {
@@ -77,7 +76,7 @@ namespace XY.Common.Library
 
 當上面類別庫建立完成後，可以透過以下指令在該專案底下新增一個 NuGet 套件規格聲明檔(.nuspec):
 
-nuget.exe spec
+    nuget.exe spec
 
 ![cmd_spec](cmd_spec.png)
 
@@ -113,7 +112,7 @@ XY.Common.Library.nuspec
 
 當我們確定設定都正確可以透過以下指令執行 NuGet 打包 ：
 
-nuget.exe pack <my_package.nupkg>
+    nuget.exe pack <my_package.nupkg>
 
 ![cmd_pack](cmd_pack.png)
 
@@ -121,7 +120,7 @@ nuget.exe pack <my_package.nupkg>
 
 而當我們需要上傳時也可透過以下指令完成上傳：
 
-nuget.exe push -Source "XY-Common" -ApiKey VSTS <my_package.nupkg>
+    nuget.exe push -Source "XY-Common" -ApiKey VSTS <my_package.nupkg>
 
 ![cmd_push](cmd_push.png)
 
