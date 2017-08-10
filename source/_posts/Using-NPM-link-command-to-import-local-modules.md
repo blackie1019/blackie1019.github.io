@@ -8,6 +8,7 @@ categories:
   - CI&CD
 tags:
   - npm
+  - Dependency Management
   - Continuous Integration
 sitemap: true
 date: 2017-08-09 20:21:22

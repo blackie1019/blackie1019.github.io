@@ -8,6 +8,7 @@ categories:
   - CI&CD
 tags:
   - NuGet
+  - Dependency Management
   - Continuous Integration
   - TFS
 sitemap: true
