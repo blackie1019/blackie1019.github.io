@@ -20,7 +20,7 @@ date: 2017-08-08 17:20:49
 
 ![banner](banner.png)
 
-在安裝 JFrog Artifactory Pro 時會遇到服務註冊完沒有辦法啟動的問題
+先前介紹的[JFrog - Universal Artifact Repository Manager](http://blackie1019.github.io/2017/08/07/JFrog-Universal-Artifact-Repository-Manager/)在安裝 JFrog Artifactory Pro 時會遇到服務註冊完沒有辦法啟動的問題。
 
 這個問題主要是 JFrog Artifactory 製作服務檔案時使用的 Apache commons daemon 不相容所導致的
 
@@ -40,7 +40,7 @@ date: 2017-08-08 17:20:49
 
 5. 透過指令將服務啟動：
 
-    sc start Artifactory
+      sc start Artifactory
 
   這邊看到以下圖示代表服務正式啟動：
 

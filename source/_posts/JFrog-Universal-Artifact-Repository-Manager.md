@@ -17,7 +17,7 @@ date: 2017-08-07 13:54:38
 
 <!-- More -->
 
-![banner](banner.jpg)
+![banner](banner.png)
 
 這次要介紹的 JFrog Artifactory 是一個號稱全端相依管理與產出物管理工具(Universal Artifact Repository Manager)，能透過SaaS服務啟用也能透過自建主機的方式建置企業內部的產出管理儲存庫，將應用程式的開發與部屬的耦合性下降。
 
