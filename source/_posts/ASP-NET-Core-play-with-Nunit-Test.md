@@ -122,7 +122,7 @@ namespace App.Test
 [NUnit 3 Test Runner for .NET Core](https://github.com/nunit/dotnet-test-nunit)是一套
 
 
-*由於該套件還在alpha階段，如果在windows的環境使用Visaul Studio的Nuget Management的話記得要選擇show prereleases才能找到該套件。*
+*由於該套件還在alpha階段，如果在windows的環境使用Visaul Studio的NuGet Management的話記得要選擇show prereleases才能找到該套件。*
 
 # References #
 

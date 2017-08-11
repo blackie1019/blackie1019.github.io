@@ -53,7 +53,7 @@ date: 2017-08-03 21:08:41
 
 除了上述方法外也可以透過 [NuGet CLI](https://docs.microsoft.com/en-us/nuget/guides/install-nuget)協助我們完成環境設定與類別庫打包上傳等功能，接著我們就來實際開發一個類別庫上傳至　TFS　上作為套件供其他程式參考使用。
 
-### Create Nuget Project ###
+### Create NuGet Project ###
 
 完整的 CLI 指令可以參考 [NuGet CLI Command](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference)
 

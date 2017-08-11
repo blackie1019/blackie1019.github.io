@@ -48,9 +48,9 @@ tags:
 
 ![redislab](redislab.png)
 
-## Add StackExchange.Redis from Nuget Package Manager ##
+## Add StackExchange.Redis from NuGet Package Manager ##
 
-接著我們使用先前介紹的[Nuget Package Manager](ASP.NET Core using Nuget with Visual Studio Code)來幫我們載入StackExchange.Redis.
+接著我們使用先前介紹的[NuGet Package Manager](ASP.NET Core using NuGet with Visual Studio Code)來幫我們載入StackExchange.Redis.
 
 ## Setup up ConnectionMultiplexer and IDatabase ##
 

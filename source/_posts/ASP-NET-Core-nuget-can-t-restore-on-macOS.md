@@ -11,18 +11,18 @@ categories:
 tags: 
 - ASP.NET Core
 - .NET Core
-- Nuget
+- NuGet
 - macOS
 ---
 
-紀錄一下在macOS上遇到Nuget無法抓取還原的問題
+紀錄一下在macOS上遇到NuGet無法抓取還原的問題
 
 <!-- More -->
 
-之前在ASP.NET Core的開發都在Ｗindows環境，所以沒有遭遇Nuget還原或是dotnet cli有類似問題的情況．
+之前在ASP.NET Core的開發都在Ｗindows環境，所以沒有遭遇NuGet還原或是dotnet cli有類似問題的情況．
 今天在安裝.NET Core SPATemplate時發生錯誤，問題詳細的錯誤訊息如下：
 
-![Nuget_Exception](Nuget_Exception.png)
+![NuGet_Exception](NuGet_Exception.png)
 
 後來在爬了官方的討論後發現可能是安裝上面有少安裝套件或是必要更新．
 

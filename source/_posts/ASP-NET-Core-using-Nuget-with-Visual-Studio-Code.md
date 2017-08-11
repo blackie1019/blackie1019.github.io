@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core using Nuget with Visual Studio Code
+title: ASP.NET Core using NuGet with Visual Studio Code
 subtitle: ''
 author: Blackie
 header-img: ''
@@ -12,10 +12,10 @@ tags:
 - ASP.NET Core
 - .NET Core
 - VSCode
-- Nuget
+- NuGet
 ---
 
-整理如何在ASP.NET Core與Visual Studio Code中使用Nuget套件
+整理如何在ASP.NET Core與Visual Studio Code中使用NuGet套件
 
 <!-- More -->
 

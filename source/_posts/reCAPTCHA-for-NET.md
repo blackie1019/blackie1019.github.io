@@ -61,7 +61,7 @@ reCAPTCHA問題的所需的文字圖片，首先會由reCAPTCHA計畫網站利�
 
 ## reCAPTCHA for .NET ###
 
-[recaptcha-net](https://github.com/tanveery/recaptcha-net)，這是Nuget上面的一個專案可讓.Net 同時支援Google reCAPTCHA Version 1與Version 2。設定與使用都相當簡單
+[recaptcha-net](https://github.com/tanveery/recaptcha-net)，這是NuGet上面的一個專案可讓.Net 同時支援Google reCAPTCHA Version 1與Version 2。設定與使用都相當簡單
 
 ### Features ###
 
@@ -80,7 +80,7 @@ reCAPTCHA問題的所需的文字圖片，首先會由reCAPTCHA計畫網站利�
 
 ### Setup ###
 
-1. 安裝reCAPTCHA Nuget Package
+1. 安裝reCAPTCHA NuGet Package
 
         Install-Package RecaptchaNet
 

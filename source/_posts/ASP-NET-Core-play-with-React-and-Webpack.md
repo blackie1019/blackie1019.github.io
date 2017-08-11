@@ -161,7 +161,7 @@ namespace boilerplate_dotnetcore_mvc_react.ApiControllers
 
 #### Import Swashbuckle ####
 
-接著我們在透過 NuGet 加入 *Swashbuckle.AspNetCore* 套件並還原套件，對於 *NuGet* 的使用可以參考先前的[ASP.NET Core using Nuget with Visual Studio Code](https://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-Nuget-with-Visual-Studio-Code/)
+接著我們在透過 NuGet 加入 *Swashbuckle.AspNetCore* 套件並還原套件，對於 *NuGet* 的使用可以參考先前的[ASP.NET Core using NuGet with Visual Studio Code](https://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-NuGet-with-Visual-Studio-Code/)
 
 此時修改 Startup.cs 加入 ApiController 與 Swagger 的 Routing:
 

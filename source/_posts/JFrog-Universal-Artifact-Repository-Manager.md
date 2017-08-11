@@ -7,6 +7,7 @@ header-img: ''
 categories:
   - CI&CD
 tags:
+  - JFrog Artifactory
   - Dependency Management
   - Continuous Integration
 sitemap: true

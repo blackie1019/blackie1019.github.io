@@ -87,7 +87,7 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 - ASP.NET Core Middleware
 - ASP.NET Core Framework-Provided Services
 - ASP.NET Core IServiceCollection
-- [ASP.NET Core using Nuget with Visual Studio Code](https://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-Nuget-with-Visual-Studio-Code/)
+- [ASP.NET Core using NuGet with Visual Studio Code](https://blackie1019.github.io/2017/03/30/ASP-NET-Core-using-NuGet-with-Visual-Studio-Code/)
 - [ASP.NET Core play with MSTest](https://blackie1019.github.io/2017/04/05/ASP-NET-Core-play-with-MSTest/)
 - [ASP.NET Core Create New Project Template](http://blackie1019.github.io/2017/04/27/ASP-NET-Core-Create-New-Project-Template/)
 

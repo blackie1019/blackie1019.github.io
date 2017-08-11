@@ -26,7 +26,7 @@ tags:
 
 這邊的專案拆分好處是我們可以分離不同的開發(關注點分離)並隔離彼此的影響．
 
-而我們就可以透過.sln的檔案幫我們一次管理多個csharproj檔案，如執行Nuget還原或是多個專案建置等動作．
+而我們就可以透過.sln的檔案幫我們一次管理多個csharproj檔案，如執行NuGet還原或是多個專案建置等動作．
 
 # Hands On with .sln #
 
@@ -63,6 +63,6 @@ tags:
 
 ![add_csharproj](add_csharproj.png)
 
-接著我們再次執行還原就可以看到Nuget成功地幫兩個專案都進行還原了
+接著我們再次執行還原就可以看到NuGet成功地幫兩個專案都進行還原了
 
 ![sln_restore](sln_restore.png)
