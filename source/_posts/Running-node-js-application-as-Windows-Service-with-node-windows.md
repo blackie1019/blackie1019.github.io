@@ -13,8 +13,6 @@ sitemap: true
 date: 2017-08-12 10:51:51
 ---
 
-<!-- More -->
-
 介紹如何透過 node-windows 幫我們建立 node.js 的 daemon 程式在 winodws 環境中背景執行。
 
 <!-- More -->
