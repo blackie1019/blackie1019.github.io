@@ -48,7 +48,7 @@ Jenkins 在現在程式開發裡面已經是不可或缺的 CI 工具，幫我�
 
 ## Jenkins Material Theme ##
 
-![jenkins-material-theme](http://afonsof.com/jenkins-material-theme/)的官方說明可以一步步的製作客製化的主題或是你要直接使用現有的主題。
+[jenkins-material-theme](http://afonsof.com/jenkins-material-theme/)的官方說明可以一步步的製作客製化的主題或是你要直接使用現有的主題。
 
 ![jenkin_material_theme](jenkin_material_theme.png)
 
