@@ -15,8 +15,6 @@ sitemap: true
 date: 2017-08-15 00:01:08
 ---
 
-<!-- More -->
-
 介紹如何使用 JFrog Artifactory 建立 private NuGet server
 
 <!-- More -->
