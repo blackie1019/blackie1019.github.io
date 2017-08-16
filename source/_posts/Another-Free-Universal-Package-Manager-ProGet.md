@@ -39,6 +39,7 @@ date: 2017-08-16 00:01:44
 - Universal (Application/Platform)
 
 ProGet 也有 *SaaS* 版，有興趣的可以參考[ProGet-SaaS](http://inedo.com/proget/pricing/saas-request)，功能整理如下:
+
 | Features                     | Free | Basic | Load Balanced-Only | Enterprise(High Availability) | 
 |------------------------------|------|-------|--------------------|-------------------------------| 
 | Unlimited Users              | ✔    | ✔     | ✔                  | ✔                             | 
