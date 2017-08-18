@@ -11,6 +11,7 @@ tags:
   - Dependency Management
   - Continuous Integration
   - TFS
+  - Artifacts Management
 sitemap: true
 date: 2017-08-03 21:08:41
 ---

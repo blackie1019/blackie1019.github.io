@@ -10,6 +10,7 @@ tags:
   - JFrog Artifactory
   - Dependency Management
   - Continuous Integration
+  - Artifacts Management
 sitemap: true
 date: 2017-08-07 13:54:38
 ---

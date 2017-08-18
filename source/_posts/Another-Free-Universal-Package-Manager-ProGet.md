@@ -13,6 +13,7 @@ tags:
   - NuGet
   - npm
   - Maven
+  - Artifacts Management
 sitemap: true
 date: 2017-08-16 00:01:44
 ---
@@ -125,8 +126,8 @@ ProGet 也有 *SaaS* 版，有興趣的可以參考[ProGet-SaaS](http://inedo.co
 
     npm adduser
 
-接著輸入帳號與密碼(如果是輸入預設帳號可以直接輸入小寫*admin*但輸入密碼時一定要相同的大小寫，及**Admin**)
-
+接著輸入帳號與密碼，如果是輸入預設帳號可以直接輸入小寫*admin*但輸入密碼時一定要相同的大小寫，即 **Admin** (<= 感謝 Larry 哥友善提醒錯字更正!)
+ 
 ![cmd_npm_adduser](cmd_npm_adduser.png)
 
 完成環境設定後，一樣到該 *npm package* 目錄下執行:
