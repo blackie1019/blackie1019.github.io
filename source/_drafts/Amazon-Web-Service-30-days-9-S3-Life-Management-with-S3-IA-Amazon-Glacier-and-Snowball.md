@@ -1,8 +1,6 @@
 ---
 layout: post
-title: >-
-  Amazon Web Service 30 days - 9 : S3 Life Management with S3 IA, Amazon
-  Glacier and Snowball
+title: 'Amazon Web Service 30 days - 9 : S3 Life Management with S3 IA, Amazon Glacier and Snowball'
 subtitle: ''
 author: Blackie
 header-img: ''

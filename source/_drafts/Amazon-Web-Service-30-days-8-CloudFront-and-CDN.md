@@ -18,7 +18,7 @@ tags:
 
 ## What is CDN ##
 
-CDN指的是一種Content delivery network或Content distribution network的簡稱。
+CDN 指的是 Content delivery network 或 Content distribution network 的簡稱。
 
 透過此技術可以將網站上的靜態內容（如.html文件、.jpg或.png圖片與css檔案等）和動態內容（例如數據庫查詢）緩存到CDN提供商位於全球各地的多個伺服器節點上面，可以有效的降低網路延遲(latency)對於網站所帶來的效能影響。
 
