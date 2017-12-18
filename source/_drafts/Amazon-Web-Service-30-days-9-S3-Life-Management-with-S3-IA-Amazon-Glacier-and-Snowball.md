@@ -1,7 +1,7 @@
 ---
 layout: post
 title: >-
-  Amazon Web Service 30 days - Day 9 : S3 Life Management with S3 IA, Amazon
+  Amazon Web Service 30 days - 9 : S3 Life Management with S3 IA, Amazon
   Glacier and Snowball
 subtitle: ''
 author: Blackie
