@@ -52,6 +52,14 @@ tags:
 
 ![lab_8.png](lab_8.png)
 
+而我們也可以開啟 Server access logging，就像是網頁伺服器紀錄 request 紀錄的功能一樣將其記錄存放至同一個資料槽內：
+
+![lab_11.png](lab_11.png)
+
+![lab_10.png](lab_10.png)
+
+![lab_9.png](lab_9.png)
+
 ## 置換網站 Domain 至特定 Domain ##
 
 如果想知道怎麼把 S3 的 Domain 換成自己的，可以參考這部影片(透過 [GoDaddy](https://tw.godaddy.com/) 購買 Domain)
