@@ -102,4 +102,5 @@ EBS 只能提供給一個 EC2 Instance 安裝，如果有跨多個 EC2 Instance 
 
 ## References ##
 
+- [Amazon EBS 產品詳細資訊](https://aws.amazon.com/tw/ebs/details/)
 - [The disk is offline because of policy set by an administrator](https://www.youtube.com/watch?v=P2BOuxcccRM)
