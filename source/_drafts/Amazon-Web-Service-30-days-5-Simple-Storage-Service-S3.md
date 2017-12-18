@@ -12,7 +12,7 @@ tags:
 - AWS
 ---
 
-30天鐵人賽介紹 AWS 雲端世界 - 5: 物件檔案儲存服務 - Simple Storage Service (S3)。
+30天鐵人賽介紹 AWS 雲端世界 - 5: 物件檔案儲存服務 - Simple Storage Service (S3)
 
 <!-- More -->
 

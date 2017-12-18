@@ -16,7 +16,7 @@ tags:
 
 <!-- More -->
 
-金天我們首先會介紹一下 S3 IA, Glacier 如何搭配 S3 Standard 進行檔案生命週期的管理
+今天我們首先會介紹一下 S3 IA, Glacier 如何搭配 S3 Standard 進行檔案生命週期的管理
 
 而當我們提到資料如何被儲存與存放的生命週期，當然也要提及如果現有資料怎麼被移送至雲端上面，所以也會同時介紹到 Storage GateWay 與 Snowball 這兩項服務。
 

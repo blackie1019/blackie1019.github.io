@@ -12,7 +12,7 @@ tags:
 - AWS
 ---
 
-30天鐵人賽介紹 AWS 雲端世界 - 3: 雲端服務上的Global, Region, Available Zone 與Edge 介紹。
+30天鐵人賽介紹 AWS 雲端世界 - 3: 雲端服務上的Global, Region, Available Zone 與Edge 介紹
 
 <!-- More -->
 
