@@ -132,6 +132,34 @@ AWS 目前有提供 JSON 格式發佈當前的 IP 範圍，可以下載 [ip-rang
 
 ![lab_6.png](lab_6.png)
 
+![lab_7.png](lab_7.png)
+
+等部屬完成後可以看到他配發的 CDN Domain:
+
+![lab_8.png](lab_8.png)
+
+![lab_9.png](lab_9.png)
+
+然後我們回到原本的 S3 Bucket 取用其中一個檔案的公開連結：
+
+![lab_10.png](lab_10.png)
+
+![lab_11.png](lab_11.png)
+
+接著將連結中的 domain 與 bucket 名稱置換成 CDN 的 Domain 就可以成功的看到 Cloudfront 所提供的檔案內容：
+
+![lab_12.png](lab_12.png)
+
+最後，我們可以嘗試將原先的 S3 bucket 中的 *Public Read* 權限關閉，可以看到原始檔案已經無法取用了：
+
+![lab_13.png](lab_13.png)
+
+![lab_14.png](lab_14.png)
+
+而此時，我們切回去Cloudfront 所提供的檔案連結，則還是可以成功的讀取到該檔案，透過此方法我們可以有效的管理來源端的資料權限，提升安全性：
+
+![lab_15.png](lab_15.png)
+
 ## References ##
 
 - [Amazon CloudFront](https://aws.amazon.com/tw/cloudfront/)
