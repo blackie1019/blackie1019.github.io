@@ -173,4 +173,3 @@ Elastic Load Balancing(ELB)是提供 EC2 或是後面會介紹到的　可在多
 
 - [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/?nc1=h_ls)
 - [An Introduction to HAProxy and Load Balancing Concepts](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts)
-- []()
