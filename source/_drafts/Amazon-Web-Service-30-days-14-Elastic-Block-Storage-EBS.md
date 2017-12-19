@@ -16,6 +16,8 @@ tags:
 
 <!-- More -->
 
+## What is Elastic Block Storage ##
+
 Elastic Block Storage(EBS)可在 AWS 服務中提供用於 EC2 執行個體的永久性磁碟區，也就是我們熟知的實體硬碟概念。而 EBS 儲存在你所選擇的 AZ 當中，無法直接跨 AZ 使用。
 
 EBS 只能提供給一個 EC2 Instance 安裝，如果有跨多個 EC2 Instance 分享磁碟的需求則要參考 [Amazon EFS](https://aws.amazon.com/tw/efs/) 而這個我們也會在後面日子重新介紹。
