@@ -1,15 +1,17 @@
 ---
 layout: post
-title: 'Amazon Web Service 30 days - 3: Cloud host on Global, Region, Available Zone and Edge'
+title: >-
+  Amazon Web Service 30 days - 3: Cloud host on Global, Region, Available Zone
+  and Edge
 subtitle: ''
 author: Blackie
 header-img: ''
-sitemap: true
-date: 2017-12-22 08:20:19
 categories:
-- Cloud
+  - Cloud
 tags:
-- AWS
+  - AWS
+sitemap: true
+date: 2017-12-22 00:10:19
 ---
 
 30天鐵人賽介紹 AWS 雲端世界 - 3: 雲端服務上的Global, Region, Available Zone 與Edge 介紹
