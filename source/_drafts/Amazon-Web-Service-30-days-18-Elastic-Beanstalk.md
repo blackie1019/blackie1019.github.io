@@ -82,9 +82,7 @@ Elastic Beanstalk 是提供一個在 AWS 裡面簡單管理、部署 Web 應用�
 ## References ##
 
 - [AWS Elastic Beanstalk - Running Microservices and Docker](https://www.slideshare.net/AmazonWebServices/aws-elastic-beanstalk-running-microservices-and-docker)
-https://aws.amazon.com/documentation/elastic-beanstalk/
 - [什么是 AWS Elastic Beanstalk？](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
 - [AWS Elastic Beanstalk - FAQs](https://aws.amazon.com/elasticbeanstalk/faqs/)
-- [Single Container Docker Configuration]
-(http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_image.html)
+- [Single Container Docker Configuration](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_image.html)
 - [Single Container Docker Environments](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-singlecontainer-deploy.html#docker-singlecontainer-dockerfilesample)
