@@ -4,12 +4,12 @@ title: 'Amazon Web Service 30 days - 2: AWS Account Registration'
 subtitle: ''
 author: Blackie
 header-img: ''
-sitemap: true
-date: 2017-12-13 11:18:19
 categories:
-- Cloud
+  - Cloud
 tags:
-- AWS
+  - AWS
+sitemap: true
+date: 2017-12-21 11:18:19
 ---
 
 30天鐵人賽介紹 AWS 雲端世界 - 2: 申請與開通 AWS 帳號
