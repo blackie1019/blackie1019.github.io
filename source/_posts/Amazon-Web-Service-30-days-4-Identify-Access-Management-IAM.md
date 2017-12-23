@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 4 : Identify Access Management(IAM)'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2017-12-23 00:10:18
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 4: AWS 服務和資源的帳戶權限掌控者 - Identify Access Management(IAM)
 

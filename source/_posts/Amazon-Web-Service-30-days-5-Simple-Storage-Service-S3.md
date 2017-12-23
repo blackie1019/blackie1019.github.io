@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 5 : Simple Storage Service (S3)'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2017-12-24 00:28:54
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 5: 物件檔案儲存服務 - Simple Storage Service (S3)
 

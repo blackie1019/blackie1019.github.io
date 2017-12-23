@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 6 : S3 and Cross Region Replication'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2017-12-25 00:24:16
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 6:　建立跨區域的S3 Bucket
 

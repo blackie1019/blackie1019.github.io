@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 11 : AWS Certificate Manager and SSL'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2017-12-30 00:10:45
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 11:　透過 AWS Certificate Manager 管理 SSL 並讓架設的靜態網頁支援 HTTPS
 

@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 10 : Static Web Site Hosting on S3'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2017-12-29 00:25:28
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 10:　透過 S3 架設靜態網頁
 

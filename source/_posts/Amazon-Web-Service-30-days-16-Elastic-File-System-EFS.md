@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 16 : Elastic File System(EFS)'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2018-01-04 00:03:16
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 16:　EC2的共用檔案儲存服務 Elastic File System(EFS)
 

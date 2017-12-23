@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 18 : Elastic Beanstalk'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2018-01-06 00:03:18
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 18:　讓程式開發人員能更專注開發的上線環境 Elastic Beanstalk
 

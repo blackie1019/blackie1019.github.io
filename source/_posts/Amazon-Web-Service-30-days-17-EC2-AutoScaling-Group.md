@@ -4,13 +4,15 @@ title: 'Amazon Web Service 30 days - 17 : EC2 AutoScaling Group'
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2018-01-05 00:05:33
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 17:　透過 EC2 AutoScaling Group 實現自動拓展功能
 

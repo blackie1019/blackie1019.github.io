@@ -1,16 +1,20 @@
 ---
 layout: post
-title: 'Amazon Web Service 30 days - 9 : S3 Life Management with S3 IA, Amazon Glacier and Snowball'
+title: >-
+  Amazon Web Service 30 days - 9 : S3 Life Management with S3 IA, Amazon Glacier
+  and Snowball
 subtitle: ''
 author: Blackie
 header-img: ''
+categories:
+  - Cloud
+tags:
+  - AWS
 sitemap: true
 date: 2017-12-28 00:48:59
-categories:
-- Cloud
-tags:
-- AWS
 ---
+
+<!-- More -->
 
 30天鐵人賽介紹 AWS 雲端世界 - 9:　S3 的檔案生命週期管理之 S3 IA, Glacier 與 Snowball 服務
 
