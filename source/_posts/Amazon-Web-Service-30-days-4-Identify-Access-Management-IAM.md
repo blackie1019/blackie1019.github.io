@@ -198,5 +198,5 @@ Identify Access Management(IAM)，是 AWS 用來提供各種 AWS 旗下服務權
 ## References ##
 
 - [AWS Identity and Access Management](http://docs.aws.amazon.com/IAM/latest/UserGuide/id.html)
-- [](https://doc.ez.no/layout/set/print/eZ-Publish/User-manual/4.3/The-administration-interface/The-User-accounts-tab)
+- [The "User accounts" tab](https://doc.ez.no/layout/set/print/eZ-Publish/User-manual/4.3/The-administration-interface/The-User-accounts-tab)
 - [AWS Certification: IAM Essentials and Concepts Cheat Sheet](https://scriptcrunch.com/aws-certification-iam-essentials-cheat-sheet/)
