@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'Amazon Web Service 30 days - 7 : AWS CLI Tool'
+title: 'Amazon Web Service 30 days - 7: AWS CLI Tool'
 subtitle: ''
 author: Blackie
 header-img: ''
-categories:
-  - Cloud
-tags:
-  - AWS
 sitemap: true
 date: 2017-12-26 00:14:50
+categories:
+- Cloud
+tags:
+- AWS
 ---
 
 30天鐵人賽介紹 AWS 雲端世界 - 7:　AWS CLI Tool

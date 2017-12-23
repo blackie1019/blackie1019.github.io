@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-05 00:05:33
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 17:　透過 EC2 AutoScaling Group 實現自動拓展功能
 
 <!-- More -->

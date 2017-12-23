@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-06 00:03:18
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 18:　讓程式開發人員能更專注開發的上線環境 Elastic Beanstalk
 
 <!-- More -->

@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-02 00:10:47
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 14:　EC2的實體硬碟服務 Elastic Block Storage(EBS)
 
 <!-- More -->

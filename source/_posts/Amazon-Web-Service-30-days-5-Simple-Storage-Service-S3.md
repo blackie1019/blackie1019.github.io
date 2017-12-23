@@ -12,8 +12,6 @@ sitemap: true
 date: 2017-12-24 00:28:54
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 5: 物件檔案儲存服務 - Simple Storage Service (S3)
 
 <!-- More -->

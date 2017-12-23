@@ -12,8 +12,6 @@ sitemap: true
 date: 2017-12-25 00:24:16
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 6:　建立跨區域的S3 Bucket
 
 <!-- More -->

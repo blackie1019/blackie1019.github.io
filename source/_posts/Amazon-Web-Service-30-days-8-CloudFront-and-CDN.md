@@ -12,8 +12,6 @@ sitemap: true
 date: 2017-12-27 00:30:11
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 8:　CloudFront 與 建立檔案 CDN 服務
 
 <!-- More -->

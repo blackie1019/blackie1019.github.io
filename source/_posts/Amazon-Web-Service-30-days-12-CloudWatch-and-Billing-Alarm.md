@@ -12,8 +12,6 @@ sitemap: true
 date: 2017-12-31 00:08:21
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 12:　透過 AWS CloudWatch 啟用帳戶當前使用預算通知
 
 <!-- More -->

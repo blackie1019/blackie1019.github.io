@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-01 00:10:43
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 13:　使用 Elastic Compute Cloud(EC2) 達到 AWS 上啟用 VM 服務
 
 <!-- More -->

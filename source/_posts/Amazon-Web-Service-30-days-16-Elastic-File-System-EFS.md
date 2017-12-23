@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-04 00:03:16
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 16:　EC2的共用檔案儲存服務 Elastic File System(EFS)
 
 <!-- More -->

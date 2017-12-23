@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-03 00:02:29
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 15:　EC2的網路負載平衡服務 Elastic Load Balancing(ELB)
 
 <!-- More -->
