@@ -4,12 +4,12 @@ title: 'Amazon Web Service 30 days - 20 : API Gateway'
 subtitle: ''
 author: Blackie
 header-img: ''
-sitemap: true
-date: 2018-01-07 00:09:40
 categories:
-- Cloud
+  - Cloud
 tags:
-- AWS
+  - AWS
+sitemap: true
+date: 2018-01-08 00:09:40
 ---
 
 30天鐵人賽介紹 AWS 雲端世界 - 20:　Lambda 搭配 API Gateway，實現 Serverless 架構可以被外部呼叫觸發
