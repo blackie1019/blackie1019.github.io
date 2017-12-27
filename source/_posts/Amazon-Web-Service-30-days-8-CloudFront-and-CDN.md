@@ -73,7 +73,7 @@ Amazon CloudFront 是提供 CDN 功能的服務，而他也不僅僅是靜態資
 
 ![how-you-configure-cf](how-you-configure-cf.png)
 
-![how-cloudfront-delivers-content](hhow-cloudfront-delivers-content.png)
+![how-cloudfront-delivers-content](how-cloudfront-delivers-content.png)
 
 而我們能透過 Distributions 來提供 Web 與 RTMP Distributions 兩項功能：
 
@@ -98,7 +98,7 @@ AWS 目前有提供 JSON 格式發佈當前的 IP 範圍，可以下載 [ip-rang
 ### 其他介紹 ###
 
 網路上可以找到很多AWS CDN的應用介紹，這邊看到這篇介紹的蠻詳細的，有興趣花點時間了解的可以參考這邊完整的針對 CloudFront 與 CDN　服務的應用的介紹(雖然偏向銷售但對全面瞭解是蠻好的)，
-![AWS CDN 內容傳遞網路](https://www.youtube.com/watch?v=0bD8zNc6kuk)。
+[AWS CDN 內容傳遞網路](https://www.youtube.com/watch?v=0bD8zNc6kuk)。
 
 ## Hands on Lab ##
 
