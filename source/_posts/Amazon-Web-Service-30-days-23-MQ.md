@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-11 00:04:26
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 23:　適用於 Apache ActiveMQ 的訊息代理服務 MQ
 
 <!-- More -->
