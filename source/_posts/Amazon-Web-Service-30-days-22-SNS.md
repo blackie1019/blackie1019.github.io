@@ -90,7 +90,7 @@ SNS 與 SQS 相同也有雷同訊息重寄的設定，而發佈端跟訂閱端�
 
 ## Hands on Lab ##
 
-首先先登入 [AWS Console] 後在中間的輸入框查詢 Simple Queue Service ，或是透過左上角的 Services 點選到　Application Integration　下的 Simple Notification Service 服務：
+首先先登入 [AWS Console] 後在中間的輸入框查詢 Simple Notification Service ，或是透過左上角的 Services 點選到　Application Integration　下的 Simple Notification Service 服務：
 
 ![lab_01.png](lab_01.png)
 

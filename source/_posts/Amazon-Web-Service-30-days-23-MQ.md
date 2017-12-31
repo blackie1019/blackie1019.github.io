@@ -85,7 +85,7 @@ ActiveMQ是一種開源的，實現了JMS1.1規範的，面向消息(MOM)的中�
 
 ### Create MQ Broker ###
 
-首先先登入 [AWS Console] 後在中間的輸入框查詢 Simple Queue Service ，或是透過左上角的 Services 點選到　Application Integration　下的 Amazon MQ 服務：
+首先先登入 [AWS Console] 後在中間的輸入框查詢 ActiveMQ ，或是透過左上角的 Services 點選到　Application Integration　下的 Amazon MQ 服務：
 
 ![lab_01.png](lab_01.png)
 
