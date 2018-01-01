@@ -20,7 +20,7 @@ date: 2018-01-13 00:04:26
 
 RDBMS 類型 : Amazon RDS
 NoSQL key-value 類型 : Amazon DynamoDB
-NoSQL Cache 類型 : Amazon Elasticache
+NoSQL Cache 類型 : Amazon ElastiCache
 Data Warehouse 類型 : Amazon Redshift
 
 首先先介紹 RDS 服務。

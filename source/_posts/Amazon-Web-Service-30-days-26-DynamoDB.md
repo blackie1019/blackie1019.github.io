@@ -47,11 +47,11 @@ DynamoDB 是取代之前的 SimpleDB；其設計概念為 Scalable (能應付極
 
 ## Hands on Lab ##
 
-我們就一樣透過實際  nodejs 實作整合 RDS 服務並透過 aws-sdk 協助我們做開發。
+我們就一樣透過實際  nodejs 實作整合 DynamoDB 服務並透過 aws-sdk 協助我們做開發。
 
 ### Create RDS Instance ###
 
-首先先登入 [AWS Console] 後在中間的輸入框查詢 RDS ，或是透過左上角的 Services 點選到　Database　下的 Amazon RDS 服務：
+首先先登入 [AWS Console] 後在中間的輸入框查詢 DynamoDB ，或是透過左上角的 Services 點選到　Database　下的 Amazon DynamoDB 服務：
 
 ![lab_01.png](lab_01.png)
 
