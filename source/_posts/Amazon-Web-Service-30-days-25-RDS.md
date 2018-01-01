@@ -19,8 +19,8 @@ date: 2018-01-13 00:04:26
 接著要開始介紹　AWS 資料服務，當前　AWS　上有四種目前主流的資料庫類型：
 
 RDBMS 類型 : Amazon RDS
-NoSQL-文件類型 : Amazon DynamoDB
-NoSQL-快取類型 : Amazon Elasticache
+NoSQL key-value 類型 : Amazon DynamoDB
+NoSQL Cache 類型 : Amazon Elasticache
 Data Warehouse 類型 : Amazon Redshift
 
 首先先介紹 RDS 服務。
