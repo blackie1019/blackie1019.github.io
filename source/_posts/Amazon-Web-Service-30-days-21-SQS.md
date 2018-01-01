@@ -217,6 +217,8 @@ sqs.receiveMessage(params, function(err, data) {
 
 明天就會各位介紹如何 SNS 這項服務並透過 SNS + SQS 來達成基層的訊息架構。就讓我們繼續看下去吧～
 
+以上範例原始碼請至[AWS SQS sample code](https://github.com/blackie1019/aws-sqs-example)
+
 ## References ##
 
 - [Amazon Simple Queue Service (SQS)](https://aws.amazon.com/tw/sqs/)

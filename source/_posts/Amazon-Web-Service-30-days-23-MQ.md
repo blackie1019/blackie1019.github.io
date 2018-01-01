@@ -79,7 +79,7 @@ ActiveMQ是一種開源的，實現了JMS1.1規範的，面向消息(MOM)的中�
 
 接下來我們也會以 *MQTT* 為例示範如何使用 MQ 來幫我們傳送與接受訊息。
 
-## Hands on lab ##
+## Hands on Lab ##
 
 ![mqtt-communications-diagram.png](mqtt-communications-diagram.png)
 

@@ -287,6 +287,8 @@ sns.publish(
 
 ![lab_19.png](lab_19.png)
 
+以上範例原始碼請至[AWS SNS sample code](https://github.com/blackie1019/aws-sns-example)
+
 ## References ##
 
 - [Amazon Simple Notification Service (SNS)](https://aws.amazon.com/tw/sns/)

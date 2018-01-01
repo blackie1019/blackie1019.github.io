@@ -28,7 +28,7 @@ AWS Cognito 可以快速輕鬆地將使用者註冊/登入和存取控制新增�
 
 所以透過 AWS Cognito 我們就可以快速的實作登入服務並取得授權的資料摟，接下來我們就來實做一下吧。
 
-## Hands on lab ##
+## Hands on Lab ##
 
 首先先登入 [AWS Console] 後在中間的輸入框查詢 Cognito ，或是透過左上角的 Services 點選到　Security, Identity & Compliance　下的 Amazon Cognito 服務：
 
