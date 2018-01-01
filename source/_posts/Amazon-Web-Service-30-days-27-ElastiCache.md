@@ -159,6 +159,8 @@ client.hkeys("hash key", function (err, replies) {
 
 ![lab_13.png](lab_13.png)
 
+程式碼範例：[https://github.com/blackie1019/aws-elasticache-example](https://github.com/blackie1019/aws-elasticache-example)
+
 ## References ##
 
 - [Amazon ElastiCache](https://aws.amazon.com/tw/elasticache/?nc1=h_ls)
