@@ -85,8 +85,8 @@ DynamoDB 是取代之前的 SimpleDB；其設計概念為 Scalable (能應付極
 
 接下來就用 node.js 來介接剛剛建立的資料實體，這邊需要透過 aws-sdk 這個套件作為 client 的 SDK:
 
-  npm install aws-sdk --save
-  npm install fs --save
+    npm install aws-sdk --save
+    npm install fs --save
 
 接著建立以下檔案建立資料表:
 

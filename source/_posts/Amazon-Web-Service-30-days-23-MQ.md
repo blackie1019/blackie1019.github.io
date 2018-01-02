@@ -41,33 +41,33 @@ ActiveMQ是一種開源的，實現了JMS1.1規範的，面向消息(MOM)的中�
 
 - JMS
 
-  Java 所提供的應用層標準訊息佇列協議
+    Java 所提供的應用層標準訊息佇列協議
 
 - NMS
 
-  .NET 所提供的應用層標準訊息佇列協議
+    .NET 所提供的應用層標準訊息佇列協議
 
 - AMQP
   
-  一個提供統一消息服務的應用層標準訊息佇列協議,是應用層協議的一個開放標準,為面向消息的中間件設計。基於此協議的客戶端與消息中間件可傳遞消息，並不受客戶端/中間件不同產品，不同開發語言等條件的限制。
+    一個提供統一消息服務的應用層標準訊息佇列協議,是應用層協議的一個開放標準,為面向消息的中間件設計。基於此協議的客戶端與消息中間件可傳遞消息，並不受客戶端/中間件不同產品，不同開發語言等條件的限制。
 
-  優點：可靠、通用
+    優點：可靠、通用
 
   ![AMQP.png](AMQP.png)
 
 - MQTT
 
-  優點: 優點：格式簡潔、佔用網路頻寬小、適合移動端通信、推播(PUSH)、嵌入式系統
+    優點: 優點：格式簡潔、佔用網路頻寬小、適合移動端通信、推播(PUSH)、嵌入式系統
 
 - STOMP
 
-  是一種為MOM(Message Oriented Middleware，面向消息的中間件)設計的簡單文本協議。 STOMP提供一個可互操作的連接格式，允許客戶端與任意STOMP消息代理（Broker）進行交互。
+    是一種為MOM(Message Oriented Middleware，面向消息的中間件)設計的簡單文本協議。 STOMP提供一個可互操作的連接格式，允許客戶端與任意STOMP消息代理（Broker）進行交互。
 
-  優點：命令模式（非topic\queue模式）
+    優點：命令模式（非topic\queue模式）
 
 - WebSocket
 
-  優點: 單純、簡單
+    優點: 單純、簡單
 
 而費用上 *Free Tier* 每月使用單可用Micro Instance 等級的實體(Instance)達 750 小時，並且每月可存儲 1 GB 的數據流量。
 
@@ -125,7 +125,7 @@ ActiveMQ是一種開源的，實現了JMS1.1規範的，面向消息(MOM)的中�
 
 這邊我們將用到 [MQTT.js](https://www.npmjs.com/package/mqtt) 這個套件，MQTT.js支援在命令行（終端機）中直接輸入命令，藉以發佈與接收 MQTT 主題。若要使用命令行模式，請用全域（global）方式安裝MQTT.js：
 
-  npm install mqtt -g
+    npm install mqtt -g
 
 接著我們建立以下兩個檔案並將 AWS MQ 中的 MQTT 設定放入，更這邊注意官方給的 mqtt+ssl 需要改成 *mqtts* ，並且建立連線時填入 *protocolId* 設定為 **MQIsdp**與 *protocolVersion* 設定為 **3** 才可以成功建立連線:
 
@@ -174,7 +174,7 @@ setTimeout(function() {
 
 上述檔案建立完後即可運行:
 
-  node subscriber.js
+    node subscriber.js
 
 接者我們在另外一個檔案建立消費端:
 
@@ -227,7 +227,7 @@ client.on("message", function(topic, message) {
 
 安裝修改好後，我們可以來運行測試一下發佈則訊息至 AWS MQ 上並啟用消費端的程式接收訊息，這邊要麻煩開兩個 CLI 執行:
 
-  node publisher.js
+    node publisher.js
 
 ![lab_12.png](lab_12.png)
 

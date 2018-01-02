@@ -102,7 +102,7 @@ RDS 的費用部分與 EC2 類似，會根據區域、系統、CPU、Memory、�
 
 首先安裝 *mysql* 提供給 js 的 client SDK: 
 
-  npm install mysql --save
+    npm install mysql --save
 
 接著新增起始文件並寫入以下內容：
 

@@ -88,18 +88,18 @@ AWS CodeCommit 是一種雲端私有 git 服務，可讓公司輕鬆地託私有
 
 首先我們在已經建立好的 Cloud9 環境的 Bash 控制畫面輸入以下指令確認 git 環境:
 
-  git --version
+    git --version
 
 接下來執行以下設定將環境準備好:
 
-  git config --global user.name "<name>"
-  git config --global user.email "<email>"
-  git config --global credential.helper '!aws codecommit credential-helper $@'
-  git config --global credential.UseHttpPath true
+    git config --global user.name "<name>"
+    git config --global user.email "<email>"
+    git config --global credential.helper '!aws codecommit credential-helper $@'
+    git config --global credential.UseHttpPath true
 
 設定好後可以看到下面的結果:
 
-  git config -l
+    git config -l
 
 ![lab_codecommit_05.png](lab_codecommit_05.png)
 

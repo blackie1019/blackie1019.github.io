@@ -63,15 +63,15 @@ EKS 服務可以省去安裝以及操作自己的 Kubernetes 叢集的時間，�
 
 接著先確定本機器環境可以執行與運作 .NET Core，並透過以下指令建立一個新的專案
 
-  mkdir webapp
-  cd webapp
-  dotnet new reactredux
+    mkdir webapp
+    cd webapp
+    dotnet new reactredux
 
 建立好後即可透過以下指令還原套件運行看網站內容：
 
-  dotnet restore
-  npm install
-  dotnet run
+    dotnet restore
+    npm install
+    dotnet run
 
 ![lab_code_01.png](lab_code_01.png)
 
@@ -79,7 +79,7 @@ EKS 服務可以省去安裝以及操作自己的 Kubernetes 叢集的時間，�
 
 完成後我們即可以透過發佈指令將檔案發佈至 *app* 資料夾內：
 
-  dotnet publish --output D:/2.Repo/aws-ecs-example/webapp/app/ --configuration Release
+    dotnet publish --output D:/2.Repo/aws-ecs-example/webapp/app/ --configuration Release
 
 將檔案準備好後，在至 *webapp* 資料夾內新增　*Dockerfile*(抓取 docker container　的映像檔案，參考官方[microsoft/aspnetcore-build](https://hub.docker.com/r/microsoft/aspnetcore-build/)當前最新版 *microsoft/dotnet:2.0.4-sdk-2.1.3-stretch*) ：
 
@@ -102,24 +102,24 @@ ENTRYPOINT ["dotnet", "webapp.dll"]
 然後再添加 *.dockerignore* 檔案:
 
   # Sample contents of .dockerignore file
-  bin/
-  obj/
-  node_modules/
+    bin/
+    obj/
+    node_modules/
 
 接著我們在 webapp 路徑下執行指令建置本機 docker image 檔案，並將其給予標記 ：
  
-  docker build -t ironman .
-  docker tag ironman:latest 728812454107.dkr.ecr.ap-northeast-1.amazonaws.com/ironman:latest
+    docker build -t ironman .
+    docker tag ironman:latest 728812454107.dkr.ecr.ap-northeast-1.amazonaws.com/ironman:latest
 
 ![lab_code_03.png](lab_code_03.png)
 
 照這邊我們已經將 docker image 準備好了，我們可以透過下面指令在本機運行(跑daemon）：
 
-  docker run -d -p 80:80 -t ironman
+    docker run -d -p 80:80 -t ironman
 
 或是直接運行偵錯都可：
 
-  docker run -it -p 80:80 ironman
+    docker run -it -p 80:80 ironman
 
 ![lab_code_04.png](lab_code_04.png)
 
@@ -143,13 +143,13 @@ ENTRYPOINT ["dotnet", "webapp.dll"]
 
 接著我們回到 bash 指令環境，透過 aws-cli 登入 ecs，這邊要注意要透過以下指令才可以成功登入：
 
-  $(aws ecr get-login --no-include-email --region ap-northeast-1)
+    $(aws ecr get-login --no-include-email --region ap-northeast-1)
 
 ![lab_code_07.png](lab_code_07.png)
 
 將建置好的 docker image 上傳至 ECS 內的 repo 當中：
 
-  docker push 728812454107.dkr.ecr.ap-northeast-1.amazonaws.com/ironman:latest
+    docker push 728812454107.dkr.ecr.ap-northeast-1.amazonaws.com/ironman:latest
 
 ![lab_code_08.png](lab_code_08.png)
 
