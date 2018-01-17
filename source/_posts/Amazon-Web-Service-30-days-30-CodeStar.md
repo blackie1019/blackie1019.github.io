@@ -12,8 +12,6 @@ sitemap: true
 date: 2018-01-17 00:04:26
 ---
 
-<!-- More -->
-
 30天鐵人賽介紹 AWS 雲端世界 - 30: AWS CodeStar 協助簡化與落實 CI / CD工作流程
 
 <!-- More -->

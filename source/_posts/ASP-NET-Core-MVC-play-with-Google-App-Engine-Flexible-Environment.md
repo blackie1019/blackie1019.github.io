@@ -7,7 +7,7 @@ header-img: ''
 sitemap: true
 date: 2017-04-28 23:37:07
 categories:
-- Google Cloud Platform
+- Cloud
 tags: 
 - ASP.NET Core
 - GCP

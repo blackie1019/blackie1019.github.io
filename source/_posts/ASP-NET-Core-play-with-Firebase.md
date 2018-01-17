@@ -7,7 +7,7 @@ author: Blackie
 sitemap: true
 date: 2017-04-20 07:55:14
 categories:
-- Google Cloud Platform
+- Cloud
 tags: 
 - ASP.NET Core
 - .NET Core

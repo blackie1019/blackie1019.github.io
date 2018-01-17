@@ -7,7 +7,7 @@ header-img: ''
 sitemap: true
 date: 2017-04-12 00:31:12
 categories:
-- Google Cloud Platform
+- Cloud
 tags:
 - Cloud
 - ASP.NET

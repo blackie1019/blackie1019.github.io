@@ -7,7 +7,7 @@ header-img: ''
 sitemap: true
 date: 2017-05-11 21:16:27
 categories:
-- Google Cloud Platform
+- Cloud
 tags:
 - Cloud
 - GCP
