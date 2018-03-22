@@ -65,7 +65,7 @@ AWS CodeStar 是一個提供專案整合環境的雲端服務，可以將軟體�
 
 - CodePipeline
 
-    每個管線(pipelin)每個月 $1
+    每個管線(pipelin)每個月 $1.00
 
 - CodeDeploy
 
