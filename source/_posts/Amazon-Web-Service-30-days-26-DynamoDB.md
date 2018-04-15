@@ -131,9 +131,6 @@ dynamodb.createTable(params, function(err, data) {
 
 當上面執行完後我們就建立了第二個資料表，接下來匯入我們準備好的資料：
 
-```json
-```
-
 ![lab_13.png](lab_13.png)
 
 ![lab_14.png](lab_14.png)
