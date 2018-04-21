@@ -46,12 +46,6 @@ tags:
 
 ### Encoding and Decoding ###
 
-編碼是將一個信息從某一種形式/格式直接轉換為成另一種形式/格式，主要是協助雙方可以使用統一的形式/格式進行溝通。
-
-![encode_decode.png](encode_decode.png)
-
-### Encoding and Decoding ###
-
 編碼是將一個信息從某一種形式/格式直接轉換為成另一種形式/格式，主要是協助雙方可以使用統一的形式/格式進行溝通。更進一步的來說編碼也可以是一個將原先無意義的輸入轉換成有意義輸出的方式。
 
 程式開發上的編碼有：Text encoding(Big5, UTF-8), [URL encoding/Percent Encoding](https://www.w3schools.com/tags/ref_urlencode.asp)
