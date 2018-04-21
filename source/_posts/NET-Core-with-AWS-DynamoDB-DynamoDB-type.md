@@ -19,6 +19,8 @@ tags:
 
 <!-- More -->
 
+![SDKSupport.DDBLowLevelAPI.png](SDKSupport.DDBLowLevelAPI.png)
+
 一般透過 AWS 官方提供的 SDK 與 .NET Core 進行開發有三種方式可以取得與操作資料：
 
 1. [DynamoDB Low-Level API](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.LowLevelAPI.html)
@@ -124,3 +126,4 @@ public static async Task RunDocumentModel(AmazonDynamoDBClient client, string ta
 
 ## References ##
 - [Higher-Level Programming Interfaces for DynamoDB - .NET: Object Persistence Model](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html)
+- [DynamoDB Series – Conversion Schemas](https://aws.amazon.com/blogs/developer/dynamodb-series-conversion-schemas/)
