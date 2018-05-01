@@ -15,6 +15,7 @@ menu:
   commonweal: 公益404
   dotnet: .NET Core
   gcp: GCP
+  aws: AWS
 
 sidebar:
   overview: 站点概览

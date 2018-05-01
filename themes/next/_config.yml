@@ -29,7 +29,8 @@ fb_app_id: 1912565115693515
 menu:
   home: /
   dotnet: /dotnet/
-  gcp: /categories/Google-Cloud-Platform
+  aws: /tags/aws/
+  gcp: /tags/gcp/
   categories: /categories
   #about: /about
   archives: /archives
@@ -53,7 +54,8 @@ menu_icons:
   archives: archive
   commonweal: heartbeat
   dotnet: icon-csharp
-  gcp:  icon-google-developers
+  gcp: icon-google-developers
+  aws: icon-aws
 
 
 

@@ -306,7 +306,7 @@ tags:
 
 ASP.NET Core天生就與Azure的整合應該是最好的，而使用AWS的人又佔了雲端50%以上的用戶，不缺與AWS整合的文章或學習資源．
 
-所以為了多元的推廣 *ASP.NET Core* 這樣一個好技術與雲端平台的其他選擇，我開始了這一系列[Google Cloud Platform](http://blackie1019.github.io/categories/Google-Cloud-Platform)的文章．之後我分享更多ASP.NET Core能與GCP服務整合的實務案例，提供整體架構選擇上的一另一種組合！
+所以為了多元的推廣 *ASP.NET Core* 這樣一個好技術與雲端平台的其他選擇，我開始了這一系列[Google Cloud Platform](http://blackie1019.github.io/tags/GCP)的文章．之後我分享更多ASP.NET Core能與GCP服務整合的實務案例，提供整體架構選擇上的一另一種組合！
 
 而擴充性，這邊強調Google的Firebase實在是直得大家研究的工具，他大大減少整個應用程式開發的底層架構，大家都知道要研發汽車，我們不用重複製作輪子，一樣的道理，要製作網站我們也不用所有功能都自己套用套件開發，有些服務或功能在大部分網站或是手機應用程式的服務上都是必備的功能，這邊Firebase就是一個很好的解決方案．
 

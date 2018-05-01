@@ -263,7 +263,7 @@ ASP.NET MVC5 與 WebAPI2 甚至是 ASP.NET Web Form 等專案目前都是跑在 
 
 對於 web 框架評比有興趣的朋友可以參考[https://www.techempower.com/benchmarks/](https://www.techempower.com/benchmarks)
 
-對於 ASP.NET Core 與 Google Cloud Platform 整合部署有興趣的朋友可以參考 [Google Cloud Platform](http://blackie1019.github.io/categories/Google-Cloud-Platform) 系列文章．
+對於 ASP.NET Core 與 Google Cloud Platform 整合部署有興趣的朋友可以參考 [Google Cloud Platform](http://blackie1019.github.io/tags/GCP) 系列文章．
 
 ### Q: C# 與 .NET Core 和 ASP.NET Core 的關係？###
 

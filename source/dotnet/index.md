@@ -125,9 +125,9 @@ ASP.NET Core 是一個基於.NET Core全新的跨平台Framework, 類似於使�
 
 這邊都會以專欄的方式介紹，有興趣的朋友請到各專欄閱讀：
 
-- ASP.NET Core Hosting on Cloud - Azure
-- ASP.NET Core Hosting on Cloud - AWS
-- [ASP.NET Core play with Google Cloud Platform](http://blackie1019.github.io/categories/Google-Cloud-Platform/)
+- ASP.NET Core play with Cloud - Azure
+- [Amazon Web Service 專區](http://blackie1019.github.io/tags/AWS/)
+- [Google Cloud Platform 專區](http://blackie1019.github.io/tags/GCP/)
 
 ## Project Goal ##
 
