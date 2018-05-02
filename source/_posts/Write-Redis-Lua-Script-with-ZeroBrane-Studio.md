@@ -83,7 +83,7 @@ return var2
 
 ![debug_02.png](debug_02.png)
 
-![debug_03.png](debug_02.png)
+![debug_03.png](debug_03.png)
 
 到這邊介紹完基本的操作後，就來直接與本機或遠端的 Redis Instance 開發互動。
 
