@@ -29,8 +29,8 @@ fb_app_id: 1912565115693515
 menu:
   home: /
   dotnet: /dotnet/
-  aws: /tags/aws/
-  gcp: /tags/gcp/
+  aws: /tags/AWS/
+  gcp: /tags/GCP/
   categories: /categories
   #about: /about
   archives: /archives
@@ -224,6 +224,7 @@ links:
   Ouch - Developer ≈ Designer : http://ouch1978.github.io
   Max W - Retry : http://retrydb.blogspot.tw/
   Bruno - 饅頭小舖 : https://yi-shiuan.github.io/
+  Jed - Blog: - https://jed1978.github.io/
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
