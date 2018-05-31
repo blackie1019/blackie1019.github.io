@@ -32,6 +32,7 @@ tags:
 -主要服務主機(primary instance)，放置於 Google Compute Engine 中，運行 Windows Server 2016 與相關服務.
 -備援主機(second instance), 配置同於主要主機.
 -一組 AD domain name 主機 (DNS). 用於:
+
     - 提供 Windows domain.
     - 解決 hostnames 與 IP 配對.
     - 在叢集內用來決定誰是當前的主要服務主機與備援主機. 相關內容請參考[required quorum for the cluster](https://technet.microsoft.com/en-us/library/jj612870.aspx)
@@ -41,7 +42,6 @@ tags:
 當整個叢集進行容錯移轉時，當前的網路請求(requests)會被派送至最新的啟用端點(active node)。一般來說叢集技術會透過address resolution protocol (ARP) 處理路由，處理 *IP* 與 *MAC addresses* 配對。在 *GCP* 服務中，Virtual Private Cloud (VPC) 支援軟體來定義網路(software-defined networking)的相關功能，所以在此我們不用提供實際的 *MAC addresses* 就可以達到叢集進行容錯移轉的功能。這也意味者，我們需要透過一個軟體服務來幫我們建立內部的負載平衡器來讓當前的路由運作。
 
 通常來說，一般內網的負載平衡器負責分擔並分散來自於同一 VPC 內的大量後端主機的網絡流量，而對於叢集容錯移轉來說，我們會將全部流入該內部負載平衡器進入端口(incoming)的流量轉至當前啟用的容錯節點(active cluster node)，而如何判斷當下節點可以作為啟用的容錯節點則依據下方規則:
-
 
 - 每個 VM 當作一個運行中的 Compute Engine VM 為 Windows 提供叢集容錯移轉支援。會有代理持續追蹤相關的 IP 位址。
 - 負載平衡器的前端(frontend)提供 IP 作為程序應用的進入端點。
@@ -88,7 +88,7 @@ tags:
 
     ![Image 006.jpg](Image 006.jpg)
 
-2. 確定當前專案有啟用帳單功能. [更多關於啟用帳單的功能](https://cloud.google.com/billing/docs/how-to/modify-project)
+2. 確定當前專案有啟用帳單功能. [更多關於啟用帳單的功能](https://cloud.![Image 005.jpg](Image 005.jpg)google.com/billing/docs/how-to/modify-project)
 
     ![Image 005.jpg](Image 005.jpg)
 
@@ -258,9 +258,11 @@ tags:
 
 然後我們需要一台台進入VM設定每一台的 IPV4 區網如下:
 1. 配置 IP :
+
     - wsfc-1 配置 *10.0.0.4*.
     - wsfc-2 配置 *10.0.0.5*.
     - wsfc-dc 配置 *10.0.0.6*.
+    
 2. 設定 Subnet mask 為 *255.255.0.0*
 3. 設定 Default gateway 的值為 wsfcnetsub1 提供的 IP(這邊就是 *10.0.0.1*)，如果是 wsfc-dc 則保留為空值。
 4. 設定 Preferred DNS server 為 *10.0.0.6*
@@ -284,6 +286,7 @@ tags:
 - 設定 local Administator account 的密碼(這步驟不做無法完成後續安裝...)
 - 啟用 local Administator account
 - 建立 AD 服務，這邊只要一步步透過步驟即可完成，只要注意設定如下:
+
     - 將此電腦升為 *domain controller*
     - 新增一個 forest ，並將名稱設定為 *WSFC.TEST*
     - 設定 NetBIOS 網域名稱為 *WSFC* (系統會自動抓取，只要稍微注意一下即可).
@@ -361,6 +364,7 @@ tags:
 - 將 Domain 切換至 WSFC.TEST"，這邊透過 WSFC.TEST\clusteruser 來提供權限完成設定
 - 重啟該電腦
 - 重啟完成後將 *clusteruser* 設為 *wsfc-1* 與 *wsfc-2* 的 administrator 
+
     - 前往 Computer Management > Local Users and Groups > Groups > Administrators 點選新增
     - 輸入 *clusteruser* 並確認名稱後完成設定
 
