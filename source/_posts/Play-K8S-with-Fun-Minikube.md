@@ -13,7 +13,7 @@ tags:
 - Minikube
 ---
 
-K8S 的本機玩具：Ｍinikube
+K8S 的本機單節點玩具：Ｍinikube
 
 <!-- More -->
 
@@ -22,10 +22,10 @@ K8S 是 *kubernetes* 的縮寫(軟體界很習慣保留前後字母中＋中間�
 
 macOS的安裝相對簡單，先準備好以下其中一種：
 
-    - Hyperkit driver
-    - xhyve driver
-    - VirtualBox
-    - VMware Fusion
+- Hyperkit driver
+- xhyve driver
+- VirtualBox
+- VMware Fusion
 
 本次嘗試運行於 ＊VirtualBox＊ 上．另外由於安裝透過 [Brew](https://brew.sh/index_zh-tw) 進行配置，所以先必須將環境安裝好
 
