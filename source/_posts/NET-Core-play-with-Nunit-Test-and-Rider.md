@@ -55,7 +55,7 @@ tags:
 
 當我們透過上面的流程成功加入專案樣板後，新增專案的區塊則會多出一塊 *Other* 裡面就可以新增 NUnit Test 的測試專案．
 
-而當我們從 NUnit Test 運行測試專案時，則會提示需要安裝額外的套件()：
+而當我們從 NUnit Test 運行測試專案時，則會提示需要安裝額外的套件：
 
 ![nunit_03](nunit_03.png)
 
@@ -179,7 +179,7 @@ namespace dotnet_dapper_mysql.Domain.Test
 
 ## 一定要選 NUnit 嗎？ ##
 
-其實 Nnuit 在 .NET Framework 算是一個穩定的測試框架，相較於 MSTest 功能上比較受限且該測試框架只能跑微軟的語言，選擇 NUnit 是一個對於未來交為彈性的準備．而作為後起的 xUnit 則是加入更多新功能也被微軟作為未來除了官方 ＭSTest 為首推的開源框架．
+其實 NUnit 在 .NET Framework 算是一個穩定的測試框架，相較於 MSTest 功能上比較受限且該測試框架只能跑微軟的語言，選擇 NUnit 是一個對於未來交為彈性的準備．而作為後起的 xUnit 則是加入更多新功能也被微軟作為未來除了官方 ＭSTest 為首推的開源框架．
 
 而 xUnit 其實也是 NUnit 同一群人開發的，這邊也找了他們解釋為什麼要進行額外的 xUnit 開發：[Why Did we Build xUnit 1.0?](https://xunit.github.io/docs/why-did-we-build-xunit-1.0.html)
 
