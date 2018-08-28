@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core play with Nunit Test
+title: ASP.NET Core play with NUnit Test
 subtitle: ''
 author: Blackie
 header-img: ''

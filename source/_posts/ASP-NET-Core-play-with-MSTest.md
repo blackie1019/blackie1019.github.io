@@ -172,7 +172,7 @@ MSTest 是微軟提出的測試框架也是ASP.NET與ASP.NET Core內建的測試
 
 結果顯示我們的測試有一個失敗的案例
 
-# MSTest and Nunit Test #
+# MSTest and NUnit Test #
 
 先總結個人的喜好，MSTest雖然是比較陽春且微軟特有的測試框架，但絕對足夠做日常的測試開發．但如果要強調跨語言/環境的測試與負責的測試驗證，或許Nunit Test目前還是首選．
 
