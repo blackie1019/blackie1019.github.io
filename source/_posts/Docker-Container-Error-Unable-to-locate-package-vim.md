@@ -7,7 +7,7 @@ header-img: ''
 sitemap: true
 date: 2017-05-09 14:17:54
 categories:
-- Container & VM
+- Virtualization
 tags:
 - Docker
 - Linux

@@ -7,11 +7,12 @@ header-img: ''
 sitemap: true
 date: 2018-08-07 00:36:14
 categories:
-- Container
+- Virtualization
 tags:
 - K8S
 - Vagrant
 - CoreOS
+- VM
 ---
 
 K8S 的本機多節點玩具 Vagrant + CoreOS 
