@@ -82,6 +82,6 @@ tags:
 ![08](08.png)
 
 ## References ##
-(https://cutejaneii.wordpress.com/2017/04/17/docker-2-%E5%AE%89%E8%A3%9Ddocker%E5%8F%8Aportainer/)
+
 - [Portainer documentation](https://portainer.readthedocs.io/en/stable/index.html)
 - [How to Manage Docker Containers using Portainer on Ubuntu](https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/)
