@@ -1,7 +1,7 @@
 ---
 layout: post
 title: >-
-  [Git]Switch from HEAD branch to master branch cause to disappear of part of
+  [Git]Switch from HEAD to master branch cause to disappear of part of
   the project
 subtitle: ''
 author: Blackie
@@ -15,11 +15,11 @@ tags:
 - Source Control
 ---
 
-記錄如何解決 Git 從 HEAD 分支切換到 master 分支部分交付不見/不見的問題
+記錄如何解決 Git 從 HEAD 切換到 master 分支部分交付不見/不見的問題
 
 <!-- More -->
 
-前陣子再一個經常操作的專案上做了 git commit 後，從當前的 HEAD 分支切換到 master 分支，部分交付的 commits 在 HEAD 操作的就全部遺失了，在 git cli 或 sourcetree 上都無法透過指令顯示不見的 HEAD 分支．
+前陣子再一個經常操作的專案上做了 git commit 後，從當前的 HEAD 切換到 master 分支，部分交付的 commits 在 HEAD 操作的就全部遺失了，在 git cli 或 sourcetree 上都無法透過指令顯示不見的 HEAD 分支．
 
 後來想到 Git *commit* 的特性，就透過 git reflog 指令然觀看全部 git 的操作記錄，裡面詳細記載你曾經下過的 git 指令:
 
