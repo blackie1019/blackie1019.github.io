@@ -1,7 +1,7 @@
 ---
 layout: post
 title: >-
-  [Git]Switch from HEAD to master branch cause to disappear of part of
+  [Git] Switch from HEAD to master branch cause to disappear of part of
   the project
 subtitle: ''
 author: Blackie
@@ -23,7 +23,7 @@ tags:
 
 後來想到 Git *commit* 的特性，就透過 git reflog 指令然觀看全部 git 的操作記錄，裡面詳細記載你曾經下過的 git 指令:
 
-  git reflog
+    git reflog
 
 ![git002.png](git002.png)
 
@@ -31,7 +31,7 @@ tags:
 
 這邊可以馬上透過建立 tag 的指令將當前消失的 commits 顯示出來：
 
-  git tag emergency 596f379
+    git tag emergency 596f379
 
 ![git003.png](git003.png)
 
