@@ -11,7 +11,7 @@ categories:
 tags:
 - git
 - git ignore
-- rider
+- Rider
 ---
 
 分享 git ignore CLI 工具與 Rider 的 .gitignore 擴充套件(plugin)
