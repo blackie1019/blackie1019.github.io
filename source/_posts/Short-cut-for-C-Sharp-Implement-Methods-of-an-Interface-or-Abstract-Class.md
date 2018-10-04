@@ -44,7 +44,7 @@ tags:
 
 ## Visual Studio :  Ctrl+.  ##
 
-而 VS 其實很早就被這樣的快捷鍵，依樣可以透過滑鼠右鍵選擇 *Implement Abstract Metohd* 或是直接按下 *Ctrl+.*，呼叫出以下畫面：
+而 VS 其實很早就支援這樣的快捷鍵，一樣可以透過滑鼠右鍵選擇 *Implement Abstract Metohd* 或是直接按下 *Ctrl+.*，呼叫出以下畫面：
 
 ![05.png](05.png)
 
