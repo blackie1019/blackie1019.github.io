@@ -15,7 +15,7 @@ tags:
 紀錄 Rider 如何透過 *Live templates* 與 *File templates* 增加開發效率
 <!-- More -->
 
-Ｒider 在 ***2018.2* 版本推出了兩個新功能 *Live templates* 與 *File templates*的流程改進，透過這兩個功能我們可以
+Ｒider 在 **2018.2** 版本推出了兩個新功能 *Live templates* 與 *File templates* 的流程改進，透過這兩個功能我們可以
 處理重複內容、建立程式碼樣板和各項語言撰寫前的宣告或是呈現的預設樣式，原文介紹：[Live templates and file templates in Rider 2018.2](https://blog.jetbrains.com/dotnet/2018/09/06/live-templates-file-templates-rider-2018-2/)，這邊就簡單分享一下如何使用這兩個功能．
 
 ## Live Templates ##

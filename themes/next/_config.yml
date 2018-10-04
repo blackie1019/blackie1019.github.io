@@ -27,12 +27,11 @@ fb_app_id: 1912565115693515
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /
+  #about: /about
   dotnet: /categories/NET/
   aws: /tags/AWS/
   gcp: /tags/GCP/
   categories: /categories
-  #about: /about
   archives: /archives
   tags: /tags
   #commonweal: /404.html
