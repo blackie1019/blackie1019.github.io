@@ -27,7 +27,7 @@ tags:
 ```csharp
 public void DoTest()
 {
-    var datas = [];
+    var datas = new[]{"test1","test2"};
 }
 ```
 
