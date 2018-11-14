@@ -38,6 +38,7 @@ tags:
 1. 資料還原的語法(與上一篇相同)，只是我們放入 *build.sh* 中:
 
     ```shell
+    #! /bin/sh
     docker exec 1ddf /usr/bin/mysqldump -u root --password=pass.123 LabMariabDB > 01_backup.sql
 
     docker-compose up -d
@@ -45,7 +46,7 @@ tags:
 
 2. 準備 *init.sql* 如下
 
-    ```shell
+    ```sql
     CREATE USER 'blackie'@'%' IDENTIFIED BY 'pass.123';
     GRANT All privileges ON *.* TO 'blackie'@'%';
 
