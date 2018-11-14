@@ -29,11 +29,11 @@ tags:
 
 1. 拉取 MariaDB image
 
-    docker pull mariadb
+        docker pull mariadb
 
 2. 運行一個 Instance 並設定密碼與 port 對外
 
-    docker run -p 3306:3306 --name lab-mariadb -e MYSQL_ROOT_PASSWORD=pass.123 -d mariadb
+        docker run -p 3306:3306 --name lab-mariadb -e MYSQL_ROOT_PASSWORD=pass.123 -d mariadb
 
 3. 建立資料如下：
 
@@ -45,11 +45,11 @@ tags:
 
 1. 拉取 MariaDB image
 
-    docker pull mysql
+        docker pull mysql
 
 2. 運行一個 Instance 並設定密碼與 port 對外
 
-    docker run -p 3316:3306 --name test-mysql -e MYSQL_ROOT_PASSWORD=pass.123 -d mysql
+        docker run -p 3316:3306 --name test-mysql -e MYSQL_ROOT_PASSWORD=pass.123 -d mysql
 
 這邊我們避免 *MySQL* 與 *MariaDB* 的 port 衝突，所以設定到 **3316** ，到這邊就可以進入本篇的重點，資料匯入與匯出了．
 
@@ -59,11 +59,11 @@ tags:
 
 1. 從 *MariaDB* 備份至 *back.sql* :
    
-    docker exec 1ddf /usr/bin/mysqldump -u root --password=pass.123 LabMariabDB > backup.sql
+        docker exec 1ddf /usr/bin/mysqldump -u root --password=pass.123 LabMariabDB > backup.sql
 
 2. 還原至 *MySQL* :
 
-    cat backup.sql | docker exec -i 5b6d /usr/bin/mysql -u root --password=pass.123 test
+        cat backup.sql | docker exec -i 5b6d /usr/bin/mysql -u root --password=pass.123 test
   
 到這邊我們就可以看到資料成功還原至 *MySQL* 了．
 
