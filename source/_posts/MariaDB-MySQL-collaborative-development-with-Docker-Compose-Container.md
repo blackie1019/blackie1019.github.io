@@ -26,12 +26,12 @@ tags:
 
 本次要透過 docker-compose 加速整個流程的進行，會建立以下目錄與內容:
 
-/Database
-  /dump
-    - 00_init.sql
-    - 01_backup.sql
-  build.sh
-  docker-compose.yml
+/Database/
+|-- dump/
+|   |-- 00_init.sql
+|   |-- 01_backup.sql
+|-- build.sh
+|-- docker-compose.yml
 
 當我們有資料後則透過以下方式進行資料還原與準備初始化：
 
