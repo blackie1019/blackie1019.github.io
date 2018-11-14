@@ -27,9 +27,9 @@ tags:
 本次要透過 docker-compose 加速整個流程的進行，會建立以下目錄與內容:
 
 /Database/
-|-- dump/
-|   |-- 00_init.sql
-|   |-- 01_backup.sql
+|-------/dump/
+|-------|-- 00_init.sql
+|-------|-- 01_backup.sql
 |-- build.sh
 |-- docker-compose.yml
 
@@ -39,19 +39,20 @@ tags:
 
     ```shell
     #! /bin/sh
-    docker exec 1ddf /usr/bin/mysqldump -u root --password=pass.123 LabMariabDB > 01_backup.sql
+    docker exec <containerid> /usr/bin/mysqldump -B <schema-name> --routines -u root --password=pass.123 <schema-name> > 01_backup.sql
 
     docker-compose up -d
+
+    dockdr-compose ps
     ```
+
+  這邊要注意
 
 2. 準備 *init.sql* 如下
 
     ```sql
     CREATE USER 'blackie'@'%' IDENTIFIED BY 'pass.123';
     GRANT All privileges ON *.* TO 'blackie'@'%';
-
-    CREATE DATABASE test;
-    use test; 
     ```
 
 3. 這邊準備的 *docker-compose.yml*
@@ -84,8 +85,8 @@ tags:
 
 我們可以透過以下指令確認當前運行的環境狀態：
 
-  docker-compose ps 
+    docker-compose ps 
 
 或是也可以透過下方指令查看所有 container 狀態:
 
-  docker ps -a
+    docker ps -a

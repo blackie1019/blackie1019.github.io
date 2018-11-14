@@ -59,7 +59,11 @@ tags:
 
 1. 從 *MariaDB* 備份至 *back.sql* :
    
-        docker exec 1ddf /usr/bin/mysqldump -u root --password=pass.123 LabMariabDB > backup.sql
+        docker exec <containerid> /usr/bin/mysqldump -B <schema-name> --routines -u root --password=pass.123 <schema-name> > 01_backup.sql
+
+   這邊的 *--routines* 是把 store procedure 匯出(預設 triiger 會匯出)
+   
+   另外就是 *-B <schema-name>* 這段是為了幫我們會出的 01_backup.sql 建立對應的資料庫並使用它作為匯入
 
 2. 還原至 *MySQL* :
 
@@ -73,7 +77,7 @@ mysql-docker-export.sh
 
 ```shell
 # Backup
-docker exec 1ddf /usr/bin/mysqldump -u root --password=pass.123 LabMariabDB > backup.sql
+docker exec 1ddf /usr/bin/mysqldump  -B LabMariabDB --routines -u root --password=pass.123 LabMariabDB > backup.sql
 
 # Init
 cat init.sql | docker exec -i 5b6d /usr/bin/mysql -u root --password=pass.123
@@ -88,7 +92,4 @@ init.sql
 ```sql
 CREATE USER 'blackie'@'%' IDENTIFIED BY 'pass.123';
 GRANT All privileges ON *.* TO 'blackie'@'%';
-
-CREATE DATABASE test;
-use test;
 ```
