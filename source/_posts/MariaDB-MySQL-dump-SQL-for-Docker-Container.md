@@ -73,7 +73,7 @@ tags:
 
 怕麻煩的朋友甚至可以寫成 *.sh* 檔案加快協同開發：
 
-mysql-docker-export.sh
+mysql-docker-export.sh 內容：
 
 ```shell
 # Backup
@@ -88,7 +88,8 @@ cat backup.sql | docker exec -i 5b6d /usr/bin/mysql -u blackie --password=pass.1
 
 這邊的 *1ddf* 是 *MariaDB* 的 container id, *5b6d* 是 *MySQL* 的 container id
 
-init.sql
+init.sql 內容：
+
 ```sql
 CREATE USER 'blackie'@'%' IDENTIFIED BY 'pass.123';
 GRANT All privileges ON *.* TO 'blackie'@'%';
