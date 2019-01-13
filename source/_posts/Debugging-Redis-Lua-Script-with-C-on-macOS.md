@@ -20,9 +20,9 @@ tags:
 
 <!-- More -->
 
-先前寫如何中[分享如何使用 ZeroBrane Studio 協助 Redis 的 Lua Script 開發與除錯](http://blackie1019.github.io/2018/05/01/Write-Redis-Lua-Script-with-ZeroBrane-Studio/)介紹如何正確地使用工具來幫我們除錯 Redis Lua Script.
+先前分享如何中[分享如何使用 ZeroBrane Studio 協助 Redis 的 Lua Script 開發與除錯](http://blackie1019.github.io/2018/05/01/Write-Redis-Lua-Script-with-ZeroBrane-Studio/)介紹如何正確地使用工具來幫我們除錯 Redis Lua Script.
 
-這次結合 C#, .NET Core 與 macOS 環境，重新整理與介紹如何正確地使用 Redis Lua Script.
+本次結合 C#, .NET Core 與 macOS 環境，重新整理與介紹如何正確地使用 Redis Lua Script.
 
 ## 為什麼使用 Redis Lua Script ##
 

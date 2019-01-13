@@ -37,6 +37,7 @@
     "hexo-server": "^0.2.2",
     "hexo-tag-codepen": "^0.2.2",
     "lodash": "^4.17.5",
+    "natives": "^1.1.6",
     "run-sequence": "^1.2.2"
   }
 }
