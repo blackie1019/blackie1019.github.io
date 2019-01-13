@@ -58,8 +58,8 @@ Redis的架構設計單執行緒的設計，在運行Lua script的時候是沒�
 
 環境使用 Docker 進行 Redis Instance 的建置，指令如下：
 
-  docker pull Redis
-  docker run -P --name redis-lab -d redis
+    docker pull Redis
+    docker run -P --name redis-lab -d redis
 
 透過 `-P` 參數，這裡進行動態的 port 配置與對應至 container 內的 `6379` port
 
@@ -69,9 +69,9 @@ Redis的架構設計單執行緒的設計，在運行Lua script的時候是沒�
 
 透過以下指令與 `redis-cli` 取得當前的所以鍵值
 
-  docker exec -it <container-id> bash
-  redis-cli
-  KEYS *
+    docker exec -it <container-id> bash
+    redis-cli
+    KEYS *
 
 ![02.png](02.png)
 
@@ -81,8 +81,8 @@ Redis的架構設計單執行緒的設計，在運行Lua script的時候是沒�
 
 安裝好後可配置使用者設定，載入剛下載的 plugin 至 ZeroBrane Studio 中：
 
-  mkdir $HOME/.zbstudio
-  mkdir $HOME/.zbstudio/packages
+    mkdir $HOME/.zbstudio
+    mkdir $HOME/.zbstudio/packages
 
 接者將下載的 `redis.lua` plugin 檔案放入剛剛建立的目錄下($HOME/.zbstudio/packages)
 
