@@ -56,27 +56,27 @@ tags:
     ```
 
 3. 這邊準備的 *docker-compose.yml*
-   
+
     ```yaml
     version: '2'
 
-    services: 
+    services:
       mmc-test-db:
         image: mysql:8.0.12
-      
+
         ports:
           - "3316:3306"
         environment:
           MYSQL_ROOT_PASSWORD: pass.123
         volumes:
           - "./dump:/docker-entrypoint-initdb.d"
-        
+
         stdin_open: true
         tty: true
     ```
 
     為了避免 *port* 重複，將對外的 port 改置 *3316*
- 
+
     這邊透過 MySQL 與 ＭariaDB 的 *docker-entrypoint-initdb.d* 這個特殊的目錄，在 Instance 啟動時就幫我們執行資料目錄內的 .sh, .script 與 .sql 檔案．
 
     另外，如果透過 docker-compose 的方式啟動記得要補上 *stdin_open* 與 *tty* 設定，確保服務不會執行完就終止．
@@ -85,7 +85,7 @@ tags:
 
 我們可以透過以下指令確認當前運行的環境狀態：
 
-    docker-compose ps 
+    docker-compose ps
 
 或是也可以透過下方指令查看所有 container 狀態:
 
