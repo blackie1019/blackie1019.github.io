@@ -20,7 +20,7 @@ tags:
 
 <!-- More -->
 
-先前分享如何中[分享如何使用 ZeroBrane Studio 協助 Redis 的 Lua Script 開發與除錯](http://blackie1019.github.io/2018/05/01/Write-Redis-Lua-Script-with-ZeroBrane-Studio/)介紹如何正確地使用工具來幫我們除錯 Redis Lua Script.
+先前[分享如何使用 ZeroBrane Studio 協助 Redis 的 Lua Script 開發與除錯](http://blackie1019.github.io/2018/05/01/Write-Redis-Lua-Script-with-ZeroBrane-Studio/)介紹如何正確地使用工具來幫我們除錯 Redis Lua Script.
 
 本次結合 C#, .NET Core 與 macOS 環境，重新整理與介紹如何正確地使用 Redis Lua Script.
 
@@ -42,7 +42,7 @@ tags:
 
 而透過 `Lua Script` 以上的指令可以僅透過一個客製的指令進行操作，大幅提升 Redis 效能與反應．
 
-Redis的架構設計單執行緒的設計，在運行Lua script的時候是沒辦法處理其他的請求的，所以Lua script並不能像Database的Stored Procedure一樣運行複雜的商務邏輯，個人認為如果有以下情境可以考慮採用：
+Redis的架構設計**單執行緒**的設計，在運行Lua script的時候是沒辦法處理其他的請求的，所以Lua script並不能像Database的Stored Procedure一樣運行複雜的商務邏輯，個人認為如果有以下情境可以考慮採用：
 
 - 避免多次請求來回浪費掉的round-trip network latency
 - 創造出 Redis 與 Redis Framework 沒有支援的command
@@ -67,7 +67,7 @@ Redis的架構設計單執行緒的設計，在運行Lua script的時候是沒�
 
 ![01.png](01.png)
 
-透過以下指令與 `redis-cli` 取得當前的所以鍵值
+透過以下指令與 `redis-cli` 取得當前的所有鍵值
 
     docker exec -it <container-id> bash
     redis-cli
