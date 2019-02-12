@@ -19,7 +19,7 @@ tags:
 
 <!-- More -->
 
-![landing.png](/images/landing.png)
+![landing.png](landing.png)
 
 gRPC 是一個由 google 開發的開源、跨語言且高效能的 RPC Framework，它可以高效地連接單個或多個數據中心的服務，也可以支持可插拔的負載均衡，追踪，健康檢查以及認證。當然，它也能應用於分散式計算的中用來連接各種設備、APP 應用、瀏覽器(需要一點技巧)與後端服務．
 
@@ -36,8 +36,9 @@ Remote procedure call (RPC) 顧名思義就是用於遠端調用, 簡單的說�
 如兩台服務器A和B，A服務器上部署一個應用，B服務器上部署一個應用，A服務器上的應用想調用B服務器上的應用提供的接口，由於不在一個應用實體內，不能直接調用，所以需要通過網路來呼叫調用的方式和傳達調用所需的傳入數據。
 
 人們最常比較 RPC 與 Restful API Restful API 現在可以說是整個網頁應用程式的主流用法，而 RPC 則是更早於 Restful API 出現的遠端調用，最簡單的差別如下：
-  - Restful API 使用http 協定透過 GET 方法來取得資料，如：/usr/2
-  - RPC 則使用類似函數呼叫的方式執行，例如：getUser(2)
+
+- Restful API 使用http 協定透過 GET 方法來取得資料，如：/usr/2
+- RPC 則使用類似函數呼叫的方式執行，例如：getUser(2)
 
 ## What is gRPC ##
 
