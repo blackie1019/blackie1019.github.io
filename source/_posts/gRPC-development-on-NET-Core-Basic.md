@@ -45,7 +45,7 @@ gRPC 是由Google所開發的開源RPC Framework，可支援多種語言：C、C
 
 透過 gRPC，可以享受如同 Restful API 呼叫一樣前後端不同語言的開發，而這也讓人常常誤會或是難分辨使用時機．
 
-![landing-4.svg](landing-4.svg)
+![bi-communication.png](bi-communication.png)
 
 gRPC 是基於 `HTTP2` 以及 `Protocol buffer` 與 `Netty` 這三個很厲害的協定與技術所開發的框架．
 
