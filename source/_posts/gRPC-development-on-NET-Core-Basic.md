@@ -7,8 +7,9 @@ header-img: ''
 sitemap: true
 date: 2019-02-11 00:40:06
 categories:
-- Development&Coding
+- .NET
 tags: 
+- .NET
 - .NET Core
 - gRPC
 - Protobuf
@@ -340,7 +341,9 @@ namespace Demo.Client
 
 如此一來gRPC的開發就完成串接呼叫了！
 
-有於功能與效能的強大，讓 gRPC 也正式被承諾會被整合進入 ASP.NET Core 中並在 .NET Core 3 發行．有興趣的朋友可以追一下目前的專案進度[grpc/grpc-dotnet](https://github.com/grpc/grpc-dotnet)
+由於功能與效能的強大，讓 gRPC 也正式被承諾會被整合進入 ASP.NET Core 中並在 .NET Core 3 發行．
+
+有興趣的朋友可以追一下目前的專案進度[grpc/grpc-dotnet](https://github.com/grpc/grpc-dotnet)
 
 ## Reference ##
 

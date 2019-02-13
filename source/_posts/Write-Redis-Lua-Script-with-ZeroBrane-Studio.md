@@ -7,7 +7,7 @@ header-img: ''
 sitemap: true
 date: 2018-05-02 00:26:57
 categories:
-- Redis
+- Development&Coding
 tags:
 - Lua Script
 - ZeroBrane Studio

@@ -7,10 +7,11 @@ header-img: ''
 sitemap: true
 date: 2019-01-13 14:20:07
 categories:
-- Redis
+- .NET
 tags:
 - Lua Script
 - ZeroBrane Studio
+- .NET
 - .NET Core
 - C#
 - Redis

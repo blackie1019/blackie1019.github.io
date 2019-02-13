@@ -11,7 +11,7 @@ categories:
 tags: 
 - ASP.NET Core
 - .NET Core
-- .NET CLI
+- .NET Core CLI
 ---
 
 使用-f參數讓我們將新增的專案放入指定的.Net Framework版本

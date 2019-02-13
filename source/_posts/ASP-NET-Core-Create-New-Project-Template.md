@@ -11,7 +11,7 @@ categories:
 tags: 
 - ASP.NET Core
 - .NET Core
-- .NET CLI
+- .NET Core CLI
 - C#
 ---
 
