@@ -63,8 +63,8 @@ gRPC 是基於 `HTTP2` 以及 `Protocol buffer` 與 `Netty` 這三個很厲害�
 ```protobuf
 syntax = "proto3"; // protobuf 的版本
 
-package Accounts; // 類別與函式產生時所屬的 namespace，在 csharp 此設定沒用
-option csharp_namespace = "Skyline.Sports.Message.Accounts"; // csharp 需透過此設定才能指定所屬的 namespace
+package Demo; // 類別與函式產生時所屬的 namespace，在 csharp 此設定沒用
+option csharp_namespace = "Demo"; // csharp 需透過此設定才能指定所屬的 namespace
 
 message HelloRequest {
   int Value =1;
