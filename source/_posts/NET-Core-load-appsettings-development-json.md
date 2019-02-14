@@ -76,7 +76,7 @@ public class AppSettingsHelper
             C:\> set ASPNETCORE_ENVIRONMENT=Development
             C:\> dotnet ...
 
-      - Unix/macOs
+     - Unix/macOS
 
             $ export ASPNETCORE_ENVIRONMENT=Development
             $ dotnet ...
