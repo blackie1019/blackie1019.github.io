@@ -5,7 +5,7 @@ subtitle: ''
 author: Blackie
 header-img: ''
 sitemap: true
-date: 2019-02-21 06:44:57
+date: 2019-02-22 07:44:57
 categories:
 - .NET
 tags: 
@@ -73,6 +73,16 @@ PBKDF2 的定義如下:
 如果重複計算的回合數足夠大，破解的成本就會變得很高。而Salt的添加也會增加攻擊的難度。上述的流程則如下示意：
 
 ![PBKDF2.png](PBKDF2.png)
+
+PBKDF2 與其他知名的密碼雜湊比較(Bcrept, SHA-256)的破解成本比較就可以知道差異:
+
+![cost.png](cost.png)
+
+另外因為GPU比CPU做運算會快上更多，而PBKDF2 有針對 `GPU` 的攻擊做防範，這則是傳統加密雜湊運算所沒有的，整體 GPU 運算比較如下([oclHashcat-plus](http://hashcat.net/oclhashcat-plus/))：
+
+![gpu.png](gpu.png)
+
+現金的無線網路 WPA/WPA2 的規格預設採用 PBKDF2，所以各語言的普及率也高，如果需要找個密碼標準來用的話，PBKDF2 是相當不錯的選擇．
 
 ## Implement PBKDF2 with C# ##
 
@@ -145,3 +155,4 @@ private static string CreateSalt()
 - [Worst and best practices for secure password storage](https://blog.conviso.com.br/worst-and-best-practices-for-secure-password-storage/)
 - [PBKDF2 算法概述](https://blog.csdn.net/xy010902100449/article/details/52078767)
 - [25.NET Core密碼PBKDF2加密方式處理](https://ithelp.ithome.com.tw/articles/10205239)
+- [各種密碼破解速度](https://blog.gslin.org/archives/2013/08/28/3484/%E5%90%84%E7%A8%AE%E5%AF%86%E7%A2%BC%E7%A0%B4%E8%A7%A3%E9%80%9F%E5%BA%A6/)
