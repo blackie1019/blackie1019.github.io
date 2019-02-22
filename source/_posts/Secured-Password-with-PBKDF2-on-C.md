@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Password Encrpty with PBKDF2 on C#'
+title: 'Secured Password with PBKDF2 on C#'
 subtitle: ''
 author: Blackie
 header-img: ''
