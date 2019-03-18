@@ -66,7 +66,7 @@ tags:
 </Project>
 ```
 
-與先前不同的是這邊定義了一個通用類別於 Common 目錄下，並於使用到該類型的 .proto 載入此檔案（路徑需包含 subfolder)．
+另外，本次專案這邊額外定義了一個通用類別於 Common 目錄下，並於使用到該類型的 .proto 載入此檔案（路徑需包含 subfolder)．
 
 而 Grpc.Tools 設定了 `PrivateAssets="All"` ，該屬性指定應取用哪些資產不會放入下一個專案的套件，阻止下一個引用該專案產生的 .dll 時 .csproj 的 .dll 引用繼承。
 
