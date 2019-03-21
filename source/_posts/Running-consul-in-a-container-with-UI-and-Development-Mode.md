@@ -37,3 +37,4 @@ docker 指令時記得補上 `0.0.0.0` :
 ## References ##
 
 - [Consul GETTING STARTED - Web UI](https://learn.hashicorp.com/consul/getting-started/ui)
+- [Larry Nung's Level Up : Consul - Web UI](http://larrynung.github.io/2018/12/13/Consul-Web-UI/)
