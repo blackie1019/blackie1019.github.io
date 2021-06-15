@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /css/
+Disallow: /images/
+Disallow: /img/
+Disallow: /js/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Sitemap: https://blackie1019.github.io/sitemap.xml
